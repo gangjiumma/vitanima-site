@@ -226,9 +226,9 @@ export const dict = {
         { k: "사업 분야", v: "반려동물 AI · 데이터 플랫폼" },
         { k: "서비스", v: "AnimAI · AnimAI Biz" },
         { k: "이메일", v: "cs@vitanima.kr" },
-        { k: "사업자등록번호", v: "— 채워넣기" },
+        { k: "사업자등록번호", v: "284-88-02356" },
         { k: "설립일", v: "2022년 8월 30일" },
-        { k: "주소", v: "인천광역시 서구 북항로 193번길 6" },
+        { k: "주소", v: "인천광역시 연수구 테크노파크로 111번길 5, 8층" },
       ],
 
       nameH2: "이름",
@@ -730,9 +730,9 @@ export const dict = {
         { k: "Field", v: "Companion animal AI · data platform" },
         { k: "Services", v: "AnimAI · AnimAI Biz" },
         { k: "Email", v: "cs@vitanima.kr" },
-        { k: "Business reg. no.", v: "— to be filled" },
+        { k: "Business reg. no.", v: "284-88-02356" },
         { k: "Founded", v: "30 August 2022" },
-        { k: "Address", v: "6, Bukhang-ro 193beon-gil, Seo-gu, Incheon, Korea" },
+        { k: "Address", v: "8F, 5, Technopark-ro 111beon-gil, Yeonsu-gu, Incheon, Korea" },
       ],
 
       nameH2: "The name",
