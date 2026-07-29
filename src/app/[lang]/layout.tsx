@@ -33,6 +33,11 @@ export async function generateMetadata({
       locale: lang === "ko" ? "ko_KR" : "en_US",
       type: "website",
     },
+    verification: {
+      other: {
+        "naver-site-verification": "0a9d08a53f66a2196ea9d5752d4707b6185b35ba",
+      },
+    },
   };
 }
 
