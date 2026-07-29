@@ -18,7 +18,7 @@ export async function generateMetadata({
   const lang = await resolveLang(params);
   const d = getDict(lang);
   return {
-    metadataBase: new URL("https://vitanima.kr"),
+    metadataBase: new URL("https://www.vitanima.kr"),
     title: d.meta.title,
     description: d.meta.description,
     alternates: {
@@ -28,14 +28,15 @@ export async function generateMetadata({
     openGraph: {
       title: d.meta.title,
       description: d.meta.description,
-      url: `https://vitanima.kr/${lang}`,
+      url: `https://www.vitanima.kr/${lang}`,
       siteName: d.common.company,
       locale: lang === "ko" ? "ko_KR" : "en_US",
       type: "website",
     },
     verification: {
       other: {
-        "naver-site-verification": "0a9d08a53f66a2196ea9d5752d4707b6185b35ba",
+        "naver-site-verification":
+          "0a9d08a53f66a2196ea9d5752d4707b6185b35ba",
       },
     },
   };

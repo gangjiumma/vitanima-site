@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { LANGS } from "@/lib/dict";
 
-const BASE = "https://vitanima.kr";
+const BASE = "https://www.vitanima.kr";
 const ROUTES = [
   "",
   "/about",
