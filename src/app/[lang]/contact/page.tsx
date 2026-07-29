@@ -39,21 +39,34 @@ export default async function ContactPage({
           </Reveal>
 
           <Reveal delay={100}>
-            <div className="mt-10 inline-flex flex-col gap-4 border-t border-line pt-7 sm:flex-row sm:items-center sm:gap-8">
-              <div>
-                <p className="t-label text-ink-4">
-                  {c.emailLabel.toUpperCase()}
-                </p>
-                <a
-                  href={`mailto:${d.common.email}`}
-                  className="mt-2 block t-display text-[24px] text-ink underline-offset-4 hover:text-forest hover:underline sm:text-[30px]"
-                >
-                  {d.common.email}
-                </a>
+            <div className="mt-10 border-t border-line pt-7">
+              <div className="flex flex-col gap-7 sm:flex-row sm:gap-14">
+                <div>
+                  <p className="t-label text-ink-4">
+                    {c.emailLabel.toUpperCase()}
+                  </p>
+                  <a
+                    href={`mailto:${d.common.email}`}
+                    className="t-display mt-2 block text-[24px] text-ink underline-offset-4 hover:text-forest hover:underline sm:text-[30px]"
+                  >
+                    {d.common.email}
+                  </a>
+                </div>
+                <div>
+                  <p className="t-label text-ink-4">
+                    {c.phoneLabel.toUpperCase()}
+                  </p>
+                  <a
+                    href={d.common.phoneHref}
+                    className="t-display t-num mt-2 block text-[24px] text-ink underline-offset-4 hover:text-forest hover:underline sm:text-[30px]"
+                  >
+                    {d.common.phone}
+                  </a>
+                </div>
               </div>
               <a
                 href={`mailto:${d.common.email}`}
-                className="inline-flex w-fit items-center gap-2 rounded-full bg-forest px-6 py-3 text-[14px] text-bone transition-colors hover:bg-forest-2"
+                className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-forest px-6 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-forest-2"
               >
                 <Mail size={15} />
                 {c.mailBtn}

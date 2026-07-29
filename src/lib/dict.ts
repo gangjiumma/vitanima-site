@@ -45,6 +45,8 @@ export const dict = {
       company: "주식회사 비타니마",
       companyShort: "㈜비타니마",
       email: "cs@vitanima.kr",
+      phone: "010-2358-5248",
+      phoneHref: "tel:+821023585248",
       productUrl: "https://www.animai.kr",
       dashboardUrl: "https://gangji-manage.kr",
       iosUrl: "https://apps.apple.com/kr/app/id6760122477",
@@ -225,9 +227,11 @@ export const dict = {
         { k: "대표이사", v: "김훈기" },
         { k: "사업 분야", v: "반려동물 AI · 데이터 플랫폼" },
         { k: "서비스", v: "AnimAI · AnimAI Biz" },
+        { k: "전화", v: "010-2358-5248" },
         { k: "이메일", v: "cs@vitanima.kr" },
         { k: "사업자등록번호", v: "284-88-02356" },
-        { k: "설립일", v: "2022년 9월 5일" },
+        { k: "통신판매업신고번호", v: "제2026-인천연수구-1470호" },
+        { k: "설립일", v: "2022년 8월 30일" },
         { k: "주소", v: "인천광역시 연수구 테크노파크로 111번길 5, 8층" },
       ],
 
@@ -509,6 +513,7 @@ export const dict = {
       lead:
         "어떤 용건이든 아래 주소 한 통이면 닿습니다. 영업일 기준 2일 안에 답장드립니다.",
       emailLabel: "이메일",
+      phoneLabel: "전화",
       types: [
         { t: "투자 · IR", d: "라운드 관련 자료는 요청 주시면 개별 전달드립니다." },
         { t: "사업 제휴", d: "상품 · 시설 · 보험 · 데이터 협업." },
@@ -548,6 +553,8 @@ export const dict = {
       company: "Vitanima Inc.",
       companyShort: "Vitanima",
       email: "cs@vitanima.kr",
+      phone: "+82 10-2358-5248",
+      phoneHref: "tel:+821023585248",
       productUrl: "https://www.animai.kr",
       dashboardUrl: "https://gangji-manage.kr",
       iosUrl: "https://apps.apple.com/kr/app/id6760122477",
@@ -729,8 +736,10 @@ export const dict = {
         { k: "CEO", v: "Hunki Kim" },
         { k: "Field", v: "Companion animal AI · data platform" },
         { k: "Services", v: "AnimAI · AnimAI Biz" },
+        { k: "Phone", v: "+82 10-2358-5248" },
         { k: "Email", v: "cs@vitanima.kr" },
         { k: "Business reg. no.", v: "284-88-02356" },
+        { k: "E-commerce reg. no.", v: "2026-Incheon Yeonsu-1470" },
         { k: "Founded", v: "30 August 2022" },
         { k: "Address", v: "8F, 5, Technopark-ro 111beon-gil, Yeonsu-gu, Incheon, Korea" },
       ],
@@ -1017,6 +1026,7 @@ export const dict = {
       lead:
         "One address reaches us, whatever the subject. We reply within two business days.",
       emailLabel: "Email",
+      phoneLabel: "Phone",
       types: [
         {
           t: "Investment · IR",

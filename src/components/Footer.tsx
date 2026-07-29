@@ -25,12 +25,20 @@ export default function Footer({ lang }: { lang: Lang }) {
             <p className="t-title mt-3 max-w-xs text-[17px] leading-relaxed text-bone/70">
               {d.footer.tagline}
             </p>
-            <a
-              href={`mailto:${d.common.email}`}
-              className="mt-5 inline-block text-[13px] font-medium text-forest-lit underline-offset-4 hover:underline"
-            >
-              {d.common.email}
-            </a>
+            <div className="mt-5 flex flex-col gap-1.5">
+              <a
+                href={`mailto:${d.common.email}`}
+                className="text-[13px] font-medium text-forest-lit underline-offset-4 hover:underline"
+              >
+                {d.common.email}
+              </a>
+              <a
+                href={d.common.phoneHref}
+                className="t-num text-[13px] font-medium text-bone/60 underline-offset-4 hover:text-bone hover:underline"
+              >
+                {d.common.phone}
+              </a>
+            </div>
           </div>
 
           <div>
