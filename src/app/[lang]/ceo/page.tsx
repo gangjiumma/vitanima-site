@@ -38,17 +38,13 @@ export default async function CeoPage({
           <div className="mt-14 grid gap-12 lg:grid-cols-[300px_1fr] lg:gap-16">
             <Reveal delay={80}>
               <div className="lg:sticky lg:top-24">
-                {/* 사진 자리 — public/ceo.jpg 를 넣고 아래 주석을 풀면 됩니다 */}
-                <div className="flex aspect-[4/5] w-full max-w-[280px] items-center justify-center border border-line bg-bone-2">
-                  <span className="t-label text-ink-4">PHOTO</span>
-                </div>
-                {/*
+                {/* 사진 — public/ceo.jpg */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/ceo.jpg"
                   alt={c.name}
-                  className="aspect-[4/5] w-full max-w-[280px] object-cover"
+                  className="aspect-[4/5] w-full max-w-[280px] border border-line object-cover"
                 />
-                */}
                 <p className="t-title mt-5 text-[22px] text-ink">{c.name}</p>
                 <p className="mt-1 text-[13px] font-medium tracking-[0.04em] text-forest">
                   {c.role}
