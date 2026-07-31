@@ -26,9 +26,9 @@ export const resolveLang = async (
 export const dict = {
   ko: {
     meta: {
-      title: "㈜비타니마 — 말하지 못하는 반려동물을, 세상에서 가장 잘 아는 기술",
+      title: "㈜비타니마 — AI가 우리 아이를 이해하게 만듭니다",
       description:
-        "㈜비타니마는 보호자의 말이 곧 데이터가 되는 폐루프 AI로, 반려동물 한 마리 한 마리의 삶을 기록하고 이해합니다. 서비스는 AnimAI입니다.",
+        "세상의 AI는 평균을 학습합니다. 비타니마의 AI는 우리 아이를 학습합니다. 보호자의 말을 반려동물 개체 데이터로 바꾸는 AI 기술로 AnimAI를 만듭니다.",
     },
     nav: {
       about: "회사",
@@ -57,98 +57,125 @@ export const dict = {
     },
 
     home: {
-      eyebrow: "COMPANION ANIMAL AI",
-      h1: ["말하지 못하는 반려동물을", "세상에서 가장 잘 아는 기술"],
+      eyebrow: "AI FOR PET LIFE",
+      h1: ["AI가", "우리 아이를", "이해하게 만듭니다"],
       lead:
-        "시장은 지금까지 평균을 팔아왔습니다. 비타니마는 한 마리를 학습합니다. 보호자가 매일 하는 말이 그대로 그 아이의 데이터가 되고, 시간이 지날수록 그 아이에 대해서만 정확해집니다.",
-      ctaPrimary: "AnimAI 보기",
-      ctaSecondary: "기술 구조",
+        "대부분의 AI는 품종과 나이 같은 평균적인 정보에서 답을 찾습니다. 비타니마는 보호자의 말과 반려생활 데이터를 AI로 이해해 한 마리 한 마리를 알아가는 서비스를 만듭니다.",
+      ctaPrimary: "AnimAI 알아보기",
+      ctaSecondary: "비타니마의 기술",
 
-      loopLabel: "보호자의 말이 돌아오는 구조 · LOOP",
-      loopCenter: ["말이", "돌아온다"],
-      loopSteps: [
-        { k: "01", t: "말", d: "보호자가 평소처럼 말합니다" },
-        { k: "02", t: "의미", d: "무엇이 · 언제 · 어느 아이에게" },
-        { k: "03", t: "정렬", d: "같은 시간의 활동 기록과 맞춥니다" },
-        { k: "04", t: "학습", d: "그 아이만의 평소를 익힙니다" },
-        { k: "05", t: "질문", d: "평소와 다르면 먼저 묻습니다" },
-        { k: "06", t: "답", d: "그 답이 다시 처음으로" },
-      ],
+      loopCenter: ["보호자의 말을", "AI가 이해합니다"],
+      loopCaption: "보호자의 언어를 반려동물 개체 데이터로 전환하는 AI 기술",
 
-      problemEyebrow: "THE PROBLEM",
-      problemH2: "평균적인 반려동물은 존재하지 않습니다",
+      problemEyebrow: "WHY",
+      problemH2: ["같은 품종이어도", "모두 다르게 살아갑니다"],
+      problemLead:
+        "현재의 반려동물 정보와 서비스는 대부분 품종과 나이, 크기를 기준으로 제공됩니다. 하지만 실제 반려생활을 결정하는 것은 그 아이가 지금까지 어떻게 살아왔는지입니다.",
       problems: [
         {
-          t: "시장은 세 칸으로 나눕니다",
-          d: "소형 · 중형 · 대형. 사료도 영양제도 결국 이 세 칸에 맞춰 만들어집니다. 그런데 그 안에서 품종이 갈리고, 같은 품종 안에서 나이가 갈리고, 나이가 같아도 알레르기와 질환에 따라 급여가 갈립니다.",
+          t: "정보는 평균에서 시작합니다",
+          d: "같은 품종과 나이의 반려동물에게 비슷한 정보와 상품이 제공됩니다. 하지만 먹는 것과 생활 습관, 성격과 건강 상태는 한 마리마다 모두 다릅니다.",
         },
         {
-          t: "그 아이를 아는 사람은 한 명뿐입니다",
-          d: "매일 곁에 있는 보호자만 압니다. 어제보다 덜 먹었다는 것, 계단을 오르기 싫어한다는 것. 그런데 그 정보는 말로만 있고 어디에도 남지 않습니다.",
+          t: "보호자는 그 차이를 알고 있습니다",
+          d: "어제보다 밥을 덜 먹었는지, 어떤 상황에서 불안해하는지, 최근 무엇이 달라졌는지. 매일 함께 지내는 보호자는 그 아이의 작은 차이와 변화를 알고 있습니다.",
         },
         {
-          t: "그래서 남는 기록이 반쪽입니다",
-          d: "차트에는 아팠던 날만 남습니다. 그사이의 평범한 하루가 사실 가장 중요한 데이터인데, 그것을 가진 곳이 아직 없습니다.",
+          t: "그러나 AI는 그 아이를 모릅니다",
+          d: "보호자가 알고 있는 정보는 기존 AI가 활용할 수 있는 데이터로 쌓이지 않습니다. 결국 AI는 그 아이의 실제 생활보다 일반적인 정보와 통계를 바탕으로 답하게 됩니다.",
         },
       ],
 
-      axEyebrow: "WHAT WE DO",
-      axH2: "평균을 팔던 시장에서, 한 마리를 학습합니다",
-      axLead:
-        "개체를 하나하나 아는 일은 늘 비쌌습니다. 수의사 문진, 전문가 주석, 설문, 센서 — 전부 사람이 붙어야 했습니다. 비타니마는 이미 매일 오가는 보호자의 말에서 그 정보를 얻습니다. 특허 3건을 출원한 구조입니다.",
+      axEyebrow: "OUR APPROACH",
+      axH2: ["세상의 AI는 평균을 학습합니다", "비타니마의 AI는 우리 아이를 학습합니다"],
+      axBody:
+        "비타니마는 보호자가 일상에서 하는 말을 AI가 이해할 수 있는 개체 데이터로 바꿉니다. 전문가가 한 마리씩 직접 관찰하거나 별도의 센서와 기기로 모든 정보를 수집하지 않아도, 보호자와 AI의 자연스러운 상호작용을 통해 각 반려동물의 성격과 생활, 변화를 지속적으로 학습합니다.",
+      axNote: "더 적은 비용과 과정으로, 한 마리에게 더 가까운 AI를 만듭니다.",
+      axCardsTitle: "AI가 한 마리를 배우는 방법",
       axPoints: [
-        { t: "배우지 않아도 되게", d: "전문 용어 없이, 평소 쓰던 말 그대로." },
-        { t: "남기지 않아도 남게", d: "기록하려 애쓰지 않아도 그날이 쌓이도록." },
-        { t: "그 아이에게만 정확하게", d: "다른 아이가 아니라 우리 아이에 대해서." },
+        {
+          t: "보호자의 말을 이해합니다",
+          d: "보호자가 평소처럼 이야기하면 AI가 문장 속 대상과 상황, 의미를 파악합니다.",
+        },
+        {
+          t: "개체 데이터로 바꿉니다",
+          d: "대화 속 정보를 성격과 식습관, 건강 상태, 생활 패턴과 이용 이력에 맞게 구조화합니다.",
+        },
+        {
+          t: "한 마리씩 학습합니다",
+          d: "새로운 정보가 쌓일수록 일반적인 평균보다 그 아이의 맥락을 더 많이 반영합니다.",
+        },
       ],
 
       fieldEyebrow: "SERVICE",
       fieldTag: "운영 중",
       fieldH2: "AnimAI",
-      fieldBefore: "우리 아이가 어떤지 알려면 병원에 가야 했습니다.",
-      fieldAfter:
-        "보호자가 매일 하는 말을 그 아이의 기록으로 바꾸는 앱입니다. 지금 운영 중이고, 전국 시설 예약과 사업자 대시보드가 그 위에 붙어 있습니다.",
-      fieldWhy:
-        "매일의 기록, 우리 아이를 아는 AI 상담, 건강과 일정, 동네 시설 예약. 흩어져 있던 것을 한 곳에서 하고, 그 과정이 그대로 그 아이의 데이터가 됩니다.",
+      fieldTagline: "AI로 더 편리하고 더 우리 아이답게 만드는 반려생활 플랫폼",
+      fieldCols: [
+        {
+          t: "우리 아이를 알아가는 AI 비서",
+          d: "AnimAI의 AI 비서는 보호자의 말을 이해하고 반려동물에 관한 정보를 학습합니다. 성격과 생활 습관, 건강 상태와 이전 경험을 함께 고려해 사용할수록 우리 아이에게 더 맞는 정보와 기능을 제공합니다.",
+        },
+        {
+          t: "반려생활에 필요한 서비스를 한곳에서",
+          d: "건강과 일정 관리부터 주변 반려동물 시설 탐색과 예약까지. 보호자는 필요한 서비스를 한곳에서 이용하고, 시설은 AnimAI Biz를 통해 예약과 고객, 매장 운영을 관리합니다.",
+        },
+      ],
+      fieldFeatures: [
+        { t: "AI 비서", d: "우리 아이의 특성과 맥락을 이해하는 AI" },
+        { t: "일정 관리", d: "예방접종과 투약, 주요 일정을 간편하게 관리" },
+        { t: "시설 탐색·예약", d: "전국 반려동물 시설을 찾고 바로 예약" },
+        { t: "AnimAI Biz", d: "예약과 고객, 운영을 연결하는 사업자 대시보드" },
+      ],
       fieldLink: "AnimAI 자세히 보기",
 
-      structureEyebrow: "THE LOOP",
-      structureH2: "쓸수록 그 아이에게 정확해집니다",
+      structureEyebrow: "HOW IT WORKS",
+      structureH2: ["사용할수록", "우리 아이를 더 잘 이해합니다"],
       structureLead:
-        "한 바퀴가 끝나면 다음 바퀴의 질문이 더 정확해지고, 그 답이 다시 데이터가 됩니다. 다른 곳에서 복제하기 어려운 것은 모델이 아니라 이 시간입니다.",
-      structureLink: "기술 구조 자세히",
+        "AnimAI는 보호자와의 상호작용에서 반려동물에 관한 의미 있는 정보를 파악합니다. 새롭게 알게 된 내용은 기존의 생활 정보와 함께 학습되고, 그 결과는 다음 기능과 정보 제공에 반영됩니다. 이 과정이 반복될수록 AI는 일반적인 반려동물이 아니라 우리 아이에 가까워집니다.",
+      loopSteps: [
+        { k: "01", t: "상호작용", d: "보호자가 AI 비서와 평소처럼 이야기합니다" },
+        { k: "02", t: "이해", d: "AI가 말의 대상과 상황, 의미를 파악합니다" },
+        { k: "03", t: "구조화", d: "대화 속 정보를 AI가 학습할 수 있는 개체 데이터로 바꿉니다" },
+        { k: "04", t: "결합", d: "새로운 정보를 기존의 성격과 생활, 건강 데이터와 함께 봅니다" },
+        { k: "05", t: "학습", d: "한 마리에게 반복되는 특성과 달라진 변화를 학습합니다" },
+        { k: "06", t: "개인화", d: "알게 된 내용을 다음 정보와 기능, 서비스 경험에 반영합니다" },
+      ],
+      structureLink: "비타니마의 기술 자세히 보기",
 
-      trackEyebrow: "TRACK RECORD",
-      trackH2: "처음 해보는 게 아닙니다",
+      trackEyebrow: "OUR EXPERIENCE",
+      trackH2: ["현장의 문제를", "해결해 왔습니다"],
       trackLead:
-        "어려운 부분을 만드는 쪽이 떠안으면 쓰는 사람의 하루가 실제로 바뀐다는 것을, 2022년 수출입 물류에서 한 번 확인했습니다. 포워더 고객사 150곳, 450개 프로젝트 파일럿 결과입니다.",
+        "비타니마의 창업팀은 산업 현장에서 직접 문제를 발견하고 서비스를 만들어 왔습니다. 2022년에는 수출입 물류 현장의 비효율을 해결하기 위해 관리 업무와 대기 시간을 줄이는 서비스를 개발하고 운영했습니다. 150개 고객사, 450개 프로젝트를 수행하며 쌓은 서비스 개발과 현장 운영 경험을 바탕으로, 이제 반려동물과 보호자에게 필요한 기술을 직접 만들고 검증하고 있습니다.",
       trackMetrics: [
-        { n: "83%", l: "관리 업무 단축" },
-        { n: "71%", l: "대기 시간 단축" },
+        { n: "83%", l: "반복 관리 업무 감소" },
+        { n: "71%", l: "현장 대기 시간 감소" },
         { n: "83%", l: "슈퍼휴먼 PMF" },
       ],
-      trackLink: "여기까지 온 길",
+      trackNote: "* 물류 서비스 고객 파일럿 결과",
+      trackLink: "비타니마가 걸어온 길",
 
-      proofEyebrow: "AS OF TODAY",
-      proofH2: "지금까지",
+      proofEyebrow: "VITANIMA TODAY",
+      proofH2: "비타니마의 현재",
+      proofLead:
+        "AI가 한 마리의 반려동물을 더 잘 이해할 수 있도록 기술과 서비스, 데이터를 함께 확장하고 있습니다.",
       proofs: [
-        { n: "1,000+", l: "AnimAI 누적 회원" },
-        { n: "13,000+", l: "전국 반려동물 시설 데이터" },
-        { n: "3", l: "특허 출원 (2026.07)" },
-        { n: "70억", l: "대표 7년 · 3개 법인 누적 매출" },
+        { n: "1,000+", l: "AnimAI 가입 보호자" },
+        { n: "13,000+", l: "전국 반려시설 데이터" },
+        { n: "3건", l: "출원 특허" },
+        { n: "70억 원+", l: "창업팀 누적 사업 매출" },
       ],
-      proofNote: "수치는 반올림 표기입니다.",
+      proofNote: "* 대표 창업 후 7년간, 3개 법인 합산 기준",
 
       newsH2: "소식",
       newsLink: "전체 보기",
       newsEmpty: "아직 등록된 소식이 없습니다.",
 
-      ctaH2: "함께 볼 자리가 있다면",
+      ctaH2: ["비타니마와", "새로운 가능성을 논의하세요"],
       ctaLead:
-        "투자 검토, 상품·시설 제휴, 채용 — 어느 쪽이든 한 통이면 됩니다.",
+        "투자, 사업 제휴, 채용 등 비타니마와 함께할 방법을 제안해 주세요.",
       ctaBtn: "문의하기",
     },
-
     about: {
       eyebrow: "COMPANY",
       h1: "회사",
@@ -525,7 +552,7 @@ export const dict = {
     },
 
     footer: {
-      tagline: "말하지 못하는 반려동물을, 세상에서 가장 잘 아는 기술",
+      tagline: "AI가 우리 아이를 이해하게 만듭니다",
       product: "서비스",
       company: "회사",
       rights: "All rights reserved.",
@@ -534,9 +561,9 @@ export const dict = {
 
   en: {
     meta: {
-      title: "Vitanima — Understanding animals who cannot speak",
+      title: "Vitanima — Making AI understand your animal",
       description:
-        "Vitanima builds a closed-loop AI in which what a caregiver says becomes data, recording and understanding the life of each individual animal. Our service is AnimAI.",
+        "The world’s AI learns the average. Vitanima’s AI learns your animal. We build AnimAI on technology that turns a caregiver’s words into per-animal data.",
     },
     nav: {
       about: "Company",
@@ -565,98 +592,131 @@ export const dict = {
     },
 
     home: {
-      eyebrow: "COMPANION ANIMAL AI",
-      h1: ["Understanding animals", "who cannot speak"],
+      eyebrow: "AI FOR PET LIFE",
+      h1: ["Making AI", "understand", "your animal"],
       lead:
-        "The market has only ever sold the average. Vitanima learns one animal. What a caregiver says each day becomes that animal's data, and over time it grows accurate about them in particular.",
-      ctaPrimary: "See AnimAI",
-      ctaSecondary: "How it works",
+        "Most AI answers from averages — breed, age, size. Vitanima builds services that understand what a caregiver says, along with the data of daily life, to learn one animal at a time.",
+      ctaPrimary: "About AnimAI",
+      ctaSecondary: "Our technology",
 
-      loopLabel: "How a caregiver's words come back · LOOP",
-      loopCenter: ["words", "come back"],
-      loopSteps: [
-        { k: "01", t: "Speak", d: "A caregiver says it as they always would" },
-        { k: "02", t: "Meaning", d: "What · when · which animal" },
-        { k: "03", t: "Align", d: "Matched to activity from the same hours" },
-        { k: "04", t: "Learn", d: "What normal looks like for this one animal" },
-        { k: "05", t: "Ask", d: "When something differs, we ask first" },
-        { k: "06", t: "Answer", d: "And the answer starts it again" },
-      ],
+      loopCenter: ["AI understands", "what you say"],
+      loopCaption:
+        "Technology that turns a caregiver's language into per-animal data",
 
-      problemEyebrow: "THE PROBLEM",
-      problemH2: "There is no average pet",
+      problemEyebrow: "WHY",
+      problemH2: ["Same breed,", "entirely different lives"],
+      problemLead:
+        "Information and services for companion animals are mostly organised by breed, age and size. But what actually shapes daily life is how that particular animal has lived so far.",
       problems: [
         {
-          t: "The market sorts into three boxes",
-          d: "Small, medium, large — and food and supplements are built to fit them. Yet breed splits within size, age splits within breed, and at the same age an allergy or a condition changes what the animal should eat.",
+          t: "Information starts from the average",
+          d: "Animals of the same breed and age receive much the same advice and products. Yet diet, habits, temperament and health differ with every single one.",
         },
         {
-          t: "Only one person knows this animal",
-          d: "The caregiver beside them every day. That they ate less than yesterday, that they don't want the stairs. And that knowledge exists only as speech, recorded nowhere.",
+          t: "The caregiver knows the difference",
+          d: "Whether they ate less than yesterday, what makes them anxious, what has changed recently. The person living with them every day knows those small differences.",
         },
         {
-          t: "So half the record never exists",
-          d: "A chart holds the sick days. The ordinary days in between are the most valuable data there is, and nobody yet holds them.",
+          t: "But AI does not know that animal",
+          d: "What the caregiver knows never accumulates as data an AI can use. So the AI answers from general information and statistics rather than that animal's actual life.",
         },
       ],
 
-      axEyebrow: "WHAT WE DO",
-      axH2: "A market that sold the average. We learn one animal.",
-      axLead:
-        "Knowing animals individually has always been expensive — vet interviews, expert annotation, surveys, sensors, all needing a person attached. Vitanima takes that information from what is already said every day. Three patents have been filed on the structure.",
+      axEyebrow: "OUR APPROACH",
+      axH2: [
+        "The world's AI learns the average.",
+        "Vitanima's AI learns your animal.",
+      ],
+      axBody:
+        "Vitanima turns what caregivers say in ordinary conversation into per-animal data an AI can work with. Without an expert observing each animal, and without collecting everything through dedicated sensors, the natural exchange between caregiver and AI keeps teaching it each animal's temperament, routine and changes.",
+      axNote:
+        "Less cost, fewer steps — and an AI that sits closer to one animal.",
+      axCardsTitle: "How the AI learns one animal",
       axPoints: [
-        { t: "Nothing to learn", d: "No jargon — the words you already use." },
-        { t: "Nothing to file", d: "The day accumulates without being written down." },
-        { t: "Accurate about yours", d: "Not about animals in general. About this one." },
+        {
+          t: "It understands what you say",
+          d: "Speak as you normally would, and the AI reads the subject, the situation and the meaning in the sentence.",
+        },
+        {
+          t: "It turns that into data",
+          d: "Information from the conversation is structured into temperament, diet, health, routine and service history.",
+        },
+        {
+          t: "It learns one at a time",
+          d: "The more that accumulates, the more it reflects that animal's context rather than a general average.",
+        },
       ],
 
       fieldEyebrow: "SERVICE",
       fieldTag: "Live",
       fieldH2: "AnimAI",
-      fieldBefore: "Knowing how your animal was doing meant going to the clinic.",
-      fieldAfter:
-        "An app that turns what a caregiver says every day into that animal's record. Live now, with nationwide facility booking and a business dashboard built on top.",
-      fieldWhy:
-        "A daily record, an AI that knows your animal, health and schedules, local facility booking. What used to be scattered happens in one place — and that becomes the animal's data.",
+      fieldTagline:
+        "A companion-animal platform that uses AI to make daily life easier — and more like your animal",
+      fieldCols: [
+        {
+          t: "An AI assistant that gets to know your animal",
+          d: "The AnimAI assistant understands what a caregiver says and learns about the animal. Weighing temperament, routine, health and past experience together, it offers information and features that fit your animal better the more you use it.",
+        },
+        {
+          t: "Everything you need, in one place",
+          d: "From health and scheduling to finding and booking nearby facilities. Caregivers use what they need in one place, while facilities manage bookings, customers and operations through AnimAI Biz.",
+        },
+      ],
+      fieldFeatures: [
+        { t: "AI assistant", d: "An AI that understands your animal's traits and context" },
+        { t: "Scheduling", d: "Vaccinations, medication and key dates, simply managed" },
+        { t: "Find & book", d: "Search facilities nationwide and book straight away" },
+        { t: "AnimAI Biz", d: "A dashboard connecting bookings, customers and operations" },
+      ],
       fieldLink: "More about AnimAI",
 
-      structureEyebrow: "THE LOOP",
-      structureH2: "It grows accurate about your animal",
+      structureEyebrow: "HOW IT WORKS",
+      structureH2: ["The more it's used,", "the better it understands"],
       structureLead:
-        "Each turn sharpens the next question, and the answer becomes data again. What is hard to copy is not the model — it is the time.",
-      structureLink: "How the loop works",
+        "AnimAI picks up meaningful information about the animal from its exchanges with the caregiver. What it newly learns is studied alongside existing records, and the result feeds the next feature and the next answer. Repeat that, and the AI moves from companion animals in general toward your animal in particular.",
+      loopSteps: [
+        { k: "01", t: "Exchange", d: "The caregiver talks with the assistant as they normally would" },
+        { k: "02", t: "Understand", d: "The AI reads the subject, situation and meaning" },
+        { k: "03", t: "Structure", d: "That information becomes per-animal data the AI can learn from" },
+        { k: "04", t: "Combine", d: "New information is seen alongside existing temperament, routine and health data" },
+        { k: "05", t: "Learn", d: "Recurring traits and genuine changes are learned for that animal" },
+        { k: "06", t: "Personalise", d: "What was learned shapes the next answer, feature and experience" },
+      ],
+      structureLink: "More about our technology",
 
-      trackEyebrow: "TRACK RECORD",
-      trackH2: "This isn't our first attempt",
+      trackEyebrow: "OUR EXPERIENCE",
+      trackH2: ["We have solved problems", "on the ground before"],
       trackLead:
-        "That absorbing the hard part actually changes a user's day is something we confirmed once before, in import/export logistics in 2022 — across a pilot with 150 forwarder clients and 450 projects.",
+        "Vitanima's founding team has found problems on industrial floors and built services for them. In 2022 we developed and ran a service that cut admin work and waiting time in import/export logistics. On the back of that experience — 150 client companies and 450 projects — we are now building and validating technology for companion animals and their caregivers.",
       trackMetrics: [
-        { n: "83%", l: "Less admin time" },
-        { n: "71%", l: "Less waiting" },
+        { n: "83%", l: "Less repetitive admin work" },
+        { n: "71%", l: "Less waiting on site" },
         { n: "83%", l: "Superhuman PMF" },
       ],
-      trackLink: "How we got here",
+      trackNote: "* From a customer pilot of the logistics service",
+      trackLink: "The path we took",
 
-      proofEyebrow: "AS OF TODAY",
+      proofEyebrow: "VITANIMA TODAY",
       proofH2: "Where we are",
+      proofLead:
+        "We are expanding technology, services and data together, so that AI can understand one animal better.",
       proofs: [
-        { n: "1,000+", l: "AnimAI registered members" },
+        { n: "1,000+", l: "AnimAI registered caregivers" },
         { n: "13,000+", l: "Pet facilities in our directory" },
-        { n: "3", l: "Patents filed (Jul 2026)" },
-        { n: "₩7.0B", l: "Founder revenue across 3 companies" },
+        { n: "3", l: "Patents filed" },
+        { n: "₩7.0B+", l: "Founding team's cumulative revenue" },
       ],
-      proofNote: "Figures are rounded.",
+      proofNote: "* Across 3 companies over 7 years since the founder's first company",
 
       newsH2: "News",
       newsLink: "See all",
       newsEmpty: "No news yet.",
 
-      ctaH2: "If there's something worth looking at together",
+      ctaH2: ["Let's talk about", "what we could build together"],
       ctaLead:
-        "Investment, product or facility partnership, joining the team — one email reaches us.",
+        "Investment, partnership, joining the team — tell us how you'd like to work with Vitanima.",
       ctaBtn: "Get in touch",
     },
-
     about: {
       eyebrow: "COMPANY",
       h1: "Company",
@@ -1041,7 +1101,7 @@ export const dict = {
     },
 
     footer: {
-      tagline: "Understanding animals who cannot speak",
+      tagline: "Making AI understand your animal",
       product: "Services",
       company: "Company",
       rights: "All rights reserved.",

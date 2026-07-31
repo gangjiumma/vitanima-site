@@ -113,10 +113,10 @@ export default function Loop({
       {/* 가운데 */}
       <text
         x={C}
-        y={C - 10}
+        y={C - 12}
         textAnchor="middle"
         fontFamily="var(--font-sans)"
-        fontSize="22"
+        fontSize="19"
         fontWeight="800"
         letterSpacing="-0.5"
         fill={p.center}
@@ -125,10 +125,10 @@ export default function Loop({
       </text>
       <text
         x={C}
-        y={C + 20}
+        y={C + 14}
         textAnchor="middle"
         fontFamily="var(--font-sans)"
-        fontSize="22"
+        fontSize="19"
         fontWeight="800"
         letterSpacing="-0.5"
         fill={p.center}
@@ -137,9 +137,9 @@ export default function Loop({
       </text>
       <line
         x1={C - 26}
-        y1={C + 36}
+        y1={C + 34}
         x2={C + 26}
-        y2={C + 36}
+        y2={C + 34}
         stroke={p.arc}
         strokeWidth="1"
         opacity="0.5"
