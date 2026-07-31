@@ -9,7 +9,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = await resolveLang(params);
   const d = getDict(lang);
-  return { title: `${d.about.h1} — ${d.common.companyShort}` };
+  return { title: `${d.nav.about} — ${d.common.companyShort}` };
 }
 
 export default async function AboutPage({
@@ -23,58 +23,91 @@ export default async function AboutPage({
 
   return (
     <>
+      {/* ── COMPANY ──────────────────────────────── */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
             <p className="t-label text-forest">{a.eyebrow}</p>
             <h1 className="t-display mt-5 text-[34px] text-ink sm:text-[48px]">
-              {a.h1}
+              {a.h1.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </h1>
-            <p className="mt-6 max-w-2xl text-[16px] leading-[1.85] text-ink-3 sm:text-[17px]">
+            <p className="mt-7 max-w-2xl text-[16px] leading-[1.9] text-ink-3 sm:text-[17px]">
               {a.lead}
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* 미션 · 비전 */}
+      {/* ── MISSION · VISION ─────────────────────── */}
       <section className="bg-ink text-bone">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="grid gap-14 lg:grid-cols-2 lg:gap-16">
             <Reveal>
-              <p className="t-label text-forest-lit">
-                {a.missionLabel.toUpperCase()}
+              <p className="t-label text-forest-lit">{a.missionLabel}</p>
+              <p className="t-display mt-5 text-[26px] leading-[1.3] sm:text-[34px]">
+                {a.mission.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
               </p>
-              <p className="t-display mt-4 text-[24px] leading-[1.35] sm:text-[30px]">
-                {a.mission}
+              <p className="mt-6 max-w-md text-[15px] leading-[1.9] text-bone/65">
+                {a.missionBody}
               </p>
             </Reveal>
+
             <Reveal delay={120}>
-              <p className="t-label text-forest-lit">
-                {a.visionLabel.toUpperCase()}
+              <p className="t-label text-forest-lit">{a.visionLabel}</p>
+              <p className="t-display mt-5 text-[26px] leading-[1.3] sm:text-[34px]">
+                {a.vision.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
               </p>
-              <p className="t-display mt-4 text-[24px] leading-[1.35] sm:text-[30px]">
-                {a.vision}
+              <p className="mt-6 max-w-md text-[15px] leading-[1.9] text-bone/65">
+                {a.visionBody}
               </p>
             </Reveal>
           </div>
+
+          {/* 방향 전환 */}
           <Reveal delay={180}>
-            <p className="mt-14 max-w-2xl border-t border-line-dark pt-8 text-[15.5px] leading-[1.9] text-bone/70">
-              {a.missionBody}
-            </p>
+            <div className="mt-16 border-t border-line-dark pt-10">
+              {a.turnBody.map((line, i) => (
+                <p
+                  key={line}
+                  className={
+                    i === 0
+                      ? "t-display text-[22px] text-forest-lit sm:text-[28px]"
+                      : "t-title mt-3 max-w-2xl text-[17px] leading-[1.7] text-bone sm:text-[20px]"
+                  }
+                >
+                  {line}
+                </p>
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>
 
-      {/* 여기까지 온 길 */}
+      {/* ── OUR PATH ─────────────────────────────── */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
             <p className="t-label text-forest">{a.storyEyebrow}</p>
-            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[38px]">
-              {a.storyH2}
+            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[40px]">
+              {a.storyH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </h2>
-            <p className="mt-6 max-w-2xl text-[15.5px] leading-[1.9] text-ink-3 sm:text-[16.5px]">
+            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.9] text-ink-3 sm:text-[16.5px]">
               {a.storyLead}
             </p>
           </Reveal>
@@ -113,12 +146,10 @@ export default async function AboutPage({
                           ))}
                         </dl>
                         {"note" in c && c.note ? (
-                          <p className="mt-4 text-[13px] leading-relaxed text-ink-4">
-                            {c.note}
-                          </p>
+                          <p className="mt-4 text-[12px] text-ink-4">{c.note}</p>
                         ) : null}
                         {"learn" in c && c.learn ? (
-                          <p className="mt-6 border-l-2 border-forest pl-5 text-[15.5px] leading-[1.9] text-ink">
+                          <p className="t-title mt-7 border-l-2 border-forest pl-5 text-[17px] leading-[1.7] text-ink sm:text-[19px]">
                             {c.learn}
                           </p>
                         ) : null}
@@ -131,15 +162,15 @@ export default async function AboutPage({
           </div>
 
           <Reveal delay={140}>
-            <p className="t-title mt-6 max-w-2xl border-t border-line pt-8 text-[19px] leading-[1.6] text-ink sm:text-[22px]">
+            <p className="t-display mt-6 max-w-2xl border-t border-line pt-9 text-[21px] leading-[1.5] text-ink sm:text-[26px]">
               {a.storyClose}
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* 핵심 가치 */}
-      <section className="border-b border-line">
+      {/* ── 우리가 지키는 것 ─────────────────────── */}
+      <section className="border-b border-line bg-bone-2">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
             <h2 className="t-display text-[26px] text-ink sm:text-[34px]">
@@ -150,9 +181,9 @@ export default async function AboutPage({
           <div className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2">
             {a.values.map((v, i) => (
               <Reveal key={v.n} delay={i * 80}>
-                <div className="border-t border-line pt-6">
+                <div className="border-t-2 border-forest pt-6">
                   <span className="t-label t-num text-forest">{v.n}</span>
-                  <h3 className="t-title mt-3 text-[21px] text-ink sm:text-[23px]">
+                  <h3 className="t-title mt-3 text-[20px] leading-snug text-ink sm:text-[22px]">
                     {v.t}
                   </h3>
                   <p className="mt-3 text-[15px] leading-[1.85] text-ink-3">
@@ -165,25 +196,40 @@ export default async function AboutPage({
         </div>
       </section>
 
-      {/* 이름 */}
-      <section className="border-b border-line bg-bone-2">
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16">
+      {/* ── 회사 이름 ────────────────────────────── */}
+      <section className="border-b border-line">
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[240px_1fr] lg:gap-16">
           <Reveal>
             <h2 className="t-label text-ink-4">{a.nameH2.toUpperCase()}</h2>
           </Reveal>
           <Reveal delay={80}>
-            <p className="t-display text-[26px] text-ink sm:text-[34px]">
+            <p className="t-display text-[34px] tracking-[0.02em] text-ink sm:text-[46px]">
               VIT<span className="text-forest">ANIMA</span>
             </p>
-            <p className="mt-5 max-w-xl text-[15.5px] leading-[1.9] text-ink-3">
+
+            <dl className="mt-9 max-w-lg">
+              {a.nameLines.map((n) => (
+                <div
+                  key={n.k}
+                  className="flex flex-wrap items-baseline gap-x-5 border-t border-line py-4 last:border-b"
+                >
+                  <dt className="t-title w-[86px] shrink-0 text-[19px] text-forest">
+                    {n.k}
+                  </dt>
+                  <dd className="text-[15.5px] text-ink-3">{n.v}</dd>
+                </div>
+              ))}
+            </dl>
+
+            <p className="mt-8 max-w-xl text-[15.5px] leading-[1.95] text-ink">
               {a.nameBody}
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* 법인 정보 */}
-      <section className="border-b border-line">
+      {/* ── 법인 정보 ────────────────────────────── */}
+      <section className="border-b border-line bg-bone-2">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16">
           <Reveal>
             <h2 className="t-label text-ink-4">{a.factsH2.toUpperCase()}</h2>
@@ -195,7 +241,7 @@ export default async function AboutPage({
                   key={f.k}
                   className="flex flex-col gap-1 border-t border-line py-4 last:border-b sm:flex-row sm:gap-8"
                 >
-                  <dt className="text-[13px] font-medium tracking-[0.04em] text-ink-4 sm:w-44 sm:shrink-0">
+                  <dt className="text-[13px] font-medium tracking-[0.04em] text-ink-4 sm:w-48 sm:shrink-0">
                     {f.k}
                   </dt>
                   <dd className="text-[15px] leading-relaxed text-ink">
@@ -208,8 +254,8 @@ export default async function AboutPage({
         </div>
       </section>
 
-      {/* 연혁 */}
-      <section className="bg-bone-2">
+      {/* ── 연혁 ─────────────────────────────────── */}
+      <section>
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16">
           <Reveal>
             <h2 className="t-label text-ink-4">{a.historyH2.toUpperCase()}</h2>

@@ -178,75 +178,89 @@ export const dict = {
     },
     about: {
       eyebrow: "COMPANY",
-      h1: "회사",
+      h1: ["AI가", "우리 아이를", "이해하게 만듭니다"],
       lead:
-        "비타니마는 반려동물 AI 회사입니다. 말하지 못하는 아이를 대신해, 곁에 있는 사람의 말을 기록으로 바꾸는 일을 합니다.",
+        "비타니마는 AI로 반려동물을 이해하는 회사를 만듭니다. 우리는 보호자의 말과 반려생활에서 만들어지는 정보를 AI가 이해할 수 있는 데이터로 바꾸고, 한 마리 한 마리에게 맞는 AI를 만들어갑니다.",
 
-      missionLabel: "미션",
-      mission: "말하지 못하는 반려동물을, 세상에서 가장 잘 아는 기술을 만든다",
-      visionLabel: "비전",
-      vision: "모든 아이가 자기만의 기록을 갖는 것",
+      missionLabel: "MISSION",
+      mission: ["AI가", "반려동물을", "더 잘 이해하도록"],
       missionBody:
-        "평균을 팔던 시장에서, 한 마리를 학습하는 회사. 이것이 비타니마의 자리입니다. 어려운 부분은 우리가 맡고 보호자에게는 결과만 남기는 것 — 산업의 구조를 이렇게 다시 짜는 방식을 우리는 AX라고 부릅니다. 반려동물은 그 방식이 가장 필요한 자리였습니다.",
+        "기존의 AI는 평균적인 데이터를 학습합니다. 비타니마는 보호자의 언어와 반려생활을 함께 이해하는 AI를 만듭니다.",
+      visionLabel: "VISION",
+      vision: ["모든 아이가", "자기만의 AI를 갖는 것"],
+      visionBody:
+        "우리가 만들고 싶은 것은 기록 앱이 아닙니다. 우리 아이를 가장 잘 이해하는 AI입니다.",
+      turnBody: [
+        "우리는 방향을 바꿨습니다.",
+        "AI가 평균을 배우는 것이 아니라, 우리 아이를 배우게 합니다.",
+        "그 시작은 보호자의 말입니다.",
+      ],
 
       storyEyebrow: "OUR PATH",
-      storyH2: "여기까지 온 길",
+      storyH2: ["다른 산업에서", "같은 문제를", "먼저 해결했습니다"],
       storyLead:
-        "비타니마의 방법은 책상에서 나온 것이 아닙니다. 물류 현장에서 같은 모양의 문제를 만났고, 한 번 풀어봤고, 그 방법을 지금 반려동물에서 다시 쓰고 있습니다.",
+        "비타니마는 처음부터 반려동물 산업에 있었던 팀이 아닙니다. 우리는 다른 산업에서 같은 질문을 먼저 마주했고, 그 답을 찾는 방법을 배웠습니다. 지금은 그 방법을 반려동물을 위해 다시 쓰고 있습니다.",
       story: [
         {
           y: "2019",
           k: "01",
-          t: "현장에 있었습니다",
-          d: "창고와 차량을 직접 운영하는 수출입 3PL을 했습니다. 그곳에서 매일 본 것은 전화와 팩스와 이메일이었습니다. 트럭 기사는 하루 2시간 30분을 일하고 4시간을 기다렸는데, 그 4시간은 어느 시스템에도 남지 않았습니다. 현장에 있는 사람만 아는 정보가 시스템 밖에 있었습니다.",
+          t: "현장에서 시작했습니다",
+          d: "창고와 차량을 직접 운영하며 매일 같은 장면을 봤습니다. 일은 끝났는데 사람은 기다리고 있었고, 현장에는 분명 답을 아는 사람이 있는데 그 이야기는 다음 사람에게 제대로 전달되지 않았습니다. 기술이 부족했던 것이 아니라, 사람이 알고 있는 것이 제대로 이어지지 않는 문제였습니다.",
         },
         {
           y: "2022",
           k: "02",
-          t: "구조를 바꿔봤습니다",
-          d: "㈜이지로지를 세워, 흩어져 있던 내륙운송 과정을 한곳으로 모으고 현황을 자동으로 공유하는 시스템을 만들었습니다. 어려운 부분을 우리가 떠안고 쓰는 쪽에는 결과만 남기는 방식이었습니다.",
+          t: "방법을 바꿨습니다",
+          d: "우리는 사람을 더 투입하지 않았습니다. 현장에서 생기는 내용을 누구나 바로 공유하고 사용할 수 있도록 만들었습니다. 복잡한 과정은 시스템이 맡고, 사람은 자신의 일에만 집중할 수 있도록 바꿨습니다. 그 결과 150개 고객사, 450개 프로젝트에서 관리 업무는 줄었고 현장은 더 빠르게 움직이기 시작했습니다.",
           metrics: [
-            { n: "83%", l: "포워더사 관리 업무 단축" },
-            { n: "71%", l: "불필요한 대기 시간 단축" },
-            { n: "17%", l: "내륙운송 비용 절감" },
+            { n: "83%", l: "프로세스 관리 감소" },
+            { n: "71%", l: "대기시간 감소" },
+            { n: "83%", l: "슈퍼휴먼 PMF" },
           ],
-          note: "포워더 고객사 150곳 · 450개 프로젝트 파일럿 결과. 이용 고객사 설문에서 슈퍼휴먼 PMF 83%, 정식 출시 시 사용 희망 94%.",
+          note: "* 물류 서비스 고객 파일럿 결과",
           learn:
-            "여기서 확인한 것은 기능이 아니라 방향이었습니다. 복잡함을 만드는 쪽이 떠안으면, 쓰는 사람의 하루가 실제로 바뀐다는 것.",
+            "우리가 바꾼 것은 기능이 아니라, 사람들이 일하는 방식이었습니다.",
         },
         {
           y: "2026",
           k: "03",
-          t: "같은 방법을, 다른 현장에서",
-          d: "2023년, 개인적인 사정으로 이지로지를 끝까지 가져가지 못했습니다. 물류를 정리하면서 오래 마음에 두고 있던 문제로 방향을 돌렸습니다. 두 마리와 함께 살면서 계속 이상하다고 생각하던 것이 있었습니다. 우리 아이가 어떤지 알 방법이 병원에 가는 것뿐이라는 것. 매일 곁에 있는 사람은 저인데, 남는 기록은 아팠던 날뿐이었습니다. 물류에서 검증한 방법을 그대로 가져와 AnimAI를 만들었습니다.",
+          t: "같은 질문을 다시 만났습니다",
+          d: "반려동물을 키우면서도 비슷한 장면을 보게 됐습니다. 우리 아이를 가장 잘 아는 사람은 언제나 보호자였습니다. 하지만 보호자가 알고 있는 이야기는 AI도, 서비스도, 다음에 만나는 전문가도 충분히 이어받지 못하고 있었습니다. 그래서 우리는 물류에서 했던 것처럼, 사람이 알고 있는 것을 AI가 이해할 수 있도록 만드는 방법을 반려동물에도 적용하기 시작했습니다. 그렇게 비타니마가 시작됐습니다.",
         },
       ],
-      storyClose:
-        "현장이 달라졌을 뿐 방법은 같습니다. 시스템 밖에 있던 사람의 말을 안으로 들이고, 어려운 부분은 우리가 맡는 것.",
+      storyClose: "산업은 달라졌지만, 우리가 푸는 문제는 같았습니다.",
 
       valuesH2: "우리가 지키는 것",
       values: [
         {
           n: "01",
-          t: "현장에서 시작한다",
-          d: "책상에서 정의한 문제는 대체로 틀립니다. 쓰는 사람 옆에서 본 것만 문제로 인정합니다.",
+          t: "현장에서 시작합니다",
+          d: "책상이 아니라 사용자가 있는 곳에서 문제를 찾습니다.",
         },
         {
           n: "02",
-          t: "복잡함은 우리가 삼킨다",
-          d: "어려운 부분을 사용자에게 넘기지 않습니다. 우리 쪽이 복잡해지는 것을 선택합니다.",
+          t: "복잡함은 우리가 맡습니다",
+          d: "사용자는 쉽게 사용할 수 있어야 합니다. 복잡한 기술은 우리 안에 남깁니다.",
         },
         {
           n: "03",
-          t: "오래 남을 것을 만든다",
-          d: "유행하는 기능이 아니라, 시간이 지날수록 값이 커지는 기록과 관계를 만듭니다.",
+          t: "시간이 지날수록 더 좋아져야 합니다",
+          d: "한 번 쓰고 끝나는 것이 아니라, 매일 더 좋아져야 합니다.",
         },
         {
           n: "04",
-          t: "만들고 나서 말한다",
-          d: "계획을 발표하기보다 돌아가는 것을 먼저 내놓습니다.",
+          t: "먼저 만들고, 데이터로 증명합니다",
+          d: "의견보다 사용자의 경험을 믿습니다.",
         },
       ],
+
+      nameH2: "회사 이름",
+      nameLines: [
+        { k: "Vita", v: "생명을 뜻합니다." },
+        { k: "Anima", v: "영혼을 뜻합니다." },
+      ],
+      nameBody:
+        "비타니마는 생명을 이해하는 AI를 만들겠다는 우리의 약속입니다. AnimAI는 그 약속을 가장 먼저 구현한 첫 번째 서비스입니다.",
 
       factsH2: "법인 정보",
       facts: [
@@ -262,9 +276,6 @@ export const dict = {
         { k: "주소", v: "인천광역시 연수구 테크노파크로 111번길 5, 8층" },
       ],
 
-      nameH2: "이름",
-      nameBody:
-        "Vita(생명)와 Anima(영혼)를 붙였습니다. 살아 있다는 것, 그리고 그것을 살아 있게 하는 것. 이름이 곧 우리가 하는 일입니다. 서비스 이름 AnimAI도 여기서 나왔습니다 — Anima에서 AI로.",
 
       historyH2: "연혁",
       history: [
@@ -719,76 +730,90 @@ export const dict = {
     },
     about: {
       eyebrow: "COMPANY",
-      h1: "Company",
+      h1: ["Making AI", "understand", "your animal"],
       lead:
-        "Vitanima is a companion animal AI company. On behalf of an animal that cannot speak, we turn what the person beside them says into a record.",
+        "Vitanima is building a company that understands companion animals through AI. We turn what caregivers say, and the information daily life produces, into data an AI can work with — and build an AI that fits one animal at a time.",
 
-      missionLabel: "Mission",
-      mission:
-        "Build the technology that understands animals who cannot speak, better than anything else",
-      visionLabel: "Vision",
-      vision: "Every animal with a record of their own",
+      missionLabel: "MISSION",
+      mission: ["So that AI", "understands animals", "better"],
       missionBody:
-        "A market that sold the average; a company that learns one animal. We take on the hard part and leave the caregiver with the result — rebuilding an industry's structure this way is what we call AX. Companion animals was the field that needed it most.",
+        "Existing AI learns from average data. Vitanima builds an AI that understands a caregiver's language and their daily life together.",
+      visionLabel: "VISION",
+      vision: ["Every animal", "with an AI of their own"],
+      visionBody:
+        "What we want to build is not a journaling app. It is the AI that understands your animal best.",
+      turnBody: [
+        "We changed the direction.",
+        "Rather than have AI learn the average, we have it learn your animal.",
+        "And that begins with what the caregiver says.",
+      ],
 
       storyEyebrow: "OUR PATH",
-      storyH2: "How we got here",
+      storyH2: ["We solved the same problem", "in another industry", "first"],
       storyLead:
-        "Our method didn't come from a desk. We met the same problem on a logistics floor, solved it once there, and are now applying it in the companion animal field.",
+        "Vitanima was not a team that started out in the pet industry. We met the same question first in another industry and learned how to answer it. Now we are applying that method to companion animals.",
       story: [
         {
           y: "2019",
           k: "01",
-          t: "We were on the floor",
-          d: "We ran an import/export 3PL with our own warehouse and trucks. What we saw every day was phone calls, faxes and email. A driver would work two and a half hours and wait four — and those four hours appeared in no system anywhere. What only the people on the floor knew was sitting outside the system.",
+          t: "We started on the ground",
+          d: "Running our own warehouse and trucks, we saw the same scene every day. The work was done, yet people were waiting. Someone on the floor clearly knew the answer, and that account never reached the next person properly. It was not a shortage of technology. It was that what people knew did not carry forward.",
         },
         {
           y: "2022",
           k: "02",
-          t: "We rebuilt the structure",
-          d: "We founded EasyLogi to pull the scattered inland haulage process into one place and share status automatically. We took on the hard part and left the people using it with the result.",
+          t: "We changed the method",
+          d: "We did not add more people. We made what happens on the ground shareable and usable by anyone, immediately. The system took the complicated steps so people could concentrate on their own work. Across 150 client companies and 450 projects, admin work fell and the floor started moving faster.",
           metrics: [
-            { n: "83%", l: "Less admin time for forwarders" },
-            { n: "71%", l: "Less unnecessary waiting" },
-            { n: "17%", l: "Lower inland haulage cost" },
+            { n: "83%", l: "Less process administration" },
+            { n: "71%", l: "Less waiting time" },
+            { n: "83%", l: "Superhuman PMF" },
           ],
-          note: "From a pilot across 150 forwarder clients and 450 projects. In a customer survey, 83% Superhuman PMF and 94% intent to use at launch.",
+          note: "* From a customer pilot of the logistics service",
           learn:
-            "What that confirmed wasn't a feature set. It was a direction: when the side creating the complexity absorbs it, the user's day actually changes.",
+            "What we changed was not a feature set. It was the way people worked.",
         },
         {
           y: "2026",
           k: "03",
-          t: "The same method, a different field",
-          d: "In 2023, personal circumstances meant we couldn't carry EasyLogi through. Winding down the logistics work, we turned to a problem that had been on our minds for a long time. Living with two dogs, something had always seemed wrong: the only way to know how they were doing was to go to a clinic. I was the one beside them every day, and the only record that existed was of the days they were ill. We brought the method we had validated in logistics straight across, and built AnimAI.",
+          t: "We met the same question again",
+          d: "Living with our own animals, we saw a similar scene. The person who knows an animal best has always been the caregiver. Yet what the caregiver knows was not being carried forward — not by the AI, not by the services, not by the next professional they met. So, as we had in logistics, we began applying the same method to companion animals: making what a person knows something an AI can understand. That is how Vitanima began.",
         },
       ],
       storyClose:
-        "Only the field changed; the method is the same. Bring what people say in from outside the system, and take on the hard part ourselves.",
+        "The industry changed. The problem we are solving did not.",
 
       valuesH2: "What we hold to",
       values: [
         {
           n: "01",
-          t: "Start on the ground",
-          d: "Problems defined at a desk are usually wrong. Only what we've seen beside a user counts as a problem.",
+          t: "We start on the ground",
+          d: "We look for problems where the users are, not at a desk.",
         },
         {
           n: "02",
           t: "We take on the complexity",
-          d: "We don't hand the hard part to users. We choose to be the complicated side.",
+          d: "Users should find it easy. The complicated technology stays on our side.",
         },
         {
           n: "03",
-          t: "Build what lasts",
-          d: "Not trending features, but records and relationships that grow more valuable with time.",
+          t: "It has to get better with time",
+          d: "Not something used once, but something better every day.",
         },
         {
           n: "04",
-          t: "Build first, talk after",
-          d: "We'd rather ship something working than announce a plan.",
+          t: "Build first, prove with data",
+          d: "We trust what users experience over what anyone thinks.",
         },
       ],
+
+      nameH2: "The name",
+      nameLines: [
+        { k: "Vita", v: "means life." },
+        { k: "Anima", v: "means soul." },
+      ],
+      nameBody:
+        "Vitanima is our promise to build an AI that understands life. AnimAI is the first service to carry out that promise.",
 
       factsH2: "Corporate information",
       facts: [
@@ -804,9 +829,6 @@ export const dict = {
         { k: "Address", v: "8F, 5, Technopark-ro 111beon-gil, Yeonsu-gu, Incheon, Korea" },
       ],
 
-      nameH2: "The name",
-      nameBody:
-        "Vita (life) and Anima (soul). Being alive, and what keeps it alive. The name is the work. Our service name, AnimAI, comes from the same root — from Anima to AI.",
 
       historyH2: "History",
       history: [
