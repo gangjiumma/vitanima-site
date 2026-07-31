@@ -105,7 +105,7 @@ export default async function AnimaiPage({
             </h2>
           </Reveal>
 
-          <div className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-x-12 gap-y-10 sm:grid-cols-2">
             {a.features.map((f, i) => (
               <Reveal key={f.t} delay={i * 70}>
                 <div className="border-t border-line pt-5">
@@ -152,10 +152,15 @@ export default async function AnimaiPage({
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
-            <h2 className="t-display text-[26px] text-ink sm:text-[34px]">
-              {a.roadH2}
+            <p className="t-label text-forest">{a.roadEyebrow}</p>
+            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[38px]">
+              {a.roadH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </h2>
-            <p className="mt-5 max-w-xl text-[15px] leading-[1.85] text-ink-3">
+            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.9] text-ink-3">
               {a.roadNote}
             </p>
           </Reveal>

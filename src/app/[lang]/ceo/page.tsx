@@ -25,20 +25,39 @@ export default async function CeoPage({
 
   return (
     <>
-      {/* 인사말 */}
+      {/* ── 히어로 ───────────────────────────────── */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
             <p className="t-label text-forest">{c.eyebrow}</p>
-            <h1 className="t-display mt-5 text-[34px] text-ink sm:text-[48px]">
-              {c.h1}
+            <p className="mt-5 text-[15px] text-ink-3">{c.h1}</p>
+            <h1 className="t-display mt-4 text-[32px] text-ink sm:text-[46px]">
+              {c.lead.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </h1>
+            <div className="mt-8 max-w-2xl space-y-5">
+              {c.intro.map((p) => (
+                <p
+                  key={p.slice(0, 14)}
+                  className="text-[16px] leading-[1.95] text-ink-3"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
           </Reveal>
+        </div>
+      </section>
 
-          <div className="mt-14 grid gap-12 lg:grid-cols-[300px_1fr] lg:gap-16">
-            <Reveal delay={80}>
+      {/* ── 본문 ─────────────────────────────────── */}
+      <section className="border-b border-line bg-bone-2">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <div className="grid gap-12 lg:grid-cols-[300px_1fr] lg:gap-16">
+            <Reveal>
               <div className="lg:sticky lg:top-24">
-                {/* 사진 — public/ceo.jpg */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/ceo.jpg"
@@ -53,10 +72,7 @@ export default async function CeoPage({
             </Reveal>
 
             <Reveal delay={140}>
-              <p className="t-display text-[22px] leading-[1.45] text-ink sm:text-[28px]">
-                {c.greetingLead}
-              </p>
-              <div className="mt-8 max-w-2xl space-y-6">
+              <div className="max-w-2xl space-y-6">
                 {c.greeting.map((p) => (
                   <p
                     key={p.slice(0, 16)}
@@ -74,7 +90,7 @@ export default async function CeoPage({
         </div>
       </section>
 
-      {/* 요약 */}
+      {/* ── 요약 ─────────────────────────────────── */}
       <section className="bg-ink text-bone">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
           <Reveal>
@@ -95,8 +111,8 @@ export default async function CeoPage({
         </div>
       </section>
 
-      {/* 약력 */}
-      <section className="border-b border-line bg-bone-2">
+      {/* ── 약력 ─────────────────────────────────── */}
+      <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[240px_1fr] lg:gap-16">
           <Reveal>
             <h2 className="t-label text-ink-4">{c.careerH2.toUpperCase()}</h2>
@@ -128,7 +144,7 @@ export default async function CeoPage({
               href={`/${lang}/contact`}
               className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-forest-2"
             >
-              {d.contact.h1}
+              {d.nav.contact}
               <ArrowRight size={15} />
             </Link>
           </Reveal>

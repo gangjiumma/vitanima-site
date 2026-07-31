@@ -306,17 +306,20 @@ export const dict = {
     ceo: {
       eyebrow: "CEO",
       h1: "대표 인사말",
+      lead: ["저는 기술보다", "문제를 먼저 봅니다."],
+      intro: [
+        "저는 개발자로 시작한 사람이 아닙니다. 창고를 운영하고, 차량을 직접 관리하며, 현장에서 사람들이 어디에서 가장 많은 시간을 쓰는지 먼저 배웠습니다.",
+        "그 경험은 지금도 변하지 않았습니다. 기술은 목적이 아니라, 문제를 해결하는 방법이라고 믿습니다.",
+      ],
       name: "김훈기",
       role: "대표이사 · Founder",
-      greetingLead:
-        "저는 기술을 먼저 배운 사람이 아니라, 현장을 먼저 겪은 사람입니다.",
       greeting: [
-        "7년 동안 네 번 창업했습니다. 무역중개로 시작해 창고와 차량을 직접 굴리는 물류 회사를 운영했고, 세 개 법인에서 누적 70억 원의 매출을 만들었습니다. 외부 투자는 받지 않았습니다.",
-        "그 시간 동안 배운 것은 기술이 아니라 사람이 어디서 막히는지였습니다. 매출이 멈춰도 임대료와 차량과 인건비는 매달 나갔습니다. 2020년에는 코로나가, 2022년에는 전쟁이 왔고 계획은 두 번 다 깨졌습니다. 두 번 다 숫자를 만들어냈습니다. 그때 알게 된 것은 산업의 어려움이 대부분 기술의 문제가 아니라 구조의 문제라는 사실이었습니다.",
-        "2022년에는 그 생각을 실제로 시험해봤습니다. ㈜이지로지를 세워 흩어져 있던 내륙운송 과정을 한곳으로 모으고, 현황이 자동으로 공유되게 만들었습니다. 포워더 고객사 150곳과 450개 프로젝트를 대상으로 한 파일럿에서 관리 업무는 83%, 불필요한 대기 시간은 71% 줄었습니다. 기능이 뛰어나서가 아니라, 어려운 부분을 우리 쪽이 떠안았기 때문이었습니다.",
-        "비타니마를 시작한 이유도 같습니다. 반려동물을 키우면서, 우리 아이가 어떤지 알 방법이 병원에 가는 것뿐이라는 게 이상했습니다. 매일 곁에 있는 사람은 저인데, 남는 기록은 아팠던 날뿐이었습니다. 어려운 건 보호자가 감당하고 있었습니다.",
-        "AI가 그 자리를 대신할 수 있다고 생각합니다. 사람이 전문 지식을 배우지 않아도, 절차를 익히지 않아도, 평소 하던 말만으로 결과를 얻을 수 있게 하는 것. 그렇게 산업의 구조를 다시 짜는 일을 AX라고 부르고, 저는 그 방법을 반려동물에 쓰기로 했습니다.",
-        "지금은 기획과 개발과 운영을 직접 합니다. 만들어놓고 이야기하는 편을 택했습니다. AnimAI는 이미 운영 중이고, 매일 쓰는 분들이 계십니다. 다음 이야기는 그다음에 드리겠습니다.",
+        "7년 동안 무역과 물류 사업을 운영했습니다. 창고와 차량을 직접 운영했고, 세 개의 회사를 만들며 누적 70억 원 이상의 매출을 만들었습니다.",
+        "그 과정에서 기술보다 먼저 배운 것이 있습니다. 산업의 많은 문제는 사람이 아니라, 복잡한 과정에서 시작된다는 것이었습니다.",
+        "그래서 2022년에는 현장의 업무를 자동화하는 시스템을 만들었습니다. 흩어져 있던 업무를 하나로 모으고, 사람이 반복하던 일을 줄였습니다. 150개 고객사, 450개 프로젝트에서 관리 업무는 줄었고, 현장은 더 빨라졌습니다.",
+        "그 경험은 반려동물을 키우면서 다시 떠올랐습니다. 우리 아이를 가장 잘 아는 사람은 언제나 보호자였습니다. 그런데 그 이야기는 어디에도 제대로 이어지지 않았습니다. 매번 처음부터 다시 설명하고, 다시 찾고, 다시 선택해야 했습니다. 그 시간이 아깝다고 생각했습니다.",
+        "그래서 비타니마를 시작했습니다. AI를 만들기 위해서가 아니라, 보호자의 이야기를 AI가 이해하게 만들기 위해서입니다. 그렇게 해야 우리 아이에게 더 맞는 선택을 할 수 있고, 함께하는 시간을 더 소중하게 만들 수 있다고 믿었습니다.",
+        "지금도 저는 기획과 개발, 운영을 직접 합니다. 좋은 기술보다, 사람들이 계속 사용하는 서비스를 만드는 것이 더 중요하다고 믿기 때문입니다. 비타니마는 그 생각을 계속 실현해 나가겠습니다.",
       ],
       sign: "㈜비타니마 대표이사 김훈기",
 
@@ -337,96 +340,87 @@ export const dict = {
         { n: "0원", l: "외부 투자 유치" },
       ],
     },
-
     animai: {
       eyebrow: "SERVICE",
       tag: "운영 중",
       h1: "AnimAI",
-      tagline: "우리 아이를 기억하는 AI",
+      tagline: "우리 아이를 알아가는 AI",
       lead:
-        "반려동물 보호자를 위한 앱입니다. 매일 하는 말과 기록이 그 아이만의 데이터가 되고, 시간이 지날수록 그 아이에 대해서만 정확해집니다.",
+        "보호자의 말을 통해 우리 아이의 특성과 생활을 이해합니다. 사용할수록 더 잘 맞는 정보와 선택을 제안하는 반려생활 AI 플랫폼입니다.",
       iosBtn: "App Store",
       androidBtn: "Google Play",
       siteBtn: "animai.kr",
 
       whyH2: "왜 만들었나",
       whyTime:
-        "아이의 시간은 우리보다 훨씬 빠르게 흐릅니다. 그래서 시행착오로 흘려보내는 몇 달이 아깝습니다.",
-      whyBefore: "우리 아이가 어떤지 알려면 병원에 가야 했습니다.",
+        "아이의 시간은 우리보다 훨씬 빠르게 흐릅니다. 시행착오로 보내는 시간이 아까웠습니다.",
+      whyBefore: "우리 아이가 어떤지 알려면 매번 처음부터 설명해야 했습니다.",
       whyBody:
-        "매일 곁에 있는 사람은 보호자인데, 남는 기록은 아팠던 날뿐이었습니다. 그사이의 평범한 하루가 사실은 가장 중요한 데이터인데도 어디에도 쌓이지 않았습니다. AnimAI는 보호자가 원래 하던 말을 그대로 기록으로 바꿉니다. 따로 배우거나 입력할 것이 없습니다.",
+        "같은 품종과 나이라도 아이마다 성향과 체질, 생활은 모두 다릅니다. 그래서 보호자는 우리 아이에게 맞는 것을 찾기 위해 알아보고, 시도하고, 맞지 않으면 다시 바꿔야 합니다. AnimAI는 보호자의 말을 이해하고, 선택 이후의 결과까지 학습합니다. 사용할수록 시행착오는 줄고, 우리 아이에게 맞는 답은 더 가까워집니다.",
 
       featureH2: "무엇을 하나",
       features: [
         {
-          t: "매일의 기록",
-          d: "사진 한 장과 한 줄이면 그날이 남습니다. 쌓이면 그 아이의 일대기가 됩니다.",
+          t: "전담 AI 비서",
+          d: "일반적인 답을 반복하지 않습니다. 우리 아이의 특성과 이전 대화를 바탕으로 현재 상황에 더 가까운 정보와 선택지를 제공합니다.",
         },
         {
-          t: "전담 AI 상담",
-          d: "우리 아이를 아는 AI가 답합니다. 진단이 필요한 질문은 가까운 동물병원으로 연결합니다.",
+          t: "헬스케어",
+          d: "생활 속에서 나타나는 변화와 보호자가 알려준 내용을 바탕으로 우리 아이의 상태를 이해하는 데 필요한 헬스케어 정보를 제공합니다. 의료진의 진단을 대신하는 것이 아니라, 보호자가 아이를 더 세심하게 살피고 필요한 정보를 놓치지 않도록 돕습니다.",
         },
         {
-          t: "매일의 맞춤 추천",
-          d: "그 아이의 상태와 그날의 기록을 바탕으로 오늘 볼 것을 골라 드립니다.",
-        },
-        {
-          t: "건강과 일정",
-          d: "예방접종 · 구충 · 검진 일정을 챙기고, 체중과 사료량을 종에 맞게 계산합니다.",
+          t: "맞춤 추천",
+          d: "품종이나 나이만으로 추천하지 않습니다. 우리 아이의 체질과 성향, 생활환경, 보호자가 알려준 경험을 함께 살펴 상품과 서비스를 제안합니다.",
         },
         {
           t: "동네 시설과 예약",
-          d: "미용 · 유치원 · 호텔 · 병원을 찾고 앱에서 바로 예약합니다.",
-        },
-        {
-          t: "보호자 커뮤니티",
-          d: "같은 고민을 하는 이웃들의 하루를 보고, 우리 아이 이야기를 남깁니다.",
+          d: "우리 아이의 성향과 필요한 서비스를 고려해 주변 미용실, 유치원, 호텔, 병원 등을 살펴보고 예약으로 이어질 수 있습니다.",
         },
       ],
 
       bizH2: "AnimAI Biz",
-      bizTagline: "반려동물 사업자를 위한 대시보드",
+      bizTagline: "반려동물 사업자를 위한 AI 운영 플랫폼",
       bizBody:
-        "미용실 · 유치원 · 호텔 · 병원이 예약과 고객을 관리하는 웹 도구입니다. 무료로 시작할 수 있고, 앱에서 들어오는 예약이 그대로 연결됩니다.",
-      bizLink: "gangji-manage.kr",
+        "미용실 · 유치원 · 호텔 · 병원의 예약과 고객관리를 한곳에서 운영합니다. 반복 업무는 AI가 줄이고, AnimAI를 사용하는 보호자와 시설을 자연스럽게 연결합니다.",
+      bizLink: "AnimAI Biz 알아보기",
 
-      roadH2: "앞으로",
+      roadEyebrow: "앞으로",
+      roadH2: ["알수록 더 잘 맞는", "반려생활을 만듭니다"],
       roadNote:
-        "순서는 매출 크기가 아니라 의존 관계입니다. 앞의 둘이 신호와 공급을 만들고, 뒤의 셋이 그 위에 섭니다.",
+        "AnimAI가 지향하는 것은 기능을 많이 모은 앱이 아닙니다. 보호자의 이야기와 실제 선택의 결과를 바탕으로, 우리 아이를 알아갈수록 상품과 서비스, 헬스케어, 돌봄이 더 잘 맞아지는 반려생활 플랫폼입니다.",
       road: [
         {
           n: "01",
           role: "신호",
           t: "웨어러블 태그",
-          d: "아이의 하루를 24시간 해상도로 받습니다. 지금도 앱과 스마트폰 센서로 신호를 받고 있고, 태그는 그 해상도를 올리는 장치입니다.",
+          d: "보호자의 이야기만으로 알기 어려운 생활 신호를 더합니다. 앱과 스마트폰 센서에 이어 웨어러블 태그에서 얻은 정보까지 함께 이해하며 우리 아이의 일상을 더 세밀하게 알아갑니다.",
         },
         {
           n: "02",
           role: "공급",
           t: "사업자 대시보드",
-          d: "오프라인 접점이자 유통망. 현재 운영 중입니다.",
+          d: "보호자가 알려준 개체별 특성이 실제 서비스 현장에서도 이어지도록 합니다. 사업자는 아이를 더 잘 이해하고, 보호자는 같은 설명을 반복하는 시간을 줄일 수 있습니다.",
         },
         {
           n: "03",
           role: "확장",
           t: "맞춤 커머스",
-          d: "그 아이에게 맞는 상품만 제안하고, 구매 이후의 변화를 다시 받아 확인합니다.",
+          d: "단순히 상품을 추천하는 데서 끝나지 않습니다. 우리 아이의 특성과 이전 구매, 사용 이후의 반응을 함께 학습해 다음 선택의 시행착오를 줄입니다.",
         },
         {
           n: "04",
           role: "확장",
           t: "보험 중개",
-          d: "생애 기록이 쌓인 개체는 보험이 가장 필요한 시점을 압니다.",
+          d: "개체별 생활과 헬스케어 정보가 쌓일수록 필요한 보장을 더 쉽게 비교하고 선택할 수 있는 환경을 만들어갑니다.",
         },
         {
           n: "05",
           role: "확장",
           t: "노령 집중 케어",
-          d: "관찰 주기를 좁히고 병원과 나눌 기록을 정리해 드립니다.",
+          d: "나이가 들수록 작은 변화도 중요해집니다. 평소의 생활과 달라진 점을 더 세심하게 이해하고, 보호자와 전문가가 필요한 정보를 나눌 수 있도록 돕습니다.",
         },
       ],
     },
-
     tech: {
       eyebrow: "TECHNOLOGY",
       h1: "방향을 뒤집었습니다",
@@ -493,48 +487,45 @@ export const dict = {
 
     careers: {
       eyebrow: "CAREERS",
-      h1: "같이 만들 사람을 찾습니다",
+      h1: "함께 만들 사람을 찾습니다",
       lead:
-        "비타니마는 작은 팀입니다. 그래서 한 사람이 맡는 범위가 넓고, 만든 것이 바로 사용자에게 갑니다.",
+        "비타니마는 AI를 만드는 회사가 아닙니다. 기술로 사람과 반려동물의 시간을 더 가치 있게 만드는 회사를 만들고 있습니다. 같은 방향을 보고 함께 성장할 동료를 기다립니다.",
 
-      whyH2: "여기서 일한다는 것",
+      whyH2: "우리가 일하는 방식",
       why: [
         {
-          t: "만든 게 다음 주에 돌아간다",
-          d: "결재 단계가 없습니다. 아침에 정한 것이 저녁에 배포되는 일이 흔합니다.",
+          t: "문제를 먼저 봅니다",
+          d: "기술보다 먼저 사용자의 문제를 이해합니다.",
         },
         {
-          t: "쓰는 사람을 직접 본다",
-          d: "사용자 문의를 팀원이 직접 읽습니다. 중간에 요약해주는 사람이 없습니다.",
+          t: "빠르게 만들고 확인합니다",
+          d: "오래 고민하기보다 직접 만들고 사용자의 반응으로 배우는 것을 중요하게 생각합니다.",
         },
         {
-          t: "범위를 스스로 정한다",
-          d: "무엇을 만들지까지 같이 정합니다. 시킨 것만 하는 자리는 없습니다.",
+          t: "함께 해결합니다",
+          d: "직무보다 문제를 중심으로 협업합니다. 좋은 아이디어는 누구에게서든 시작될 수 있다고 믿습니다.",
+        },
+        {
+          t: "끝까지 책임집니다",
+          d: "만드는 것에서 끝나지 않습니다. 사용자가 계속 사용하는 서비스가 될 때까지 함께합니다.",
         },
       ],
 
-      lookH2: "이런 분을 찾습니다",
+      whoH2: "이런 분과 함께하고 싶습니다",
+      who: [
+        "문제를 스스로 발견하고 해결하는 사람",
+        "새로운 것을 배우는 데 두려움이 없는 사람",
+        "사용자 관점에서 생각하는 사람",
+        "팀과 함께 성장하는 사람",
+      ],
+
+      lookH2: "채용 분야",
       roles: [
-        {
-          t: "프로덕트 엔지니어",
-          s: "React Native · TypeScript",
-          d: "앱 전반을 함께 만듭니다. 화면 하나를 처음부터 끝까지 책임지는 일에 익숙하신 분.",
-        },
-        {
-          t: "AI 엔지니어",
-          s: "LLM · 데이터 파이프라인",
-          d: "말에서 의미를 뽑아내는 부분을 맡습니다. 프롬프트 설계와 평가 체계를 같이 만듭니다.",
-        },
-        {
-          t: "프로덕트 디자이너",
-          s: "UX · UI",
-          d: "복잡한 것을 덜어내는 일을 좋아하시는 분. 직접 만드는 것까지 하시면 더 좋습니다.",
-        },
-        {
-          t: "사업 개발",
-          s: "제휴 · 오프라인",
-          d: "반려동물 시설과 브랜드를 직접 만나 연결합니다. 현장을 즐기시는 분.",
-        },
+        { t: "AI Engineer", d: "개체별 AI 학습과 추천 기술을 함께 만듭니다." },
+        { t: "Backend Engineer", d: "플랫폼과 데이터 기반 서비스를 개발합니다." },
+        { t: "Frontend / App", d: "보호자가 매일 사용하는 서비스를 만듭니다." },
+        { t: "Product Designer", d: "복잡한 기술을 누구나 쉽게 사용할 수 있는 경험으로 만듭니다." },
+        { t: "Business Development", d: "더 많은 보호자와 사업자가 비타니마를 만날 수 있도록 연결합니다." },
       ],
       rolesNote: "상시 모집입니다. 위에 없는 역할도 제안해 주세요.",
 
@@ -544,24 +535,51 @@ export const dict = {
       applyBtn: "지원 메일 보내기",
       applyNote: "영업일 기준 5일 안에 회신드립니다.",
     },
-
     contact: {
       eyebrow: "CONTACT",
-      h1: "문의",
+      h1: "함께 이야기해 주세요",
       lead:
-        "어떤 용건이든 아래 주소 한 통이면 닿습니다. 영업일 기준 2일 안에 답장드립니다.",
+        "비타니마는 다양한 파트너와 함께 성장하고 있습니다. 서비스, 제휴, 투자, 채용 등 무엇이든 편하게 문의해 주세요.",
+      types: [
+        {
+          t: "서비스 문의",
+          en: "AnimAI",
+          d: "서비스 이용 및 앱 관련 문의",
+          email: "support@vitanima.kr",
+        },
+        {
+          t: "사업 제휴",
+          en: "Partnership",
+          d: "병원, 미용실, 호텔, 유치원 등 사업 제휴 문의",
+          email: "biz@vitanima.kr",
+        },
+        {
+          t: "AnimAI Biz",
+          en: "Facility",
+          d: "AnimAI Biz 입점 및 운영 문의",
+          email: "biz@vitanima.kr",
+        },
+        {
+          t: "투자 문의",
+          en: "Investment",
+          d: "IR 및 투자 관련 문의",
+          email: "ir@vitanima.kr",
+        },
+        {
+          t: "채용 문의",
+          en: "Careers",
+          d: "채용 및 채용 과정 관련 문의",
+          email: "recruit@vitanima.kr",
+        },
+      ],
+      ctaH2: ["함께하면", "더 좋은 반려생활을", "만들 수 있습니다"],
+      ctaLead:
+        "작은 문의도 괜찮습니다. 비타니마는 언제나 새로운 이야기를 기다립니다.",
+      mailBtn: "문의하기",
+      infoH2: "회사 정보",
       emailLabel: "이메일",
       phoneLabel: "전화",
-      types: [
-        { t: "투자 · IR", d: "라운드 관련 자료는 요청 주시면 개별 전달드립니다." },
-        { t: "사업 제휴", d: "상품 · 시설 · 보험 · 데이터 협업." },
-        { t: "시설 입점", d: "대시보드는 무료로 시작할 수 있습니다." },
-        { t: "취재 · 채용", d: "인터뷰 요청과 지원은 같은 주소로 보내주세요." },
-      ],
-      infoH2: "회사 정보",
-      mailBtn: "메일 보내기",
     },
-
     footer: {
       tagline: "AI가 우리 아이를 이해하게 만듭니다",
       product: "서비스",
@@ -859,17 +877,20 @@ export const dict = {
     ceo: {
       eyebrow: "CEO",
       h1: "A word from the CEO",
+      lead: ["I look at the problem", "before the technology."],
+      intro: [
+        "I did not start out as a developer. I ran a warehouse, managed trucks myself, and learned first-hand where people on the ground spend most of their time.",
+        "That has not changed. Technology is not the goal — it is a way to solve a problem.",
+      ],
       name: "Hunki Kim",
       role: "CEO · Founder",
-      greetingLead:
-        "I didn't learn the technology first. I met the ground first.",
       greeting: [
-        "Four companies in seven years. I started in trade brokerage, then ran a logistics company with its own warehouse and trucks, and built ₩7.0B in cumulative revenue across three of them — without outside investment.",
-        "What I learned in those years wasn't technology. It was where people get stuck. Rent, vehicles and payroll went out every month whether or not revenue came in. COVID arrived in 2020, the war in 2022, and the plan broke both times. Both times we delivered the numbers. What I took from it is that most of what makes an industry hard is structural, not technical.",
-        "In 2022 I put that to the test. I founded EasyLogi to pull the scattered inland haulage process into one place and share status automatically. Across a pilot with 150 forwarder clients and 450 projects, admin time fell by 83% and unnecessary waiting by 71% — not because the features were clever, but because we took the hard part onto our side.",
-        "Vitanima began the same way. Living with my own dogs, it struck me as strange that the only way to know how they were doing was to go to a clinic. I was the one beside them every day, and yet the only record that existed was of the days they were ill. The difficulty sat with the caregiver.",
-        "I believe AI can take that seat. No specialist knowledge to learn, no procedure to master — just ordinary words, and a result. Rebuilding an industry's structure that way is what we call AX, and companion animals is where I chose to apply it.",
-        "Today I handle product, engineering and operations myself. I'd rather build first and talk after. AnimAI is already live, with people using it every day. The rest of the story comes after that.",
+        "I ran trade and logistics businesses for seven years. I operated our own warehouse and trucks, founded three companies, and built over ₩7.0B in cumulative revenue.",
+        "Along the way I learned something that came before technology: most problems in an industry begin not with people, but with complicated processes.",
+        "So in 2022 I built a system that automated work on the ground. It pulled scattered tasks into one place and cut the work people were repeating. Across 150 client companies and 450 projects, admin work fell and the floor moved faster.",
+        "That experience came back to me while living with my own animals. The person who knows an animal best has always been the caregiver — and yet that account was never carried forward anywhere. Every time, you explain from the beginning, search again, choose again. I thought that time was being wasted.",
+        "So I started Vitanima. Not to build AI, but to make AI understand what a caregiver says. Only then can we make choices that fit our animals better, and make the time we have together count for more.",
+        "I still handle product, engineering and operations myself, because I believe building a service people keep using matters more than building good technology. Vitanima will keep working to make that real.",
       ],
       sign: "Hunki Kim, CEO, Vitanima Inc.",
 
@@ -890,96 +911,88 @@ export const dict = {
         { n: "₩0", l: "Outside investment raised" },
       ],
     },
-
     animai: {
       eyebrow: "SERVICE",
       tag: "Live",
       h1: "AnimAI",
-      tagline: "An AI that remembers your animal",
+      tagline: "An AI that gets to know your animal",
       lead:
-        "An app for the people who live with companion animals. What you say and record each day becomes data about that one animal, and over time it grows accurate about them in particular.",
+        "It understands your animal's traits and daily life through what you say. The more you use it, the better the information and options it suggests fit — a companion-animal AI platform.",
       iosBtn: "App Store",
       androidBtn: "Google Play",
       siteBtn: "animai.kr",
 
       whyH2: "Why we built it",
       whyTime:
-        "An animal's years pass far faster than ours. Months lost to trial and error are months that matter.",
-      whyBefore: "Knowing how your animal was doing meant going to the clinic.",
+        "An animal's years pass far faster than ours. Time lost to trial and error is time that matters.",
+      whyBefore:
+        "To explain how your animal is doing, you had to start from the beginning every time.",
       whyBody:
-        "The caregiver is there every day, and yet the only record that exists is of the days the animal was ill. The ordinary days in between are the most valuable data there is, and nothing was collecting them. AnimAI turns what a caregiver already says into that record. Nothing extra to learn or type.",
+        "Even at the same breed and age, temperament, constitution and daily life differ with every animal. So caregivers research, try, and switch again when it doesn't fit. AnimAI understands what you say and learns from what happens after each choice. The more it is used, the less trial and error — and the closer the answer that fits your animal.",
 
       featureH2: "What it does",
       features: [
         {
-          t: "A daily record",
-          d: "One photo and one line keeps the day. Enough of them becomes a life story.",
+          t: "A dedicated AI assistant",
+          d: "It doesn't repeat generic answers. Drawing on your animal's traits and your earlier conversations, it offers information and options closer to the situation in front of you.",
         },
         {
-          t: "A dedicated AI",
-          d: "An AI that knows your animal answers. Anything needing a diagnosis is routed to a nearby clinic.",
+          t: "Health care",
+          d: "From changes that show up in daily life and what the caregiver reports, it provides the health information needed to understand your animal's condition. It does not replace a clinician's diagnosis — it helps the caregiver watch more closely and not miss what matters.",
         },
         {
-          t: "Daily recommendations",
-          d: "Chosen from that animal's state and the day's records.",
+          t: "Fitted recommendations",
+          d: "Not recommendations by breed or age alone. It weighs constitution, temperament, living environment and what the caregiver has told it, then suggests products and services.",
         },
         {
-          t: "Health and schedules",
-          d: "Vaccinations, deworming and check-ups tracked; weight and food portions calculated by species.",
-        },
-        {
-          t: "Local facilities",
-          d: "Find grooming, daycare, hotels and clinics — and book from the app.",
-        },
-        {
-          t: "A community",
-          d: "See how neighbours' days went, and leave your own animal's story.",
+          t: "Local facilities & booking",
+          d: "Considering your animal's temperament and what they need, browse nearby groomers, daycares, hotels and clinics — and book from there.",
         },
       ],
 
       bizH2: "AnimAI Biz",
-      bizTagline: "A dashboard for pet businesses",
+      bizTagline: "An AI operations platform for pet businesses",
       bizBody:
-        "A web tool for groomers, daycares, hotels and clinics to manage bookings and customers. Free to start, with app bookings flowing straight in.",
-      bizLink: "gangji-manage.kr",
+        "Run bookings and customer management for groomers, daycares, hotels and clinics in one place. AI cuts the repetitive work, and caregivers using AnimAI connect naturally with facilities.",
+      bizLink: "About AnimAI Biz",
 
-      roadH2: "What comes next",
+      roadEyebrow: "WHAT COMES NEXT",
+      roadH2: ["The more it knows,", "the better the fit"],
       roadNote:
-        "The order is dependency, not revenue. The first two produce signal and supply; the last three stand on them.",
+        "What AnimAI aims at is not an app with many features. Built on caregivers' accounts and the results of real choices, it is a platform where products, services, health care and daily care fit better the more it learns about your animal.",
       road: [
         {
           n: "01",
           role: "Signal",
           t: "Wearable tag",
-          d: "A day at 24-hour resolution. Signal already arrives through the app and phone sensors; the tag raises the resolution.",
+          d: "It adds the signals that are hard to know from an account alone. Alongside the app and phone sensors, information from a wearable tag lets us read daily life in finer detail.",
         },
         {
           n: "02",
           role: "Supply",
           t: "Business dashboard",
-          d: "An offline touchpoint and distribution layer. Live today.",
+          d: "The per-animal traits a caregiver shared carry through to the actual service floor. Businesses understand the animal better, and caregivers repeat the same explanation less.",
         },
         {
           n: "03",
           role: "Extension",
           t: "Fitted commerce",
-          d: "Only products that suit that animal, with post-purchase change read back as confirmation.",
+          d: "It doesn't stop at recommending a product. Learning from your animal's traits, past purchases and the response afterwards, it reduces trial and error on the next choice.",
         },
         {
           n: "04",
           role: "Extension",
           t: "Insurance brokerage",
-          d: "An animal with a lifetime record shows when coverage matters most.",
+          d: "As per-animal life and health information accumulates, we build an environment where the coverage you need is easier to compare and choose.",
         },
         {
           n: "05",
           role: "Extension",
           t: "Senior care",
-          d: "A tighter observation cycle, and records worth bringing to the clinic.",
+          d: "With age, small changes matter more. We read what differs from the usual more carefully, and help caregivers and professionals share what they need.",
         },
       ],
     },
-
     tech: {
       eyebrow: "TECHNOLOGY",
       h1: "We reversed the direction",
@@ -1052,46 +1065,43 @@ export const dict = {
       eyebrow: "CAREERS",
       h1: "We're looking for people to build with",
       lead:
-        "Vitanima is a small team. One person covers a wide range, and what you make goes straight to users.",
+        "Vitanima is not a company that makes AI. We are building a company that uses technology to make the time people and their animals share more valuable. We're waiting for colleagues who see the same direction and want to grow together.",
 
-      whyH2: "What it's like here",
+      whyH2: "How we work",
       why: [
         {
-          t: "What you build ships next week",
-          d: "There is no approval chain. Deciding in the morning and deploying in the evening is common.",
+          t: "We look at the problem first",
+          d: "We understand the user's problem before the technology.",
         },
         {
-          t: "You see the users yourself",
-          d: "Team members read support messages directly. Nobody summarises them for you.",
+          t: "We build fast and check",
+          d: "Rather than deliberate at length, we build it and learn from how users respond.",
         },
         {
-          t: "You set your own scope",
-          d: "We decide what to build together. There is no seat here for doing only what you're told.",
+          t: "We solve it together",
+          d: "We collaborate around problems, not job titles. A good idea can start with anyone.",
+        },
+        {
+          t: "We see it through",
+          d: "It doesn't end at shipping. We stay with it until it becomes a service people keep using.",
         },
       ],
 
-      lookH2: "Roles we're open to",
+      whoH2: "Who we'd like to work with",
+      who: [
+        "People who find problems themselves and solve them",
+        "People unafraid of learning something new",
+        "People who think from the user's side",
+        "People who grow with a team",
+      ],
+
+      lookH2: "Open roles",
       roles: [
-        {
-          t: "Product engineer",
-          s: "React Native · TypeScript",
-          d: "Build the app with us. Comfortable owning a screen from start to finish.",
-        },
-        {
-          t: "AI engineer",
-          s: "LLM · data pipelines",
-          d: "Own the part that pulls meaning out of language, including prompt design and evaluation.",
-        },
-        {
-          t: "Product designer",
-          s: "UX · UI",
-          d: "Someone who enjoys removing complexity. Building it yourself is a plus.",
-        },
-        {
-          t: "Business development",
-          s: "Partnerships · offline",
-          d: "Meet pet facilities and brands in person. For people who enjoy the ground.",
-        },
+        { t: "AI Engineer", d: "Build per-animal learning and recommendation technology with us." },
+        { t: "Backend Engineer", d: "Develop the platform and data-driven services." },
+        { t: "Frontend / App", d: "Build the service caregivers use every day." },
+        { t: "Product Designer", d: "Turn complex technology into an experience anyone can use." },
+        { t: "Business Development", d: "Connect more caregivers and businesses with Vitanima." },
       ],
       rolesNote: "Open on a rolling basis. Propose a role that isn't listed.",
 
@@ -1101,27 +1111,51 @@ export const dict = {
       applyBtn: "Email your application",
       applyNote: "We reply within five business days.",
     },
-
     contact: {
       eyebrow: "CONTACT",
-      h1: "Contact",
+      h1: "Let's talk",
       lead:
-        "One address reaches us, whatever the subject. We reply within two business days.",
-      emailLabel: "Email",
-      phoneLabel: "Phone",
+        "Vitanima grows with partners of many kinds. Service, partnership, investment, careers — write to us about anything.",
       types: [
         {
-          t: "Investment · IR",
-          d: "Round materials are shared individually on request.",
+          t: "Service",
+          en: "AnimAI",
+          d: "Questions about using the service and the app",
+          email: "support@vitanima.kr",
         },
-        { t: "Partnership", d: "Product, facility, insurance or data collaboration." },
-        { t: "List your facility", d: "The dashboard is free to start." },
-        { t: "Press · careers", d: "Interview requests and applications go to the same address." },
+        {
+          t: "Partnership",
+          en: "Partnership",
+          d: "Clinics, groomers, hotels, daycares and other partnerships",
+          email: "biz@vitanima.kr",
+        },
+        {
+          t: "AnimAI Biz",
+          en: "Facility",
+          d: "Listing on and operating with AnimAI Biz",
+          email: "biz@vitanima.kr",
+        },
+        {
+          t: "Investment",
+          en: "Investment",
+          d: "IR and investment enquiries",
+          email: "ir@vitanima.kr",
+        },
+        {
+          t: "Careers",
+          en: "Careers",
+          d: "Hiring and the recruitment process",
+          email: "recruit@vitanima.kr",
+        },
       ],
+      ctaH2: ["Together we can make", "life with animals", "better"],
+      ctaLead:
+        "No question is too small. Vitanima is always waiting for a new conversation.",
+      mailBtn: "Get in touch",
       infoH2: "Company information",
-      mailBtn: "Send email",
+      emailLabel: "Email",
+      phoneLabel: "Phone",
     },
-
     footer: {
       tagline: "Making AI understand your animal",
       product: "Services",
