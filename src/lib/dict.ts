@@ -423,53 +423,62 @@ export const dict = {
     },
     tech: {
       eyebrow: "TECHNOLOGY",
-      h1: "방향을 뒤집었습니다",
-      lead:
-        "센서는 신호를 줍니다. 그런데 그 신호가 무슨 뜻인지는 알려주지 않습니다. 반려동물 AI가 지금까지 풀지 못한 것은 데이터가 아니라 의미였습니다.",
+      h1: "방향을 바꾸었습니다",
+      lead: [
+        "기존 AI는 더 많은 데이터를 모으려고 했습니다. 우리는 데이터를 더 모으기보다, 보호자가 이미 알고 있는 것을 AI가 이해하는 것부터 시작했습니다.",
+        "반려동물을 이해하는 데 부족했던 것은 데이터의 양이 아니라, 보호자의 경험을 이해하는 방법이라고 생각했습니다.",
+      ],
 
       invH2: "보통은 이렇게 합니다",
-      invBefore: ["신호를 모은다", "모델이 분류한다", "무슨 뜻인지는 모른다"],
-      invAfter: [
-        "보호자가 말한다",
-        "그 말이 의미가 된다",
-        "같은 시간의 신호에 붙는다",
-      ],
-      invBeforeLabel: "기존 방향",
+      invBeforeLabel: "기존의 방향",
+      invBefore: ["데이터를 모은다", "AI가 분류한다", "평균적인 답을 만든다"],
       invAfterLabel: "비타니마의 방향",
+      invAfter: ["보호자가 이야기한다", "AI가 의미를 이해한다", "우리 아이를 알아간다"],
       invBody:
-        "보호자의 말은 매일 무료로 생깁니다. 별도 조사도, 전문가 주석도 필요 없습니다. 그래서 한 마리를 개별로 아는 비용이 사실상 사라집니다.",
+        "보호자는 우리 아이를 가장 오래 지켜본 사람입니다. 비타니마는 그 경험을 AI가 이해할 수 있도록 만드는 것에서 시작했습니다.",
 
       loopH2: "쓸수록 정확해지는 구조",
-      loopBody:
-        "한 바퀴가 끝나면 다음 바퀴의 질문이 더 정확해집니다. 그 질문에 대한 답이 다시 데이터가 되기 때문에, 시간이 지날수록 그 대상에 대해서만 정확해집니다. 복제하기 어려운 것은 모델이 아니라 이 시간입니다.",
+      loopBody: [
+        "AnimAI는 질문 하나에 답하고 끝나는 AI가 아닙니다. 보호자가 알려준 이야기와 그 이후의 결과를 함께 이해하며 우리 아이를 계속 알아갑니다.",
+        "사용할수록 다음 질문은 더 우리 아이에게 맞아지고, 다음 선택의 시행착오는 줄어듭니다.",
+      ],
+      loopSteps: [
+        { k: "01", t: "상호작용", d: "보호자는 평소처럼 이야기합니다." },
+        { k: "02", t: "이해", d: "AI가 말 속의 상황과 의미를 이해합니다." },
+        { k: "03", t: "구조화", d: "이해한 내용을 AI가 활용할 수 있는 정보로 정리합니다." },
+        { k: "04", t: "연결", d: "이전의 생활과 경험을 함께 살펴봅니다." },
+        { k: "05", t: "학습", d: "우리 아이에게 반복되는 특성과 변화를 학습합니다." },
+        { k: "06", t: "개인화", d: "다음 정보와 추천, 서비스 경험에 반영됩니다." },
+      ],
 
       guardH2: "AI는 진단하지 않습니다",
       guardBody:
-        "우리 AI가 하는 일은 묻는 것과 기록하는 것입니다. 평소와 다른 구간이 보이면 보호자에게 확인하고, 그 답을 남깁니다. 판단은 병원에서 합니다. 진단이나 처방으로 답해야 할 질문은 가까운 동물병원 연결로 넘깁니다.",
+        "AnimAI는 진단이나 처방을 대신하지 않습니다. AI가 하는 일은 보호자의 이야기를 이해하고, 평소와 다른 변화를 더 쉽게 발견하도록 돕는 것입니다. 진단이 필요한 상황에서는 전문가와 연결될 수 있도록 안내합니다.",
 
       ipH2: "특허",
+      ipLead:
+        "비타니마는 보호자의 경험을 AI가 이해하고, 개체별 특성을 학습하는 기술을 지속적으로 연구하고 있습니다.",
       ipNote:
-        "세 건 모두 청구범위 제출 유예 출원이며, 심사 진행 전입니다. 출원은 반려동물 현장을 기준으로 냈지만 구조 자체는 특정 산업에 매여 있지 않습니다. 아래는 대외 공개 가능한 범위의 요약입니다.",
+        "2026년 7월 3건을 출원했으며, 모두 청구범위 제출 유예 상태로 심사 진행 전입니다. 아래는 대외 공개 가능한 범위의 요약입니다.",
       ip: [
         {
           d: "2026.07.16",
           t: "발화 기반 개체별 상태 추정",
-          s: "말을 데이터의 의미로 바꾸고, 그 대상만의 기준을 세우는 구조",
+          s: "보호자의 말을 개체별 특성을 이해하는 정보로 바꾸는 기술",
         },
         {
           d: "2026.07.19",
-          t: "상품 효능 역피드백",
-          s: "선택 이후의 변화를 되받아 실제로 맞았는지 확인하는 구조",
+          t: "상품 효능 피드백",
+          s: "선택 이후의 경험을 학습해 다음 추천에 반영하는 기술",
         },
         {
           d: "2026.07.19",
           t: "상태 기반 시설 매칭",
-          s: "지금의 상태를 기준으로 오프라인 자원을 연결하는 구조",
+          s: "우리 아이의 현재 상태와 특성에 맞는 시설을 연결하는 기술",
         },
       ],
       ipStatus: "출원",
     },
-
     news: {
       eyebrow: "NEWSROOM",
       h1: "뉴스룸",
@@ -995,57 +1004,62 @@ export const dict = {
     },
     tech: {
       eyebrow: "TECHNOLOGY",
-      h1: "We reversed the direction",
-      lead:
-        "Sensors give you signal. They do not tell you what the signal means. What pet AI has failed to solve was never data — it is meaning.",
+      h1: "We changed the direction",
+      lead: [
+        "Existing AI has tried to gather more data. Rather than gather more, we started by having the AI understand what caregivers already know.",
+        "What was missing in understanding companion animals was never the volume of data. It was a way to understand the caregiver's experience.",
+      ],
 
       invH2: "The usual approach",
-      invBefore: [
-        "Collect signal",
-        "Let a model classify it",
-        "Never learn what it meant",
-      ],
-      invAfter: [
-        "The caregiver speaks",
-        "The words carry meaning",
-        "Meaning attaches to that hour's signal",
-      ],
       invBeforeLabel: "Conventional",
+      invBefore: ["Gather the data", "Let a model classify it", "Produce an average answer"],
       invAfterLabel: "Vitanima",
+      invAfter: ["The caregiver speaks", "The AI understands the meaning", "It gets to know your animal"],
       invBody:
-        "What a caregiver says is produced every day at no cost. No survey, no expert annotation. The cost of knowing one animal individually effectively disappears.",
+        "The caregiver has watched your animal longer than anyone. Vitanima began by making that experience something an AI can understand.",
 
-      loopH2: "It gets more accurate with use",
-      loopBody:
-        "Each turn of the loop sharpens the next question, and the answer becomes data again. Over time the system becomes accurate about one subject in particular. What is hard to copy is not the model — it is the time.",
+      loopH2: "It grows more accurate with use",
+      loopBody: [
+        "AnimAI is not an AI that answers one question and stops. It understands what the caregiver has told it alongside what happened afterwards, and keeps getting to know your animal.",
+        "The more it is used, the better the next question fits your animal — and the less trial and error the next choice takes.",
+      ],
+      loopSteps: [
+        { k: "01", t: "Exchange", d: "The caregiver speaks as they normally would." },
+        { k: "02", t: "Understand", d: "The AI reads the situation and meaning in what was said." },
+        { k: "03", t: "Structure", d: "What it understood becomes information the AI can work with." },
+        { k: "04", t: "Connect", d: "Earlier life and experience are considered together." },
+        { k: "05", t: "Learn", d: "Recurring traits and changes are learned for that animal." },
+        { k: "06", t: "Personalise", d: "It shapes the next answer, recommendation and experience." },
+      ],
 
       guardH2: "The AI does not diagnose",
       guardBody:
-        "What our AI does is ask and record. When something looks unlike the usual pattern, it checks with the caregiver and keeps the answer. Judgement belongs to the clinic. Anything requiring a diagnosis or prescription is routed to a nearby veterinary hospital.",
+        "AnimAI does not stand in for diagnosis or prescription. What the AI does is understand what the caregiver says and help them notice changes from the usual more easily. When a diagnosis is needed, it guides them to a professional.",
 
       ipH2: "Patents",
+      ipLead:
+        "Vitanima continues to research technology that lets AI understand a caregiver's experience and learn per-animal traits.",
       ipNote:
-        "All three are filed with deferred claims and have not yet entered examination. They were filed against the companion animal field, but the structure itself is not bound to one industry. Summaries below are limited to what can be disclosed publicly.",
+        "Three applications were filed in July 2026, all with deferred claims and not yet in examination. Summaries below are limited to what can be disclosed publicly.",
       ip: [
         {
           d: "16 Jul 2026",
-          t: "Per-subject state estimation from speech",
-          s: "Turning what is said into meaning for data, and setting a baseline for that one subject",
+          t: "Per-animal state estimation from speech",
+          s: "Turning what a caregiver says into information that describes one animal's traits",
         },
         {
           d: "19 Jul 2026",
           t: "Product efficacy feedback",
-          s: "Reading change after a choice to confirm whether it actually fit",
+          s: "Learning from experience after a choice and reflecting it in the next recommendation",
         },
         {
           d: "19 Jul 2026",
           t: "State-based facility matching",
-          s: "Connecting offline capacity based on current state",
+          s: "Connecting facilities that suit an animal's current state and traits",
         },
       ],
       ipStatus: "Filed",
     },
-
     news: {
       eyebrow: "NEWSROOM",
       h1: "Newsroom",
