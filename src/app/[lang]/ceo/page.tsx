@@ -11,7 +11,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const lang = await resolveLang(params);
   const d = getDict(lang);
-  return { title: `${d.ceo.h1} — ${d.common.companyShort}` };
+  return { title: `${d.nav.ceo} — ${d.common.companyShort}` };
 }
 
 export default async function CeoPage({
@@ -45,7 +45,7 @@ export default async function CeoPage({
             <p className="t-label text-forest">{c.eyebrow}</p>
             <p className="mt-5 text-[15px] text-ink-3">{c.kicker}</p>
             <h1 className="t-display mt-4 text-[32px] text-ink sm:text-[46px]">
-              {c.lead.map((line) => (
+              {c.h1.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
