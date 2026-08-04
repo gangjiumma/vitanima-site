@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { getDict, resolveLang } from "@/lib/dict";
 
@@ -35,8 +37,30 @@ export default async function AboutPage({
                 </span>
               ))}
             </h1>
-            <p className="mt-7 max-w-2xl text-[16px] leading-[1.9] text-ink-3 sm:text-[17px]">
-              {a.lead}
+            <div className="mt-7 max-w-2xl space-y-4">
+              {a.lead.map((p) => (
+                <p
+                  key={p.slice(0, 12)}
+                  className="text-[16px] leading-[1.9] text-ink-3 sm:text-[17px]"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+            <div className="mt-12 flex flex-wrap items-center gap-3">
+              {a.heroFlow.map((f, i) => (
+                <div key={f} className="flex items-center gap-3">
+                  <span className="border border-line bg-bone-2 px-4 py-2.5 text-[14px] text-ink">
+                    {f}
+                  </span>
+                  {i < a.heroFlow.length - 1 && (
+                    <ArrowRight size={15} className="text-forest" />
+                  )}
+                </div>
+              ))}
+            </div>
+            <p className="t-title mt-5 text-[15px] text-forest">
+              {a.heroFlowCenter}
             </p>
           </Reveal>
         </div>
@@ -78,19 +102,71 @@ export default async function AboutPage({
           {/* 방향 전환 */}
           <Reveal delay={180}>
             <div className="mt-16 border-t border-line-dark pt-10">
-              {a.turnBody.map((line, i) => (
-                <p
-                  key={line}
-                  className={
-                    i === 0
-                      ? "t-display text-[22px] text-forest-lit sm:text-[28px]"
-                      : "t-title mt-3 max-w-2xl text-[17px] leading-[1.7] text-bone sm:text-[20px]"
-                  }
-                >
+              <p className="t-display text-[24px] leading-[1.35] sm:text-[32px]">
+                {a.turnBody.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── WHY VITANIMA ─────────────────────────── */}
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <Reveal>
+            <p className="t-label text-forest">{a.whyEyebrow}</p>
+            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[40px]">
+              {a.whyH2.map((line) => (
+                <span key={line} className="block">
                   {line}
+                </span>
+              ))}
+            </h2>
+            <div className="mt-7 max-w-2xl space-y-4">
+              {a.whyBody.map((p) => (
+                <p
+                  key={p.slice(0, 12)}
+                  className="text-[15.5px] leading-[1.9] text-ink-3"
+                >
+                  {p}
                 </p>
               ))}
             </div>
+            <p className="t-title mt-8 max-w-2xl border-l-2 border-forest pl-5 text-[16px] leading-[1.7] text-ink sm:text-[18px]">
+              {a.whyQuote}
+            </p>
+          </Reveal>
+
+          {/* 반복되는 과정 */}
+          <Reveal delay={130}>
+            <div className="mt-14 flex flex-wrap items-center gap-x-3 gap-y-3">
+              {a.whyLoop.map((step, i) => (
+                <div key={step} className="flex items-center gap-3">
+                  <span
+                    className={`border px-4 py-2.5 text-[14px] ${
+                      i === 3
+                        ? "border-forest bg-forest-tint text-forest"
+                        : "border-line bg-bone-2 text-ink-3"
+                    }`}
+                  >
+                    {step}
+                  </span>
+                  {i < a.whyLoop.length - 1 && (
+                    <ArrowRight
+                      size={15}
+                      className={i === 3 ? "text-forest" : "text-line"}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+            <p className="t-display mt-10 text-[21px] text-ink sm:text-[26px]">
+              {a.whyClose}
+            </p>
           </Reveal>
         </div>
       </section>
@@ -101,15 +177,18 @@ export default async function AboutPage({
           <Reveal>
             <p className="t-label text-forest">{a.storyEyebrow}</p>
             <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[40px]">
-              {a.storyH2.map((line) => (
-                <span key={line} className="block">
-                  {line}
-                </span>
-              ))}
+              {a.storyH2}
             </h2>
-            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.9] text-ink-3 sm:text-[16.5px]">
-              {a.storyLead}
-            </p>
+            <div className="mt-7 max-w-2xl space-y-4">
+              {a.storyLead.map((p) => (
+                <p
+                  key={p.slice(0, 12)}
+                  className="text-[15.5px] leading-[1.9] text-ink-3 sm:text-[16.5px]"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
           </Reveal>
 
           <div className="mt-14">
@@ -120,7 +199,7 @@ export default async function AboutPage({
                     <p className="t-display t-num text-[30px] leading-none text-forest sm:text-[36px]">
                       {c.y}
                     </p>
-                    <p className="t-label t-num mt-2 text-ink-4">{c.k}</p>
+                    <p className="t-label mt-2 text-ink-4">{c.k}</p>
                   </div>
 
                   <div className="max-w-2xl">
@@ -162,9 +241,18 @@ export default async function AboutPage({
           </div>
 
           <Reveal delay={140}>
-            <p className="t-display mt-6 max-w-2xl border-t border-line pt-9 text-[21px] leading-[1.5] text-ink sm:text-[26px]">
-              {a.storyClose}
-            </p>
+            <div className="mt-6 max-w-2xl border-t border-line pt-9">
+              <p className="t-display text-[22px] leading-[1.4] text-ink sm:text-[28px]">
+                {a.storyClose.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </p>
+              <p className="mt-5 text-[15px] leading-[1.9] text-ink-3">
+                {a.storyCloseBody}
+              </p>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -203,20 +291,23 @@ export default async function AboutPage({
             <h2 className="t-label text-ink-4">{a.nameH2.toUpperCase()}</h2>
           </Reveal>
           <Reveal delay={80}>
-            <p className="t-display text-[34px] tracking-[0.02em] text-ink sm:text-[46px]">
-              VIT<span className="text-forest">ANIMA</span>
-            </p>
 
-            <dl className="mt-9 max-w-lg">
-              {a.nameLines.map((n) => (
+            <dl className="mt-10 max-w-2xl">
+              {a.nameLines.map((n, i) => (
                 <div
                   key={n.k}
-                  className="flex flex-wrap items-baseline gap-x-5 border-t border-line py-4 last:border-b"
+                  className="flex flex-col gap-1 border-t border-line py-5 last:border-b sm:flex-row sm:items-baseline sm:gap-8"
                 >
-                  <dt className="t-title w-[86px] shrink-0 text-[19px] text-forest">
+                  <dt
+                    className={`t-display shrink-0 text-[24px] sm:w-[190px] sm:text-[30px] ${
+                      i === 2 ? "text-forest" : "text-ink"
+                    }`}
+                  >
                     {n.k}
                   </dt>
-                  <dd className="text-[15.5px] text-ink-3">{n.v}</dd>
+                  <dd className="text-[15.5px] leading-[1.8] text-ink-3">
+                    {n.v}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -278,6 +369,40 @@ export default async function AboutPage({
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── 마지막 CTA ───────────────────────────── */}
+      <section className="bg-ink text-bone">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-24">
+          <Reveal>
+            <h2 className="t-display max-w-2xl text-[28px] sm:text-[38px]">
+              {a.ctaH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </h2>
+            <p className="mt-7 max-w-lg text-[15.5px] leading-[1.9] text-bone/70">
+              {a.ctaLead}
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-3">
+              <Link
+                href={`/${lang}/animai`}
+                className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-[15px] font-medium text-bone transition-colors hover:bg-forest-2"
+              >
+                {a.ctaBtn}
+                <ArrowRight size={15} />
+              </Link>
+              <Link
+                href={`/${lang}/ceo`}
+                className="inline-flex items-center gap-2 rounded-full border border-line-dark px-6 py-3.5 text-[15px] font-medium text-bone transition-colors hover:border-forest-lit hover:text-forest-lit"
+              >
+                {a.ctaBtn2}
+                <ArrowUpRight size={15} />
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
     </>

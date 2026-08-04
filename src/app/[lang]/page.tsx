@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ArrowDown } from "lucide-react";
 import Loop from "@/components/Loop";
+import PhoneMock from "@/components/PhoneMock";
 import Reveal from "@/components/Reveal";
 import { getDict, resolveLang } from "@/lib/dict";
 import { sortedNews, type NewsCat } from "@/lib/news";
@@ -17,21 +18,28 @@ export default async function HomePage({
 
   return (
     <>
-      {/* ── 1. 메인 ──────────────────────────────── */}
+      {/* ══ 1. HERO ══════════════════════════════ */}
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:py-32">
+        <div className="mx-auto grid max-w-6xl gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[55fr_45fr] lg:items-center lg:gap-16 lg:py-32">
           <Reveal>
             <p className="t-label text-forest">{h.eyebrow}</p>
-            <h1 className="t-display mt-6 text-[36px] text-ink sm:text-[50px] lg:text-[58px]">
+            <h1 className="t-display mt-6 text-[36px] text-ink sm:text-[50px] lg:text-[56px]">
               {h.h1.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h1>
-            <p className="mt-7 max-w-lg text-[16px] leading-[1.85] text-ink-3 sm:text-[17px]">
-              {h.lead}
-            </p>
+            <div className="mt-7 max-w-lg space-y-4">
+              {h.lead.map((p) => (
+                <p
+                  key={p.slice(0, 12)}
+                  className="text-[16px] leading-[1.85] text-ink-3"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <Link
                 href={`/${lang}/animai`}
@@ -50,256 +58,373 @@ export default async function HomePage({
             </div>
           </Reveal>
 
-          <Reveal delay={140} className="flex flex-col items-center">
-            <Loop keys={h.loopSteps.map((s) => s.k)} center={h.loopCenter} />
-            <p className="mt-6 max-w-[320px] text-center text-[13px] leading-relaxed text-ink-4">
-              {h.loopCaption}
-            </p>
+          {/* 대화 → 학습 → 신호 3단 */}
+          <Reveal delay={140}>
+            <div>
+              {h.heroFlow.map((f, i) => (
+                <div key={f.k}>
+                  <div className="border border-line bg-bone-2 px-6 py-5">
+                    <div className="flex items-baseline gap-3">
+                      <span className="t-label t-num text-forest">{f.k}</span>
+                      <span className="t-label text-ink-4">{f.en}</span>
+                    </div>
+                    <h2 className="t-title mt-2 text-[19px] text-ink">{f.t}</h2>
+                    <p className="mt-1.5 text-[13.5px] leading-[1.7] text-ink-3">
+                      {f.d}
+                    </p>
+                  </div>
+                  {i < h.heroFlow.length - 1 && (
+                    <div className="flex justify-center py-2">
+                      <ArrowDown size={16} className="text-forest" />
+                    </div>
+                  )}
+                </div>
+              ))}
+              <p className="t-title mt-6 border-t-2 border-forest pt-4 text-center text-[15px] text-forest">
+                {h.heroFlowCenter}
+              </p>
+            </div>
           </Reveal>
         </div>
       </section>
 
-      {/* ── 2. 문제 정의 ─────────────────────────── */}
+      {/* ══ 2. PROBLEM ═══════════════════════════ */}
       <section className="bg-ink text-bone">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[40fr_60fr] lg:gap-16">
           <Reveal>
             <p className="t-label text-forest-lit">{h.problemEyebrow}</p>
-            <h2 className="t-display mt-5 text-[28px] sm:text-[40px]">
+            <h2 className="t-display mt-5 text-[28px] sm:text-[38px]">
               {h.problemH2.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h2>
-            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.9] text-bone/70 sm:text-[16.5px]">
-              {h.problemLead}
+            <div className="mt-7 space-y-4">
+              {h.problemLead.map((p) => (
+                <p
+                  key={p.slice(0, 12)}
+                  className="text-[15px] leading-[1.9] text-bone/65"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+            <p className="t-title mt-8 border-l-2 border-forest-lit pl-5 text-[16px] leading-[1.7] text-bone sm:text-[18px]">
+              {h.problemQuote}
             </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-x-10 gap-y-10 sm:grid-cols-3">
-            {h.problems.map((p, i) => (
-              <Reveal key={p.t} delay={i * 110}>
-                <div className="border-t border-line-dark pt-6">
-                  <h3 className="t-title text-[19px] leading-snug text-bone sm:text-[21px]">
-                    {p.t}
-                  </h3>
-                  <p className="mt-3.5 text-[14.5px] leading-[1.85] text-bone/60">
-                    {p.d}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3. 접근 방식 ─────────────────────────── */}
-      <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <Reveal>
-            <p className="t-label text-forest">{h.axEyebrow}</p>
-            <h2 className="t-display mt-5 text-[26px] sm:text-[38px]">
-              <span className="block text-ink-4">{h.axH2[0]}</span>
-              <span className="mt-1 block text-ink">{h.axH2[1]}</span>
-            </h2>
-            <p className="mt-8 max-w-2xl text-[15.5px] leading-[1.95] text-ink-3 sm:text-[16.5px]">
-              {h.axBody}
-            </p>
-            <p className="t-title mt-6 max-w-2xl border-l-2 border-forest pl-5 text-[16px] leading-[1.7] text-ink sm:text-[18px]">
-              {h.axNote}
-            </p>
-          </Reveal>
-
-          <Reveal delay={120}>
-            <h3 className="t-label mt-16 text-ink-4">
-              {h.axCardsTitle.toUpperCase()}
-            </h3>
-          </Reveal>
-          <ol className="mt-7 grid gap-x-10 gap-y-9 sm:grid-cols-3">
-            {h.axPoints.map((p, i) => (
-              <Reveal key={p.t} delay={i * 100}>
-                <li className="border-t-2 border-forest pt-5">
-                  <span className="t-label t-num text-forest">
+          {/* 생애 변화 타임라인 */}
+          <Reveal delay={130}>
+            <ol className="grid gap-px bg-line-dark sm:grid-cols-2">
+              {h.timeline.map((t, i) => (
+                <li key={t.t} className="bg-ink p-5 sm:p-6">
+                  <span className="t-label t-num text-forest-lit">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h4 className="t-title mt-2.5 text-[19px] text-ink sm:text-[21px]">
-                    {p.t}
-                  </h4>
-                  <p className="mt-2.5 text-[14.5px] leading-[1.85] text-ink-3">
-                    {p.d}
-                  </p>
+                  <h3 className="t-title mt-2 text-[17px] text-bone">{t.t}</h3>
+                  <ul className="mt-2 space-y-1">
+                    {t.d.map((x) => (
+                      <li key={x} className="text-[13.5px] text-bone/55">
+                        {x}
+                      </li>
+                    ))}
+                  </ul>
                 </li>
-              </Reveal>
-            ))}
-          </ol>
+              ))}
+            </ol>
+
+            <div className="mt-8 space-y-3">
+              <p className="border border-line-dark px-5 py-3.5 text-[13.5px] text-ink-4 line-through decoration-ink-4 decoration-1">
+                {h.timelineOld}
+              </p>
+              <p className="t-title border-2 border-forest-lit bg-forest/20 px-5 py-3.5 text-[14px] text-bone">
+                {h.timelineNew}
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* ── 4. 서비스 ────────────────────────────── */}
-      <section className="border-b border-line bg-bone-2">
+      {/* ══ 3. PRODUCT ═══════════════════════════ */}
+      <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <Reveal>
-            <div className="flex flex-wrap items-center gap-3">
-              <p className="t-label text-forest">{h.fieldEyebrow}</p>
-              <span className="t-label rounded-full bg-forest px-2.5 py-1 text-bone">
-                {h.fieldTag}
-              </span>
-            </div>
-            <h2 className="t-display mt-5 text-[40px] text-ink sm:text-[52px]">
-              {h.fieldH2}
-            </h2>
-            <p className="t-title mt-3 max-w-xl text-[18px] leading-[1.5] text-forest sm:text-[21px]">
-              {h.fieldTagline}
-            </p>
-          </Reveal>
+          <div className="grid gap-14 lg:grid-cols-[45fr_55fr] lg:items-center lg:gap-16">
+            {/* 앱 화면 자리 */}
+            <Reveal className="order-2 flex justify-center lg:order-1">
+              <PhoneMock />
+            </Reveal>
 
-          <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-16">
-            {h.fieldCols.map((c, i) => (
-              <Reveal key={c.t} delay={i * 120}>
-                <div className="border-t border-line pt-6">
-                  <h3 className="t-title text-[21px] text-ink sm:text-[24px]">
-                    {c.t}
-                  </h3>
-                  <p className="mt-4 text-[15.5px] leading-[1.9] text-ink-3">
-                    {c.d}
+            <Reveal delay={120} className="order-1 lg:order-2">
+              <div className="flex flex-wrap items-center gap-3">
+                <p className="t-label text-forest">{h.prodEyebrow}</p>
+                <span className="t-label rounded-full bg-forest px-2.5 py-1 text-bone">
+                  {h.prodTag}
+                </span>
+              </div>
+              <h2 className="t-display mt-5 text-[40px] text-ink sm:text-[52px]">
+                {h.prodH2}
+              </h2>
+              <p className="t-title mt-3 text-[19px] leading-[1.45] text-forest sm:text-[23px]">
+                {h.prodTagline.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </p>
+              <div className="mt-7 max-w-xl space-y-4">
+                {h.prodBody.map((p) => (
+                  <p
+                    key={p.slice(0, 12)}
+                    className="text-[15.5px] leading-[1.9] text-ink-3"
+                  >
+                    {p}
                   </p>
-                </div>
-              </Reveal>
-            ))}
+                ))}
+              </div>
+              <div className="mt-9 flex flex-wrap items-center gap-3">
+                <a
+                  href={d.common.iosUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-ink-2"
+                >
+                  {h.iosBtn}
+                </a>
+                <a
+                  href={d.common.androidUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-ink-2"
+                >
+                  {h.androidBtn}
+                </a>
+                <Link
+                  href={`/${lang}/animai`}
+                  className="inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+                >
+                  {h.prodLink}
+                  <ArrowUpRight size={15} />
+                </Link>
+              </div>
+            </Reveal>
           </div>
 
-          <ul className="mt-14 grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-4">
-            {h.fieldFeatures.map((f, i) => (
-              <Reveal key={f.t} delay={i * 70}>
-                <li className="border-t border-line pt-4">
-                  <h4 className="t-title text-[16px] text-ink">{f.t}</h4>
-                  <p className="mt-1.5 text-[13.5px] leading-[1.7] text-ink-3">
-                    {f.d}
+          <ul className="mt-16 grid gap-x-10 gap-y-8 sm:grid-cols-3">
+            {h.prodCards.map((c, i) => (
+              <Reveal key={c.t} delay={i * 80}>
+                <li className="border-t border-line pt-5">
+                  <h3 className="t-title text-[18px] text-ink">{c.t}</h3>
+                  <p className="mt-2 text-[14px] leading-[1.8] text-ink-3">
+                    {c.d}
                   </p>
                 </li>
               </Reveal>
             ))}
           </ul>
-
-          <Reveal delay={140}>
-            <Link
-              href={`/${lang}/animai`}
-              className="mt-12 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-forest-2"
-            >
-              {h.fieldLink}
-              <ArrowRight size={15} />
-            </Link>
-          </Reveal>
         </div>
       </section>
 
-      {/* ── 5. 기술 구조 ─────────────────────────── */}
-      <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <Reveal>
-            <p className="t-label text-forest">{h.structureEyebrow}</p>
-            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[40px]">
-              {h.structureH2.map((line) => (
+      {/* ══ 4. THE LOOP ══════════════════════════ */}
+      <section className="bg-ink text-bone">
+        <div className="mx-auto grid max-w-6xl gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[45fr_55fr] lg:items-center lg:gap-16">
+          <Reveal className="flex flex-col items-center">
+            <Loop keys={h.loopSteps.map((s) => s.k)} center={h.loopCenter} tone="dark" />
+            <ul className="mt-8 grid w-full gap-x-6 gap-y-2 sm:grid-cols-2">
+              {h.loopSteps.map((s) => (
+                <li key={s.k} className="flex items-baseline gap-2.5">
+                  <span className="t-label t-num text-forest-lit">{s.k}</span>
+                  <span className="text-[13.5px] text-bone/65">{s.t}</span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <Reveal delay={130}>
+            <p className="t-label text-forest-lit">{h.loopEyebrow}</p>
+            <h2 className="t-display mt-5 text-[26px] sm:text-[36px]">
+              {h.loopH2.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h2>
-            <p className="mt-7 max-w-2xl text-[15.5px] leading-[1.9] text-ink-3 sm:text-[16.5px]">
-              {h.structureLead}
-            </p>
-          </Reveal>
 
-          <ol className="mt-14 grid gap-x-10 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
-            {h.loopSteps.map((s, i) => (
-              <Reveal key={s.k} delay={i * 70}>
-                <li className="border-t border-line pt-5">
-                  <div className="flex items-baseline gap-3">
-                    <span className="t-label t-num text-forest">{s.k}</span>
-                    <h3 className="t-title text-[20px] text-ink">{s.t}</h3>
+            <div className="mt-9 border border-line-dark p-6">
+              <p className="t-title text-[17px] leading-[1.6] text-bone sm:text-[19px]">
+                “{h.loopExampleQuote}”
+              </p>
+
+              <p className="t-label mt-7 text-ink-4">
+                {h.loopExampleLabel.toUpperCase()}
+              </p>
+              <dl className="mt-3 grid gap-x-8 gap-y-2 sm:grid-cols-2">
+                {h.loopExample.map((e) => (
+                  <div key={e.k} className="flex gap-3 border-t border-line-dark pt-2">
+                    <dt className="w-14 shrink-0 text-[13px] text-ink-4">
+                      {e.k}
+                    </dt>
+                    <dd className="text-[13.5px] text-forest-lit">{e.v}</dd>
                   </div>
-                  <p className="mt-2.5 text-[14.5px] leading-[1.8] text-ink-3">
-                    {s.d}
-                  </p>
-                </li>
-              </Reveal>
-            ))}
-          </ol>
+                ))}
+              </dl>
 
-          <Reveal delay={120}>
+              <p className="t-label mt-7 text-ink-4">
+                {h.loopExampleNextLabel.toUpperCase()}
+              </p>
+              <p className="mt-2.5 text-[14px] leading-[1.85] text-bone/70">
+                {h.loopExampleNext}
+              </p>
+            </div>
+
+            <p className="mt-7 max-w-lg text-[14.5px] leading-[1.85] text-bone/60">
+              {h.loopBody}
+            </p>
             <Link
               href={`/${lang}/technology`}
-              className="mt-12 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+              className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest-lit underline-offset-4 hover:underline"
             >
-              {h.structureLink}
+              {h.loopLink}
               <ArrowUpRight size={15} />
             </Link>
           </Reveal>
         </div>
       </section>
 
-      {/* ── 6. 회사 경험 ─────────────────────────── */}
-      <section className="bg-ink text-bone">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
-            <Reveal>
-              <p className="t-label text-forest-lit">{h.trackEyebrow}</p>
-              <h2 className="t-display mt-5 text-[26px] sm:text-[36px]">
-                {h.trackH2.map((line) => (
-                  <span key={line} className="block">
-                    {line}
-                  </span>
-                ))}
-              </h2>
-              <p className="mt-7 max-w-lg text-[15px] leading-[1.9] text-bone/70">
-                {h.trackLead}
-              </p>
-              <Link
-                href={`/${lang}/about`}
-                className="mt-7 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest-lit underline-offset-4 hover:underline"
-              >
-                {h.trackLink}
-                <ArrowUpRight size={15} />
-              </Link>
-            </Reveal>
+      {/* ══ 5. NEXT SIGNAL ═══════════════════════ */}
+      <section className="border-b border-line bg-bone-2">
+        <div className="mx-auto grid max-w-6xl gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[55fr_45fr] lg:items-center lg:gap-16">
+          {/* 제품 자리 */}
+          <Reveal className="order-2 lg:order-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/tag-pets.png"
+              alt={h.signalTagAlt}
+              className="mx-auto w-full max-w-[440px]"
+            />
+          </Reveal>
 
-            <Reveal delay={130}>
-              <dl className="grid gap-x-8 gap-y-9 sm:grid-cols-3">
-                {h.trackMetrics.map((m) => (
-                  <div key={m.l} className="border-t-2 border-forest-lit pt-5">
-                    <dt className="t-display t-num text-[34px] leading-none text-forest-lit sm:text-[40px]">
-                      {m.n}
-                    </dt>
-                    <dd className="mt-3 text-[13.5px] leading-snug text-bone/60">
-                      {m.l}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <p className="mt-8 text-[12px] text-ink-4">{h.trackNote}</p>
-            </Reveal>
+          <Reveal delay={120} className="order-1 lg:order-2">
+            <p className="t-label text-forest">{h.signalEyebrow}</p>
+            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[38px]">
+              {h.signalH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </h2>
+            <div className="mt-7 space-y-4">
+              {h.signalBody.map((p) => (
+                <p
+                  key={p.slice(0, 12)}
+                  className="text-[15px] leading-[1.9] text-ink-3"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+            <p className="t-title mt-7 border-l-2 border-forest pl-5 text-[15.5px] leading-[1.7] text-ink sm:text-[17px]">
+              {h.signalQuote}
+            </p>
+
+            <ol className="mt-9 space-y-3">
+              {h.signalTimeline.map((t) => (
+                <li
+                  key={t.d}
+                  className="flex flex-wrap items-baseline gap-x-5 border-t border-line pt-3"
+                >
+                  <span className="t-label t-num w-24 shrink-0 text-forest">
+                    {t.d}
+                  </span>
+                  <span className="text-[14.5px] text-ink">{t.t}</span>
+                </li>
+              ))}
+            </ol>
+
+            <Link
+              href={`/${lang}/technology`}
+              className="mt-7 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+            >
+              {h.signalLink}
+              <ArrowUpRight size={15} />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══ 6. ONE PLATFORM ══════════════════════ */}
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+          <Reveal>
+            <p className="t-label text-forest">{h.platformEyebrow}</p>
+            <h2 className="t-display mt-5 max-w-3xl text-[26px] text-ink sm:text-[34px]">
+              {h.platformH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </h2>
+          </Reveal>
+
+          <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-0">
+            {h.platformSides.map((s, i) => (
+              <Reveal key={s.t} delay={i * 130}>
+                <div
+                  className={
+                    i === 0
+                      ? "lg:border-r lg:border-line lg:pr-14"
+                      : "lg:pl-14"
+                  }
+                >
+                  <p className="t-label text-forest">{s.en}</p>
+                  <h3 className="t-display mt-4 text-[30px] text-ink sm:text-[36px]">
+                    {s.t}
+                  </h3>
+                  <p className="mt-4 max-w-md text-[15px] leading-[1.9] text-ink-3">
+                    {s.d}
+                  </p>
+                  <ul className="mt-7 space-y-2">
+                    {s.items.map((it) => (
+                      <li
+                        key={it}
+                        className="border-t border-line pt-2 text-[14.5px] text-ink"
+                      >
+                        {it}
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href={i === 0 ? `/${lang}/animai` : d.common.dashboardUrl}
+                    target={i === 0 ? undefined : "_blank"}
+                    rel={i === 0 ? undefined : "noreferrer"}
+                    className="mt-7 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+                  >
+                    {s.link}
+                    <ArrowUpRight size={15} />
+                  </a>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── 7. 현재까지 ──────────────────────────── */}
+      {/* ══ 7. PROOF + CTA ═══════════════════════ */}
       <section className="border-b border-line bg-bone-2">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-24">
           <Reveal>
             <p className="t-label text-forest">{h.proofEyebrow}</p>
-            <h2 className="t-display mt-5 text-[26px] text-ink sm:text-[36px]">
+            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[38px]">
               {h.proofH2}
             </h2>
-            <p className="mt-6 max-w-2xl text-[15.5px] leading-[1.9] text-ink-3">
-              {h.proofLead}
-            </p>
           </Reveal>
 
           <dl className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
             {h.proofs.map((p, i) => (
               <Reveal key={p.l} delay={i * 80}>
-                <div className="border-t border-line pt-5">
-                  <dt className="t-display t-num text-[32px] leading-none text-forest sm:text-[38px]">
+                <div className="border-t-2 border-forest pt-5">
+                  <dt className="t-display t-num text-[34px] leading-none text-forest sm:text-[42px]">
                     {p.n}
                   </dt>
                   <dd className="mt-3 text-[14px] leading-relaxed text-ink-3">
@@ -309,12 +434,49 @@ export default async function HomePage({
               </Reveal>
             ))}
           </dl>
+          <p className="mt-9 text-[12px] text-ink-4">{h.proofNote}</p>
 
-          <p className="mt-10 text-[12px] text-ink-4">{h.proofNote}</p>
+          {/* 실행 경험 */}
+          <div className="mt-20 grid gap-10 border-t border-line pt-14 lg:grid-cols-[1fr_1fr] lg:gap-16">
+            <Reveal>
+              <h3 className="t-display text-[24px] text-ink sm:text-[32px]">
+                {h.trackH2.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </h3>
+              <p className="mt-6 max-w-md text-[15px] leading-[1.9] text-ink-3">
+                {h.trackLead}
+              </p>
+              <Link
+                href={`/${lang}/about`}
+                className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+              >
+                {h.trackLink}
+                <ArrowUpRight size={15} />
+              </Link>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <dl className="grid gap-x-8 gap-y-8 sm:grid-cols-3">
+                {h.trackMetrics.map((m) => (
+                  <div key={m.l} className="border-t border-line pt-4">
+                    <dt className="t-display t-num text-[28px] leading-none text-ink sm:text-[32px]">
+                      {m.n}
+                    </dt>
+                    <dd className="mt-2.5 text-[13px] leading-snug text-ink-3">
+                      {m.l}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </Reveal>
+          </div>
         </div>
       </section>
 
-      {/* ── 8. 소식 ──────────────────────────────── */}
+      {/* ══ 소식 ═════════════════════════════════ */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
           <Reveal>
@@ -365,27 +527,36 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ── 9. 문의 ──────────────────────────────── */}
-      <section>
+      {/* ══ 최종 CTA ═════════════════════════════ */}
+      <section className="bg-ink text-bone">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
           <Reveal>
-            <h2 className="t-display max-w-2xl text-[28px] text-ink sm:text-[40px]">
+            <h2 className="t-display max-w-2xl text-[28px] sm:text-[42px]">
               {h.ctaH2.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h2>
-            <p className="mt-6 max-w-lg text-[15.5px] leading-[1.85] text-ink-3">
+            <p className="mt-7 max-w-lg text-[15.5px] leading-[1.9] text-bone/70">
               {h.ctaLead}
             </p>
-            <Link
-              href={`/${lang}/contact`}
-              className="mt-9 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-forest-2"
-            >
-              {h.ctaBtn}
-              <ArrowRight size={15} />
-            </Link>
+            <div className="mt-10 flex flex-wrap items-center gap-3">
+              <Link
+                href={`/${lang}/animai`}
+                className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-[15px] font-medium text-bone transition-colors hover:bg-forest-2"
+              >
+                {h.ctaBtn}
+                <ArrowRight size={15} />
+              </Link>
+              <Link
+                href={`/${lang}/contact`}
+                className="inline-flex items-center gap-2 rounded-full border border-line-dark px-6 py-3.5 text-[15px] font-medium text-bone transition-colors hover:border-forest-lit hover:text-forest-lit"
+              >
+                {h.ctaBtn2}
+                <ArrowRight size={15} />
+              </Link>
+            </div>
           </Reveal>
         </div>
       </section>

@@ -27,10 +27,23 @@ export default async function CeoPage({
     <>
       {/* ── 히어로 ───────────────────────────────── */}
       <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-          <Reveal>
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[35fr_65fr] lg:gap-16">
+          <Reveal className="order-2 lg:order-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/ceo.jpg"
+              alt={c.name}
+              className="aspect-[4/5] w-full max-w-[320px] border border-line object-cover"
+            />
+            <p className="t-title mt-5 text-[22px] text-ink">{c.name}</p>
+            <p className="mt-1 text-[13px] font-medium tracking-[0.04em] text-forest">
+              {c.role}
+            </p>
+          </Reveal>
+
+          <Reveal delay={120} className="order-1 lg:order-2">
             <p className="t-label text-forest">{c.eyebrow}</p>
-            <p className="mt-5 text-[15px] text-ink-3">{c.h1}</p>
+            <p className="mt-5 text-[15px] text-ink-3">{c.kicker}</p>
             <h1 className="t-display mt-4 text-[32px] text-ink sm:text-[46px]">
               {c.lead.map((line) => (
                 <span key={line} className="block">
@@ -55,38 +68,21 @@ export default async function CeoPage({
       {/* ── 본문 ─────────────────────────────────── */}
       <section className="border-b border-line bg-bone-2">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="grid gap-12 lg:grid-cols-[300px_1fr] lg:gap-16">
-            <Reveal>
-              <div className="lg:sticky lg:top-24">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/ceo.jpg"
-                  alt={c.name}
-                  className="aspect-[4/5] w-full max-w-[280px] border border-line object-cover"
-                />
-                <p className="t-title mt-5 text-[22px] text-ink">{c.name}</p>
-                <p className="mt-1 text-[13px] font-medium tracking-[0.04em] text-forest">
-                  {c.role}
+          <Reveal>
+            <div className="max-w-2xl space-y-6">
+              {c.greeting.map((p) => (
+                <p
+                  key={p.slice(0, 16)}
+                  className="text-[15.5px] leading-[1.95] text-ink-3"
+                >
+                  {p}
                 </p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={140}>
-              <div className="max-w-2xl space-y-6">
-                {c.greeting.map((p) => (
-                  <p
-                    key={p.slice(0, 16)}
-                    className="text-[15.5px] leading-[1.95] text-ink-3"
-                  >
-                    {p}
-                  </p>
-                ))}
-              </div>
-              <p className="mt-10 border-t border-line pt-6 text-[14px] font-medium text-ink">
-                {c.sign}
-              </p>
-            </Reveal>
-          </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-2xl border-t border-line pt-6 text-[14px] font-medium text-ink">
+              {c.sign}
+            </p>
+          </Reveal>
         </div>
       </section>
 
@@ -104,6 +100,11 @@ export default async function CeoPage({
                     {f.n}
                   </dt>
                   <dd className="mt-3 text-[14px] text-bone/60">{f.l}</dd>
+                  {f.note ? (
+                    <dd className="mt-1.5 text-[12px] leading-snug text-forest-lit">
+                      {f.note}
+                    </dd>
+                  ) : null}
                 </div>
               </Reveal>
             ))}
