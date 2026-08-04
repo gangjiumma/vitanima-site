@@ -110,40 +110,41 @@ export default function Loop({
         );
       })}
 
-      {/* 가운데 */}
-      <text
-        x={C}
-        y={C - 12}
-        textAnchor="middle"
-        fontFamily="var(--font-sans)"
-        fontSize="19"
-        fontWeight="800"
-        letterSpacing="-0.5"
-        fill={p.center}
-      >
-        {center[0]}
-      </text>
-      <text
-        x={C}
-        y={C + 14}
-        textAnchor="middle"
-        fontFamily="var(--font-sans)"
-        fontSize="19"
-        fontWeight="800"
-        letterSpacing="-0.5"
-        fill={p.center}
-      >
-        {center[1]}
-      </text>
-      <line
-        x1={C - 26}
-        y1={C + 34}
-        x2={C + 26}
-        y2={C + 34}
-        stroke={p.arc}
-        strokeWidth="1"
-        opacity="0.5"
-      />
+      {/* 가운데 — center 배열 길이에 맞춰 자동 배치 */}
+      {(() => {
+        const lines = center.filter(Boolean);
+        const lh = 27;
+        const top = C - ((lines.length - 1) * lh) / 2 - 6;
+        return (
+          <>
+            {lines.map((line, i) => (
+              <text
+                key={line}
+                x={C}
+                y={top + i * lh}
+                textAnchor="middle"
+                dominantBaseline="central"
+                fontFamily="var(--font-sans)"
+                fontSize={lines.length > 2 ? 18 : 20}
+                fontWeight="800"
+                letterSpacing="-0.5"
+                fill={p.center}
+              >
+                {line}
+              </text>
+            ))}
+            <line
+              x1={C - 26}
+              y1={top + (lines.length - 1) * lh + 22}
+              x2={C + 26}
+              y2={top + (lines.length - 1) * lh + 22}
+              stroke={p.arc}
+              strokeWidth="1"
+              opacity="0.5"
+            />
+          </>
+        );
+      })()}
     </svg>
   );
 }

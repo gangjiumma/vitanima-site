@@ -48,7 +48,7 @@ export const dict = {
       phone: "010-2358-5248",
       phoneHref: "tel:+821023585248",
       productUrl: "https://www.animai.kr",
-      dashboardUrl: "https://gangji-manage.kr",
+      dashboardUrl: "https://www.animai.kr/business",
       iosUrl: "https://apps.apple.com/kr/app/id6760122477",
       androidUrl:
         "https://play.google.com/store/apps/details?id=com.gangjiunni.app",
@@ -110,7 +110,7 @@ export const dict = {
 
       loopEyebrow: "THE LOOP",
       loopH2: ["한 번의 답이", "다음 맞춤을 바꿉니다"],
-      loopCenter: ["쓸수록", "우리 아이에", "가까워집니다"],
+      loopCenter: ["AI Loop", "특허 출원"],
       loopSteps: [
         { k: "01", t: "보호자가 말함", d: "" },
         { k: "02", t: "의미 추출", d: "" },
@@ -560,7 +560,7 @@ export const dict = {
         "한 번의 질문과 답변으로 끝나지 않습니다.",
         "새롭게 알게 된 내용이 개체별 모델에 반영되고, AI는 필요한 내용을 먼저 확인합니다. 그 답은 다시 새로운 라벨이 되어 다음 질문과 정보, 서비스에 반영됩니다.",
       ],
-      loopCenter: ["보호자의 말이", "AI가 이해하는", "기준이 됩니다"],
+      loopCenter: ["AI Loop", "특허 출원"],
       loopSteps: [
         { k: "S1", t: "상호작용", d: "보호자가 AI와 이야기합니다.", s: "가동 중" },
         { k: "S2", t: "이해", d: "AI가 개체와 시점, 상태와 행동을 파악합니다.", s: "가동 중" },
@@ -792,7 +792,7 @@ export const dict = {
       phone: "+82 10-2358-5248",
       phoneHref: "tel:+821023585248",
       productUrl: "https://www.animai.kr",
-      dashboardUrl: "https://gangji-manage.kr",
+      dashboardUrl: "https://www.animai.kr/business",
       iosUrl: "https://apps.apple.com/kr/app/id6760122477",
       androidUrl:
         "https://play.google.com/store/apps/details?id=com.gangjiunni.app",
@@ -854,7 +854,7 @@ export const dict = {
 
       loopEyebrow: "THE LOOP",
       loopH2: ["One answer changes", "the next fit"],
-      loopCenter: ["Closer", "to your animal", "with every use"],
+      loopCenter: ["AI Loop", "Patent filed"],
       loopSteps: [
         { k: "01", t: "The caregiver speaks", d: "" },
         { k: "02", t: "Meaning extracted", d: "" },
@@ -1306,7 +1306,7 @@ export const dict = {
         "It doesn't end with one question and one answer.",
         "What is newly learned updates the per-animal model, and the AI checks what it needs before you have to. That answer becomes a new label, feeding the next question, information and service.",
       ],
-      loopCenter: ["A caregiver's words", "become the baseline", "the AI reads by"],
+      loopCenter: ["AI Loop", "Patent filed"],
       loopSteps: [
         { k: "S1", t: "Exchange", d: "The caregiver talks with the AI.", s: "Live" },
         { k: "S2", t: "Understand", d: "The AI identifies animal, time, state and behaviour.", s: "Live" },
