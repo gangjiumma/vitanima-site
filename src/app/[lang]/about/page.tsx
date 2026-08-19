@@ -47,14 +47,18 @@ export default async function AboutPage({
                 </p>
               ))}
             </div>
-            <div className="mt-12 flex flex-wrap items-center gap-3">
+            <div className="mt-12 flex flex-wrap items-stretch gap-3">
               {a.heroFlow.map((f, i) => (
-                <div key={f} className="flex items-center gap-3">
-                  <span className="border border-line bg-bone-2 px-4 py-2.5 text-[14px] text-ink">
-                    {f}
-                  </span>
+                <div key={f.t} className="flex items-stretch gap-3">
+                  <div className="border border-line bg-bone-2 px-5 py-4">
+                    <p className="t-title text-[15px] text-ink">{f.t}</p>
+                    <p className="mt-1 text-[13px] text-ink-3">{f.d}</p>
+                  </div>
                   {i < a.heroFlow.length - 1 && (
-                    <ArrowRight size={15} className="text-forest" />
+                    <ArrowRight
+                      size={15}
+                      className="shrink-0 self-center text-forest"
+                    />
                   )}
                 </div>
               ))}
@@ -126,6 +130,9 @@ export default async function AboutPage({
                 </span>
               ))}
             </h2>
+            <p className="t-title mt-6 text-[17px] leading-[1.6] text-forest sm:text-[19px]">
+              {a.whySub}
+            </p>
             <div className="mt-7 max-w-2xl space-y-4">
               {a.whyBody.map((p) => (
                 <p
@@ -210,29 +217,23 @@ export default async function AboutPage({
                       {c.d}
                     </p>
 
+                    {"note" in c && c.note ? (
+                      <p className="t-label mt-4 text-ink-4">{c.note}</p>
+                    ) : null}
+
                     {"metrics" in c && c.metrics ? (
-                      <>
-                        <dl className="mt-8 grid gap-x-6 gap-y-6 border-y border-line py-7 sm:grid-cols-3">
-                          {c.metrics.map((m) => (
-                            <div key={m.l}>
-                              <dt className="t-display t-num text-[30px] leading-none text-forest sm:text-[34px]">
-                                {m.n}
-                              </dt>
-                              <dd className="mt-2.5 text-[13.5px] leading-snug text-ink-3">
-                                {m.l}
-                              </dd>
-                            </div>
-                          ))}
-                        </dl>
-                        {"note" in c && c.note ? (
-                          <p className="mt-4 text-[12px] text-ink-4">{c.note}</p>
-                        ) : null}
-                        {"learn" in c && c.learn ? (
-                          <p className="t-title mt-7 border-l-2 border-forest pl-5 text-[17px] leading-[1.7] text-ink sm:text-[19px]">
-                            {c.learn}
-                          </p>
-                        ) : null}
-                      </>
+                      <dl className="mt-8 grid gap-x-6 gap-y-6 border-y border-line py-7 sm:grid-cols-3">
+                        {c.metrics.map((m) => (
+                          <div key={m.l}>
+                            <dt className="t-display t-num text-[22px] leading-tight text-forest sm:text-[26px]">
+                              {m.n}
+                            </dt>
+                            <dd className="mt-2.5 text-[13.5px] leading-snug text-ink-3">
+                              {m.l}
+                            </dd>
+                          </div>
+                        ))}
+                      </dl>
                     ) : null}
                   </div>
                 </article>
@@ -293,16 +294,12 @@ export default async function AboutPage({
           <Reveal delay={80}>
 
             <dl className="mt-10 max-w-2xl">
-              {a.nameLines.map((n, i) => (
+              {a.nameLines.map((n) => (
                 <div
                   key={n.k}
-                  className="flex flex-col gap-1 border-t border-line py-5 last:border-b sm:flex-row sm:items-baseline sm:gap-8"
+                  className="flex flex-col gap-1 border-t border-line py-5 sm:flex-row sm:items-baseline sm:gap-8"
                 >
-                  <dt
-                    className={`t-display shrink-0 text-[24px] sm:w-[190px] sm:text-[30px] ${
-                      i === 2 ? "text-forest" : "text-ink"
-                    }`}
-                  >
+                  <dt className="t-display shrink-0 text-[26px] text-ink sm:w-[190px] sm:text-[32px]">
                     {n.k}
                   </dt>
                   <dd className="text-[15.5px] leading-[1.8] text-ink-3">
@@ -310,11 +307,28 @@ export default async function AboutPage({
                   </dd>
                 </div>
               ))}
+              <div className="flex flex-col gap-2 border-y-2 border-forest py-6 sm:flex-row sm:items-baseline sm:gap-8">
+                <dt className="t-display shrink-0 text-[26px] text-forest sm:w-[190px] sm:text-[32px]">
+                  {a.nameCompound}
+                </dt>
+                <dd className="text-[15.5px] leading-[1.9] text-ink">
+                  {a.nameBody}
+                </dd>
+              </div>
             </dl>
 
-            <p className="mt-8 max-w-xl text-[15.5px] leading-[1.95] text-ink">
-              {a.nameBody}
-            </p>
+            <div className="mt-10 max-w-2xl border border-line bg-bone-2 px-6 py-6">
+              <p className="t-title text-[19px] text-ink">
+                {a.nameProductLabel}
+              </p>
+              <p className="mt-1.5 text-[13px] font-medium tracking-[0.04em] text-forest">
+                {a.nameProductSub}
+              </p>
+              <p className="mt-4 text-[14.5px] leading-[1.85] text-ink-3">
+                {a.nameProductBody}
+              </p>
+            </div>
+
           </Reveal>
         </div>
       </section>
@@ -365,9 +379,13 @@ export default async function AboutPage({
                   <p className="mt-1.5 text-[14.5px] leading-relaxed text-ink-3">
                     {it.d}
                   </p>
+                  {it.sub ? (
+                    <p className="mt-1.5 text-[13px] text-ink-4">{it.sub}</p>
+                  ) : null}
                 </div>
               </Reveal>
             ))}
+            <p className="mt-8 text-[12.5px] text-ink-4">{a.historyNote}</p>
           </div>
         </div>
       </section>
@@ -386,6 +404,7 @@ export default async function AboutPage({
             <p className="mt-7 max-w-lg text-[15.5px] leading-[1.9] text-bone/70">
               {a.ctaLead}
             </p>
+            <p className="mt-5 text-[12.5px] text-bone/45">{a.ctaNote}</p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <Link
                 href={`/${lang}/animai`}

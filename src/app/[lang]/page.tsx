@@ -100,6 +100,9 @@ export default async function HomePage({
                 </span>
               ))}
             </h2>
+            <p className="t-title mt-6 text-[17px] leading-[1.6] text-forest-lit sm:text-[19px]">
+              {h.problemSub}
+            </p>
             <div className="mt-7 space-y-4">
               {h.problemLead.map((p) => (
                 <p
@@ -115,28 +118,30 @@ export default async function HomePage({
             </p>
           </Reveal>
 
-          {/* 생애 변화 타임라인 */}
           <Reveal delay={130}>
-            <ol className="grid gap-px bg-line-dark sm:grid-cols-2">
+            <p className="t-label text-ink-4">{h.timelineLabel}</p>
+            <ol className="mt-4 grid gap-px bg-line-dark sm:grid-cols-2">
               {h.timeline.map((t, i) => (
-                <li key={t.t} className="bg-ink p-5 sm:p-6">
+                <li key={t} className="flex items-baseline gap-4 bg-ink px-6 py-6">
                   <span className="t-label t-num text-forest-lit">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="t-title mt-2 text-[17px] text-bone">{t.t}</h3>
-                  <ul className="mt-2 space-y-1">
-                    {t.d.map((x) => (
-                      <li key={x} className="text-[13.5px] text-bone/55">
-                        {x}
-                      </li>
-                    ))}
-                  </ul>
+                  <span className="t-title text-[19px] text-bone sm:text-[21px]">
+                    {t}
+                  </span>
                 </li>
               ))}
             </ol>
 
-            <div className="mt-8 space-y-3">
-              <p className="border border-line-dark px-5 py-3.5 text-[13.5px] text-ink-4 line-through decoration-ink-4 decoration-1">
+            <div className="mt-8 border-t border-line-dark pt-6">
+              <p className="t-label text-forest-lit">{h.timelineSubLabel}</p>
+              <p className="t-title mt-3 text-[16px] leading-[1.7] text-bone sm:text-[18px]">
+                {h.timelineSub}
+              </p>
+            </div>
+
+            <div className="mt-9 space-y-3">
+              <p className="border border-line-dark px-5 py-3.5 text-[13.5px] text-ink-4">
                 {h.timelineOld}
               </p>
               <p className="t-title border-2 border-forest-lit bg-forest/20 px-5 py-3.5 text-[14px] text-bone">
@@ -183,7 +188,10 @@ export default async function HomePage({
                   </p>
                 ))}
               </div>
-              <div className="mt-9 flex flex-wrap items-center gap-3">
+              <p className="mt-6 text-[13px] leading-relaxed text-ink-4">
+                {h.prodNote}
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
                 <a
                   href={d.common.iosUrl}
                   target="_blank"
@@ -231,6 +239,12 @@ export default async function HomePage({
         <div className="mx-auto grid max-w-6xl gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[45fr_55fr] lg:items-center lg:gap-16">
           <Reveal className="flex flex-col items-center">
             <Loop keys={h.loopSteps.map((s) => s.k)} center={h.loopCenter} tone="dark" />
+            <p className="mt-4 text-center text-[13px] text-bone/60">
+              {h.loopCenterSub}
+            </p>
+            <p className="t-label mt-2 text-center text-forest-lit">
+              {h.loopCenterNote}
+            </p>
             <ul className="mt-8 grid w-full gap-x-6 gap-y-2 sm:grid-cols-2">
               {h.loopSteps.map((s) => (
                 <li key={s.k} className="flex items-baseline gap-2.5">
@@ -251,35 +265,36 @@ export default async function HomePage({
               ))}
             </h2>
 
+            <p className="mt-6 max-w-lg text-[15px] leading-[1.85] text-bone/70">
+              {h.loopSub}
+            </p>
+
             <div className="mt-9 border border-line-dark p-6">
               <p className="t-title text-[17px] leading-[1.6] text-bone sm:text-[19px]">
                 “{h.loopExampleQuote}”
               </p>
 
-              <p className="t-label mt-7 text-ink-4">
-                {h.loopExampleLabel.toUpperCase()}
-              </p>
-              <dl className="mt-3 grid gap-x-8 gap-y-2 sm:grid-cols-2">
-                {h.loopExample.map((e) => (
-                  <div key={e.k} className="flex gap-3 border-t border-line-dark pt-2">
-                    <dt className="w-14 shrink-0 text-[13px] text-ink-4">
-                      {e.k}
-                    </dt>
-                    <dd className="text-[13.5px] text-forest-lit">{e.v}</dd>
+              <dl className="mt-7 space-y-4">
+                {h.loopExampleRows.map((r, i) => (
+                  <div key={r.k} className="border-t border-line-dark pt-3">
+                    <dt className="t-label text-ink-4">{r.k}</dt>
+                    <dd
+                      className={`mt-2 text-[14.5px] leading-[1.75] ${
+                        i === 2 ? "t-title text-forest-lit" : "text-bone/80"
+                      }`}
+                    >
+                      {i === 2 ? `“${r.v}”` : r.v}
+                    </dd>
                   </div>
                 ))}
               </dl>
-
-              <p className="t-label mt-7 text-ink-4">
-                {h.loopExampleNextLabel.toUpperCase()}
-              </p>
-              <p className="mt-2.5 text-[14px] leading-[1.85] text-bone/70">
-                {h.loopExampleNext}
-              </p>
             </div>
 
             <p className="mt-7 max-w-lg text-[14.5px] leading-[1.85] text-bone/60">
               {h.loopBody}
+            </p>
+            <p className="mt-4 max-w-lg text-[12.5px] leading-[1.75] text-ink-4">
+              {h.loopNote}
             </p>
             <Link
               href={`/${lang}/technology`}
@@ -314,6 +329,9 @@ export default async function HomePage({
                 </span>
               ))}
             </h2>
+            <p className="t-title mt-6 max-w-lg text-[16px] leading-[1.6] text-forest sm:text-[18px]">
+              {h.signalSub}
+            </p>
             <div className="mt-7 space-y-4">
               {h.signalBody.map((p) => (
                 <p
@@ -342,6 +360,9 @@ export default async function HomePage({
               ))}
             </ol>
 
+            <p className="mt-5 text-[12.5px] text-ink-4">
+              {h.signalTimelineNote}
+            </p>
             <Link
               href={`/${lang}/technology`}
               className="mt-7 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
@@ -365,6 +386,9 @@ export default async function HomePage({
                 </span>
               ))}
             </h2>
+            <p className="t-title mt-6 max-w-2xl text-[16px] leading-[1.6] text-forest sm:text-[18px]">
+              {h.platformSub}
+            </p>
           </Reveal>
 
           <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-0">
@@ -387,10 +411,15 @@ export default async function HomePage({
                   <ul className="mt-7 space-y-2">
                     {s.items.map((it) => (
                       <li
-                        key={it}
-                        className="border-t border-line pt-2 text-[14.5px] text-ink"
+                        key={it.t}
+                        className="flex flex-wrap items-center gap-2 border-t border-line pt-2 text-[14.5px] text-ink"
                       >
-                        {it}
+                        {it.t}
+                        {it.tag ? (
+                          <span className="t-label rounded-full border border-line px-2 py-0.5 text-ink-4">
+                            {it.tag}
+                          </span>
+                        ) : null}
                       </li>
                     ))}
                   </ul>
@@ -471,61 +500,55 @@ export default async function HomePage({
                   </div>
                 ))}
               </dl>
+              <p className="mt-8 text-[12.5px] text-ink-4">{h.trackNote}</p>
             </Reveal>
           </div>
         </div>
       </section>
 
-      {/* ══ 소식 ═════════════════════════════════ */}
-      <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
-          <Reveal>
-            <div className="flex items-end justify-between gap-4">
-              <h2 className="t-display text-[26px] text-ink sm:text-[32px]">
-                {h.newsH2}
-              </h2>
-              <Link
-                href={`/${lang}/news`}
-                className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
-              >
-                {h.newsLink}
-                <ArrowUpRight size={15} />
-              </Link>
-            </div>
-          </Reveal>
-
-          {news.length === 0 ? (
-            <Reveal delay={80}>
-              <p className="mt-8 border-t border-line pt-6 text-[15px] text-ink-4">
-                {h.newsEmpty}
-              </p>
+      {/* ══ 소식 — 등록된 뉴스가 있을 때만 노출 ══ */}
+      {news.length > 0 && (
+        <section className="border-b border-line">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+            <Reveal>
+              <div className="flex items-end justify-between gap-4">
+                <h2 className="t-display text-[26px] text-ink sm:text-[32px]">
+                  {h.newsH2}
+                </h2>
+                <Link
+                  href={`/${lang}/news`}
+                  className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+                >
+                  {h.newsLink}
+                  <ArrowUpRight size={15} />
+                </Link>
+              </div>
             </Reveal>
-          ) : (
-            <ul className="mt-8">
-              {news.map((n, i) => (
-                <Reveal key={n.id} delay={i * 70}>
-                  <li className="border-t border-line last:border-b">
-                    <a
-                      href={n.href || `/${lang}/news`}
-                      target={n.href ? "_blank" : undefined}
-                      rel={n.href ? "noreferrer" : undefined}
-                      className="flex flex-wrap items-baseline gap-x-5 gap-y-1 py-5 transition-colors hover:text-forest"
-                    >
-                      <span className="t-label t-num text-ink-4">{n.date}</span>
-                      <span className="t-label text-forest">
-                        {d.news.cats[n.cat as NewsCat]}
-                      </span>
-                      <span className="t-title text-[17px] sm:text-[19px]">
-                        {n.title[lang]}
-                      </span>
-                    </a>
-                  </li>
-                </Reveal>
-              ))}
-            </ul>
-          )}
-        </div>
-      </section>
+              <ul className="mt-8">
+                {news.map((n, i) => (
+                  <Reveal key={n.id} delay={i * 70}>
+                    <li className="border-t border-line last:border-b">
+                      <a
+                        href={n.href || `/${lang}/news`}
+                        target={n.href ? "_blank" : undefined}
+                        rel={n.href ? "noreferrer" : undefined}
+                        className="flex flex-wrap items-baseline gap-x-5 gap-y-1 py-5 transition-colors hover:text-forest"
+                      >
+                        <span className="t-label t-num text-ink-4">{n.date}</span>
+                        <span className="t-label text-forest">
+                          {d.news.cats[n.cat as NewsCat]}
+                        </span>
+                        <span className="t-title text-[17px] sm:text-[19px]">
+                          {n.title[lang]}
+                        </span>
+                      </a>
+                    </li>
+                  </Reveal>
+                ))}
+              </ul>
+          </div>
+        </section>
+      )}
 
       {/* ══ 최종 CTA ═════════════════════════════ */}
       <section className="bg-ink text-bone">
