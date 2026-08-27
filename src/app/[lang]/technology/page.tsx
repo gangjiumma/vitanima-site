@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ArrowDown, CornerLeftUp } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ArrowDown, CornerLeftUp } from "lucide-react";
 import Loop from "@/components/Loop";
 import Reveal from "@/components/Reveal";
 import { getDict, resolveLang } from "@/lib/dict";
@@ -584,31 +584,114 @@ export default async function TechnologyPage({
             </p>
           </Reveal>
 
-          {/* 특허 */}
-          <div className="mt-20 border-t border-line-dark pt-14">
-            <Reveal>
-              <h3 className="t-display text-[22px] sm:text-[28px]">{t.ipH2}</h3>
-            </Reveal>
-            <div className="mt-10 grid gap-x-10 gap-y-9 lg:grid-cols-3">
-              {t.ip.map((p, i) => (
-                <Reveal key={p.n} delay={i * 90}>
-                  <div className="border-t border-line-dark pt-5">
-                    <span className="t-label t-num text-forest-lit">{p.n}</span>
-                    <h4 className="t-title mt-3 text-[17px] leading-snug text-bone">
-                      {p.t}
-                    </h4>
-                    <p className="t-label t-num mt-3 text-forest-lit">{p.no}</p>
-                    <p className="mt-2 text-[13px] text-bone/55">{p.s}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-            <p className="mt-9 text-[12.5px] text-ink-4">{t.ipNote}</p>
-          </div>
         </div>
       </section>
 
-      {/* ══ 09. MEDICAL BOUNDARY ═════════════════ */}
+      {/* ══ 09. RECORD FOR INSURANCE ═════════════ */}
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <Reveal>
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="t-label text-forest">{t.insEyebrow}</p>
+              <span className="t-label rounded-full border border-line px-2.5 py-1 text-ink-4">
+                {t.insBadge}
+              </span>
+            </div>
+            <h2 className="t-display mt-5 max-w-3xl text-[28px] text-ink sm:text-[38px]">
+              {t.insH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </h2>
+            <p className="t-title mt-6 max-w-2xl text-[16px] leading-[1.6] text-forest sm:text-[18px]">
+              {t.insSub}
+            </p>
+          </Reveal>
+
+          <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
+            <Reveal>
+              <div className="max-w-xl space-y-5">
+                {t.insBody.map((p) => (
+                  <p
+                    key={p.slice(0, 12)}
+                    className="text-[15.5px] leading-[1.95] text-ink-3"
+                  >
+                    {p}
+                  </p>
+                ))}
+              </div>
+            </Reveal>
+
+            <Reveal delay={130}>
+              <div className="border border-line bg-bone-2 px-6 py-8 sm:px-8">
+                <ol>
+                  {t.insFlow.map((f, i) => (
+                    <li key={f}>
+                      <div
+                        className={`px-5 py-3.5 text-center text-[14.5px] ${
+                          i === 0
+                            ? "t-title border-2 border-forest bg-forest-tint text-forest"
+                            : "border border-line bg-bone text-ink"
+                        }`}
+                      >
+                        {f}
+                      </div>
+                      <div className="flex justify-center py-1.5">
+                        <ArrowDown size={15} className="text-forest" />
+                      </div>
+                    </li>
+                  ))}
+                  <li>
+                    <div className="t-title border-2 border-forest bg-forest-tint px-5 py-3.5 text-center text-[14.5px] text-forest">
+                      {t.insFlowBack}
+                    </div>
+                  </li>
+                </ol>
+                <p className="mt-7 border-t border-line pt-5 text-center text-[13.5px] leading-relaxed text-ink-3">
+                  {t.insFlowNote}
+                </p>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={170}>
+            <Link
+              href={`/${lang}/contact`}
+              className="mt-12 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+            >
+              {t.insLink}
+              <ArrowUpRight size={15} />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══ 10. PATENTS ══════════════════════════ */}
+      <section className="bg-ink text-bone">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+          <Reveal>
+            <h2 className="t-display text-[24px] sm:text-[30px]">{t.ipH2}</h2>
+          </Reveal>
+          <div className="mt-10 grid gap-x-10 gap-y-9 lg:grid-cols-3">
+            {t.ip.map((p, i) => (
+              <Reveal key={p.n} delay={i * 90}>
+                <div className="border-t border-line-dark pt-5">
+                  <span className="t-label t-num text-forest-lit">{p.n}</span>
+                  <h3 className="t-title mt-3 text-[17px] leading-snug text-bone">
+                    {p.t}
+                  </h3>
+                  <p className="t-label t-num mt-3 text-forest-lit">{p.no}</p>
+                  <p className="mt-2 text-[13px] text-bone/55">{p.s}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <p className="mt-9 text-[12.5px] text-ink-4">{t.ipNote}</p>
+        </div>
+      </section>
+
+      {/* ══ 11. MEDICAL BOUNDARY ═════════════════ */}
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[280px_1fr] lg:gap-16">
           <Reveal>

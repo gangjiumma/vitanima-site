@@ -868,7 +868,7 @@ export const dict = {
           t: "Lifetime Log 정렬",
           d: "대화와 건강기록을 해당 시점에 정리하고, 태그 연결 후에는 같은 시점의 활동·수면 신호도 함께 정렬합니다.",
           s: "가동 중",
-          sub: "Tag signal 확장 중",
+          sub: "Care Tag 신호 확장 예정",
         },
         {
           k: "S4",
@@ -939,7 +939,7 @@ export const dict = {
             "태그가 연결된 이후 활동량 감소나 야간 움직임 증가가 관찰되면, 기존 Lifetime Log와 함께 확인합니다.",
           ],
           chips: [],
-          stage: "웨어러블 신호 → Lifetime Log 확인 → S5 능동질의",
+          stage: "생활신호 → Lifetime Log 확인 → S5 능동질의",
           retro: false,
         },
       ],
@@ -952,25 +952,25 @@ export const dict = {
       signalH2: ["보호자가 못 보는 시간의", "생활신호를 더합니다"],
       signalBody: [
         "대화 기반 Loop는 Care Tag가 없어도 작동합니다.",
-        "Care Tag가 연결되면 행동과 수면 변화를 같은 Lifetime Log에 추가하고, 보호자의 설명과 함께 그 의미를 확인합니다.",
+        "Care Tag가 연결되면 활동과 수면 변화를 같은 Lifetime Log에 추가하고, 보호자의 설명과 함께 그 의미를 확인합니다.",
       ],
       signalItems: [
         {
           t: "Care Tag",
-          d: "행동·수면 변화를 기록하는 BLE 웨어러블 신호원",
-          s: "2026.08 · 1대 집중 테스트 진행 중",
+          d: "활동·수면 변화를 기록하는 BLE 웨어러블 신호원",
+          s: "2026.08 · 내부 파일럿 진행 중",
           sub: "가속도계 · BLE",
         },
         {
           t: "Home Station",
-          d: "보호자가 외출 중에도 집 안에서 Care Tag 신호 수집을 이어가기 위한 게이트",
-          s: "구독 연계 수집 게이트 계획",
+          d: "집에서 Care Tag 신호 수집을 이어가기 위한 게이트. 외출 중에는 보호자의 앱을 통해 수집합니다.",
+          s: "Care Tag와 함께 검증 예정",
           sub: "",
         },
         {
           t: "Home Device",
           d: "배변량 · 급식량 · 체중 등 태그로 보기 어려운 집 안 생활신호",
-          s: "2차 개발 예정",
+          s: "Pre-A 이후 확장 예정",
           sub: "",
         },
       ],
@@ -1009,6 +1009,21 @@ export const dict = {
         "우리 아이의 기준도 더 정교해집니다.",
       ],
 
+      insEyebrow: "RECORD FOR INSURANCE",
+      insBadge: "보험 비교견적 서비스 준비 중",
+      insH2: ["같은 기록이", "보험에서도 사용됩니다"],
+      insSub:
+        "보험은 새로운 데이터가 아니라, 이미 쌓인 Lifetime Log 위에서 시작합니다.",
+      insBody: [
+        "보험 비교견적에는 보통 품종, 나이, 병력, 예방이력이 필요합니다.",
+        "이 정보는 이미 Lifetime Log에 기록되어 있기 때문에, 보호자가 처음부터 다시 입력하지 않아도 됩니다.",
+        "가입 이후의 청구와 갱신 결과도 같은 기록에 다시 연결해 보험 이력을 따로 관리하지 않아도 되도록 준비하고 있습니다.",
+      ],
+      insFlow: ["Lifetime Log", "비교견적", "가입", "청구 · 갱신"],
+      insFlowBack: "Lifetime Log",
+      insFlowNote: "평소의 기록이 보험 가입 전과 후를 계속 이어줍니다.",
+      insLink: "보험 서비스 준비 현황 보기",
+
       ipH2: "Loop 관련 특허 3건 출원",
       ip: [
         {
@@ -1041,7 +1056,7 @@ export const dict = {
 
       ctaH2: ["시간이 쌓일수록,", "우리 아이의 기준이 정교해집니다"],
       ctaLead:
-        "AnimAI는 보호자의 대화를 Lifetime Log에 쌓고, Care Tag의 생활신호를 같은 시간 위에 연결합니다.",
+        "AnimAI는 보호자의 대화를 Lifetime Log에 쌓고, Care Tag의 생활신호를 같은 시간 위에 연결합니다. 그 기록은 건강관리와 보험에서 다시 사용됩니다.",
       ctaBtn: "AnimAI 알아보기",
     },
     news: {
@@ -2103,7 +2118,7 @@ export const dict = {
           t: "Lifetime Log alignment",
           d: "Conversation and health records are organised at that point in time; once a tag is connected, activity and sleep signals from the same period align alongside.",
           s: "Live",
-          sub: "Tag signal expanding",
+          sub: "Care Tag signal planned",
         },
         {
           k: "S4",
@@ -2183,7 +2198,7 @@ export const dict = {
             "Once a tag is connected, drops in activity or increased night movement are read together with the existing Lifetime Log.",
           ],
           chips: [],
-          stage: "Wearable signal → Lifetime Log → S5 active enquiry",
+          stage: "Life signal → Lifetime Log → S5 active enquiry",
           retro: false,
         },
       ],
@@ -2196,25 +2211,25 @@ export const dict = {
       signalH2: ["Adding life signals from", "the hours you cannot see"],
       signalBody: [
         "The conversation-based Loop works without a Care Tag.",
-        "Once connected, behaviour and sleep changes join the same Lifetime Log, and their meaning is confirmed alongside the caregiver's account.",
+        "Once connected, activity and sleep changes join the same Lifetime Log, and their meaning is confirmed alongside the caregiver's account.",
       ],
       signalItems: [
         {
           t: "Care Tag",
-          d: "A BLE wearable signal source recording behaviour and sleep changes",
-          s: "Aug 2026 · focused single-unit test in progress",
+          d: "A BLE wearable signal source recording activity and sleep changes",
+          s: "Aug 2026 · internal pilot in progress",
           sub: "Accelerometer · BLE",
         },
         {
           t: "Home Station",
-          d: "A gate to continue collecting Care Tag signals at home while the caregiver is out",
-          s: "Planned as a subscription-linked collection gate",
+          d: "A gate to continue collecting Care Tag signals at home; while out, the caregiver's app collects them.",
+          s: "To be validated alongside the Care Tag",
           sub: "",
         },
         {
           t: "Home Device",
           d: "Toileting, feeding and weight — signals a tag cannot easily see",
-          s: "Planned for second-phase development",
+          s: "Expansion planned after Pre-A",
           sub: "",
         },
       ],
@@ -2269,6 +2284,21 @@ export const dict = {
         "and the more precise your animal's baseline becomes.",
       ],
 
+      insEyebrow: "RECORD FOR INSURANCE",
+      insBadge: "Insurance comparison service in preparation",
+      insH2: ["The same record", "is used for insurance too"],
+      insSub:
+        "Insurance starts not from new data, but from the Lifetime Log already accumulated.",
+      insBody: [
+        "Insurance comparison usually requires breed, age, medical history and preventive care.",
+        "That information is already in the Lifetime Log, so the caregiver does not have to enter it from scratch.",
+        "We are preparing so that claims and renewals after enrolment reconnect to the same record, and insurance history need not be managed separately.",
+      ],
+      insFlow: ["Lifetime Log", "Comparison", "Enrolment", "Claims · renewal"],
+      insFlowBack: "Lifetime Log",
+      insFlowNote: "Everyday records carry through, before and after enrolment.",
+      insLink: "See how the insurance service is progressing",
+
       ipH2: "3 Loop-related patents filed",
       ip: [
         {
@@ -2301,7 +2331,7 @@ export const dict = {
 
       ctaH2: ["As time accumulates,", "your animal's baseline grows more precise"],
       ctaLead:
-        "AnimAI accumulates the caregiver's conversation in the Lifetime Log, and connects the Care Tag's life signals onto the same timeline.",
+        "AnimAI accumulates the caregiver's conversation in the Lifetime Log, and connects the Care Tag's life signals onto the same timeline. That record is then used again in health care and insurance.",
       ctaBtn: "About AnimAI",
     },
     news: {
