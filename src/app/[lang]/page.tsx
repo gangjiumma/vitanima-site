@@ -41,20 +41,22 @@ export default async function HomePage({
               ))}
             </div>
             <div className="mt-10 flex flex-wrap items-center gap-3">
-              <Link
-                href={`/${lang}/animai`}
+              <a
+                href={d.common.productUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-forest-2"
               >
                 {h.ctaPrimary}
                 <ArrowRight size={15} />
-              </Link>
-              <Link
-                href={`/${lang}/technology`}
+              </a>
+              <a
+                href="#how-it-works"
                 className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 text-[14px] font-medium text-ink transition-colors hover:border-forest hover:text-forest"
               >
                 {h.ctaSecondary}
-                <ArrowRight size={15} />
-              </Link>
+                <ArrowDown size={15} />
+              </a>
             </div>
           </Reveal>
 
@@ -133,21 +135,16 @@ export default async function HomePage({
               ))}
             </ol>
 
-            <div className="mt-8 border-t border-line-dark pt-6">
+            <div className="mt-8 border-t border-line-dark pt-7">
               <p className="t-label text-forest-lit">{h.timelineSubLabel}</p>
               <p className="t-title mt-3 text-[16px] leading-[1.7] text-bone sm:text-[18px]">
                 {h.timelineSub}
               </p>
             </div>
 
-            <div className="mt-9 space-y-3">
-              <p className="border border-line-dark px-5 py-3.5 text-[13.5px] text-ink-4">
-                {h.timelineOld}
-              </p>
-              <p className="t-title border-2 border-forest-lit bg-forest/20 px-5 py-3.5 text-[14px] text-bone">
-                {h.timelineNew}
-              </p>
-            </div>
+            <p className="t-title mt-9 border-2 border-forest-lit bg-forest/20 px-5 py-4 text-[14.5px] leading-[1.6] text-bone">
+              {h.timelineNew}
+            </p>
           </Reveal>
         </div>
       </section>
@@ -219,23 +216,11 @@ export default async function HomePage({
             </Reveal>
           </div>
 
-          <ul className="mt-16 grid gap-x-10 gap-y-8 sm:grid-cols-3">
-            {h.prodCards.map((c, i) => (
-              <Reveal key={c.t} delay={i * 80}>
-                <li className="border-t border-line pt-5">
-                  <h3 className="t-title text-[18px] text-ink">{c.t}</h3>
-                  <p className="mt-2 text-[14px] leading-[1.8] text-ink-3">
-                    {c.d}
-                  </p>
-                </li>
-              </Reveal>
-            ))}
-          </ul>
         </div>
       </section>
 
       {/* ══ 4. THE LOOP ══════════════════════════ */}
-      <section className="bg-ink text-bone">
+      <section id="how-it-works" className="scroll-mt-20 bg-ink text-bone">
         <div className="mx-auto grid max-w-6xl gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[45fr_55fr] lg:items-center lg:gap-16">
           <Reveal className="flex flex-col items-center">
             <Loop keys={h.loopSteps.map((s) => s.k)} center={h.loopCenter} tone="dark" />
@@ -293,9 +278,6 @@ export default async function HomePage({
             <p className="mt-7 max-w-lg text-[14.5px] leading-[1.85] text-bone/60">
               {h.loopBody}
             </p>
-            <p className="mt-4 max-w-lg text-[12.5px] leading-[1.75] text-ink-4">
-              {h.loopNote}
-            </p>
             <Link
               href={`/${lang}/technology`}
               className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest-lit underline-offset-4 hover:underline"
@@ -307,7 +289,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ══ 5. NEXT SIGNAL ═══════════════════════ */}
+      {/* ══ 5. CARE TAG ══════════════════════════ */}
       <section className="border-b border-line bg-bone-2">
         <div className="mx-auto grid max-w-6xl gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[55fr_45fr] lg:items-center lg:gap-16">
           {/* 제품 자리 */}
@@ -374,68 +356,91 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ══ 6. ONE PLATFORM ══════════════════════ */}
+      {/* ══ 6. FROM RECORD TO INSURANCE ══════════ */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
           <Reveal>
-            <p className="t-label text-forest">{h.platformEyebrow}</p>
-            <h2 className="t-display mt-5 max-w-3xl text-[26px] text-ink sm:text-[34px]">
-              {h.platformH2.map((line) => (
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="t-label text-forest">{h.insEyebrow}</p>
+              <span className="t-label rounded-full border border-line px-2.5 py-1 text-ink-4">
+                {h.insBadge}
+              </span>
+            </div>
+            <h2 className="t-display mt-5 max-w-3xl text-[28px] text-ink sm:text-[38px]">
+              {h.insH2.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h2>
             <p className="t-title mt-6 max-w-2xl text-[16px] leading-[1.6] text-forest sm:text-[18px]">
-              {h.platformSub}
+              {h.insSub}
             </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-0">
-            {h.platformSides.map((s, i) => (
-              <Reveal key={s.t} delay={i * 130}>
-                <div
-                  className={
-                    i === 0
-                      ? "lg:border-r lg:border-line lg:pr-14"
-                      : "lg:pl-14"
-                  }
-                >
-                  <p className="t-label text-forest">{s.en}</p>
-                  <h3 className="t-display mt-4 text-[30px] text-ink sm:text-[36px]">
-                    {s.t}
-                  </h3>
-                  <p className="mt-4 max-w-md text-[15px] leading-[1.9] text-ink-3">
-                    {s.d}
-                  </p>
-                  <ul className="mt-7 space-y-2">
-                    {s.items.map((it) => (
-                      <li
-                        key={it.t}
-                        className="flex flex-wrap items-center gap-2 border-t border-line pt-2 text-[14.5px] text-ink"
+          <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
+            {/* 왼쪽 — 3단계 */}
+            <div>
+              {h.insItems.map((it, i) => (
+                <Reveal key={it.n} delay={i * 90}>
+                  <div className="border-t border-line py-6 last:border-b">
+                    <span className="t-label t-num text-forest">{it.n}</span>
+                    <h3 className="t-title mt-2.5 text-[19px] text-ink sm:text-[21px]">
+                      {it.t}
+                    </h3>
+                    <p className="mt-2.5 text-[14.5px] leading-[1.85] text-ink-3">
+                      {it.d}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            {/* 오른쪽 — 순환 흐름 */}
+            <Reveal delay={130}>
+              <div className="border border-line bg-bone-2 px-6 py-8 sm:px-8">
+                <ol>
+                  {h.insFlow.map((f, i) => (
+                    <li key={f}>
+                      <div
+                        className={`px-5 py-3.5 text-center text-[14.5px] ${
+                          i === 0
+                            ? "t-title border-2 border-forest bg-forest-tint text-forest"
+                            : "border border-line bg-bone text-ink"
+                        }`}
                       >
-                        {it.t}
-                        {it.tag ? (
-                          <span className="t-label rounded-full border border-line px-2 py-0.5 text-ink-4">
-                            {it.tag}
-                          </span>
-                        ) : null}
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={i === 0 ? `/${lang}/animai` : d.common.dashboardUrl}
-                    target={i === 0 ? undefined : "_blank"}
-                    rel={i === 0 ? undefined : "noreferrer"}
-                    className="mt-7 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
-                  >
-                    {s.link}
-                    <ArrowUpRight size={15} />
-                  </a>
-                </div>
-              </Reveal>
-            ))}
+                        {f}
+                      </div>
+                      <div className="flex justify-center py-1.5">
+                        <ArrowDown size={15} className="text-forest" />
+                      </div>
+                    </li>
+                  ))}
+                  <li>
+                    <div className="t-title border-2 border-forest bg-forest-tint px-5 py-3.5 text-center text-[14.5px] text-forest">
+                      {h.insFlowBack}
+                    </div>
+                  </li>
+                </ol>
+                <p className="mt-7 border-t border-line pt-5 text-center text-[13.5px] leading-relaxed text-ink-3">
+                  {h.insFlowNote}
+                </p>
+              </div>
+            </Reveal>
           </div>
+
+          <Reveal delay={170}>
+            <Link
+              href={`/${lang}/contact`}
+              className="mt-12 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+            >
+              {h.insLink}
+              <ArrowUpRight size={15} />
+            </Link>
+            <p className="mt-8 max-w-2xl border-t border-line pt-6 text-[13px] leading-relaxed text-ink-4">
+              {h.bizNote}
+            </p>
+          </Reveal>
         </div>
       </section>
 
@@ -488,19 +493,22 @@ export default async function HomePage({
             </Reveal>
 
             <Reveal delay={120}>
-              <dl className="grid gap-x-8 gap-y-8 sm:grid-cols-3">
-                {h.trackMetrics.map((m) => (
-                  <div key={m.l} className="border-t border-line pt-4">
-                    <dt className="t-display t-num text-[28px] leading-none text-ink sm:text-[32px]">
-                      {m.n}
-                    </dt>
-                    <dd className="mt-2.5 text-[13px] leading-snug text-ink-3">
-                      {m.l}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <p className="mt-8 text-[12.5px] text-ink-4">{h.trackNote}</p>
+              <div className="border border-dashed border-ink-4/50 bg-bone px-6 py-7">
+                <p className="t-label text-ink-4">{h.trackMetricsLabel}</p>
+                <dl className="mt-6 grid gap-x-8 gap-y-8 sm:grid-cols-3">
+                  {h.trackMetrics.map((m) => (
+                    <div key={m.l}>
+                      <dt className="t-display t-num text-[26px] leading-none text-ink-3 sm:text-[30px]">
+                        {m.n}
+                      </dt>
+                      <dd className="mt-2.5 text-[13px] leading-snug text-ink-4">
+                        {m.l}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <p className="mt-5 text-[12.5px] text-ink-4">{h.trackNote}</p>
             </Reveal>
           </div>
         </div>
@@ -565,13 +573,15 @@ export default async function HomePage({
               {h.ctaLead}
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
-              <Link
-                href={`/${lang}/animai`}
+              <a
+                href={d.common.productUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-[15px] font-medium text-bone transition-colors hover:bg-forest-2"
               >
                 {h.ctaBtn}
                 <ArrowRight size={15} />
-              </Link>
+              </a>
               <Link
                 href={`/${lang}/contact`}
                 className="inline-flex items-center gap-2 rounded-full border border-line-dark px-6 py-3.5 text-[15px] font-medium text-bone transition-colors hover:border-forest-lit hover:text-forest-lit"
