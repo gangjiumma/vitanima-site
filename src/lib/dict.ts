@@ -445,7 +445,7 @@ export const dict = {
       intro: [
         "기술은 문제를 해결하기 위한 방법입니다.",
         "저는 먼저 현장에서 사람들이 어디에 시간을 쓰고 있는지 봅니다. 그리고 반복되는 문제를 직접 만들고, 운영하고, 사용자 반응으로 확인합니다.",
-        "Vitanima도 같은 방식으로 시작했습니다.",
+        "Vitanima도 같은 방식으로 시작했고, 지금은 반려동물의 일상 기록이 건강관리와 보험으로 이어질 수 있도록 만들고 있습니다.",
       ],
       name: "김훈기",
       role: "대표 · Founder · 기획 · 개발",
@@ -461,11 +461,11 @@ export const dict = {
       startQuote: ["여섯 번의 경험이 일곱 번째 아이에게", "그대로 이어지지 않았습니다"],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["제가 알고 있던 경험을,", "AI가 이어서 기억하게 만들고 싶었습니다"],
+      whyH2: ["기록이 남아 있었다면,", "더 일찍 확인할 수 있었습니다"],
       whyBody: [
         "보호자는 우리 아이를 가장 오래 보고 가장 많은 것을 알고 있습니다. 하지만 그 경험은 대화가 끝나거나 서비스가 바뀌면 다시 설명해야 했습니다.",
-        "그래서 평균을 추천하는 AI가 아니라, 보호자가 말한 경험과 생활의 변화를 한 아이의 시간 위에 계속 쌓는 AI를 만들기로 했습니다.",
-        "그렇게 AnimAI와 Lifetime Log를 만들었고, 이제 Care Tag의 생활신호까지 연결하고 있습니다.",
+        "병원 기록과 보험 기록은 대부분 문제가 생긴 뒤에 만들어집니다. 그전의 활동과 수면, 식사 변화는 어디에도 남지 않았습니다.",
+        "그래서 평균을 추천하는 AI가 아니라, 보호자가 말한 경험과 생활의 변화를 한 아이의 시간 위에 계속 쌓는 AI를 만들기로 했습니다. 그렇게 AnimAI와 Lifetime Log를 만들었고, 지금은 Care Tag의 생활신호와 보험 채널까지 연결하고 있습니다.",
       ],
       whyQuote: ["목표는 더 많은 답을 주는 것이 아니라,", "우리 아이를 다시 설명해야 하는 일을 줄이는 것입니다"],
 
@@ -483,12 +483,7 @@ export const dict = {
 
       careerH2: "경력",
       career: [
-        {
-          y: "2018–2025",
-          t: "GN누리",
-          r: "창업 · 대표",
-          d: "무역중개 · 중앙아시아",
-        },
+        { y: "2018–2025", t: "GN누리", r: "창업 · 대표", d: "무역중개 · 중앙아시아" },
         {
           y: "2019–2025",
           t: "GN로지텍",
@@ -499,20 +494,23 @@ export const dict = {
           y: "2019–2020",
           t: "GN밸류홀딩스",
           r: "창업 · 대표",
-          d: "펫택시 중개 플랫폼 '모시개냥' 개발",
+          d: "펫택시 중개 플랫폼 '모시개냥' 개발 · 반려동물 서비스 첫 시도",
         },
-        {
-          y: "2022–2023",
-          t: "이지로지",
-          r: "창업 · 대표",
-          d: "물류 SaaS 개발",
-        },
+        { y: "2022–2023", t: "이지로지", r: "창업 · 대표", d: "물류 SaaS 개발" },
         {
           y: "2026–현재",
           t: "Vitanima",
           r: "대표 · 기획 · 개발",
-          d: "반려동물 Lifetime AIoT AnimAI 개발",
+          d: "반려동물 헬스케어 AIoT · AnimAI · Care Tag 개발",
         },
+      ],
+
+      petEyebrow: "PET INDUSTRY EXPERIENCE",
+      petH2: ["반려동물 산업은", "이번이 처음이 아닙니다"],
+      petBody: [
+        "2019년 GN밸류홀딩스에서 반려동물 이동 서비스인 펫택시 중개 플랫폼 '모시개냥'을 만들었습니다.",
+        "그때 보호자들이 이동, 병원, 미용 같은 상황에서 어떤 정보를 반복해서 설명해야 하는지 직접 보았습니다.",
+        "그 경험이 지금 Vitanima에서 만들고 있는 기록 구조의 출발점이 되었습니다.",
       ],
 
       againEyebrow: "BUILDING AGAIN",
@@ -522,15 +520,15 @@ export const dict = {
         "아이디어를 오래 설명하기보다 먼저 작동하게 만들었습니다. AnimAI를 출시하고 실제 사용자에게 공개한 뒤, 사용자 반응을 보며 Lifetime Log와 Loop를 계속 고도화하고 있습니다.",
       ],
 
-      firstEyebrow: "VITANIMA · FIRST 3 MONTHS",
-      firstH2: ["기획부터 개발, 영업과 파일럿까지", "직접 실행했습니다"],
+      firstEyebrow: "VITANIMA · WHAT I BUILT",
+      firstH2: ["기획부터 개발, 기기와 보험까지", "직접 실행하고 있습니다"],
       firstGrid: [
-        { n: "01", t: "AnimAI 출시", d: "iOS · Android" },
+        { n: "01", t: "AnimAI 출시", d: "iOS · Android · 운영 중" },
         { n: "02", t: "Lifetime Log · Loop", d: "실제 코드 가동" },
-        { n: "03", t: "AnimAI Biz", d: "B2B Dashboard 개발" },
-        { n: "04", t: "특허 3건", d: "Loop 관련 출원" },
-        { n: "05", t: "초기 고객 확보", d: "사용자 확보 · B2B 영업" },
-        { n: "06", t: "Care Tag", d: "1대 집중 파일럿 진행" },
+        { n: "03", t: "특허 3건", d: "Loop 관련 출원" },
+        { n: "04", t: "Care Tag", d: "내부 파일럿 진행 중" },
+        { n: "05", t: "보험 비교견적", d: "서비스 준비 중" },
+        { n: "06", t: "초기 사용자 확보", d: "실사용 데이터 기반 개선" },
       ],
       firstNote: "지금도 대표가 기획·개발·백엔드·인프라를 직접 맡고 있습니다.",
 
@@ -581,10 +579,10 @@ export const dict = {
         "* 유통·마케팅·인증·투자/BD 파트너 후보군을 검토 중이며, 현재 계약 또는 공식 파트너십을 의미하지 않습니다.",
 
       closeEyebrow: "FROM THE FOUNDER",
-      closeH2: ["우리 아이에게 쌓인 시간이", "사라지지 않게 만들겠습니다"],
+      closeH2: ["평소의 기록이", "더 나은 판단으로 이어지게 만들겠습니다"],
       closeBody: [
         "보호자가 한 번 말한 경험이 다음 질문에 이어지고, 기기가 기록한 생활신호가 그때의 상황과 함께 남도록 만들고 있습니다.",
-        "한 아이의 기록이 한 달, 일 년, 평생 쌓일수록 그 아이를 더 잘 이해하는 AI. 그것이 Vitanima가 만들고 있는 Lifetime AIoT입니다.",
+        "그 기록이 건강관리에 쓰이고, 필요할 때 보험 선택에도 도움이 되도록 만드는 것이 Vitanima의 방향입니다.",
       ],
       sign: "(주)비타니마 대표이사 김훈기",
 
@@ -1606,7 +1604,7 @@ export const dict = {
       intro: [
         "Technology is a way to solve a problem.",
         "I look first at where people on the ground are spending their time. Then I build the recurring problem away myself, run it, and check it against how users respond.",
-        "Vitanima started the same way.",
+        "Vitanima started the same way, and we are now building so that an animal's everyday records can carry through to health care and insurance.",
       ],
       name: "Hunki Kim",
       role: "CEO · Founder · Product · Engineering",
@@ -1625,14 +1623,11 @@ export const dict = {
       ],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: [
-        "I wanted the AI to carry",
-        "the experience I already had",
-      ],
+      whyH2: ["Had the record been there,", "we could have noticed earlier"],
       whyBody: [
         "The caregiver has watched their animal longest and knows the most. Yet that experience had to be explained again whenever a conversation ended or a service changed.",
-        "So rather than an AI that recommends the average, I decided to build one that keeps accumulating what a caregiver has said, and how life changes, on one animal's timeline.",
-        "That became AnimAI and the Lifetime Log — and now we are connecting the Care Tag's life signals as well.",
+        "Clinic records and insurance records are mostly created after a problem appears. The changes in activity, sleep and meals before that were kept nowhere.",
+        "So rather than an AI that recommends the average, I decided to build one that keeps accumulating what a caregiver has said, and how life changes, on one animal's timeline. That became AnimAI and the Lifetime Log — and we are now connecting the Care Tag's life signals and the insurance channel as well.",
       ],
       whyQuote: [
         "The goal is not to give more answers,",
@@ -1664,15 +1659,23 @@ export const dict = {
           y: "2019–2020",
           t: "GN Value Holdings",
           r: "Founder · CEO",
-          d: "Pet taxi brokerage platform",
+          d: "Pet taxi brokerage platform · first venture in companion animals",
         },
         { y: "2022–2023", t: "EasyLogi", r: "Founder · CEO", d: "Logistics SaaS" },
         {
           y: "2026–present",
           t: "Vitanima",
           r: "CEO · Product · Engineering",
-          d: "Building the companion animal Lifetime AIoT, AnimAI",
+          d: "Companion animal healthcare AIoT · AnimAI · Care Tag",
         },
+      ],
+
+      petEyebrow: "PET INDUSTRY EXPERIENCE",
+      petH2: ["This is not my first venture", "in companion animals"],
+      petBody: [
+        "In 2019, at GN Value Holdings, I built a pet taxi brokerage platform for animal transport.",
+        "That was where I saw first-hand which information caregivers had to explain over and over — for transport, clinics, grooming.",
+        "That experience became the starting point for the record structure we are building at Vitanima today.",
       ],
 
       againEyebrow: "BUILDING AGAIN",
@@ -1685,18 +1688,18 @@ export const dict = {
         "Rather than explain an idea at length, I made it work first. AnimAI launched and opened to real users, and we keep developing the Lifetime Log and the Loop against how they respond.",
       ],
 
-      firstEyebrow: "VITANIMA · FIRST 3 MONTHS",
+      firstEyebrow: "VITANIMA · WHAT I BUILT",
       firstH2: [
-        "From product and engineering to sales and pilot,",
-        "I executed it directly",
+        "From product and engineering to device and insurance,",
+        "I am executing it directly",
       ],
       firstGrid: [
-        { n: "01", t: "AnimAI launched", d: "iOS · Android" },
+        { n: "01", t: "AnimAI launched", d: "iOS · Android · live" },
         { n: "02", t: "Lifetime Log · Loop", d: "Running in production" },
-        { n: "03", t: "AnimAI Biz", d: "B2B dashboard built" },
-        { n: "04", t: "3 patents", d: "Loop-related, filed" },
-        { n: "05", t: "Early customers", d: "User acquisition · B2B sales" },
-        { n: "06", t: "Care Tag", d: "Single-unit focused pilot" },
+        { n: "03", t: "3 patents", d: "Loop-related, filed" },
+        { n: "04", t: "Care Tag", d: "Internal pilot in progress" },
+        { n: "05", t: "Insurance comparison", d: "Service in preparation" },
+        { n: "06", t: "Early users", d: "Improving on real usage data" },
       ],
       firstNote:
         "Product, engineering, backend and infrastructure are still handled directly by the founder.",
@@ -1750,12 +1753,12 @@ export const dict = {
 
       closeEyebrow: "FROM THE FOUNDER",
       closeH2: [
-        "I will make sure the time accumulated",
-        "for your animal does not disappear",
+        "I will make everyday records",
+        "lead to better judgement",
       ],
       closeBody: [
         "We are building so that an experience a caregiver mentions once carries into the next question, and so that life signals recorded by a device remain alongside the situation they came from.",
-        "An AI that understands an animal better as their record accumulates over a month, a year, a lifetime. That is the Lifetime AIoT Vitanima is building.",
+        "Vitanima's direction is for that record to serve health care, and to help with insurance decisions when they are needed.",
       ],
       sign: "Hunki Kim, CEO, Vitanima Inc.",
 

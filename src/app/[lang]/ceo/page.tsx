@@ -198,6 +198,34 @@ export default async function CeoPage({
         </div>
       </section>
 
+      {/* ══ 04-B. PET INDUSTRY EXPERIENCE ════════ */}
+      <section className="border-b border-line">
+        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[280px_1fr] lg:gap-16">
+          <Reveal>
+            <p className="t-label text-forest">{c.petEyebrow}</p>
+            <h2 className="t-display mt-5 max-w-xs text-[24px] text-ink sm:text-[30px]">
+              {c.petH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </h2>
+          </Reveal>
+          <Reveal delay={90}>
+            <div className="max-w-2xl space-y-5 border-l-2 border-forest pl-6">
+              {c.petBody.map((p) => (
+                <p
+                  key={p.slice(0, 14)}
+                  className="text-[15.5px] leading-[1.95] text-ink-3"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ══ 05. BUILDING AGAIN ═══════════════════ */}
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[280px_1fr] lg:gap-16">
@@ -226,7 +254,7 @@ export default async function CeoPage({
         </div>
       </section>
 
-      {/* ══ 06. FIRST 3 MONTHS ═══════════════════ */}
+      {/* ══ 06. WHAT I BUILT ═════════════════════ */}
       <section className="bg-ink text-bone">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
