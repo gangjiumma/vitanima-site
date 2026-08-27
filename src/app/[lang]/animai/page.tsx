@@ -381,24 +381,85 @@ export default async function AnimaiPage({
         </div>
       </section>
 
-      {/* ══ 07. OBSERVATION SUBSCRIPTION ═════════ */}
+      {/* ══ 07. FROM RECORD TO INSURANCE ═════════ */}
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[280px_1fr] lg:gap-16">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
-            <p className="t-label text-forest">{a.subEyebrow}</p>
-          </Reveal>
-          <Reveal delay={90}>
-            <h2 className="t-display max-w-2xl text-[24px] text-ink sm:text-[30px]">
-              {a.subH2.map((line) => (
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="t-label text-forest">{a.insEyebrow}</p>
+              <span className="t-label rounded-full border border-line px-2.5 py-1 text-ink-4">
+                {a.insBadge}
+              </span>
+            </div>
+            <h2 className="t-display mt-5 max-w-3xl text-[28px] text-ink sm:text-[38px]">
+              {a.insH2.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h2>
-            <p className="mt-6 max-w-2xl text-[15.5px] leading-[1.9] text-ink-3">
-              {a.subBody}
+            <p className="t-title mt-6 max-w-2xl text-[16px] leading-[1.6] text-forest sm:text-[18px]">
+              {a.insSub}
             </p>
-            <p className="mt-4 text-[12.5px] text-ink-4">{a.subNote}</p>
+          </Reveal>
+
+          <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
+            <div>
+              {a.insItems.map((it, i) => (
+                <Reveal key={it.n} delay={i * 90}>
+                  <div className="border-t border-line py-6 last:border-b">
+                    <span className="t-label t-num text-forest">{it.n}</span>
+                    <h3 className="t-title mt-2.5 text-[19px] text-ink sm:text-[21px]">
+                      {it.t}
+                    </h3>
+                    <p className="mt-2.5 text-[14.5px] leading-[1.85] text-ink-3">
+                      {it.d}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            <Reveal delay={130}>
+              <div className="border border-line bg-bone-2 px-6 py-8 sm:px-8">
+                <ol>
+                  {a.insFlow.map((f, i) => (
+                    <li key={f}>
+                      <div
+                        className={`px-5 py-3.5 text-center text-[14.5px] ${
+                          i === 0
+                            ? "t-title border-2 border-forest bg-forest-tint text-forest"
+                            : "border border-line bg-bone text-ink"
+                        }`}
+                      >
+                        {f}
+                      </div>
+                      <div className="flex justify-center py-1.5">
+                        <ArrowDown size={15} className="text-forest" />
+                      </div>
+                    </li>
+                  ))}
+                  <li>
+                    <div className="t-title border-2 border-forest bg-forest-tint px-5 py-3.5 text-center text-[14.5px] text-forest">
+                      {a.insFlowBack}
+                    </div>
+                  </li>
+                </ol>
+                <p className="mt-7 border-t border-line pt-5 text-center text-[13.5px] leading-relaxed text-ink-3">
+                  {a.insFlowNote}
+                </p>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={170}>
+            <Link
+              href={`/${lang}/contact`}
+              className="mt-12 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
+            >
+              {a.insLink}
+              <ArrowUpRight size={15} />
+            </Link>
           </Reveal>
         </div>
       </section>
@@ -480,6 +541,9 @@ export default async function AnimaiPage({
               {a.bizLink}
               <ArrowUpRight size={15} />
             </a>
+            <p className="mt-8 max-w-2xl border-t border-line-dark pt-6 text-[13px] leading-relaxed text-ink-4">
+              {a.bizNote}
+            </p>
           </Reveal>
         </div>
       </section>

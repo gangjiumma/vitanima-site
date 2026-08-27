@@ -594,24 +594,24 @@ export const dict = {
       eyebrow: "SERVICE",
       tag: "운영 중",
       h1: "AnimAI",
-      tagline: ["대화로 시작해,", "한 아이의 시간을 쌓는 AI"],
+      tagline: ["대화와 기록을 연결하는", "반려동물 AI 서비스"],
       lead: [
-        "보호자가 걱정과 변화를 말하면, 그 내용은 Lifetime Log에 시간순으로 쌓입니다.",
-        "AnimAI는 이전 기록을 보고 다시 묻고, 새로 확인한 답을 다시 기록에 반영합니다. Care Tag가 연결되면 같은 시간의 활동·수면 신호까지 함께 봅니다.",
+        "보호자가 걱정과 변화를 말하면, AnimAI는 중요한 내용을 찾아 Lifetime Log의 해당 시점에 기록합니다.",
+        "이전 대화와 건강기록을 함께 보고 다시 확인하며, Care Tag가 연결되면 같은 시간의 활동·수면 신호까지 함께 봅니다.",
       ],
-      leadNote: "Care Tag가 없어도 대화만으로 Lifetime Log는 계속 쌓입니다.",
+      leadNote: "Care Tag가 없어도 대화와 건강기록만으로 Lifetime Log는 계속 쌓입니다.",
       iosBtn: "App Store",
       androidBtn: "Google Play",
       siteBtn: "animai.kr",
       status: [
         "AnimAI · Lifetime Log · 대화 기반 Loop 운영 중",
-        "Care Tag · 2026.08 1대 집중 테스트 진행 중",
+        "Care Tag · 2026.08 내부 파일럿 진행 중",
+        "보험 비교견적 · 서비스 준비 중",
       ],
 
       whyH2: "왜 만들었나",
       whyLead: ["같은 변화도,", "이유는 아이마다 다릅니다"],
-      whySub:
-        "우리 아이의 이유를 모르면, AI도 결국 평균적인 답을 하게 됩니다.",
+      whySub: "우리 아이의 이유를 모르면, AI도 결국 평균적인 답을 하게 됩니다.",
       whyBody: [
         "같은 '활동량 감소'라도 비가 와서 산책을 못 간 것인지, 전날 많이 움직여 쉬는 것인지, 몸이 불편한 것인지는 아이마다 다릅니다.",
         "숫자와 한 번의 질문만으로는 그 이유를 알기 어렵습니다. 그래서 AnimAI는 보호자의 말과 이전 기록을 함께 봅니다.",
@@ -688,7 +688,7 @@ export const dict = {
       ],
       logInputs: [
         { t: "대화", d: "보호자가 말한 걱정과 변화" },
-        { t: "생활신호", d: "Care Tag의 행동·수면 변화" },
+        { t: "생활신호", d: "Care Tag의 활동·수면 변화" },
         { t: "건강기록", d: "병원 기록 · 처방전 등" },
       ],
       logResult: "Lifetime Log",
@@ -697,11 +697,10 @@ export const dict = {
 
       signalEyebrow: "CARE TAG · PILOT IN PROGRESS",
       signalH2: ["보호자가 못 보는 시간은", "Care Tag가 기록합니다"],
-      signalSub:
-        "첫 제품은 행동과 수면 변화를 기록하는 BLE 웨어러블 태그입니다.",
+      signalSub: "활동과 수면 변화를 기록하는 BLE 웨어러블 태그입니다.",
       signalBody: [
-        "보호자는 우리 아이를 가장 잘 알지만, 하루 24시간을 모두 볼 수는 없습니다.",
-        "Care Tag가 행동과 수면 변화를 기록하면, AnimAI는 그 신호를 보호자의 대화와 같은 Lifetime Log에서 함께 봅니다.",
+        "집에서는 Home Station, 외출 중에는 보호자의 앱을 통해 Care Tag 신호를 수집합니다.",
+        "활동량이나 수면 패턴이 평소와 달라지면 AnimAI가 보호자에게 실제 상황을 확인하고, 그 설명을 Lifetime Log에 함께 기록합니다.",
       ],
       signalQuote: [
         "Care Tag는 숫자를 보여주는 데서 끝나지 않습니다.",
@@ -709,21 +708,45 @@ export const dict = {
       ],
       signalTagAlt: "Care Tag를 착용한 강아지와 고양이",
       signalTimeline: [
-        { d: "2026.08", t: "1대 집중 테스트 진행 중" },
-        { d: "2026.09", t: "앱 사용이 활발한 유저 30명부터 파일럿" },
-        { d: "NEXT", t: "최대 200대까지 단계적 확대" },
-        { d: "THEN", t: "검증 기준 충족 후 상용화" },
+        { d: "2026.08", t: "내부 파일럿 진행 중" },
+        {
+          d: "2026.09~10",
+          t: "활성 사용자 20명 대상 파일럿 및 ODM · KC 인증 착수",
+        },
+        { d: "NEXT", t: "추가 파일럿을 통해 누적 300대 검증" },
+        { d: "THEN", t: "검증 후 정식 출시" },
       ],
       signalTimelineNote:
-        "검증 기준 충족 후 ODM·인증·패키징을 거쳐 정식 출시합니다.",
+        "검증 기준 충족 후 ODM · 인증 · 패키징을 거쳐 정식 출시합니다.",
       signalHomeNote:
-        "2차 개발 예정 · 배변량, 급식량, 체중 등 Home Device로 신호원을 확장합니다.",
+        "Pre-A 이후 · 배변량, 급식량, 체중 등 Home Device로 신호원을 확장합니다.",
 
-      subEyebrow: "OBSERVATION SUBSCRIPTION",
-      subH2: ["Care Tag의 기록이", "지속적인 관찰로 이어집니다"],
-      subBody:
-        "Care Tag와 Lifetime Log를 바탕으로 평소와 달라진 변화를 계속 확인하는 관찰 구독을 준비하고 있습니다.",
-      subNote: "월 3,000원 계획 · 가격 및 구성은 현재 계획 기준입니다.",
+      insEyebrow: "FROM RECORD TO INSURANCE",
+      insBadge: "보험 비교견적 서비스 준비 중",
+      insH2: ["쌓인 기록으로", "우리 아이에게 맞는 보험을 비교합니다"],
+      insSub:
+        "품종과 나이만 다시 입력하는 비교가 아니라, 이미 쌓인 우리 아이의 기록에서 시작합니다.",
+      insItems: [
+        {
+          n: "01",
+          t: "기록에서 견적을 시작합니다",
+          d: "품종, 나이, 병력, 예방이력 등 Lifetime Log에 이미 있는 정보를 다시 활용합니다.",
+        },
+        {
+          n: "02",
+          t: "보험료와 보장조건을 함께 비교합니다",
+          d: "여러 상품을 한 곳에서 확인하고 우리 아이를 기준으로 비교할 수 있도록 준비하고 있습니다.",
+        },
+        {
+          n: "03",
+          t: "보험 이력도 다시 기록됩니다",
+          d: "가입, 청구, 갱신 결과를 Lifetime Log에 다시 연결해 보험 이력을 따로 관리해야 하는 불편을 줄입니다.",
+        },
+      ],
+      insFlow: ["Lifetime Log", "우리 아이 기준 비교견적", "가입", "청구", "갱신"],
+      insFlowBack: "Lifetime Log",
+      insFlowNote: "평소의 기록이 보험 가입 전과 후를 계속 이어줍니다.",
+      insLink: "보험 서비스 준비 현황 보기",
 
       bizH2: "AnimAI Biz",
       bizBadge: "가동 중 · LIVE",
@@ -748,9 +771,11 @@ export const dict = {
         "현장 결제",
         "보호자 앱과 연결",
       ],
+      bizNote:
+        "제휴 펫 업장은 Care Tag를 직접 체험하고 만날 수 있는 지역 접점으로 확장할 예정입니다.",
       bizLink: "AnimAI Biz 알아보기",
 
-      ctaH2: ["시간이 쌓일수록,", "우리 아이를 더 잘 알게 됩니다"],
+      ctaH2: ["매일의 기록이", "건강관리에서 보험까지 이어집니다"],
       ctaLead:
         "AnimAI는 보호자의 대화를 Lifetime Log에 쌓고, 이전 기록을 기억해 다시 묻습니다. Care Tag의 생활신호까지 연결되면 보호자가 보지 못한 시간도 같은 기록 위에서 이어집니다.",
       ctaBtn: "AnimAI 시작하기",
@@ -1770,19 +1795,20 @@ export const dict = {
       eyebrow: "SERVICE",
       tag: "Live",
       h1: "AnimAI",
-      tagline: ["Starts with conversation,", "accumulates one animal's time"],
+      tagline: ["A companion animal AI service", "connecting conversation and record"],
       lead: [
-        "When a caregiver mentions a worry or a change, it accumulates in the Lifetime Log in chronological order.",
-        "AnimAI looks at earlier records, asks again, and folds each newly confirmed answer back in. Once a Care Tag is connected, it also sees activity and sleep signals from the same hours.",
+        "When a caregiver mentions a worry or a change, AnimAI finds what matters and records it at that point in the Lifetime Log.",
+        "It reads earlier conversations and health records together and checks again; once a Care Tag is connected, it also sees activity and sleep signals from the same hours.",
       ],
       leadNote:
-        "Even without a Care Tag, the Lifetime Log keeps accumulating from conversation alone.",
+        "Even without a Care Tag, the Lifetime Log keeps accumulating from conversation and health records alone.",
       iosBtn: "App Store",
       androidBtn: "Google Play",
       siteBtn: "animai.kr",
       status: [
         "AnimAI · Lifetime Log · conversation-based Loop live",
-        "Care Tag · focused single-unit test in progress, Aug 2026",
+        "Care Tag · internal pilot in progress, Aug 2026",
+        "Insurance comparison · service in preparation",
       ],
 
       whyH2: "Why we built it",
@@ -1868,7 +1894,7 @@ export const dict = {
       ],
       logInputs: [
         { t: "Conversation", d: "Worries and changes the caregiver mentions" },
-        { t: "Life signals", d: "Behaviour and sleep changes from the Care Tag" },
+        { t: "Life signals", d: "Activity and sleep changes from the Care Tag" },
         { t: "Health records", d: "Clinic records, prescriptions and more" },
       ],
       logResult: "Lifetime Log",
@@ -1878,11 +1904,10 @@ export const dict = {
 
       signalEyebrow: "CARE TAG · PILOT IN PROGRESS",
       signalH2: ["The hours you cannot see,", "the Care Tag records"],
-      signalSub:
-        "The first product is a BLE wearable tag that records behaviour and sleep changes.",
+      signalSub: "A BLE wearable tag that records activity and sleep changes.",
       signalBody: [
-        "Caregivers know their animals best, but nobody can watch all 24 hours.",
-        "As the Care Tag records behaviour and sleep changes, AnimAI reads those signals in the same Lifetime Log as the caregiver's conversation.",
+        "At home the Home Station collects Care Tag signals; while out, the caregiver's app does.",
+        "When activity or sleep patterns differ from the usual, AnimAI checks the actual situation with the caregiver and records that account in the Lifetime Log.",
       ],
       signalQuote: [
         "The Care Tag does not stop at showing numbers.",
@@ -1890,22 +1915,54 @@ export const dict = {
       ],
       signalTagAlt: "A dog and a cat wearing the Care Tag",
       signalTimeline: [
-        { d: "Aug 2026", t: "Focused test on one unit, in progress" },
-        { d: "Sep 2026", t: "Pilot starting with 30 highly active users" },
-        { d: "NEXT", t: "Phased expansion up to 200 units" },
-        { d: "THEN", t: "Commercialisation once validation criteria are met" },
+        { d: "Aug 2026", t: "Internal pilot in progress" },
+        {
+          d: "Sep–Oct 2026",
+          t: "Pilot with 20 active users; ODM and KC certification begins",
+        },
+        { d: "NEXT", t: "Further pilots toward 300 units validated" },
+        { d: "THEN", t: "Launch after validation" },
       ],
       signalTimelineNote:
         "Once validation criteria are met, launch follows ODM, certification and packaging.",
       signalHomeNote:
-        "Planned for second-phase development · expanding signal sources to Home Devices for toileting, feeding and weight.",
+        "After Pre-A · expanding signal sources to Home Devices for toileting, feeding and weight.",
 
-      subEyebrow: "OBSERVATION SUBSCRIPTION",
-      subH2: ["The Care Tag's records", "continue as ongoing observation"],
-      subBody:
-        "Building on the Care Tag and the Lifetime Log, we are preparing an observation subscription that keeps checking what differs from the usual.",
-      subNote:
-        "Planned at ₩3,000/month · pricing and composition are current plans.",
+      insEyebrow: "FROM RECORD TO INSURANCE",
+      insBadge: "Insurance comparison service in preparation",
+      insH2: [
+        "Comparing insurance that fits your animal,",
+        "from the record already accumulated",
+      ],
+      insSub:
+        "Not a comparison where you re-enter breed and age, but one that starts from your animal's existing record.",
+      insItems: [
+        {
+          n: "01",
+          t: "Quotes start from the record",
+          d: "Breed, age, medical history and preventive care already in the Lifetime Log are reused.",
+        },
+        {
+          n: "02",
+          t: "Premiums and coverage compared together",
+          d: "We are preparing a place to review multiple products and compare them against your animal.",
+        },
+        {
+          n: "03",
+          t: "Insurance history is recorded too",
+          d: "Enrolment, claims and renewals reconnect to the Lifetime Log, so insurance history isn't managed separately.",
+        },
+      ],
+      insFlow: [
+        "Lifetime Log",
+        "Comparison against your animal",
+        "Enrolment",
+        "Claims",
+        "Renewal",
+      ],
+      insFlowBack: "Lifetime Log",
+      insFlowNote: "Everyday records carry through, before and after enrolment.",
+      insLink: "See how the insurance service is progressing",
 
       bizH2: "AnimAI Biz",
       bizBadge: "LIVE",
@@ -1933,9 +1990,14 @@ export const dict = {
         "Pay on site",
         "Connected back to the app",
       ],
+      bizNote:
+        "Partner pet businesses will expand as local touchpoints where caregivers can try the Care Tag in person.",
       bizLink: "About AnimAI Biz",
 
-      ctaH2: ["As time accumulates,", "you know your animal better"],
+      ctaH2: [
+        "Everyday records carry through,",
+        "from health care to insurance",
+      ],
       ctaLead:
         "AnimAI accumulates a caregiver's conversation into the Lifetime Log, remembers earlier records and asks again. Once the Care Tag's life signals connect, the hours you couldn't watch continue on that same record.",
       ctaBtn: "Start with AnimAI",
