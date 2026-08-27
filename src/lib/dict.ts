@@ -238,27 +238,27 @@ export const dict = {
     },
     about: {
       eyebrow: "COMPANY",
-      h1: ["AI가", "우리 아이를", "이해하게 만듭니다"],
+      h1: ["반려동물의 일상을 기록하고,", "건강과 보험으로 연결합니다"],
       lead: [
-        "비타니마는 한 아이에게 쌓이는 대화와 생활신호를 기록해, 시간이 지날수록 우리 아이를 더 잘 이해하는 Lifetime AIoT를 만드는 회사입니다.",
-        "기기가 생활을 관찰하고, Lifetime Log가 시간을 쌓고, AnimAI가 그 기록을 기억하고 다시 사용합니다.",
+        "비타니마는 반려동물의 활동과 수면, 보호자의 대화와 건강기록을 Lifetime Log에 쌓는 회사입니다.",
+        "AI 서비스에서 시작해 지금은 웨어러블 기기와 보험 채널까지 함께 만들고 있습니다.",
       ],
       heroFlow: [
-        { t: "Care Tag", d: "생활을 관찰합니다" },
-        { t: "Lifetime Log", d: "시간을 쌓습니다" },
-        { t: "AnimAI", d: "기록을 다시 씁니다" },
+        { t: "Care Tag", d: "일상의 변화를 감지" },
+        { t: "AnimAI", d: "묻고 해석" },
+        { t: "Lifetime Log", d: "시간순으로 기록" },
       ],
-      heroFlowCenter: "시간이 쌓일수록 우리 아이를 더 잘 아는 AI",
+      heroFlowCenter: "기록이 건강관리와 보험으로 이어집니다",
 
       missionLabel: "MISSION",
-      mission: ["한 아이의 평소를 기록하고,", "시간이 지날수록 더 잘 이해하는 기술을 만듭니다"],
+      mission: ["아픈 뒤가 아니라,", "평소의 변화를 먼저 기록합니다"],
       missionBody:
-        "같은 견종과 나이라도 성향, 기호, 알레르기, 생활습관과 변화는 모두 다릅니다. 비타니마는 평균적인 정보보다 한 아이에게 실제로 쌓인 기록을 기준으로 이해하는 기술을 만듭니다.",
+        "병원 기록과 보험 기록은 대부분 문제가 생긴 뒤에 만들어집니다. 비타니마는 그 이전의 활동과 수면, 식사와 생활의 변화를 먼저 기록해 보호자가 더 일찍 확인할 수 있도록 합니다.",
       visionLabel: "VISION",
-      vision: ["모든 반려동물이", "자기만의 Lifetime AI를 갖는 것"],
+      vision: ["모든 반려동물이", "자기만의 건강 기록을 갖는 것"],
       visionBody:
-        "한 번 입력한 정보로 끝나는 AI가 아니라, 대화와 생활신호가 평생 이어지고 그 시간이 다시 다음 질문과 선택에 쓰이는 AI를 만듭니다.",
-      turnBody: ["한 번의 답보다,", "한 아이에게 쌓인 시간이 더 중요합니다"],
+        "한 번 입력하고 끝나는 정보가 아니라, 생활과 건강, 보험 이력까지 이어지는 기록. 그 기록이 다음 판단과 선택에 실제로 쓰이는 것을 목표로 합니다.",
+      turnBody: ["기록이 쌓일수록,", "더 일찍 확인하고 더 잘 판단할 수 있습니다"],
 
       whyEyebrow: "WHY VITANIMA",
       whyH2: ["여섯 마리를 키워도,", "다음 아이는 또 처음이었습니다"],
@@ -276,7 +276,7 @@ export const dict = {
       storyH2: "여기까지 온 길",
       storyLead: [
         "비타니마는 처음부터 반려동물 산업에서 시작한 회사가 아닙니다.",
-        "무역과 물류 현장에서 반복되는 문제를 직접 겪고, 그것을 시스템으로 바꾸는 일을 해왔습니다. 그리고 지금은 같은 실행 방식으로 한 아이의 시간이 다음 선택에 이어지게 만드는 일을 하고 있습니다.",
+        "무역과 물류 현장에서 반복되는 문제를 직접 겪고, 그것을 시스템으로 바꾸는 일을 해왔습니다. 그리고 지금은 같은 실행 방식으로 반려동물의 일상을 기록으로 만드는 일을 하고 있습니다.",
       ],
       story: [
         {
@@ -303,19 +303,49 @@ export const dict = {
         {
           y: "2026 · NOW",
           k: "EXECUTE",
-          t: "아이디어보다 먼저 작동하게 만들었습니다",
-          d: "AnimAI와 Lifetime Log를 실제 사용자에게 공개하고, B2B Dashboard와 인프라를 구축했습니다. Loop 관련 특허 3건을 출원하고, Care Tag의 1대 집중 파일럿까지 진행하고 있습니다.",
+          t: "AI에서 기기와 보험으로 확장하고 있습니다",
+          d: "AnimAI와 Lifetime Log를 실제 사용자에게 공개하고, Loop 관련 특허 3건을 출원했습니다. 지금은 Care Tag 파일럿과 보험 비교견적 서비스 준비를 함께 진행하고 있습니다.",
           note: "",
           metrics: [
-            { n: "iOS · Android", l: "AnimAI 출시" },
+            { n: "iOS · Android", l: "AnimAI 운영 중" },
             { n: "3건", l: "Loop 관련 특허 출원" },
-            { n: "Pilot", l: "Care Tag 1대 집중 테스트" },
+            { n: "Pilot", l: "Care Tag 내부 파일럿" },
           ],
         },
       ],
       storyClose: ["산업은 달라졌지만,", "문제를 푸는 방식은 같습니다"],
       storyCloseBody:
         "사용자가 이미 알고 있는 것을 기술이 이어받고, 반복되는 과정에 쓰이던 시간을 줄이는 것. 산업은 달라져도 Vitanima가 문제를 푸는 방식은 같습니다.",
+
+      buildEyebrow: "WHAT WE BUILD",
+      buildH2: ["세 가지를 함께 만들고,", "하나의 기록으로 잇습니다"],
+      buildSub:
+        "AI 서비스와 웨어러블 기기, 보험 채널이 같은 Lifetime Log 위에서 이어집니다.",
+      build: [
+        {
+          n: "01",
+          t: "AnimAI",
+          s: "운영 중",
+          live: true,
+          d: "보호자의 대화에서 중요한 내용을 찾아 Lifetime Log에 기록하고, 이전 기록과 연결해 다시 확인하는 AI 서비스입니다.",
+        },
+        {
+          n: "02",
+          t: "Care Tag",
+          s: "파일럿 진행 중",
+          live: false,
+          d: "활동과 수면 변화를 기록하는 BLE 웨어러블 기기입니다. 집에서는 Home Station, 외출 중에는 보호자의 앱을 통해 신호를 수집합니다.",
+        },
+        {
+          n: "03",
+          t: "보험 비교견적",
+          s: "준비 중",
+          live: false,
+          d: "Lifetime Log에 이미 쌓인 정보로 우리 아이에게 맞는 보험을 비교하고, 가입 이후의 이력도 다시 기록으로 연결합니다.",
+        },
+      ],
+      buildNote:
+        "제휴 펫 업장은 Care Tag를 직접 체험하고 만날 수 있는 지역 접점으로 확장할 예정입니다.",
 
       valuesH2: "우리가 지키는 것",
       values: [
@@ -331,7 +361,7 @@ export const dict = {
         },
         {
           n: "03",
-          t: "시간이 쌓일수록 더 잘 알아야 합니다",
+          t: "기록이 쌓일수록 더 잘 알아야 합니다",
           d: "한 번 쓰고 끝나는 기능이 아니라, 기록이 쌓일수록 우리 아이를 더 잘 이해하는 서비스를 만듭니다.",
         },
         {
@@ -358,8 +388,11 @@ export const dict = {
       facts: [
         { k: "법인명", v: "주식회사 비타니마 (Vitanima Inc.)" },
         { k: "대표이사", v: "김훈기" },
-        { k: "사업 분야", v: "반려동물 Lifetime AIoT · 데이터 플랫폼" },
-        { k: "주요 제품·서비스", v: "AnimAI · AnimAI Biz · Care Tag (파일럿)" },
+        { k: "사업 분야", v: "반려동물 헬스케어 AIoT · 데이터 · 보험 연계" },
+        {
+          k: "주요 제품·서비스",
+          v: "AnimAI (운영 중) · Care Tag (파일럿) · 보험 비교견적 (준비 중)",
+        },
         { k: "전화", v: "010-2358-5248" },
         { k: "이메일", v: "cs@vitanima.kr" },
         { k: "사업자등록번호", v: "284-88-02356" },
@@ -374,8 +407,8 @@ export const dict = {
         {
           y: "2026–현재",
           t: "주식회사 비타니마",
-          d: "반려동물 AIoT AnimAI 개발 및 운영",
-          sub: "AnimAI · Lifetime Log 운영 / Care Tag 파일럿",
+          d: "반려동물 헬스케어 AIoT 개발 및 운영",
+          sub: "AnimAI · Lifetime Log 운영 / Care Tag 파일럿 · 보험 비교견적 준비",
         },
         {
           y: "2022–2023",
@@ -398,10 +431,10 @@ export const dict = {
         { y: "2018–2025", t: "GN누리", d: "무역중개 · 중앙아시아", sub: "" },
       ],
 
-      ctaH2: ["비타니마가 만드는", "Lifetime AIoT를 만나보세요"],
+      ctaH2: ["비타니마가 만드는", "기록을 확인해보세요"],
       ctaLead:
-        "AnimAI와 Lifetime Log는 이미 실제 사용자와 함께 작동하고 있습니다. 이제 Care Tag의 생활신호를 연결해, 보호자가 보지 못한 시간까지 한 아이의 기록으로 쌓아가고 있습니다.",
-      ctaNote: "Home Device는 향후 확장 예정입니다.",
+        "AnimAI와 Lifetime Log는 이미 실제 사용자와 함께 작동하고 있습니다. 지금은 Care Tag의 생활신호와 보험 채널을 연결하는 검증을 진행하고 있습니다.",
+      ctaNote: "Home Device는 Pre-A 이후 확장 예정입니다.",
       ctaBtn: "AnimAI 알아보기",
       ctaBtn2: "대표 이야기 보기",
     },
@@ -1342,32 +1375,35 @@ export const dict = {
     },
     about: {
       eyebrow: "COMPANY",
-      h1: ["Making AI", "understand", "your animal"],
+      h1: [
+        "Recording an animal's everyday life,",
+        "connecting it to health and insurance",
+      ],
       lead: [
-        "Vitanima records the conversations and life signals that accumulate for one animal, building a Lifetime AIoT that understands them better as time passes.",
-        "The device observes daily life, the Lifetime Log accumulates time, and AnimAI remembers that record and uses it again.",
+        "Vitanima accumulates an animal's activity and sleep, the caregiver's conversations and health records, into the Lifetime Log.",
+        "We started with an AI service and are now building the wearable device and the insurance channel alongside it.",
       ],
       heroFlow: [
-        { t: "Care Tag", d: "It observes daily life" },
-        { t: "Lifetime Log", d: "It accumulates time" },
-        { t: "AnimAI", d: "It uses the record again" },
+        { t: "Care Tag", d: "Detects everyday change" },
+        { t: "AnimAI", d: "Asks and interprets" },
+        { t: "Lifetime Log", d: "Records chronologically" },
       ],
-      heroFlowCenter: "An AI that knows your animal better as time accumulates",
+      heroFlowCenter: "The record carries through to health care and insurance",
 
       missionLabel: "MISSION",
       mission: [
-        "Record what is normal for one animal,",
-        "and understand them better as time passes",
+        "Record the ordinary changes first,",
+        "not what happens after illness",
       ],
       missionBody:
-        "Even at the same breed and age, temperament, preferences, allergies, habits and changes all differ. Vitanima builds technology that reads from the record actually accumulated for one animal, rather than from average information.",
+        "Clinic records and insurance records are mostly created after a problem appears. Vitanima records what comes before — activity, sleep, meals and changes in daily life — so caregivers can notice earlier.",
       visionLabel: "VISION",
-      vision: ["Every companion animal", "with a Lifetime AI of their own"],
+      vision: ["Every companion animal", "with a health record of their own"],
       visionBody:
-        "Not an AI that ends with what you entered once, but one where conversation and life signals continue for a lifetime, and that time feeds the next question and the next choice.",
+        "Not information entered once, but a record that carries through daily life, health and insurance history. Our aim is for that record to be genuinely used in the next judgement and choice.",
       turnBody: [
-        "More than any single answer,",
-        "the time accumulated for one animal matters",
+        "The more the record accumulates,",
+        "the earlier you notice and the better you judge",
       ],
 
       whyEyebrow: "WHY VITANIMA",
@@ -1394,7 +1430,7 @@ export const dict = {
       storyH2: "How we got here",
       storyLead: [
         "Vitanima did not start out in the companion animal industry.",
-        "We met repeating problems first-hand on trade and logistics floors, and turned them into systems. Now we apply the same way of working so that one animal's time carries into the next choice.",
+        "We met repeating problems first-hand on trade and logistics floors, and turned them into systems. Now we apply the same way of working to turn an animal's everyday life into a record.",
       ],
       story: [
         {
@@ -1421,19 +1457,49 @@ export const dict = {
         {
           y: "2026 · NOW",
           k: "EXECUTE",
-          t: "We made it work before we talked about it",
-          d: "AnimAI and the Lifetime Log are open to real users, with a B2B dashboard and infrastructure in place. We have filed three Loop-related patents and are running a focused single-unit pilot of the Care Tag.",
+          t: "Expanding from AI into device and insurance",
+          d: "AnimAI and the Lifetime Log are open to real users, and three Loop-related patents have been filed. We are now running the Care Tag pilot and preparing the insurance comparison service in parallel.",
           note: "",
           metrics: [
-            { n: "iOS · Android", l: "AnimAI launched" },
+            { n: "iOS · Android", l: "AnimAI live" },
             { n: "3", l: "Loop-related patents filed" },
-            { n: "Pilot", l: "Care Tag single-unit test" },
+            { n: "Pilot", l: "Care Tag internal pilot" },
           ],
         },
       ],
       storyClose: ["The industry changed.", "The way we solve it did not."],
       storyCloseBody:
         "Have technology take over what users already know, and cut the time spent on what repeats. The industry may change; the way Vitanima solves problems does not.",
+
+      buildEyebrow: "WHAT WE BUILD",
+      buildH2: ["Three things built together,", "joined by one record"],
+      buildSub:
+        "The AI service, the wearable device and the insurance channel all connect on the same Lifetime Log.",
+      build: [
+        {
+          n: "01",
+          t: "AnimAI",
+          s: "Live",
+          live: true,
+          d: "An AI service that finds what matters in a caregiver's conversation, records it in the Lifetime Log, and connects it to earlier records to check again.",
+        },
+        {
+          n: "02",
+          t: "Care Tag",
+          s: "Pilot in progress",
+          live: false,
+          d: "A BLE wearable that records activity and sleep changes. At home the Home Station collects the signal; while out, the caregiver's app does.",
+        },
+        {
+          n: "03",
+          t: "Insurance comparison",
+          s: "In preparation",
+          live: false,
+          d: "Compare insurance that fits your animal using what is already in the Lifetime Log, and reconnect post-enrolment history back into the record.",
+        },
+      ],
+      buildNote:
+        "Partner pet businesses will expand as local touchpoints where caregivers can try the Care Tag in person.",
 
       valuesH2: "What we hold to",
       values: [
@@ -1449,7 +1515,7 @@ export const dict = {
         },
         {
           n: "03",
-          t: "The more time accumulates, the better we should know",
+          t: "The more the record accumulates, the better we should know",
           d: "Not a feature used once, but a service that understands your animal better as the record grows.",
         },
         {
@@ -1476,10 +1542,13 @@ export const dict = {
       facts: [
         { k: "Legal name", v: "Vitanima Inc. (주식회사 비타니마)" },
         { k: "CEO", v: "Hunki Kim" },
-        { k: "Field", v: "Companion animal Lifetime AIoT · data platform" },
+        {
+          k: "Field",
+          v: "Companion animal healthcare AIoT · data · insurance",
+        },
         {
           k: "Products & services",
-          v: "AnimAI · AnimAI Biz · Care Tag (pilot)",
+          v: "AnimAI (live) · Care Tag (pilot) · Insurance comparison (in preparation)",
         },
         { k: "Phone", v: "+82 10-2358-5248" },
         { k: "Email", v: "cs@vitanima.kr" },
@@ -1499,8 +1568,8 @@ export const dict = {
         {
           y: "2026–present",
           t: "Vitanima Inc.",
-          d: "Building and running the companion animal AIoT, AnimAI",
-          sub: "AnimAI · Lifetime Log live / Care Tag pilot",
+          d: "Building and running companion animal healthcare AIoT",
+          sub: "AnimAI · Lifetime Log live / Care Tag pilot · insurance comparison in preparation",
         },
         {
           y: "2022–2023",
@@ -1523,10 +1592,10 @@ export const dict = {
         { y: "2018–2025", t: "GN Nuri", d: "Trade brokerage · Central Asia", sub: "" },
       ],
 
-      ctaH2: ["Meet the Lifetime AIoT", "Vitanima is building"],
+      ctaH2: ["See the record", "Vitanima is building"],
       ctaLead:
-        "AnimAI and the Lifetime Log are already working with real users. Now we are connecting the Care Tag's life signals, so even the hours a caregiver cannot see become part of one animal's record.",
-      ctaNote: "Home Device is planned as a future expansion.",
+        "AnimAI and the Lifetime Log are already working with real users. We are now validating how the Care Tag's life signals and the insurance channel connect.",
+      ctaNote: "Home Device expansion is planned after Pre-A.",
       ctaBtn: "About AnimAI",
       ctaBtn2: "Read from the CEO",
     },

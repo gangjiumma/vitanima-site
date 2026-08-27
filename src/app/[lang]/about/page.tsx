@@ -258,6 +258,64 @@ export default async function AboutPage({
         </div>
       </section>
 
+      {/* ── WHAT WE BUILD ────────────────────────── */}
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <Reveal>
+            <p className="t-label text-forest">{a.buildEyebrow}</p>
+            <h2 className="t-display mt-5 text-[28px] text-ink sm:text-[38px]">
+              {a.buildH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </h2>
+            <p className="t-title mt-6 max-w-2xl text-[16px] leading-[1.6] text-forest sm:text-[18px]">
+              {a.buildSub}
+            </p>
+          </Reveal>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {a.build.map((b, i) => (
+              <Reveal key={b.n} delay={i * 100}>
+                <div
+                  className={`h-full border p-6 ${
+                    b.live
+                      ? "border-forest bg-forest-tint"
+                      : "border-line bg-bone-2"
+                  }`}
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <span className="t-label t-num text-forest">{b.n}</span>
+                    <span
+                      className={`t-label rounded-full px-2.5 py-1 ${
+                        b.live
+                          ? "bg-forest text-bone"
+                          : "border border-line text-ink-4"
+                      }`}
+                    >
+                      {b.s}
+                    </span>
+                  </div>
+                  <h3 className="t-title mt-4 text-[22px] text-ink sm:text-[24px]">
+                    {b.t}
+                  </h3>
+                  <p className="mt-3.5 text-[14.5px] leading-[1.85] text-ink-3">
+                    {b.d}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={150}>
+            <p className="mt-10 max-w-2xl border-t border-line pt-6 text-[13px] leading-relaxed text-ink-4">
+              {a.buildNote}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── 우리가 지키는 것 ─────────────────────── */}
       <section className="border-b border-line bg-bone-2">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
