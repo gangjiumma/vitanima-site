@@ -458,7 +458,7 @@ export default async function HomePage({
             {h.proofs.map((p, i) => (
               <Reveal key={p.l} delay={i * 80}>
                 <div className="border-t-2 border-forest pt-5">
-                  <dt className="t-display t-num text-[34px] leading-none text-forest sm:text-[42px]">
+                  <dt className="t-display t-num whitespace-nowrap text-[32px] leading-none text-forest sm:text-[40px]">
                     {p.n}
                   </dt>
                   <dd className="mt-3 text-[14px] leading-relaxed text-ink-3">
@@ -498,7 +498,7 @@ export default async function HomePage({
                 <dl className="mt-6 grid gap-x-8 gap-y-8 sm:grid-cols-3">
                   {h.trackMetrics.map((m) => (
                     <div key={m.l}>
-                      <dt className="t-display t-num text-[26px] leading-none text-ink-3 sm:text-[30px]">
+                      <dt className="t-display t-num whitespace-nowrap text-[24px] leading-none text-ink-3 sm:text-[28px]">
                         {m.n}
                       </dt>
                       <dd className="mt-2.5 text-[13px] leading-snug text-ink-4">

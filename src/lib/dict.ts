@@ -220,7 +220,7 @@ export const dict = {
       trackMetricsLabel: "NEXT 12 MONTHS",
       trackMetrics: [
         { n: "2,000대", l: "Care Tag 판매 목표" },
-        { n: "750~1,000명", l: "유료 관찰 구독 목표" },
+        { n: "1,000명", l: "유료 관찰 구독 목표" },
         { n: "300건", l: "펫보험 가입 목표" },
       ],
       trackNote: "* 위 수치는 현재 실적이 아니라 향후 12개월 목표입니다.",
@@ -1391,7 +1391,7 @@ export const dict = {
       trackMetricsLabel: "NEXT 12 MONTHS",
       trackMetrics: [
         { n: "2,000", l: "Care Tag units, sales target" },
-        { n: "750–1,000", l: "Paid observation subscriptions, target" },
+        { n: "1,000", l: "Paid observation subscriptions, target" },
         { n: "300", l: "Pet insurance enrolments, target" },
       ],
       trackNote:
