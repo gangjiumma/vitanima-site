@@ -462,10 +462,12 @@ export default async function AboutPage({
             <p className="mt-7 max-w-lg text-[15.5px] leading-[1.9] text-bone/70">
               {a.ctaLead}
             </p>
-            <p className="mt-5 text-[12.5px] text-bone/45">{a.ctaNote}</p>
+            {a.ctaNote ? (
+              <p className="mt-5 text-[12.5px] text-bone/45">{a.ctaNote}</p>
+            ) : null}
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <Link
-                href={`/${lang}/animai`}
+                href={`/${lang}/flowstamp`}
                 className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-[15px] font-medium text-bone transition-colors hover:bg-forest-2"
               >
                 {a.ctaBtn}

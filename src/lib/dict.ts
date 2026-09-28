@@ -33,7 +33,8 @@ export const dict = {
     nav: {
       about: "회사",
       ceo: "대표",
-      animai: "서비스",
+      flowstamp: "Flowstamp",
+      animai: "AnimAI",
       technology: "기술",
       news: "뉴스",
       careers: "채용",
@@ -48,6 +49,8 @@ export const dict = {
       phone: "010-2358-5248",
       phoneHref: "tel:+821023585248",
       productUrl: "https://www.animai.kr",
+      flowstampUrl: "https://www.flowstamp.kr",
+      salesEmail: "cs@vitanima.kr",
       dashboardUrl: "https://www.animai.kr/business",
       iosUrl: "https://apps.apple.com/kr/app/id6760122477",
       androidUrl:
@@ -57,220 +60,260 @@ export const dict = {
     },
 
     home: {
-      eyebrow: "PET HEALTH AIoT",
-      h1: ["매일의 기록으로", "건강 변화를 먼저 보고,", "보험까지 연결합니다"],
+      eyebrow: "AX FOR SMALL BUSINESS",
+      h1: ["현장의 기록이", "다음 단계로", "이어지게 만듭니다"],
       lead: [
-        "비타니마는 Care Tag가 관찰한 활동과 수면 변화, 보호자의 대화와 건강기록을 Lifetime Log에 쌓습니다.",
-        "평소와 다른 변화를 더 일찍 확인하고, 쌓인 기록을 건강관리와 보험에 활용할 수 있도록 만듭니다.",
+        "비타니마는 소상공인과 중소기업의 AX(AI 전환)를 돕는 회사입니다.",
+        "현장에서 만들어진 정보가 사람 손을 거치지 않고 다음 사람에게 닿도록, 두 개의 서비스를 만들고 있습니다.",
       ],
-      ctaPrimary: "AnimAI 시작하기",
-      ctaSecondary: "어떻게 작동하나요",
+      ctaPrimary: "Flowstamp 도입 문의",
+      ctaSecondary: "우리가 푸는 문제",
 
-      heroFlow: [
-        {
-          k: "01",
-          en: "CARE TAG",
-          t: "변화를 감지합니다",
-          d: "보호자가 보지 못한 시간의 활동과 수면 변화를 기록합니다.",
-        },
-        {
-          k: "02",
-          en: "ANIMAI",
-          t: "묻고 해석합니다",
-          d: "생활신호와 보호자의 말을 함께 보고, 평소와 다른 변화가 있었는지 확인합니다.",
-        },
-        {
-          k: "03",
-          en: "LIFETIME LOG",
-          t: "시간순으로 기록합니다",
-          d: "대화, 생활신호, 건강기록을 한 아이의 장기 기록으로 쌓습니다.",
-        },
-      ],
-      heroFlowCenter:
-        "관찰한 신호와 보호자의 설명이 한 아이의 Lifetime Log가 됩니다.",
-
-      problemEyebrow: "WHY IT MATTERS",
-      problemH2: ["아픈 날보다,", "평소의 작은 변화가 먼저 보입니다"],
+      problemEyebrow: "THE PROBLEM",
+      problemH2: ["같은 정보를", "사람이 서너 번 옮깁니다"],
       problemSub:
-        "치료와 보험은 문제가 생긴 뒤 시작되지만, 변화는 그 전부터 쌓입니다.",
+        "기술이 부족해서가 아니라, 현장이 아는 것을 다음 사람이 이어받지 못하기 때문입니다.",
       problemLead: [
-        "병원 기록과 보험 기록은 대부분 문제가 생긴 이후에 만들어집니다.",
-        "하지만 밥을 덜 먹은 날, 잠을 자주 깬 날, 산책이 짧아진 날처럼 작은 변화는 그보다 먼저 시작됩니다.",
+        "현장 직원이 사진을 찍어 단톡방에 올리면, 사무실이 그걸 찾아 거래처에 다시 전달합니다. 거래처는 진행 상황을 묻는 전화를 걸고, 월말에는 엑셀로 명세서를 만듭니다.",
+        "반려생활도 같습니다. 보호자가 아는 우리 아이의 변화는 대화가 끝나면 사라지고, 병원과 다음 선택에서 매번 다시 설명해야 합니다.",
       ],
-      problemQuote: "그래서 비타니마는 아픈 날이 아니라 평소부터 기록합니다.",
-      timelineLabel: "기존에 주로 확인하는 정보",
-      timeline: ["견종", "나이", "병력", "가입·청구 기록"],
-      timelineSubLabel: "Vitanima가 함께 기록하는 정보",
-      timelineSub: "활동 · 수면 · 식사 · 배변 · 보호자의 대화 · 병원 기록",
-      timelineNew: "한 아이에게 실제로 쌓인 시간을 기준으로 계속 업데이트합니다.",
+      problemQuote: "우리는 이 '옮기는 일'을 없앱니다.",
 
-      prodEyebrow: "NOW AVAILABLE",
-      prodTag: "운영 중",
-      prodH2: "AnimAI",
-      prodTagline: ["대화와 기록을 연결하는", "반려동물 AI 엔진"],
-      prodBody: [
-        "보호자가 걱정이나 변화를 말하면 AnimAI는 중요한 내용을 찾아 Lifetime Log의 해당 시점에 기록합니다.",
-        "이전 대화와 건강기록을 함께 보고, 전에 걱정했던 일이 어떻게 되었는지 다시 묻습니다.",
-        "Care Tag가 연결되면 같은 시간의 활동과 수면 신호까지 함께 확인합니다.",
-      ],
-      prodNote:
-        "Care Tag가 없어도 대화와 건강기록을 기반으로 Lifetime Log는 계속 쌓입니다.",
-      prodLink: "AnimAI 자세히 보기",
-      iosBtn: "App Store",
-      androidBtn: "Google Play",
-
-      loopEyebrow: "THE LOOP",
-      loopH2: ["AnimAI는 챗봇이 아니라", "기록을 업데이트하는 AI 엔진입니다"],
-      loopSub:
-        "한 번의 대화를 답변으로 끝내지 않고, 중요한 내용을 기록하고 이전 기록과 연결한 뒤 다음 질문에 다시 사용합니다.",
-      loopCenter: ["Lifetime Log"],
-      loopCenterSub: "우리 아이의 평생 기록",
-      loopCenterNote: "Loop 관련 특허 3건 출원 · 실제 코드 가동 중",
-      loopSteps: [
-        { k: "01", t: "보호자 입력", d: "" },
-        { k: "02", t: "주요 요소 추출", d: "" },
-        { k: "03", t: "Lifetime Log 정렬", d: "" },
-        { k: "04", t: "누적 이력 반영", d: "" },
-        { k: "05", t: "능동질의", d: "" },
-        { k: "06", t: "신뢰도 교정", d: "" },
-      ],
-      loopExampleQuote: "요즘 밤에 자꾸 뒤척여요.",
-      loopExampleRows: [
-        { k: "중요한 요소 추출", v: "뒤척임 / 밤 / 최근 며칠" },
-        { k: "Lifetime Log", v: "해당 시점의 기록에 정렬" },
-        { k: "다음 확인", v: "어제 말씀하신 뒤척임은 오늘도 계속되나요?" },
-      ],
-      loopBody:
-        "보호자의 답은 단순한 대화 기록이 아니라 기존 기록의 신뢰도를 조정하고 다음 질문에 활용됩니다.",
-      loopLink: "Loop 기술 자세히 보기",
-
-      signalEyebrow: "CARE TAG · PILOT IN PROGRESS",
-      signalH2: ["보호자가 못 보는 시간은", "Care Tag가 기록합니다"],
-      signalSub: "활동과 수면 변화를 기록하는 BLE 웨어러블 태그입니다.",
-      signalBody: [
-        "집에서는 Home Station, 외출 중에는 보호자의 앱을 통해 Care Tag 신호를 수집합니다.",
-        "활동량이나 수면 패턴이 평소와 달라지면 AnimAI가 보호자에게 실제 상황을 확인하고, 그 설명을 Lifetime Log에 함께 기록합니다.",
-      ],
-      signalQuote: [
-        "Care Tag는 활동량 숫자를 보여주는 데서 끝나지 않습니다.",
-        "생활신호와 보호자의 설명을 같은 시간에 연결해 한 아이의 기록으로 만듭니다.",
-      ],
-      signalTagAlt: "Care Tag를 착용한 강아지와 고양이",
-      signalTimeline: [
-        { d: "2026.08", t: "내부 파일럿 진행 중" },
+      wayEyebrow: "HOW WE WORK",
+      wayH2: ["산업은 달라도,", "푸는 문제는 하나입니다"],
+      waySub: "현장이 남긴 기록을 다음 단계가 그대로 이어받게 만듭니다.",
+      wayCols: ["현장", "확인·해석", "받는 쪽"],
+      wayRows: [
         {
-          d: "2026.09~10",
-          t: "활성 사용자 20명 대상 파일럿 및 ODM · KC 인증 착수",
-        },
-        { d: "NEXT", t: "추가 파일럿을 통해 누적 300대 검증" },
-        { d: "THEN", t: "검증 후 정식 출시" },
-      ],
-      signalTimelineNote:
-        "Pre-A 이후 배변, 급식, 체중 등 Home Device 확장 예정",
-      signalLink: "기술 자세히 보기",
-
-      insEyebrow: "FROM RECORD TO INSURANCE",
-      insBadge: "보험 비교견적 서비스 준비 중",
-      insH2: ["쌓인 기록으로", "우리 아이에게 맞는 보험을 비교합니다"],
-      insSub:
-        "품종과 나이만 다시 입력하는 비교가 아니라, 이미 쌓인 우리 아이의 기록에서 시작합니다.",
-      insItems: [
-        {
-          n: "01",
-          t: "기록에서 견적을 시작합니다",
-          d: "품종, 나이, 병력, 예방이력 등 Lifetime Log에 이미 있는 정보를 다시 활용합니다.",
+          name: "Flowstamp",
+          field: "물류 · 제조 · 유통",
+          status: "현장 검증 완료",
+          live: true,
+          steps: ["작업자가 찍는다", "사무실이 확인한다", "거래처가 받는다"],
         },
         {
-          n: "02",
-          t: "보험료와 보장조건을 함께 비교합니다",
-          d: "여러 상품을 한 곳에서 확인하고 우리 아이를 기준으로 비교할 수 있도록 준비하고 있습니다.",
-        },
-        {
-          n: "03",
-          t: "보험 이력도 다시 기록됩니다",
-          d: "가입, 청구, 갱신 결과를 Lifetime Log에 다시 연결해 보험 이력을 따로 관리해야 하는 불편을 줄입니다.",
+          name: "AnimAI",
+          field: "반려동물",
+          status: "운영 중",
+          live: true,
+          steps: ["보호자가 말한다", "AI가 기록한다", "다음 판단에 쓰인다"],
         },
       ],
-      insFlow: [
-        "Lifetime Log",
-        "우리 아이 기준 비교견적",
-        "가입",
-        "청구",
-        "갱신",
-      ],
-      insFlowBack: "Lifetime Log",
-      insFlowNote: "평소의 기록이 보험 가입 전과 후를 계속 이어줍니다.",
-      insLink: "보험 서비스 준비 현황 보기",
-      bizNote:
-        "제휴 펫 업장은 Care Tag를 직접 체험하고 만날 수 있는 지역 접점으로 확장할 예정입니다.",
 
-      proofEyebrow: "VITANIMA TODAY",
-      proofH2: "이미 작동하고 있습니다",
-      proofs: [
+      fsEyebrow: "FLOWSTAMP",
+      fsBadge: "현장 검증 완료",
+      fsH2: ["현장이 찍고, 사무실이 확인하고,", "거래처가 받습니다"],
+      fsSub:
+        "사진 한 장이 보고·알림·이력·청구까지 이어지는 현장 운영 솔루션입니다.",
+      fsBody: [
+        "현장은 큰 버튼 하나로 사진만 보고합니다. 사무실이 확인하면 거래처에 이메일과 알림이 자동으로 나갑니다.",
+        "거래처는 로그인 없이 링크 하나로 사진과 진행 단계, 서류를 봅니다. 견적부터 청구, 통계까지 한 바퀴로 이어져 월말 엑셀이 사라집니다.",
+      ],
+      fsMetrics: [
+        { n: "98%", l: "현장 보고 소요시간", sub: "60분 → 1분" },
+        { n: "90%", l: "고객 보고 소요시간", sub: "60분 → 5분" },
+        { n: "0건", l: "자료 전달 누락", sub: "보고 100건 기준" },
+      ],
+      fsMetricsNote:
+        "* 대표가 운영하는 물류 현장(GN로지텍)에 2개월간 적용 · 거래처 20곳 · 현장 보고 100건 기준",
+      fsConsoleAlt: "Flowstamp 사무실 화면 — 작업 진행과 AI 업무 도우미",
+      fsLink: "Flowstamp 자세히 보기",
+      fsSiteLink: "flowstamp.kr",
+
+      aiEyebrow: "ANIMAI",
+      aiBadge: "운영 중",
+      aiH2: ["반려동물의 일상을 기록하고,", "건강 변화를 더 일찍 확인합니다"],
+      aiBody: [
+        "보호자가 걱정과 변화를 말하면 AnimAI가 Lifetime Log에 시간순으로 기록하고, 이전 기록을 보고 다시 묻습니다.",
+        "지금은 Care Tag로 보호자가 보지 못한 시간의 활동·수면 신호를 더하고, 쌓인 기록을 보험에 활용하는 구조를 준비하고 있습니다.",
+      ],
+      aiMetrics: [
         { n: "2,142명", l: "사용자" },
         { n: "1,116명", l: "정식 회원" },
         { n: "420개", l: "Lifetime Log" },
-        { n: "3건", l: "Loop 관련 특허 출원" },
       ],
-      proofNote: "* 2026.08.25 기준",
+      aiMetricsNote: "* 2026.08.25 기준",
+      aiLink: "AnimAI 자세히 보기",
 
-      trackH2: ["이제 Care Tag와", "보험 채널을 검증합니다"],
-      trackLead:
-        "가동 중인 AnimAI와 Lifetime Log에 Care Tag를 더하고, 실제 사용자의 생활기록이 건강관리와 보험으로 이어지는지를 검증합니다.",
-      trackMetricsLabel: "NEXT 12 MONTHS",
-      trackMetrics: [
-        { n: "2,000대", l: "Care Tag 판매 목표" },
-        { n: "1,000명", l: "유료 관찰 구독 목표" },
-        { n: "300건", l: "펫보험 가입 목표" },
+      proofEyebrow: "VITANIMA TODAY",
+      proofH2: "말보다 먼저 만들었습니다",
+      proofs: [
+        { n: "7년", l: "무역 · 물류 사업 운영" },
+        { n: "70억 원", l: "이전 사업체 누적 매출" },
+        { n: "3건", l: "특허 출원" },
+        { n: "2건", l: "운영 중인 서비스" },
       ],
-      trackNote: "* 위 수치는 현재 실적이 아니라 향후 12개월 목표입니다.",
-      trackLink: "비타니마가 걸어온 길",
+      proofNote:
+        "* 누적 매출은 외부 투자 없이 운영한 비타니마 이전 사업체 기준이며, 비타니마의 매출이 아닙니다.",
+      proofLink: "비타니마가 걸어온 길",
 
-      ctaH2: ["매일의 기록이", "건강관리에서 보험까지 이어집니다"],
+      ctaH2: ["현장의 문제를", "함께 풀어보시겠습니까"],
       ctaLead:
-        "비타니마는 반려동물의 생활신호와 보호자의 대화, 건강기록을 Lifetime Log에 쌓아 평소와 다른 변화를 확인하고 보험에 활용할 수 있는 기록을 만듭니다.",
-      ctaBtn: "AnimAI 시작하기",
-      ctaBtn2: "투자·제휴 문의",
+        "Flowstamp 도입은 작업 양식 구성부터 기존 이력 입력, 직원 교육까지 함께 진행합니다. 투자·제휴 문의도 편하게 주세요.",
+      ctaBtn: "Flowstamp 도입 문의",
+      ctaBtn2: "투자 · 제휴 문의",
 
       newsH2: "소식",
       newsLink: "전체 보기",
       newsEmpty: "아직 등록된 소식이 없습니다.",
     },
+    flowstamp: {
+      eyebrow: "FLOWSTAMP",
+      badge: "현장 검증 완료",
+      h1: "Flowstamp",
+      tagline: ["현장이 찍고, 사무실이 확인하고,", "거래처가 받습니다"],
+      lead: [
+        "사진 한 장이 보고·알림·이력·청구까지 이어지는 현장 운영 솔루션입니다.",
+        "수출입 물류를 시작으로 제조, 유통 등 현장 사진을 고객에게 보내는 모든 업종으로 넓혀갑니다.",
+      ],
+      heroBtn: "도입 문의",
+      siteBtn: "flowstamp.kr",
+      consoleAlt: "Flowstamp 사무실 화면 — 작업 진행과 AI 업무 도우미",
+
+      whyH2: "왜 만들었나",
+      whyLead: ["같은 정보를", "사람이 서너 번 옮깁니다"],
+      whyBody: [
+        "현장 직원이 사진을 찍어 단톡방에 올리면, 사무실이 그걸 찾아 거래처에 다시 전달합니다. 거래처는 진행 상황을 묻는 전화를 걸고, 월말에는 엑셀로 명세서를 만듭니다.",
+        "7년간 창고와 운송을 운영하며 같은 문제를 매일 겪었습니다. 기술이 부족해서가 아니라, 현장이 아는 것을 다음 사람이 이어받지 못하는 구조였습니다.",
+      ],
+      whyQuote: "Flowstamp는 이 '옮기는 일'을 없앱니다.",
+
+      featureH2: "무엇을 하나",
+      features: [
+        {
+          n: "01",
+          t: "현장 보고 — 찍으면 끝",
+          d: "홈 화면이 오늘 할 일 목록입니다. 카드에서 바로 보고하고, 사무실이 지정한 촬영 항목이 체크리스트로 뜹니다. 컨테이너 사진을 찍으면 번호를 자동으로 읽어 채웁니다.",
+        },
+        {
+          n: "02",
+          t: "사무실 확인 — 도장 한 번",
+          d: "현장 보고가 올라오면 내용과 사진을 확인하고 거래처 알림을 보냅니다. 문장은 AI가 초안을 쓰고 사람이 확정합니다.",
+        },
+        {
+          n: "03",
+          t: "거래처 링크 — 로그인 없이 한눈에",
+          d: "거래처 담당자는 링크 하나로 진행 단계와 사진 타임라인, 서류, 이동 경로를 봅니다. 열람 여부도 사무실에 표시됩니다.",
+        },
+        {
+          n: "04",
+          t: "작업 양식 — 우리 회사 순서대로",
+          d: "수출·수입 컨테이너 등 기본 양식을 제공하고, 단계와 입력칸을 회사에 맞게 바꿉니다. 설명을 쓰면 AI가 양식 초안을 만듭니다.",
+        },
+        {
+          n: "05",
+          t: "견적 — 안전운임 고시 내장",
+          d: "화물자동차 안전운임 고시를 내장해 법정 운임을 계산하고 근거를 자동으로 기재합니다. 고객이 링크에서 수락하면 작업 건이 생성됩니다.",
+        },
+        {
+          n: "06",
+          t: "청구·통계 — 월말 엑셀이 사라집니다",
+          d: "완료된 작업을 모아 거래명세표를 이메일과 링크로 보냅니다. 매출과 미수, 작업 소요 기간은 통계로 정리됩니다.",
+        },
+      ],
+
+      aiH2: "AI는 제안만, 확정은 사람이",
+      aiBody: [
+        "서류 요약, 작업지시 초안, 양식 초안, 컨테이너 번호 인식, 패킹리스트 추출은 AI가 돕습니다.",
+        "금액과 운임 계산, 검증, 상태 판단은 전부 코드가 처리합니다. 틀린 번호가 거래처에 나가는 사고를 구조적으로 막습니다.",
+      ],
+      aiOrderAlt: "AI 작업지시 추천 화면",
+      aiQuote: "보고와 알림은 지워지지 않는 기록입니다. 정정은 새 기록으로 남습니다.",
+
+      clientH2: ["거래처는 링크 하나로", "전부 봅니다"],
+      clientBody: [
+        "진행 단계, 사진 타임라인, 서류, 이동 경로를 로그인 없이 확인합니다.",
+        "\u201C지금 어디까지 됐어요?\u201D 전화가 줄어듭니다.",
+      ],
+      clientAlt: "거래처가 보는 진행 상황 화면",
+
+      proofEyebrow: "VALIDATION",
+      proofH2: ["현장에서 2개월,", "실제 업무로 검증했습니다"],
+      proofMetrics: [
+        { n: "98%", l: "현장 보고 소요시간", sub: "60분 → 1분" },
+        { n: "90%", l: "고객 보고 소요시간", sub: "60분 → 5분" },
+        { n: "0건", l: "자료 전달 누락", sub: "보고 100건 기준" },
+      ],
+      proofItems: [
+        { k: "적용 현장", v: "1곳 (GN로지텍 · 대표 운영 물류 창고)" },
+        { k: "보고를 받은 거래처", v: "20곳" },
+        { k: "처리한 현장 보고", v: "100건" },
+        { k: "적용 기간", v: "2026.07~ 2개월" },
+      ],
+      proofNote:
+        "* 대표가 운영하는 물류 현장에 직접 적용해 얻은 결과이며, 외부 고객사 도입 실적은 아닙니다. 현재 첫 외부 도입을 준비하고 있습니다.",
+
+      whoH2: "누구를 위한 것인가",
+      who: [
+        {
+          t: "수출입 물류 · 창고 · 운송",
+          d: "화주와 포워더에게 적입·적출·씰링·반입 사진을 매일 보고하는 곳",
+          now: true,
+        },
+        {
+          t: "제조 · 공장",
+          d: "자재 입고부터 가공, 검수, 납품까지 과정을 고객에게 알려야 하는 곳",
+          now: false,
+        },
+        {
+          t: "도소매 · 유통",
+          d: "입고와 검수, 출고 상태를 거래처와 공유해야 하는 곳",
+          now: false,
+        },
+      ],
+      whoNote: "업종 차이는 작업 양식으로 흡수합니다.",
+
+      howH2: "도입은 이렇게 진행합니다",
+      howSteps: [
+        { n: "01", t: "도입 문의", d: "현장과 업무 흐름을 듣고 맞는지 함께 확인합니다." },
+        { n: "02", t: "작업 양식 구성", d: "회사의 작업 순서대로 단계와 촬영 항목을 만듭니다." },
+        { n: "03", t: "기존 이력 이관", d: "거래처와 담당자, 최근 작업·청구 이력을 옮겨 넣습니다." },
+        { n: "04", t: "직원 교육", d: "사무실과 현장 직원이 바로 쓸 수 있도록 교육합니다." },
+      ],
+      howNote:
+        "고객이 준비할 것은 사업자등록증·통장사본, 세금계산서 내역, 작업 대장, 거래처·직원 명단 네 가지입니다. 나머지는 저희가 합니다.",
+
+      ctaH2: ["현장의 사진이", "거래처까지 가는 길을 줄여보세요"],
+      ctaLead:
+        "작업 양식 구성부터 기존 이력 입력, 직원 교육까지 함께 진행합니다.",
+      ctaBtn: "도입 문의",
+      ctaBtn2: "문의 페이지로",
+    },
     about: {
       eyebrow: "COMPANY",
-      h1: ["반려동물의 일상을 기록하고,", "건강과 보험으로 연결합니다"],
+      h1: ["현장이 아는 것을,", "다음 사람이 이어받게 합니다"],
       lead: [
-        "비타니마는 반려동물의 활동과 수면, 보호자의 대화와 건강기록을 Lifetime Log에 쌓는 회사입니다.",
-        "AI 서비스에서 시작해 지금은 웨어러블 기기와 보험 채널까지 함께 만들고 있습니다.",
+        "비타니마는 소상공인과 중소기업의 AX(AI 전환)를 돕는 회사입니다.",
+        "물류·제조 현장의 Flowstamp와 반려동물의 AnimAI, 두 서비스를 만들고 있습니다. 산업은 다르지만 푸는 문제는 하나입니다.",
       ],
       heroFlow: [
-        { t: "Care Tag", d: "일상의 변화를 감지" },
-        { t: "AnimAI", d: "묻고 해석" },
-        { t: "Lifetime Log", d: "시간순으로 기록" },
+        { t: "현장", d: "기록이 만들어지는 곳" },
+        { t: "확인 · 해석", d: "사람과 AI가 함께" },
+        { t: "받는 쪽", d: "거래처 · 다음 판단" },
       ],
-      heroFlowCenter: "기록이 건강관리와 보험으로 이어집니다",
+      heroFlowCenter: "옮기는 일을 없애면, 현장의 시간이 남습니다",
 
       missionLabel: "MISSION",
-      mission: ["아픈 뒤가 아니라,", "평소의 변화를 먼저 기록합니다"],
+      mission: ["사람이 옮기던 정보를,", "시스템이 잇게 만듭니다"],
       missionBody:
-        "병원 기록과 보험 기록은 대부분 문제가 생긴 뒤에 만들어집니다. 비타니마는 그 이전의 활동과 수면, 식사와 생활의 변화를 먼저 기록해 보호자가 더 일찍 확인할 수 있도록 합니다.",
+        "현장에서 만들어진 기록이 사무실과 거래처로, 보호자의 말이 다음 판단으로 이어지지 않는 것은 기술이 부족해서가 아닙니다. 옮기는 사람이 필요한 구조 때문입니다. 비타니마는 그 구조를 바꿉니다.",
       visionLabel: "VISION",
-      vision: ["모든 반려동물이", "자기만의 건강 기록을 갖는 것"],
+      vision: ["작은 회사도", "큰 회사처럼 일하는 것"],
       visionBody:
-        "한 번 입력하고 끝나는 정보가 아니라, 생활과 건강, 보험 이력까지 이어지는 기록. 그 기록이 다음 판단과 선택에 실제로 쓰이는 것을 목표로 합니다.",
-      turnBody: ["기록이 쌓일수록,", "더 일찍 확인하고 더 잘 판단할 수 있습니다"],
+        "대기업은 시스템을 직접 만들어 씁니다. 소상공인과 중소기업도 같은 수준의 도구를 쓸 수 있어야 합니다. 현장에 맞고, 바로 쓸 수 있고, 감당할 수 있는 가격으로.",
+      turnBody: ["기술이 아니라,", "일하는 방식을 바꿉니다"],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["여섯 마리를 키워도,", "다음 아이는 또 처음이었습니다"],
-      whySub: "같은 견종이어도, 아이마다 전혀 달랐습니다.",
+      whyH2: ["7년간 현장에서,", "같은 문제를 매일 겪었습니다"],
+      whySub: "창고와 차량을 직접 운영하며 본 것은 늘 같았습니다.",
       whyBody: [
-        "30년 동안 여섯 마리의 강아지와 함께하며 잘 안다고 생각했습니다. 하지만 새로운 아이가 올 때마다 성향도, 알레르기도, 기호도, 건강 변화도 달랐습니다.",
-        "먼저 키운 아이에게서 얻은 경험이 다음 아이에게 그대로 이어지지 않았고, 사료부터 행동, 병원과 생활 방식까지 다시 찾아보고 다시 물어야 했습니다.",
-        "보호자에게는 몇 달의 시행착오일 수 있지만, 반려동물의 생애에서는 결코 짧은 시간이 아니었습니다.",
+        "작업은 끝났는데 정보는 늦게 도착했습니다. 현장 직원이 사진을 찍어 단톡방에 올리면, 사무실이 그걸 찾아 거래처에 다시 전달했습니다.",
+        "거래처는 진행 상황을 묻는 전화를 걸었고, 월말이면 엑셀로 명세서를 만들었습니다. 같은 정보를 사람이 서너 번 옮기고 있었습니다.",
+        "사람을 더 뽑는 대신 시스템을 만들기로 했습니다. 그렇게 만든 것이 Flowstamp이고, 같은 방법을 반려생활에 적용한 것이 AnimAI입니다.",
       ],
-      whyQuote: "경험이 있어도, 우리 아이에게 맞는 답은 다시 찾아야 했습니다.",
-      whyLoop: ["검색한다", "후기를 본다", "좋다는 걸 써본다", "안 맞으면 바꾼다", "다시 검색한다"],
-      whyClose: "Vitanima는 이 경험이 다음 선택에 이어지게 만들기 위해 시작됐습니다.",
+      whyQuote: "문제는 사람이 아니라, 사람이 옮겨야만 하는 구조였습니다.",
+      whyLoop: ["현장이 찍는다", "단톡방에 올린다", "사무실이 찾는다", "거래처에 전달한다", "전화가 온다"],
+      whyClose: "Vitanima는 이 반복을 없애기 위해 시작됐습니다.",
 
       storyEyebrow: "OUR PATH",
       storyH2: "여기까지 온 길",
@@ -296,20 +339,20 @@ export const dict = {
         {
           y: "2026",
           k: "VITANIMA",
-          t: "같은 질문을 반려생활에서 다시 만났습니다",
-          d: "보호자가 이미 알고 있는 우리 아이의 경험도 다음 질문과 선택에 충분히 이어지지 않고 있었습니다. 그래서 보호자의 말을 기록으로 만들고, 생활신호와 함께 한 아이의 시간 위에 쌓는 Vitanima를 시작했습니다.",
+          t: "두 산업에서 같은 문제를 풉니다",
+          d: "반려동물을 키우면서 같은 문제를 다시 봤습니다. 보호자가 아는 것도 다음 판단으로 이어지지 않았습니다. 물류 현장에는 Flowstamp를, 반려생활에는 AnimAI를 만들어 같은 방법을 적용하고 있습니다.",
           note: "",
         },
         {
           y: "2026 · NOW",
           k: "EXECUTE",
-          t: "AI에서 기기와 보험으로 확장하고 있습니다",
-          d: "AnimAI와 Lifetime Log를 실제 사용자에게 공개하고, Loop 관련 특허 3건을 출원했습니다. 지금은 Care Tag 파일럿과 보험 비교견적 서비스 준비를 함께 진행하고 있습니다.",
+          t: "두 서비스를 모두 시장에 내놓았습니다",
+          d: "AnimAI를 출시해 2,142명이 쓰고 있고, Flowstamp는 대표가 운영하는 물류 현장에 2개월간 적용해 검증을 마쳤습니다. 특허 3건을 출원했고, 지금은 Flowstamp의 첫 외부 도입을 준비하고 있습니다.",
           note: "",
           metrics: [
-            { n: "iOS · Android", l: "AnimAI 운영 중" },
-            { n: "3건", l: "Loop 관련 특허 출원" },
-            { n: "Pilot", l: "Care Tag 내부 파일럿" },
+            { n: "Flowstamp", l: "현장 검증 완료" },
+            { n: "AnimAI", l: "운영 중 · 2,142명" },
+            { n: "3건", l: "특허 출원" },
           ],
         },
       ],
@@ -318,34 +361,27 @@ export const dict = {
         "사용자가 이미 알고 있는 것을 기술이 이어받고, 반복되는 과정에 쓰이던 시간을 줄이는 것. 산업은 달라져도 Vitanima가 문제를 푸는 방식은 같습니다.",
 
       buildEyebrow: "WHAT WE BUILD",
-      buildH2: ["세 가지를 함께 만들고,", "하나의 기록으로 잇습니다"],
+      buildH2: ["두 산업에서,", "같은 방법으로 만듭니다"],
       buildSub:
-        "AI 서비스와 웨어러블 기기, 보험 채널이 같은 Lifetime Log 위에서 이어집니다.",
+        "현장이 남긴 기록을 다음 단계가 그대로 이어받게 하는 것. 두 서비스의 구조는 같습니다.",
       build: [
         {
           n: "01",
-          t: "AnimAI",
-          s: "운영 중",
+          t: "Flowstamp",
+          s: "현장 검증 완료",
           live: true,
-          d: "보호자의 대화에서 중요한 내용을 찾아 Lifetime Log에 기록하고, 이전 기록과 연결해 다시 확인하는 AI 서비스입니다.",
+          d: "물류·제조·유통 현장의 사진 보고가 사무실 확인을 거쳐 거래처까지 자동으로 전달됩니다. 견적부터 청구, 통계까지 한 바퀴로 이어집니다.",
         },
         {
           n: "02",
-          t: "Care Tag",
-          s: "파일럿 진행 중",
-          live: false,
-          d: "활동과 수면 변화를 기록하는 BLE 웨어러블 기기입니다. 집에서는 Home Station, 외출 중에는 보호자의 앱을 통해 신호를 수집합니다.",
-        },
-        {
-          n: "03",
-          t: "보험 비교견적",
-          s: "준비 중",
-          live: false,
-          d: "Lifetime Log에 이미 쌓인 정보로 우리 아이에게 맞는 보험을 비교하고, 가입 이후의 이력도 다시 기록으로 연결합니다.",
+          t: "AnimAI",
+          s: "운영 중",
+          live: true,
+          d: "보호자의 대화에서 중요한 내용을 찾아 Lifetime Log에 기록하고, 이전 기록과 연결해 다시 확인하는 반려동물 AI 서비스입니다.",
         },
       ],
       buildNote:
-        "제휴 펫 업장은 Care Tag를 직접 체험하고 만날 수 있는 지역 접점으로 확장할 예정입니다.",
+        "Flowstamp는 수출입 물류를 시작으로 제조·유통까지, AnimAI는 Care Tag와 보험 연계까지 넓혀갑니다.",
 
       valuesH2: "우리가 지키는 것",
       values: [
@@ -388,10 +424,10 @@ export const dict = {
       facts: [
         { k: "법인명", v: "주식회사 비타니마 (Vitanima Inc.)" },
         { k: "대표이사", v: "김훈기" },
-        { k: "사업 분야", v: "반려동물 헬스케어 AIoT · 데이터 · 보험 연계" },
+        { k: "사업 분야", v: "중소기업 AX 솔루션 · AI SaaS · 데이터 플랫폼" },
         {
           k: "주요 제품·서비스",
-          v: "AnimAI (운영 중) · Care Tag (파일럿) · 보험 비교견적 (준비 중)",
+          v: "Flowstamp (현장 검증 완료) · AnimAI (운영 중)",
         },
         { k: "전화", v: "010-2358-5248" },
         { k: "이메일", v: "cs@vitanima.kr" },
@@ -407,8 +443,8 @@ export const dict = {
         {
           y: "2026–현재",
           t: "주식회사 비타니마",
-          d: "반려동물 헬스케어 AIoT 개발 및 운영",
-          sub: "AnimAI · Lifetime Log 운영 / Care Tag 파일럿 · 보험 비교견적 준비",
+          d: "중소기업 AX 솔루션 개발 및 운영",
+          sub: "Flowstamp 현장 검증 완료 / AnimAI 운영 중",
         },
         {
           y: "2022–2023",
@@ -431,11 +467,11 @@ export const dict = {
         { y: "2018–2025", t: "GN누리", d: "무역중개 · 중앙아시아", sub: "" },
       ],
 
-      ctaH2: ["비타니마가 만드는", "기록을 확인해보세요"],
+      ctaH2: ["비타니마가 만드는", "두 서비스를 확인해보세요"],
       ctaLead:
-        "AnimAI와 Lifetime Log는 이미 실제 사용자와 함께 작동하고 있습니다. 지금은 Care Tag의 생활신호와 보험 채널을 연결하는 검증을 진행하고 있습니다.",
-      ctaNote: "Home Device는 Pre-A 이후 확장 예정입니다.",
-      ctaBtn: "AnimAI 알아보기",
+        "Flowstamp는 현장 검증을 마치고 첫 외부 도입을 준비하고 있고, AnimAI는 2,142명이 쓰고 있습니다.",
+      ctaNote: "",
+      ctaBtn: "Flowstamp 알아보기",
       ctaBtn2: "대표 이야기 보기",
     },
     ceo: {
@@ -445,29 +481,29 @@ export const dict = {
       intro: [
         "기술은 문제를 해결하기 위한 방법입니다.",
         "저는 먼저 현장에서 사람들이 어디에 시간을 쓰고 있는지 봅니다. 그리고 반복되는 문제를 직접 만들고, 운영하고, 사용자 반응으로 확인합니다.",
-        "Vitanima도 같은 방식으로 시작했고, 지금은 반려동물의 일상 기록이 건강관리와 보험으로 이어질 수 있도록 만들고 있습니다.",
+        "Vitanima도 같은 방식으로 시작했습니다. 물류 현장에는 Flowstamp를, 반려생활에는 AnimAI를 만들어 직접 검증하고 있습니다.",
       ],
       name: "김훈기",
       role: "대표 · Founder · 기획 · 개발",
 
       startEyebrow: "THE STARTING POINT",
-      startH2: ["여섯 마리를 키워도,", "다음 아이는 또 처음이었습니다"],
-      startSub: "같은 견종이어도, 아이마다 전혀 달랐습니다.",
+      startH2: ["기술이 부족해서가", "아니었습니다"],
+      startSub: "7년간 창고와 차량을 직접 운영하며 매일 본 것입니다.",
       startBody: [
-        "30년 동안 여섯 마리의 강아지와 함께하며 반려동물을 잘 안다고 생각했습니다. 하지만 새로운 아이가 올 때마다 성향도, 알레르기도, 좋아하는 것도, 몸의 반응도 달랐습니다.",
-        "특히 다섯 번째 아이를 수술 후 합병증으로 떠나보내면서 생각이 달라졌습니다. 이전까지 쌓은 경험이 다음 아이에게 그대로 이어지는 것은 아니었습니다.",
-        "사료부터 생활습관, 행동, 건강 변화까지 새로운 아이가 올 때마다 다시 찾아보고 다시 배워야 했습니다.",
+        "작업은 끝났는데 정보는 늦게 도착했습니다. 현장 직원이 사진을 찍어 단톡방에 올리면, 사무실이 그걸 찾아 거래처에 다시 전달했습니다.",
+        "거래처는 진행 상황을 묻는 전화를 걸었고, 필요한 사진이 빠지면 현장에 다시 확인해야 했습니다. 월말이면 엑셀로 명세서를 만들었습니다.",
+        "현장에는 답을 아는 사람이 분명히 있었습니다. 다만 그 사람이 아는 것이 다음 사람에게 제대로 닿지 않았습니다.",
       ],
-      startQuote: ["여섯 번의 경험이 일곱 번째 아이에게", "그대로 이어지지 않았습니다"],
+      startQuote: ["문제는 사람이 아니라,", "사람이 옮겨야만 하는 구조였습니다"],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["기록이 남아 있었다면,", "더 일찍 확인할 수 있었습니다"],
+      whyH2: ["사람을 더 뽑는 대신,", "시스템을 만들기로 했습니다"],
       whyBody: [
-        "보호자는 우리 아이를 가장 오래 보고 가장 많은 것을 알고 있습니다. 하지만 그 경험은 대화가 끝나거나 서비스가 바뀌면 다시 설명해야 했습니다.",
-        "병원 기록과 보험 기록은 대부분 문제가 생긴 뒤에 만들어집니다. 그전의 활동과 수면, 식사 변화는 어디에도 남지 않았습니다.",
-        "그래서 평균을 추천하는 AI가 아니라, 보호자가 말한 경험과 생활의 변화를 한 아이의 시간 위에 계속 쌓는 AI를 만들기로 했습니다. 그렇게 AnimAI와 Lifetime Log를 만들었고, 지금은 Care Tag의 생활신호와 보험 채널까지 연결하고 있습니다.",
+        "현장에서 반복되는 확인과 전달을 소프트웨어가 대신하게 만들었습니다. 사진 한 장을 찍으면 사무실 확인을 거쳐 거래처까지 자동으로 가는 구조입니다.",
+        "그게 Flowstamp이고, 지금 제가 운영하는 물류 현장에서 매일 쓰고 있습니다. 고객 보고까지 걸리던 시간이 크게 줄었습니다.",
+        "반려동물을 키우면서 같은 문제를 다시 봤습니다. 보호자가 아는 것도 다음 판단으로 이어지지 않았습니다. 그래서 같은 방법으로 AnimAI를 만들었습니다.",
       ],
-      whyQuote: ["목표는 더 많은 답을 주는 것이 아니라,", "우리 아이를 다시 설명해야 하는 일을 줄이는 것입니다"],
+      whyQuote: ["목표는 더 좋은 기술이 아니라,", "사람이 옮기던 일을 없애는 것입니다"],
 
       execEyebrow: "EXECUTION BEFORE VITANIMA",
       execH2: ["문제를 직접 겪고,", "사업으로 해결해왔습니다"],
@@ -513,22 +549,15 @@ export const dict = {
         "그 경험이 지금 Vitanima에서 만들고 있는 기록 구조의 출발점이 되었습니다.",
       ],
 
-      againEyebrow: "BUILDING AGAIN",
-      againH2: ["사고 이후 다시 시작했고,", "3개월 만에 제품을 시장에 내놓았습니다"],
-      againBody: [
-        "이지로지 운영 중 사고로 프로젝트를 종료했고, 영구 장애가 남았습니다. 이후 다시 창업해 Vitanima를 시작했습니다.",
-        "아이디어를 오래 설명하기보다 먼저 작동하게 만들었습니다. AnimAI를 출시하고 실제 사용자에게 공개한 뒤, 사용자 반응을 보며 Lifetime Log와 Loop를 계속 고도화하고 있습니다.",
-      ],
-
       firstEyebrow: "VITANIMA · WHAT I BUILT",
-      firstH2: ["기획부터 개발, 기기와 보험까지", "직접 실행하고 있습니다"],
+      firstH2: ["기획부터 개발, 영업까지", "직접 실행하고 있습니다"],
       firstGrid: [
-        { n: "01", t: "AnimAI 출시", d: "iOS · Android · 운영 중" },
-        { n: "02", t: "Lifetime Log · Loop", d: "실제 코드 가동" },
-        { n: "03", t: "특허 3건", d: "Loop 관련 출원" },
-        { n: "04", t: "Care Tag", d: "내부 파일럿 진행 중" },
-        { n: "05", t: "보험 비교견적", d: "서비스 준비 중" },
-        { n: "06", t: "초기 사용자 확보", d: "실사용 데이터 기반 개선" },
+        { n: "01", t: "Flowstamp 개발", d: "웹 · 모바일 · 현장 검증 완료" },
+        { n: "02", t: "AnimAI 출시", d: "iOS · Android · 2,142명" },
+        { n: "03", t: "특허 3건", d: "출원 완료" },
+        { n: "04", t: "AI OCR · 자동 보고", d: "실제 코드 가동" },
+        { n: "05", t: "Care Tag", d: "내부 파일럿 진행 중" },
+        { n: "06", t: "현장 영업", d: "첫 외부 도입 준비 중" },
       ],
       firstNote: "지금도 대표가 기획·개발·백엔드·인프라를 직접 맡고 있습니다.",
 
@@ -579,15 +608,15 @@ export const dict = {
         "* 유통·마케팅·인증·투자/BD 파트너 후보군을 검토 중이며, 현재 계약 또는 공식 파트너십을 의미하지 않습니다.",
 
       closeEyebrow: "FROM THE FOUNDER",
-      closeH2: ["평소의 기록이", "더 나은 판단으로 이어지게 만들겠습니다"],
+      closeH2: ["현장의 기록이", "다음 사람에게 닿게 만들겠습니다"],
       closeBody: [
-        "보호자가 한 번 말한 경험이 다음 질문에 이어지고, 기기가 기록한 생활신호가 그때의 상황과 함께 남도록 만들고 있습니다.",
-        "그 기록이 건강관리에 쓰이고, 필요할 때 보험 선택에도 도움이 되도록 만드는 것이 Vitanima의 방향입니다.",
+        "작은 회사일수록 사람이 정보를 옮기는 데 시간을 많이 씁니다. 그 시간을 돌려주는 것이 제가 만들고 싶은 것입니다.",
+        "물류 현장에서 시작했지만, 같은 문제는 제조와 유통, 반려생활에도 있습니다. 한 번에 하나씩, 실제로 쓰이는 것을 확인하며 넓혀가겠습니다.",
       ],
       sign: "(주)비타니마 대표이사 김훈기",
 
-      ctaH2: "이미 작동하는 AnimAI를 확인해보세요",
-      ctaBtn: "AnimAI 알아보기",
+      ctaH2: "이미 작동하는 두 서비스를 확인해보세요",
+      ctaBtn: "Flowstamp 알아보기",
       ctaBtn2: "회사 알아보기",
     },
     animai: {
@@ -1131,6 +1160,12 @@ export const dict = {
         "비타니마는 다양한 파트너와 함께 성장하고 있습니다. 서비스, 제휴, 투자, 채용 등 무엇이든 편하게 문의해 주세요.",
       types: [
         {
+          t: "Flowstamp 도입",
+          en: "Flowstamp",
+          d: "현장 운영 솔루션 도입 및 데모 문의",
+          email: "cs@vitanima.kr",
+        },
+        {
           t: "서비스 문의",
           en: "AnimAI",
           d: "서비스 이용 및 앱 관련 문의",
@@ -1170,7 +1205,7 @@ export const dict = {
       phoneLabel: "전화",
     },
     footer: {
-      tagline: "반려동물의 일상을 기록하고 건강과 보험으로 연결하는 AIoT",
+      tagline: "소상공인과 중소기업의 AX를 돕는 회사",
       product: "서비스",
       company: "회사",
       rights: "All rights reserved.",
@@ -1186,7 +1221,8 @@ export const dict = {
     nav: {
       about: "Company",
       ceo: "CEO",
-      animai: "Service",
+      flowstamp: "Flowstamp",
+      animai: "AnimAI",
       technology: "Technology",
       news: "News",
       careers: "Careers",
@@ -1201,6 +1237,8 @@ export const dict = {
       phone: "+82 10-2358-5248",
       phoneHref: "tel:+821023585248",
       productUrl: "https://www.animai.kr",
+      flowstampUrl: "https://www.flowstamp.kr",
+      salesEmail: "cs@vitanima.kr",
       dashboardUrl: "https://www.animai.kr/business",
       iosUrl: "https://apps.apple.com/kr/app/id6760122477",
       androidUrl:
@@ -1210,259 +1248,282 @@ export const dict = {
     },
 
     home: {
-      eyebrow: "PET HEALTH AIoT",
-      h1: [
-        "Everyday records that catch",
-        "health changes earlier,",
-        "and carry through to insurance",
-      ],
+      eyebrow: "AX FOR SMALL BUSINESS",
+      h1: ["Making what the field records", "carry through", "to the next step"],
       lead: [
-        "Vitanima accumulates the activity and sleep changes the Care Tag observes, along with the caregiver's conversations and health records, into the Lifetime Log.",
-        "It helps confirm what differs from the usual earlier, and makes that accumulated record usable for health care and insurance.",
+        "Vitanima helps small businesses and SMEs with AX — the shift to AI.",
+        "We build two services so that information created in the field reaches the next person without being carried by hand.",
       ],
-      ctaPrimary: "Start with AnimAI",
-      ctaSecondary: "How it works",
+      ctaPrimary: "Enquire about Flowstamp",
+      ctaSecondary: "The problem we solve",
 
-      heroFlow: [
-        {
-          k: "01",
-          en: "CARE TAG",
-          t: "It detects change",
-          d: "Records activity and sleep changes from the hours a caregiver cannot see.",
-        },
-        {
-          k: "02",
-          en: "ANIMAI",
-          t: "It asks and interprets",
-          d: "Reads life signals alongside what the caregiver said, and confirms whether something differed from the usual.",
-        },
-        {
-          k: "03",
-          en: "LIFETIME LOG",
-          t: "It records chronologically",
-          d: "Conversation, life signals and health records build one animal's long-term record.",
-        },
-      ],
-      heroFlowCenter:
-        "Observed signals and the caregiver's account become one animal's Lifetime Log.",
-
-      problemEyebrow: "WHY IT MATTERS",
-      problemH2: ["Before the sick day,", "the small changes show first"],
+      problemEyebrow: "THE PROBLEM",
+      problemH2: ["The same information,", "moved by hand three or four times"],
       problemSub:
-        "Treatment and insurance begin after something goes wrong. The changes accumulate before that.",
+        "Not for lack of technology, but because what the field knows never reaches the next person.",
       problemLead: [
-        "Clinic records and insurance records are mostly created after a problem appears.",
-        "But the small changes — a day they ate less, a night they kept waking, a walk cut short — start earlier than that.",
+        "A worker photographs the job and posts it to a group chat; the office digs it out and forwards it to the client. The client calls to ask where things stand, and at month end someone builds a statement in a spreadsheet.",
+        "Life with an animal is the same. What a caregiver knows disappears when the conversation ends, and has to be explained again at the clinic and at the next decision.",
       ],
-      problemQuote:
-        "So Vitanima records from the ordinary days, not the sick ones.",
-      timelineLabel: "What is usually checked",
-      timeline: ["Breed", "Age", "Medical history", "Policy & claim records"],
-      timelineSubLabel: "What Vitanima records alongside",
-      timelineSub:
-        "Activity · sleep · meals · toileting · the caregiver's words · clinic records",
-      timelineNew:
-        "Continuously updated against the time actually accumulated for one animal.",
+      problemQuote: "We remove the carrying.",
 
-      prodEyebrow: "NOW AVAILABLE",
-      prodTag: "Live",
-      prodH2: "AnimAI",
-      prodTagline: ["A companion animal AI engine", "connecting conversation and record"],
-      prodBody: [
-        "When a caregiver mentions a worry or a change, AnimAI finds what matters and records it at that point in the Lifetime Log.",
-        "It reads earlier conversations and health records together, and asks again how a previous worry turned out.",
-        "Once a Care Tag is connected, it also checks activity and sleep signals from the same hours.",
-      ],
-      prodNote:
-        "Even without a Care Tag, the Lifetime Log keeps accumulating from conversation and health records.",
-      prodLink: "More about AnimAI",
-      iosBtn: "App Store",
-      androidBtn: "Google Play",
-
-      loopEyebrow: "THE LOOP",
-      loopH2: [
-        "AnimAI is not a chatbot.",
-        "It is an engine that updates the record.",
-      ],
-      loopSub:
-        "Rather than ending a conversation with an answer, it records what matters, connects it to earlier records, and uses it again in the next question.",
-      loopCenter: ["Lifetime Log"],
-      loopCenterSub: "One animal's lifetime record",
-      loopCenterNote: "3 Loop-related patents filed · running in production",
-      loopSteps: [
-        { k: "01", t: "Caregiver input", d: "" },
-        { k: "02", t: "Element extraction", d: "" },
-        { k: "03", t: "Lifetime Log alignment", d: "" },
-        { k: "04", t: "Accumulated history applied", d: "" },
-        { k: "05", t: "Active enquiry", d: "" },
-        { k: "06", t: "Confidence correction", d: "" },
-      ],
-      loopExampleQuote: "She keeps tossing and turning at night lately.",
-      loopExampleRows: [
-        { k: "Key elements", v: "Restlessness / night / recent days" },
-        { k: "Lifetime Log", v: "Aligned to records from that period" },
+      wayEyebrow: "HOW WE WORK",
+      wayH2: ["Different industries,", "one problem"],
+      waySub:
+        "We make the record left by the field carry straight into the next step.",
+      wayCols: ["Field", "Check & interpret", "Receiving side"],
+      wayRows: [
         {
-          k: "Next check-in",
-          v: "Is the restlessness you mentioned yesterday continuing today?",
-        },
-      ],
-      loopBody:
-        "A caregiver's answer is not just a chat log. It adjusts the confidence of existing records and informs the next question.",
-      loopLink: "More about the Loop",
-
-      signalEyebrow: "CARE TAG · PILOT IN PROGRESS",
-      signalH2: ["The hours you cannot see,", "the Care Tag records"],
-      signalSub:
-        "A BLE wearable tag that records activity and sleep changes.",
-      signalBody: [
-        "At home the Home Station collects Care Tag signals; while out, the caregiver's app does.",
-        "When activity or sleep patterns differ from the usual, AnimAI checks the actual situation with the caregiver and records that account in the Lifetime Log.",
-      ],
-      signalQuote: [
-        "The Care Tag does not stop at showing activity numbers.",
-        "It connects life signals and the caregiver's account at the same point in time, into one animal's record.",
-      ],
-      signalTagAlt: "A dog and a cat wearing the Care Tag",
-      signalTimeline: [
-        { d: "Aug 2026", t: "Internal pilot in progress" },
-        {
-          d: "Sep–Oct 2026",
-          t: "Pilot with 20 active users; ODM and KC certification begins",
-        },
-        { d: "NEXT", t: "Further pilots toward 300 units validated" },
-        { d: "THEN", t: "Launch after validation" },
-      ],
-      signalTimelineNote:
-        "After Pre-A, expansion to Home Devices for toileting, feeding and weight",
-      signalLink: "More about the technology",
-
-      insEyebrow: "FROM RECORD TO INSURANCE",
-      insBadge: "Insurance comparison service in preparation",
-      insH2: [
-        "Comparing insurance that fits your animal,",
-        "from the record already accumulated",
-      ],
-      insSub:
-        "Not a comparison where you re-enter breed and age, but one that starts from your animal's existing record.",
-      insItems: [
-        {
-          n: "01",
-          t: "Quotes start from the record",
-          d: "Breed, age, medical history and preventive care already in the Lifetime Log are reused.",
+          name: "Flowstamp",
+          field: "Logistics · manufacturing · distribution",
+          status: "Field-validated",
+          live: true,
+          steps: ["The worker photographs", "The office confirms", "The client receives"],
         },
         {
-          n: "02",
-          t: "Premiums and coverage compared together",
-          d: "We are preparing a place to review multiple products and compare them against your animal.",
-        },
-        {
-          n: "03",
-          t: "Insurance history is recorded too",
-          d: "Enrolment, claims and renewals reconnect to the Lifetime Log, so insurance history isn't managed separately.",
+          name: "AnimAI",
+          field: "Companion animals",
+          status: "Live",
+          live: true,
+          steps: ["The caregiver speaks", "The AI records", "It informs the next decision"],
         },
       ],
-      insFlow: [
-        "Lifetime Log",
-        "Comparison against your animal",
-        "Enrolment",
-        "Claims",
-        "Renewal",
-      ],
-      insFlowBack: "Lifetime Log",
-      insFlowNote:
-        "Everyday records carry through, before and after enrolment.",
-      insLink: "See how the insurance service is progressing",
-      bizNote:
-        "Partner pet businesses will expand as local touchpoints where caregivers can try the Care Tag in person.",
 
-      proofEyebrow: "VITANIMA TODAY",
-      proofH2: "It is already working",
-      proofs: [
+      fsEyebrow: "FLOWSTAMP",
+      fsBadge: "Field-validated",
+      fsH2: ["The field photographs, the office confirms,", "the client receives"],
+      fsSub:
+        "An operations solution where a single photo carries through to reporting, notification, history and invoicing.",
+      fsBody: [
+        "The field reports with one large button and a photo. Once the office confirms, an email and a notification go out to the client automatically.",
+        "Clients see photos, progress and documents from one link, without logging in. Quotes through invoicing and statistics connect in one loop, so the month-end spreadsheet disappears.",
+      ],
+      fsMetrics: [
+        { n: "98%", l: "Time to field report", sub: "60 min → 1 min" },
+        { n: "90%", l: "Time to client report", sub: "60 min → 5 min" },
+        { n: "0", l: "Missing documents", sub: "across 100 reports" },
+      ],
+      fsMetricsNote:
+        "* Applied for two months at the logistics site the founder operates (GN Logitech) · 20 client companies · 100 field reports",
+      fsConsoleAlt: "Flowstamp office view — job progress and the AI assistant",
+      fsLink: "More about Flowstamp",
+      fsSiteLink: "flowstamp.kr",
+
+      aiEyebrow: "ANIMAI",
+      aiBadge: "Live",
+      aiH2: [
+        "Recording an animal's everyday life,",
+        "noticing health changes earlier",
+      ],
+      aiBody: [
+        "When a caregiver mentions a worry or a change, AnimAI records it chronologically in the Lifetime Log and asks again from what came before.",
+        "We are now adding activity and sleep signals from the Care Tag, and preparing a structure that puts the accumulated record to use in insurance.",
+      ],
+      aiMetrics: [
         { n: "2,142", l: "Users" },
         { n: "1,116", l: "Registered members" },
         { n: "420", l: "Lifetime Logs" },
-        { n: "3", l: "Loop-related patents filed" },
       ],
-      proofNote: "* As of 25 August 2026",
+      aiMetricsNote: "* As of 25 August 2026",
+      aiLink: "More about AnimAI",
 
-      trackH2: ["Now validating the Care Tag", "and the insurance channel"],
-      trackLead:
-        "We are adding the Care Tag to the live AnimAI and Lifetime Log, and validating whether real users' everyday records carry through to health care and insurance.",
-      trackMetricsLabel: "NEXT 12 MONTHS",
-      trackMetrics: [
-        { n: "2,000", l: "Care Tag units, sales target" },
-        { n: "1,000", l: "Paid observation subscriptions, target" },
-        { n: "300", l: "Pet insurance enrolments, target" },
+      proofEyebrow: "VITANIMA TODAY",
+      proofH2: "We built it before we talked about it",
+      proofs: [
+        { n: "7 yrs", l: "Running trade and logistics" },
+        { n: "₩7.0B", l: "Cumulative revenue, prior businesses" },
+        { n: "3", l: "Patents filed" },
+        { n: "2", l: "Services in operation" },
       ],
-      trackNote:
-        "* These are twelve-month targets, not current results.",
-      trackLink: "The path we took",
+      proofNote:
+        "* Cumulative revenue is for prior businesses run without outside investment, not Vitanima's revenue.",
+      proofLink: "The path we took",
 
-      ctaH2: [
-        "Everyday records carry through,",
-        "from health care to insurance",
-      ],
+      ctaH2: ["Shall we solve", "your field's problem together?"],
       ctaLead:
-        "Vitanima accumulates an animal's life signals, the caregiver's conversations and health records into the Lifetime Log — confirming what differs from the usual, and building a record usable for insurance.",
-      ctaBtn: "Start with AnimAI",
+        "A Flowstamp rollout covers job templates, migrating your existing history and training your staff. Investment and partnership enquiries are welcome too.",
+      ctaBtn: "Enquire about Flowstamp",
       ctaBtn2: "Investment & partnership",
 
       newsH2: "News",
       newsLink: "See all",
       newsEmpty: "No news yet.",
     },
-    about: {
-      eyebrow: "COMPANY",
-      h1: [
-        "Recording an animal's everyday life,",
-        "connecting it to health and insurance",
+    flowstamp: {
+      eyebrow: "FLOWSTAMP",
+      badge: "Field-validated",
+      h1: "Flowstamp",
+      tagline: [
+        "The field photographs, the office confirms,",
+        "the client receives",
       ],
       lead: [
-        "Vitanima accumulates an animal's activity and sleep, the caregiver's conversations and health records, into the Lifetime Log.",
-        "We started with an AI service and are now building the wearable device and the insurance channel alongside it.",
+        "An operations solution where a single photo carries through to reporting, notification, history and invoicing.",
+        "Starting with import/export logistics, extending to manufacturing, distribution and any industry that sends field photos to customers.",
+      ],
+      heroBtn: "Enquire",
+      siteBtn: "flowstamp.kr",
+      consoleAlt: "Flowstamp office view — job progress and the AI assistant",
+
+      whyH2: "Why we built it",
+      whyLead: ["The same information,", "moved by hand three or four times"],
+      whyBody: [
+        "A worker photographs the job and posts it to a group chat; the office digs it out and forwards it to the client. The client calls to ask where things stand, and at month end someone builds a statement in a spreadsheet.",
+        "We ran warehouses and trucking for seven years and met this every day. Not for lack of technology, but because what the field knew never reached the next person.",
+      ],
+      whyQuote: "Flowstamp removes the carrying.",
+
+      featureH2: "What it does",
+      features: [
+        {
+          n: "01",
+          t: "Field reporting — photograph and done",
+          d: "The home screen is today's job list. Report straight from a card, with the office's required shots shown as a checklist. Photograph a container and its number is read and filled in automatically.",
+        },
+        {
+          n: "02",
+          t: "Office confirmation — one stamp",
+          d: "When a report arrives, review the content and photos and send the client notification. AI drafts the wording; a person confirms it.",
+        },
+        {
+          n: "03",
+          t: "Client link — everything, without logging in",
+          d: "The client sees progress, a photo timeline, documents and the route from one link. Whether it was opened shows on the office side.",
+        },
+        {
+          n: "04",
+          t: "Job templates — in your company's order",
+          d: "Standard templates for export and import containers, with stages and fields adjusted to your company. Describe it and AI drafts the template.",
+        },
+        {
+          n: "05",
+          t: "Quotes — statutory freight rates built in",
+          d: "Korea's statutory trucking rate schedule is built in, calculating the legal rate and recording the basis automatically. When the client accepts from the link, a job is created.",
+        },
+        {
+          n: "06",
+          t: "Invoicing & statistics — no more month-end spreadsheet",
+          d: "Completed jobs are gathered into a statement sent by email and link. Revenue, receivables and job duration are compiled as statistics.",
+        },
+      ],
+
+      aiH2: "AI suggests. People decide.",
+      aiBody: [
+        "AI helps with document summaries, work order drafts, template drafts, container number recognition and packing list extraction.",
+        "Amounts, freight calculation, validation and status decisions are all handled by code. A wrong number reaching a client is prevented structurally.",
+      ],
+      aiOrderAlt: "AI work order suggestion",
+      aiQuote:
+        "Reports and notifications cannot be edited or deleted. Corrections are added as new records.",
+
+      clientH2: ["Clients see everything", "from one link"],
+      clientBody: [
+        "Progress, photo timeline, documents and route — without logging in.",
+        "The \u201Cwhere are we at?\u201D calls go away.",
+      ],
+      clientAlt: "The progress view a client sees",
+
+      proofEyebrow: "VALIDATION",
+      proofH2: ["Two months in the field,", "validated in real operations"],
+      proofMetrics: [
+        { n: "98%", l: "Time to field report", sub: "60 min → 1 min" },
+        { n: "90%", l: "Time to client report", sub: "60 min → 5 min" },
+        { n: "0", l: "Missing documents", sub: "across 100 reports" },
+      ],
+      proofItems: [
+        { k: "Sites in use", v: "1 (GN Logitech · the founder's logistics warehouse)" },
+        { k: "Client companies receiving reports", v: "20" },
+        { k: "Field reports processed", v: "100" },
+        { k: "Period", v: "Two months from July 2026" },
+      ],
+      proofNote:
+        "* Results from applying it directly at the logistics site the founder operates, not from external customer deployments. We are preparing the first external rollout.",
+
+      whoH2: "Who it is for",
+      who: [
+        {
+          t: "Import/export logistics · warehousing · trucking",
+          d: "Where stuffing, unstuffing, sealing and gate-in photos are reported daily to shippers and forwarders",
+          now: true,
+        },
+        {
+          t: "Manufacturing",
+          d: "Where material receipt, processing, inspection and delivery must be reported to customers",
+          now: false,
+        },
+        {
+          t: "Wholesale · distribution",
+          d: "Where inbound, inspection and outbound status must be shared with partners",
+          now: false,
+        },
+      ],
+      whoNote: "Differences between industries are absorbed by job templates.",
+
+      howH2: "How a rollout works",
+      howSteps: [
+        { n: "01", t: "Enquiry", d: "We listen to your site and workflow and check the fit together." },
+        { n: "02", t: "Job templates", d: "We build stages and required shots in your company's order." },
+        { n: "03", t: "Migrating history", d: "Clients, contacts and recent job and billing history are moved in." },
+        { n: "04", t: "Staff training", d: "Office and field staff are trained to start straight away." },
+      ],
+      howNote:
+        "You prepare four things: business registration and bank details, tax invoice records, your job ledger, and client and staff lists. We handle the rest.",
+
+      ctaH2: [
+        "Shorten the path from a field photo",
+        "to your client",
+      ],
+      ctaLead:
+        "We handle job templates, migrating your existing history and training your staff.",
+      ctaBtn: "Enquire",
+      ctaBtn2: "Go to contact",
+    },
+    about: {
+      eyebrow: "COMPANY",
+      h1: ["Making what the field knows", "reach the next person"],
+      lead: [
+        "Vitanima helps small businesses and SMEs with AX — the shift to AI.",
+        "We build two services: Flowstamp for logistics and manufacturing sites, and AnimAI for life with companion animals. Different industries, one problem.",
       ],
       heroFlow: [
-        { t: "Care Tag", d: "Detects everyday change" },
-        { t: "AnimAI", d: "Asks and interprets" },
-        { t: "Lifetime Log", d: "Records chronologically" },
+        { t: "Field", d: "Where the record is made" },
+        { t: "Check & interpret", d: "People and AI together" },
+        { t: "Receiving side", d: "Clients · the next decision" },
       ],
-      heroFlowCenter: "The record carries through to health care and insurance",
+      heroFlowCenter: "Remove the carrying, and the field gets its time back",
 
       missionLabel: "MISSION",
       mission: [
-        "Record the ordinary changes first,",
-        "not what happens after illness",
+        "Let the system carry",
+        "what people have been carrying",
       ],
       missionBody:
-        "Clinic records and insurance records are mostly created after a problem appears. Vitanima records what comes before — activity, sleep, meals and changes in daily life — so caregivers can notice earlier.",
+        "Records made in the field don't reach the office and the client, and what a caregiver says doesn't reach the next decision — not for lack of technology, but because the structure needs someone to carry it. Vitanima changes that structure.",
       visionLabel: "VISION",
-      vision: ["Every companion animal", "with a health record of their own"],
+      vision: ["Small companies working", "the way large ones do"],
       visionBody:
-        "Not information entered once, but a record that carries through daily life, health and insurance history. Our aim is for that record to be genuinely used in the next judgement and choice.",
-      turnBody: [
-        "The more the record accumulates,",
-        "the earlier you notice and the better you judge",
-      ],
+        "Large companies build their own systems. Small businesses and SMEs should have tools of the same standard — fitted to their site, usable straight away, at a price they can carry.",
+      turnBody: ["We don't change the technology.", "We change how people work."],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["Six dogs in,", "and the next one was new again"],
-      whySub: "Even at the same breed, every animal was entirely different.",
+      whyH2: ["Seven years on the ground,", "meeting the same problem daily"],
+      whySub:
+        "Running warehouses and trucks ourselves, what we saw was always the same.",
       whyBody: [
-        "Over thirty years with six dogs, we thought we knew. But each new arrival differed in temperament, allergies, preferences and how their health changed.",
-        "What we learned from an earlier animal did not carry over to the next. From food to behaviour, clinics to daily routine, we had to search and ask all over again.",
-        "For a caregiver it may be a few months of trial and error. In an animal's life, that is never a short time.",
+        "The work was done, but the information arrived late. A worker would photograph the job and post it to a group chat; the office would dig it out and forward it to the client.",
+        "The client would call to ask where things stood, and at month end someone built a statement in a spreadsheet. The same information was being carried by hand three or four times.",
+        "Instead of hiring more people, we built a system. That became Flowstamp — and applying the same method to life with animals became AnimAI.",
       ],
       whyQuote:
-        "Even with experience, the answer that fit our animal had to be found again.",
+        "The problem was never the people. It was a structure that required carrying.",
       whyLoop: [
-        "Search",
-        "Read reviews",
-        "Try what people recommend",
-        "Switch if it doesn't fit",
-        "Search again",
+        "The field photographs",
+        "Posts to a group chat",
+        "The office digs it out",
+        "Forwards to the client",
+        "The phone rings",
       ],
-      whyClose:
-        "Vitanima began so that this experience carries into the next choice.",
+      whyClose: "Vitanima began to remove this loop.",
 
       storyEyebrow: "OUR PATH",
       storyH2: "How we got here",
@@ -1488,20 +1549,20 @@ export const dict = {
         {
           y: "2026",
           k: "VITANIMA",
-          t: "We met the same question again, living with animals",
-          d: "What a caregiver already knew about their animal was not carrying into the next question or choice either. So we started Vitanima, turning what caregivers say into record and accumulating it, alongside life signals, on one animal's timeline.",
+          t: "Solving one problem across two industries",
+          d: "Living with our own animals, we met the same problem again — what a caregiver knew didn't reach the next decision either. We built Flowstamp for logistics sites and AnimAI for life with animals, applying the same method to both.",
           note: "",
         },
         {
           y: "2026 · NOW",
           k: "EXECUTE",
-          t: "Expanding from AI into device and insurance",
-          d: "AnimAI and the Lifetime Log are open to real users, and three Loop-related patents have been filed. We are now running the Care Tag pilot and preparing the insurance comparison service in parallel.",
+          t: "Both services are out in the market",
+          d: "AnimAI launched and 2,142 people use it; Flowstamp was applied for two months at the logistics site the founder operates and has completed field validation. Three patents are filed, and we are preparing Flowstamp's first external rollout.",
           note: "",
           metrics: [
-            { n: "iOS · Android", l: "AnimAI live" },
-            { n: "3", l: "Loop-related patents filed" },
-            { n: "Pilot", l: "Care Tag internal pilot" },
+            { n: "Flowstamp", l: "Field-validated" },
+            { n: "AnimAI", l: "Live · 2,142 users" },
+            { n: "3", l: "Patents filed" },
           ],
         },
       ],
@@ -1510,34 +1571,27 @@ export const dict = {
         "Have technology take over what users already know, and cut the time spent on what repeats. The industry may change; the way Vitanima solves problems does not.",
 
       buildEyebrow: "WHAT WE BUILD",
-      buildH2: ["Three things built together,", "joined by one record"],
+      buildH2: ["Two industries,", "built the same way"],
       buildSub:
-        "The AI service, the wearable device and the insurance channel all connect on the same Lifetime Log.",
+        "Making the record left by the field carry straight into the next step. Both services share that structure.",
       build: [
         {
           n: "01",
-          t: "AnimAI",
-          s: "Live",
+          t: "Flowstamp",
+          s: "Field-validated",
           live: true,
-          d: "An AI service that finds what matters in a caregiver's conversation, records it in the Lifetime Log, and connects it to earlier records to check again.",
+          d: "Photo reports from logistics, manufacturing and distribution sites pass through office confirmation and reach the client automatically. Quotes through invoicing and statistics connect in one loop.",
         },
         {
           n: "02",
-          t: "Care Tag",
-          s: "Pilot in progress",
-          live: false,
-          d: "A BLE wearable that records activity and sleep changes. At home the Home Station collects the signal; while out, the caregiver's app does.",
-        },
-        {
-          n: "03",
-          t: "Insurance comparison",
-          s: "In preparation",
-          live: false,
-          d: "Compare insurance that fits your animal using what is already in the Lifetime Log, and reconnect post-enrolment history back into the record.",
+          t: "AnimAI",
+          s: "Live",
+          live: true,
+          d: "A companion animal AI service that finds what matters in a caregiver's conversation, records it in the Lifetime Log, and connects it to earlier records to check again.",
         },
       ],
       buildNote:
-        "Partner pet businesses will expand as local touchpoints where caregivers can try the Care Tag in person.",
+        "Flowstamp extends from import/export logistics into manufacturing and distribution; AnimAI into the Care Tag and insurance.",
 
       valuesH2: "What we hold to",
       values: [
@@ -1580,13 +1634,10 @@ export const dict = {
       facts: [
         { k: "Legal name", v: "Vitanima Inc. (주식회사 비타니마)" },
         { k: "CEO", v: "Hunki Kim" },
-        {
-          k: "Field",
-          v: "Companion animal healthcare AIoT · data · insurance",
-        },
+        { k: "Field", v: "SME AX solutions · AI SaaS · data platform" },
         {
           k: "Products & services",
-          v: "AnimAI (live) · Care Tag (pilot) · Insurance comparison (in preparation)",
+          v: "Flowstamp (field-validated) · AnimAI (live)",
         },
         { k: "Phone", v: "+82 10-2358-5248" },
         { k: "Email", v: "cs@vitanima.kr" },
@@ -1606,8 +1657,8 @@ export const dict = {
         {
           y: "2026–present",
           t: "Vitanima Inc.",
-          d: "Building and running companion animal healthcare AIoT",
-          sub: "AnimAI · Lifetime Log live / Care Tag pilot · insurance comparison in preparation",
+          d: "Building and running AX solutions for SMEs",
+          sub: "Flowstamp field-validated / AnimAI live",
         },
         {
           y: "2022–2023",
@@ -1630,11 +1681,11 @@ export const dict = {
         { y: "2018–2025", t: "GN Nuri", d: "Trade brokerage · Central Asia", sub: "" },
       ],
 
-      ctaH2: ["See the record", "Vitanima is building"],
+      ctaH2: ["See the two services", "Vitanima is building"],
       ctaLead:
-        "AnimAI and the Lifetime Log are already working with real users. We are now validating how the Care Tag's life signals and the insurance channel connect.",
-      ctaNote: "Home Device expansion is planned after Pre-A.",
-      ctaBtn: "About AnimAI",
+        "Flowstamp has completed field validation and is preparing its first external rollout; AnimAI is used by 2,142 people.",
+      ctaNote: "",
+      ctaBtn: "About Flowstamp",
       ctaBtn2: "Read from the CEO",
     },
     ceo: {
@@ -1644,34 +1695,35 @@ export const dict = {
       intro: [
         "Technology is a way to solve a problem.",
         "I look first at where people on the ground are spending their time. Then I build the recurring problem away myself, run it, and check it against how users respond.",
-        "Vitanima started the same way, and we are now building so that an animal's everyday records can carry through to health care and insurance.",
+        "Vitanima started the same way. We built Flowstamp for logistics sites and AnimAI for life with animals, and we validate both ourselves.",
       ],
       name: "Hunki Kim",
       role: "CEO · Founder · Product · Engineering",
 
       startEyebrow: "THE STARTING POINT",
-      startH2: ["Six dogs in,", "and the next one was new again"],
-      startSub: "Even at the same breed, every animal was entirely different.",
+      startH2: ["It was never about", "a lack of technology"],
+      startSub:
+        "Seven years running warehouses and trucks myself, this is what I saw every day.",
       startBody: [
-        "Over thirty years with six dogs, I thought I understood animals. But each new arrival differed in temperament, allergies, what they liked, and how their body responded.",
-        "Losing our fifth to post-operative complications changed how I saw it. What I had learned before did not simply carry over to the next animal.",
-        "From food to habits, behaviour to changes in health — with every new arrival I had to search and learn it all over again.",
+        "The work was done, but the information arrived late. A worker would photograph the job and post it to a group chat; the office would dig it out and forward it to the client.",
+        "The client would call to ask where things stood, and if a photo was missing someone had to go back to the field. At month end, a statement was built in a spreadsheet.",
+        "Someone on the floor always knew the answer. It just never reached the next person properly.",
       ],
       startQuote: [
-        "Six animals' worth of experience did not",
-        "carry over to the seventh",
+        "The problem was never the people.",
+        "It was a structure that required carrying.",
       ],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["Had the record been there,", "we could have noticed earlier"],
+      whyH2: ["Instead of hiring more people,", "I built a system"],
       whyBody: [
-        "The caregiver has watched their animal longest and knows the most. Yet that experience had to be explained again whenever a conversation ended or a service changed.",
-        "Clinic records and insurance records are mostly created after a problem appears. The changes in activity, sleep and meals before that were kept nowhere.",
-        "So rather than an AI that recommends the average, I decided to build one that keeps accumulating what a caregiver has said, and how life changes, on one animal's timeline. That became AnimAI and the Lifetime Log — and we are now connecting the Care Tag's life signals and the insurance channel as well.",
+        "I had software take over the checking and relaying that repeated on the floor. Photograph the job once, and it passes through office confirmation to the client automatically.",
+        "That is Flowstamp, and it runs every day at the logistics site I operate. The time it took to report to a client has fallen sharply.",
+        "Living with my own animals, I met the same problem again — what a caregiver knows doesn't reach the next decision. So I built AnimAI the same way.",
       ],
       whyQuote: [
-        "The goal is not to give more answers,",
-        "but to reduce having to explain our animal again",
+        "The goal is not better technology,",
+        "but removing the carrying people had to do.",
       ],
 
       execEyebrow: "EXECUTION BEFORE VITANIMA",
@@ -1718,28 +1770,18 @@ export const dict = {
         "That experience became the starting point for the record structure we are building at Vitanima today.",
       ],
 
-      againEyebrow: "BUILDING AGAIN",
-      againH2: [
-        "I started again after an accident,",
-        "and shipped a product within three months",
-      ],
-      againBody: [
-        "An accident during EasyLogi ended the project and left me with a permanent disability. I founded again afterwards, and started Vitanima.",
-        "Rather than explain an idea at length, I made it work first. AnimAI launched and opened to real users, and we keep developing the Lifetime Log and the Loop against how they respond.",
-      ],
-
       firstEyebrow: "VITANIMA · WHAT I BUILT",
       firstH2: [
-        "From product and engineering to device and insurance,",
+        "From product and engineering to sales,",
         "I am executing it directly",
       ],
       firstGrid: [
-        { n: "01", t: "AnimAI launched", d: "iOS · Android · live" },
-        { n: "02", t: "Lifetime Log · Loop", d: "Running in production" },
-        { n: "03", t: "3 patents", d: "Loop-related, filed" },
-        { n: "04", t: "Care Tag", d: "Internal pilot in progress" },
-        { n: "05", t: "Insurance comparison", d: "Service in preparation" },
-        { n: "06", t: "Early users", d: "Improving on real usage data" },
+        { n: "01", t: "Built Flowstamp", d: "Web · mobile · field-validated" },
+        { n: "02", t: "Launched AnimAI", d: "iOS · Android · 2,142 users" },
+        { n: "03", t: "3 patents", d: "Filed" },
+        { n: "04", t: "AI OCR · auto reporting", d: "Running in production" },
+        { n: "05", t: "Care Tag", d: "Internal pilot in progress" },
+        { n: "06", t: "Field sales", d: "Preparing the first external rollout" },
       ],
       firstNote:
         "Product, engineering, backend and infrastructure are still handled directly by the founder.",
@@ -1793,17 +1835,17 @@ export const dict = {
 
       closeEyebrow: "FROM THE FOUNDER",
       closeH2: [
-        "I will make everyday records",
-        "lead to better judgement",
+        "I will make what the field records",
+        "reach the next person",
       ],
       closeBody: [
-        "We are building so that an experience a caregiver mentions once carries into the next question, and so that life signals recorded by a device remain alongside the situation they came from.",
-        "Vitanima's direction is for that record to serve health care, and to help with insurance decisions when they are needed.",
+        "The smaller the company, the more time people spend carrying information by hand. Giving that time back is what I want to build.",
+        "We started on logistics floors, but the same problem exists in manufacturing, distribution and life with animals. One at a time, confirming it is genuinely used, we will widen it.",
       ],
       sign: "Hunki Kim, CEO, Vitanima Inc.",
 
-      ctaH2: "See AnimAI, already working",
-      ctaBtn: "About AnimAI",
+      ctaH2: "See the two services, already working",
+      ctaBtn: "About Flowstamp",
       ctaBtn2: "About the company",
     },
     animai: {
@@ -2406,6 +2448,12 @@ export const dict = {
         "Vitanima grows with partners of many kinds. Service, partnership, investment, careers — write to us about anything.",
       types: [
         {
+          t: "Flowstamp",
+          en: "Flowstamp",
+          d: "Rollout and demo enquiries for the field operations solution",
+          email: "cs@vitanima.kr",
+        },
+        {
           t: "Service",
           en: "AnimAI",
           d: "Questions about using the service and the app",
@@ -2445,7 +2493,7 @@ export const dict = {
       phoneLabel: "Phone",
     },
     footer: {
-      tagline: "Recording everyday life, connecting health and insurance",
+      tagline: "AX for small businesses and SMEs",
       product: "Services",
       company: "Company",
       rights: "All rights reserved.",

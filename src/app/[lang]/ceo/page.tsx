@@ -226,35 +226,7 @@ export default async function CeoPage({
         </div>
       </section>
 
-      {/* ══ 05. BUILDING AGAIN ═══════════════════ */}
-      <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[280px_1fr] lg:gap-16">
-          <Reveal>
-            <p className="t-label text-forest">{c.againEyebrow}</p>
-          </Reveal>
-          <Reveal delay={90}>
-            <h2 className="t-display max-w-2xl text-[24px] text-ink sm:text-[32px]">
-              {c.againH2.map((line) => (
-                <span key={line} className="block">
-                  {line}
-                </span>
-              ))}
-            </h2>
-            <div className="mt-7 max-w-2xl space-y-5">
-              {c.againBody.map((p) => (
-                <p
-                  key={p.slice(0, 14)}
-                  className="text-[15.5px] leading-[1.95] text-ink-3"
-                >
-                  {p}
-                </p>
-              ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ══ 06. WHAT I BUILT ═════════════════════ */}
+      {/* ══ 05. WHAT I BUILT ═════════════════════ */}
       <section className="bg-ink text-bone">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
@@ -292,7 +264,7 @@ export default async function CeoPage({
         </div>
       </section>
 
-      {/* ══ 07. HOW I BUILD ══════════════════════ */}
+      {/* ══ 06. HOW I BUILD ══════════════════════ */}
       <section className="border-b border-line bg-bone-2">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
@@ -326,7 +298,7 @@ export default async function CeoPage({
         </div>
       </section>
 
-      {/* ══ 08. GLOBAL EXECUTION ═════════════════ */}
+      {/* ══ 07. GLOBAL EXECUTION ═════════════════ */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
@@ -369,7 +341,7 @@ export default async function CeoPage({
         </div>
       </section>
 
-      {/* ══ 09. FROM THE FOUNDER ═════════════════ */}
+      {/* ══ 08. FROM THE FOUNDER ═════════════════ */}
       <section className="bg-ink text-bone">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
           <Reveal>
@@ -409,7 +381,7 @@ export default async function CeoPage({
           <Reveal delay={100}>
             <div className="flex flex-wrap items-center gap-3">
               <Link
-                href={`/${lang}/animai`}
+                href={`/${lang}/flowstamp`}
                 className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-[14px] font-medium text-bone transition-colors hover:bg-forest-2"
               >
                 {c.ctaBtn}
