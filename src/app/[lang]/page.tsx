@@ -21,9 +21,9 @@ export default async function HomePage({
     <>
       {/* ══ 1. HERO ══════════════════════════════ */}
       <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28 lg:py-32">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16 lg:py-32">
           <Reveal>
-            <p className="t-label text-forest">{h.eyebrow}</p>
+            <p className="t-label text-ink-4">{h.eyebrow}</p>
             <h1 className="t-display mt-6 max-w-4xl text-[36px] text-ink sm:text-[52px] lg:text-[58px]">
               {h.h1.map((line) => (
                 <span key={line} className="block">
@@ -59,6 +59,19 @@ export default async function HomePage({
                 <ArrowDown size={15} />
               </a>
             </div>
+          </Reveal>
+
+          <Reveal delay={160} className="hidden lg:block">
+            <ul className="space-y-2 border-l border-line pl-6 text-right">
+              {h.heroMarks.map((m) => (
+                <li
+                  key={m}
+                  className="t-display text-[15px] tracking-[0.18em] text-ink-4"
+                >
+                  {m}
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
       </section>
@@ -187,7 +200,7 @@ export default async function HomePage({
                 </span>
               ))}
             </h2>
-            <p className="t-title mt-6 max-w-2xl text-[16px] leading-[1.6] text-forest sm:text-[18px]">
+            <p className="t-title mt-6 max-w-2xl text-[16px] leading-[1.6] text-ink-3 sm:text-[18px]">
               {h.fsSub}
             </p>
           </Reveal>
@@ -238,13 +251,13 @@ export default async function HomePage({
               <dl className="grid gap-x-8 gap-y-8 sm:grid-cols-3">
                 {h.fsMetrics.map((m) => (
                   <div key={m.l} className="border-t-2 border-forest pt-5">
-                    <dt className="t-display t-num whitespace-nowrap text-[30px] leading-none text-forest sm:text-[34px]">
+                    <dt className="t-display t-num whitespace-nowrap text-[38px] leading-none text-forest sm:text-[46px]">
                       {m.n}
                     </dt>
-                    <dd className="mt-3 text-[13.5px] leading-snug text-ink-3">
+                    <dd className="t-title mt-3.5 text-[14px] leading-snug text-ink">
                       {m.l}
                     </dd>
-                    <dd className="t-num mt-1.5 text-[12.5px] text-ink-4">
+                    <dd className="t-num mt-1 text-[12.5px] text-ink-4">
                       {m.sub}
                     </dd>
                   </div>
@@ -359,11 +372,11 @@ export default async function HomePage({
               {h.proofNote}
             </p>
             <Link
-              href={`/${lang}/about`}
+              href={`/${lang}/ceo`}
               className="mt-7 inline-flex items-center gap-1.5 text-[14px] font-medium text-forest underline-offset-4 hover:underline"
             >
               {h.proofLink}
-              <ArrowUpRight size={15} />
+              <ArrowRight size={15} />
             </Link>
           </Reveal>
         </div>

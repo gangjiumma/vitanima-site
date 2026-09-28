@@ -74,43 +74,53 @@ export const dict = {
     },
 
     home: {
-      eyebrow: "AX FOR SMALL BUSINESS",
-      h1: ["현장의 기록이", "다음 단계로", "이어지게 만듭니다"],
+      eyebrow: "WHAT WE BUILD",
+      h1: ["기록이 다음 일에", "바로 쓰이게 만듭니다"],
       lead: [
-        "비타니마는 소상공인과 중소기업의 AX(AI 전환)를 돕는 회사입니다.",
-        "현장에서 만들어진 정보가 사람 손을 거치지 않고 다음 사람에게 닿도록, 두 개의 서비스를 만들고 있습니다.",
+        "비타니마는 현장과 일상에서 생기는 정보를 AI로 정리하고, 다음 업무와 판단에 바로 쓸 수 있는 제품을 만듭니다.",
+        "물류 현장의 보고와 운송을 연결하는 Flowstamp와 반려동물의 일상·건강기록을 쌓는 AnimAI를 운영하고 있습니다.",
       ],
       ctaPrimary: "Flowstamp 도입 문의",
-      ctaSecondary: "우리가 푸는 문제",
+      ctaSecondary: "두 서비스 보기",
+      heroMarks: ["FLOWSTAMP", "ANIMAI"],
 
       problemEyebrow: "THE PROBLEM",
-      problemH2: ["같은 정보를", "사람이 서너 번 옮깁니다"],
+      problemH2: ["같은 정보를", "다시 찾고, 다시 묻고, 다시 옮깁니다"],
       problemSub:
-        "기술이 부족해서가 아니라, 현장이 아는 것을 다음 사람이 이어받지 못하기 때문입니다.",
+        "정보가 없는 게 아닙니다. 이미 있는 기록이 다음 업무와 판단에 그대로 쓰이지 않는 것이 문제입니다.",
       problemLead: [
-        "현장 직원이 사진을 찍어 단톡방에 올리면, 사무실이 그걸 찾아 거래처에 다시 전달합니다. 거래처는 진행 상황을 묻는 전화를 걸고, 월말에는 엑셀로 명세서를 만듭니다.",
-        "반려생활도 같습니다. 보호자가 아는 우리 아이의 변화는 대화가 끝나면 사라지고, 병원과 다음 선택에서 매번 다시 설명해야 합니다.",
+        "물류 현장에서는 작업자가 사진을 찍어 카톡으로 보내고, 사무실이 다시 찾아 정리해 거래처에 전달합니다. 같은 정보가 사람 손을 여러 번 거칩니다.",
+        "반려생활에서도 비슷합니다. 보호자가 알고 있는 변화와 병원 기록이 흩어져 있어, 필요할 때마다 다시 찾고 다시 설명해야 합니다.",
       ],
-      problemQuote: "우리는 이 '옮기는 일'을 없앱니다.",
+      problemQuote: "비타니마는 이미 생긴 기록을 다시 옮기지 않아도 되게 만듭니다.",
 
       wayEyebrow: "HOW WE WORK",
-      wayH2: ["산업은 달라도,", "푸는 문제는 하나입니다"],
-      waySub: "현장이 남긴 기록을 다음 단계가 그대로 이어받게 만듭니다.",
-      wayCols: ["현장", "확인·해석", "받는 쪽"],
+      wayH2: ["두 서비스는", "같은 방식으로 만듭니다"],
+      waySub:
+        "한 번 남긴 기록을 다시 입력하거나 설명하지 않아도, 다음 업무와 판단에 그대로 쓸 수 있게 만듭니다.",
+      wayCols: ["기록이 생김", "AI가 정리·확인", "다시 활용"],
       wayRows: [
         {
           name: "Flowstamp",
           field: "물류 · 제조 · 유통",
           status: "현장 검증 완료",
           live: true,
-          steps: ["작업자가 찍는다", "사무실이 확인한다", "거래처가 받는다"],
+          steps: [
+            "현장에서 기록한다",
+            "사무실과 AI가 확인한다",
+            "거래처 보고·운송으로 이어진다",
+          ],
         },
         {
           name: "AnimAI",
           field: "반려동물",
           status: "운영 중",
           live: true,
-          steps: ["보호자가 말한다", "AI가 기록한다", "다음 판단에 쓰인다"],
+          steps: [
+            "보호자와 기기가 기록한다",
+            "AI가 시간순으로 정리한다",
+            "다음 상담과 보험에 다시 쓴다",
+          ],
         },
       ],
 
@@ -118,28 +128,28 @@ export const dict = {
       fsBadge: "현장 검증 완료",
       fsH2: ["현장이 찍고, 사무실이 확인하고,", "거래처가 받습니다"],
       fsSub:
-        "사진 한 장이 보고·알림·이력·청구까지 이어지는 현장 운영 솔루션입니다.",
+        "현장 사진과 작업기록이 보고·알림·이력·청구까지 이어지는 물류 운영 솔루션입니다.",
       fsBody: [
-        "현장은 큰 버튼 하나로 사진만 보고합니다. 사무실이 확인하면 거래처에 이메일과 알림이 자동으로 나갑니다.",
-        "거래처는 로그인 없이 링크 하나로 사진과 진행 단계, 서류를 봅니다. 견적부터 청구, 통계까지 한 바퀴로 이어져 월말 엑셀이 사라집니다.",
+        "현장은 큰 버튼과 사진 몇 장으로 작업을 보고합니다. 사무실이 확인하면 거래처에 이메일과 알림이 자동으로 전달됩니다.",
+        "거래처는 로그인 없이 링크 하나로 사진과 진행상황을 확인합니다. 견적부터 청구, 통계, 필요한 운송 배차까지 한 화면에서 처리할 수 있습니다.",
       ],
       fsMetrics: [
-        { n: "98%", l: "현장 보고 소요시간", sub: "60분 → 1분" },
-        { n: "90%", l: "고객 보고 소요시간", sub: "60분 → 5분" },
-        { n: "0건", l: "자료 전달 누락", sub: "보고 100건 기준" },
+        { n: "98%", l: "현장 보고시간 단축", sub: "60분 → 1분" },
+        { n: "90%", l: "고객 보고시간 단축", sub: "60분 → 5분" },
+        { n: "0건", l: "자료 전달 누락", sub: "현장보고 100건 기준" },
       ],
       fsMetricsNote:
-        "* 대표가 운영하는 물류 현장(GN로지텍)에 2개월간 적용 · 거래처 20곳 · 현장 보고 100건 기준",
+        "* GN로지텍 2개월 실사용 · 거래처 20곳 · 현장보고 100건 기준",
       fsConsoleAlt: "Flowstamp 사무실 화면 — 작업 진행과 AI 업무 도우미",
       fsLink: "Flowstamp 자세히 보기",
       fsSiteLink: "flowstamp.kr",
 
       aiEyebrow: "ANIMAI",
       aiBadge: "운영 중",
-      aiH2: ["반려동물의 일상을 기록하고,", "건강 변화를 더 일찍 확인합니다"],
+      aiH2: ["반려동물의 평소를 기록하고,", "평소와 다른 변화를 놓치지 않게 합니다"],
       aiBody: [
-        "보호자가 걱정과 변화를 말하면 AnimAI가 Lifetime Log에 시간순으로 기록하고, 이전 기록을 보고 다시 묻습니다.",
-        "지금은 Care Tag로 보호자가 보지 못한 시간의 활동·수면 신호를 더하고, 쌓인 기록을 보험에 활용하는 구조를 준비하고 있습니다.",
+        "보호자와 나눈 대화, 진료기록, 생활기록을 Lifetime Log에 시간순으로 쌓습니다. AnimAI는 이전 기록을 기억하고 필요한 내용을 다시 확인합니다.",
+        "Care Tag를 연결하면 보호자가 보지 못한 시간의 활동과 수면도 함께 기록합니다. 쌓인 기록이 앞으로 펫보험 할인과 가입조건 개선으로 이어지도록 준비하고 있습니다.",
       ],
       aiMetrics: [
         { n: "2,142명", l: "사용자" },
@@ -155,15 +165,15 @@ export const dict = {
         { n: "7년", l: "무역 · 물류 사업 운영" },
         { n: "70억 원", l: "이전 사업체 누적 매출" },
         { n: "3건", l: "특허 출원" },
-        { n: "2건", l: "운영 중인 서비스" },
+        { n: "2개", l: "운영 중인 서비스" },
       ],
       proofNote:
-        "* 누적 매출은 외부 투자 없이 운영한 비타니마 이전 사업체 기준이며, 비타니마의 매출이 아닙니다.",
-      proofLink: "비타니마가 걸어온 길",
+        "* 누적매출은 외부 투자 없이 운영한 비타니마 이전 사업체 기준이며, 비타니마의 매출이 아닙니다.",
+      proofLink: "대표 소개 보기",
 
-      ctaH2: ["현장의 문제를", "함께 풀어보시겠습니까"],
+      ctaH2: ["Flowstamp를 실제 현장에", "적용해보고 싶다면 이야기해주세요"],
       ctaLead:
-        "Flowstamp 도입은 작업 양식 구성부터 기존 이력 입력, 직원 교육까지 함께 진행합니다. 투자·제휴 문의도 편하게 주세요.",
+        "작업 양식 구성부터 기존 이력 입력, 직원 교육까지 도입 과정을 함께합니다. 투자·제휴 문의도 편하게 보내주세요.",
       ctaBtn: "Flowstamp 도입 문의",
       ctaBtn2: "투자 · 제휴 문의",
 
@@ -1272,44 +1282,54 @@ export const dict = {
     },
 
     home: {
-      eyebrow: "AX FOR SMALL BUSINESS",
-      h1: ["Making what the field records", "carry through", "to the next step"],
+      eyebrow: "WHAT WE BUILD",
+      h1: ["Records that go straight", "into the next job"],
       lead: [
-        "Vitanima helps small businesses and SMEs with AX — the shift to AI.",
-        "We build two services so that information created in the field reaches the next person without being carried by hand.",
+        "Vitanima builds products that organise what happens on the ground and in daily life, so it can be used in the next task or decision right away.",
+        "We run Flowstamp, which connects field reporting and transport in logistics, and AnimAI, which builds a record of an animal's daily life and health.",
       ],
       ctaPrimary: "Enquire about Flowstamp",
-      ctaSecondary: "The problem we solve",
+      ctaSecondary: "See both services",
+      heroMarks: ["FLOWSTAMP", "ANIMAI"],
 
       problemEyebrow: "THE PROBLEM",
-      problemH2: ["The same information,", "moved by hand three or four times"],
+      problemH2: ["The same information —", "found again, asked again, moved again"],
       problemSub:
-        "Not for lack of technology, but because what the field knows never reaches the next person.",
+        "The information exists. The problem is that records already made don't get used in the next task or decision.",
       problemLead: [
-        "A worker photographs the job and posts it to a group chat; the office digs it out and forwards it to the client. The client calls to ask where things stand, and at month end someone builds a statement in a spreadsheet.",
-        "Life with an animal is the same. What a caregiver knows disappears when the conversation ends, and has to be explained again at the clinic and at the next decision.",
+        "On a logistics site, a worker photographs the job and sends it by messenger; the office finds it again, tidies it up and forwards it to the client. The same information passes through several pairs of hands.",
+        "It's similar with companion animals. What the caregiver knows and what the clinic recorded sit apart, so both have to be found and explained again each time.",
       ],
-      problemQuote: "We remove the carrying.",
+      problemQuote:
+        "Vitanima makes it unnecessary to move a record that already exists.",
 
       wayEyebrow: "HOW WE WORK",
-      wayH2: ["Different industries,", "one problem"],
+      wayH2: ["Both services", "are built the same way"],
       waySub:
-        "We make the record left by the field carry straight into the next step.",
-      wayCols: ["Field", "Check & interpret", "Receiving side"],
+        "Record it once, and use it in the next task or decision without entering or explaining it again.",
+      wayCols: ["A record is made", "AI organises & confirms", "Used again"],
       wayRows: [
         {
           name: "Flowstamp",
           field: "Logistics · manufacturing · distribution",
           status: "Field-validated",
           live: true,
-          steps: ["The worker photographs", "The office confirms", "The client receives"],
+          steps: [
+            "Recorded on site",
+            "The office and AI confirm",
+            "Carries into client reporting and transport",
+          ],
         },
         {
           name: "AnimAI",
           field: "Companion animals",
           status: "Live",
           live: true,
-          steps: ["The caregiver speaks", "The AI records", "It informs the next decision"],
+          steps: [
+            "The caregiver and device record",
+            "AI organises it chronologically",
+            "Used again in consultation and insurance",
+          ],
         },
       ],
 
@@ -1317,18 +1337,18 @@ export const dict = {
       fsBadge: "Field-validated",
       fsH2: ["The field photographs, the office confirms,", "the client receives"],
       fsSub:
-        "An operations solution where a single photo carries through to reporting, notification, history and invoicing.",
+        "A logistics operations solution where field photos and job records carry through to reporting, notification, history and invoicing.",
       fsBody: [
-        "The field reports with one large button and a photo. Once the office confirms, an email and a notification go out to the client automatically.",
-        "Clients see photos, progress and documents from one link, without logging in. Quotes through invoicing and statistics connect in one loop, so the month-end spreadsheet disappears.",
+        "The field reports a job with one large button and a few photos. Once the office confirms, an email and a notification go to the client automatically.",
+        "Clients check photos and progress from one link, without logging in. Quotes, invoicing, statistics and the transport dispatch you need are handled on one screen.",
       ],
       fsMetrics: [
-        { n: "98%", l: "Time to field report", sub: "60 min → 1 min" },
-        { n: "90%", l: "Time to client report", sub: "60 min → 5 min" },
-        { n: "0", l: "Missing documents", sub: "across 100 reports" },
+        { n: "98%", l: "Less time to field report", sub: "60 min → 1 min" },
+        { n: "90%", l: "Less time to client report", sub: "60 min → 5 min" },
+        { n: "0", l: "Missing documents", sub: "across 100 field reports" },
       ],
       fsMetricsNote:
-        "* Applied for two months at the logistics site the founder operates (GN Logitech) · 20 client companies · 100 field reports",
+        "* Two months of real use at GN Logitech · 20 client companies · 100 field reports",
       fsConsoleAlt: "Flowstamp office view — job progress and the AI assistant",
       fsLink: "More about Flowstamp",
       fsSiteLink: "flowstamp.kr",
@@ -1336,12 +1356,12 @@ export const dict = {
       aiEyebrow: "ANIMAI",
       aiBadge: "Live",
       aiH2: [
-        "Recording an animal's everyday life,",
-        "noticing health changes earlier",
+        "Recording what is normal for an animal,",
+        "so changes from it don't go unnoticed",
       ],
       aiBody: [
-        "When a caregiver mentions a worry or a change, AnimAI records it chronologically in the Lifetime Log and asks again from what came before.",
-        "We are now adding activity and sleep signals from the Care Tag, and preparing a structure that puts the accumulated record to use in insurance.",
+        "Conversations with the caregiver, clinic records and daily life accumulate chronologically in the Lifetime Log. AnimAI remembers earlier records and checks back on what matters.",
+        "Connect a Care Tag and the activity and sleep from hours nobody watched are recorded too. We are preparing for that record to lead to pet insurance discounts and better enrolment terms.",
       ],
       aiMetrics: [
         { n: "2,142", l: "Users" },
@@ -1361,11 +1381,11 @@ export const dict = {
       ],
       proofNote:
         "* Cumulative revenue is for prior businesses run without outside investment, not Vitanima's revenue.",
-      proofLink: "The path we took",
+      proofLink: "Meet the founder",
 
-      ctaH2: ["Shall we solve", "your field's problem together?"],
+      ctaH2: ["Want to try Flowstamp", "on your own site? Let's talk."],
       ctaLead:
-        "A Flowstamp rollout covers job templates, migrating your existing history and training your staff. Investment and partnership enquiries are welcome too.",
+        "We work through the rollout with you — job templates, migrating existing history, training your staff. Investment and partnership enquiries are welcome too.",
       ctaBtn: "Enquire about Flowstamp",
       ctaBtn2: "Investment & partnership",
 
