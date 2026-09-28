@@ -52,7 +52,9 @@ export default async function AboutPage({
                 <div key={f.t} className="flex items-stretch gap-3">
                   <div className="border border-line bg-bone-2 px-5 py-4">
                     <p className="t-title text-[15px] text-ink">{f.t}</p>
-                    <p className="mt-1 text-[13px] text-ink-3">{f.d}</p>
+                    {f.d ? (
+                      <p className="mt-1 text-[13px] text-ink-3">{f.d}</p>
+                    ) : null}
                   </div>
                   {i < a.heroFlow.length - 1 && (
                     <ArrowRight
@@ -104,17 +106,19 @@ export default async function AboutPage({
           </div>
 
           {/* 방향 전환 */}
-          <Reveal delay={180}>
-            <div className="mt-16 border-t border-line-dark pt-10">
-              <p className="t-display text-[24px] leading-[1.35] sm:text-[32px]">
-                {a.turnBody.map((line) => (
-                  <span key={line} className="block">
-                    {line}
-                  </span>
-                ))}
-              </p>
-            </div>
-          </Reveal>
+          {a.turnBody.length > 0 && (
+            <Reveal delay={180}>
+              <div className="mt-16 border-t border-line-dark pt-10">
+                <p className="t-display text-[24px] leading-[1.35] sm:text-[32px]">
+                  {a.turnBody.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </p>
+              </div>
+            </Reveal>
+          )}
         </div>
       </section>
 
@@ -173,6 +177,9 @@ export default async function AboutPage({
             </div>
             <p className="t-display mt-10 text-[21px] text-ink sm:text-[26px]">
               {a.whyClose}
+            </p>
+            <p className="mt-4 max-w-2xl text-[13.5px] leading-relaxed text-ink-4">
+              {a.whyCloseNote}
             </p>
           </Reveal>
         </div>

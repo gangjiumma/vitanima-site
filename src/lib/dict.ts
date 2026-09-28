@@ -103,7 +103,7 @@ export const dict = {
         {
           name: "Flowstamp",
           field: "물류 · 제조 · 유통",
-          status: "현장 검증 완료",
+          status: "2개월 실사용",
           live: true,
           steps: [
             "현장에서 기록한다",
@@ -125,7 +125,7 @@ export const dict = {
       ],
 
       fsEyebrow: "FLOWSTAMP",
-      fsBadge: "현장 검증 완료",
+      fsBadge: "2개월 실사용",
       fsH2: ["현장이 찍고, 사무실이 확인하고,", "거래처가 받습니다"],
       fsSub:
         "현장 사진과 작업기록이 보고·알림·이력·청구까지 이어지는 물류 운영 솔루션입니다.",
@@ -183,7 +183,7 @@ export const dict = {
     },
     flowstamp: {
       eyebrow: "FLOWSTAMP",
-      badge: "현장 검증 완료",
+      badge: "2개월 실사용",
       h1: "Flowstamp",
       tagline: ["현장이 찍고, 사무실이 확인하고,", "거래처가 받습니다"],
       lead: [
@@ -305,153 +305,156 @@ export const dict = {
     },
     about: {
       eyebrow: "COMPANY",
-      h1: ["현장이 아는 것을,", "다음 사람이 이어받게 합니다"],
+      h1: ["직접 겪은 문제를,", "직접 만든 제품으로 해결합니다"],
       lead: [
-        "비타니마는 소상공인과 중소기업의 AX(AI 전환)를 돕는 회사입니다.",
-        "물류·제조 현장의 Flowstamp와 반려동물의 AnimAI, 두 서비스를 만들고 있습니다. 산업은 다르지만 푸는 문제는 하나입니다.",
+        "비타니마는 실제로 겪은 문제를 소프트웨어로 해결하는 회사입니다.",
+        "수출입 물류 현장의 보고와 운송을 연결하는 Flowstamp와, 반려동물의 일상과 건강기록을 쌓는 AnimAI를 운영하고 있습니다.",
       ],
       heroFlow: [
-        { t: "현장", d: "기록이 만들어지는 곳" },
-        { t: "확인 · 해석", d: "사람과 AI가 함께" },
-        { t: "받는 쪽", d: "거래처 · 다음 판단" },
+        { t: "문제를 직접 겪습니다", d: "" },
+        { t: "제품을 직접 만듭니다", d: "" },
+        { t: "실제 사용으로 확인합니다", d: "" },
       ],
-      heroFlowCenter: "옮기는 일을 없애면, 현장의 시간이 남습니다",
+      heroFlowCenter: "계획보다 제품을 먼저 만들고, 실제 사용으로 확인합니다.",
 
-      missionLabel: "MISSION",
-      mission: ["사람이 옮기던 정보를,", "시스템이 잇게 만듭니다"],
+      missionLabel: "WHAT WE DO",
+      mission: ["반복되는 일을 줄이는", "제품을 만듭니다"],
       missionBody:
-        "현장에서 만들어진 기록이 사무실과 거래처로, 보호자의 말이 다음 판단으로 이어지지 않는 것은 기술이 부족해서가 아닙니다. 옮기는 사람이 필요한 구조 때문입니다. 비타니마는 그 구조를 바꿉니다.",
-      visionLabel: "VISION",
-      vision: ["작은 회사도", "큰 회사처럼 일하는 것"],
+        "사람이 다시 찾고, 다시 묻고, 다시 옮기던 일을 줄입니다. 필요한 정보가 이미 있다면 처음부터 다시 입력하거나 설명하지 않아도 되게 만듭니다.",
+      visionLabel: "HOW WE WORK",
+      vision: ["직접 만들고,", "실제 사용으로 확인합니다"],
       visionBody:
-        "대기업은 시스템을 직접 만들어 씁니다. 소상공인과 중소기업도 같은 수준의 도구를 쓸 수 있어야 합니다. 현장에 맞고, 바로 쓸 수 있고, 감당할 수 있는 가격으로.",
-      turnBody: ["기술이 아니라,", "일하는 방식을 바꿉니다"],
+        "문제를 설명하는 데 오래 쓰기보다 먼저 제품을 만듭니다. 실제 사용자가 써본 결과를 보고 고치고, 다시 현장에 적용합니다.",
+      turnBody: [],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["7년간 현장에서,", "같은 문제를 매일 겪었습니다"],
-      whySub: "창고와 차량을 직접 운영하며 본 것은 늘 같았습니다.",
+      whyH2: ["7년 동안 현장에서", "같은 장면을 반복해서 봤습니다"],
+      whySub: "작업이 끝나도 보고와 확인은 끝나지 않았습니다.",
       whyBody: [
-        "작업은 끝났는데 정보는 늦게 도착했습니다. 현장 직원이 사진을 찍어 단톡방에 올리면, 사무실이 그걸 찾아 거래처에 다시 전달했습니다.",
-        "거래처는 진행 상황을 묻는 전화를 걸었고, 월말이면 엑셀로 명세서를 만들었습니다. 같은 정보를 사람이 서너 번 옮기고 있었습니다.",
-        "사람을 더 뽑는 대신 시스템을 만들기로 했습니다. 그렇게 만든 것이 Flowstamp이고, 같은 방법을 반려생활에 적용한 것이 AnimAI입니다.",
+        "무역과 물류 사업을 하면서 창고와 운송을 직접 운영했습니다. 현장에서는 작업자가 사진을 찍어 단톡방에 올렸고, 사무실은 그 사진을 다시 찾아 거래처에 전달했습니다.",
+        "거래처는 진행 상황을 확인하려 전화했고, 월말에는 같은 내용을 다시 모아 엑셀과 명세서를 만들었습니다.",
+        "정보가 없어서 생기는 문제가 아니었습니다. 이미 있는 정보를 다음 사람이 쓰기 위해 누군가 다시 찾아 정리해야 했습니다.",
+        "이 반복을 줄이기 위해 직접 물류 SaaS를 만들기 시작했고, 지금의 Flowstamp로 이어졌습니다.",
       ],
-      whyQuote: "문제는 사람이 아니라, 사람이 옮겨야만 하는 구조였습니다.",
+      whyQuote: "정보는 이미 있었지만, 다음 사람이 쓰려면 다시 정리해야 했습니다.",
       whyLoop: ["현장이 찍는다", "단톡방에 올린다", "사무실이 찾는다", "거래처에 전달한다", "전화가 온다"],
-      whyClose: "Vitanima는 이 반복을 없애기 위해 시작됐습니다.",
+      whyClose: "이 경험에서 Flowstamp가 시작됐습니다.",
+      whyCloseNote:
+        "AnimAI는 다른 산업의 제품이지만, 직접 문제를 보고 제품으로 해결한다는 방식은 같습니다.",
 
       storyEyebrow: "OUR PATH",
       storyH2: "여기까지 온 길",
       storyLead: [
-        "비타니마는 처음부터 반려동물 산업에서 시작한 회사가 아닙니다.",
-        "무역과 물류 현장에서 반복되는 문제를 직접 겪고, 그것을 시스템으로 바꾸는 일을 해왔습니다. 그리고 지금은 같은 실행 방식으로 반려동물의 일상을 기록으로 만드는 일을 하고 있습니다.",
+        "2018년 무역·물류 사업에서 시작해 창고와 운송을 직접 운영했고, 반복되는 현장 업무를 줄이기 위해 물류 SaaS까지 직접 만들었습니다.",
+        "현재는 Flowstamp와 AnimAI 두 제품을 운영하고 있습니다.",
       ],
       story: [
         {
           y: "2018–2020",
           k: "FIELD",
-          t: "현장에서 시작했습니다",
-          d: "무역과 국제 물류 현장에서 고객과 직접 부딪히며 문제를 해결했습니다. 반복되는 확인과 전달, 정보의 단절이 현장의 시간을 얼마나 많이 쓰게 만드는지 배웠습니다.",
+          t: "무역과 물류 사업을 시작했습니다",
+          d: "무역 중개와 수출입 물류, 창고와 운송을 직접 운영했습니다. 고객과 현장에서 부딪히며 물류 업무가 실제로 어떻게 돌아가는지 배웠습니다.",
           note: "GN누리 · GN로지텍 · GN밸류홀딩스",
         },
         {
           y: "2022–2023",
           k: "BUILD",
-          t: "반복되는 일을 시스템으로 바꿨습니다",
-          d: "물류 현장의 반복 업무를 소프트웨어로 처리하는 SaaS를 직접 만들었습니다. 사람이 매번 확인하고 전달하던 과정을 시스템이 대신하도록 만드는 경험을 쌓았습니다.",
+          t: "처음으로 물류 SaaS를 직접 만들었습니다",
+          d: "창고와 운송 현장에서 반복되던 확인·보고 업무를 줄이기 위해 물류 SaaS를 기획하고 개발했습니다. 제품을 직접 만들고 운영해본 첫 경험이었습니다.",
           note: "이지로지 · 물류 SaaS 개발",
         },
         {
           y: "2026",
           k: "VITANIMA",
-          t: "두 산업에서 같은 문제를 풉니다",
-          d: "반려동물을 키우면서 같은 문제를 다시 봤습니다. 보호자가 아는 것도 다음 판단으로 이어지지 않았습니다. 물류 현장에는 Flowstamp를, 반려생활에는 AnimAI를 만들어 같은 방법을 적용하고 있습니다.",
+          t: "Vitanima에서 두 제품을 만들었습니다",
+          d: "수출입 물류 현장을 위한 Flowstamp와 반려동물 보호자를 위한 AnimAI를 만들었습니다. 서로 다른 시장의 제품이지만, 두 서비스 모두 실제 사용자의 문제에서 출발했습니다.",
           note: "",
         },
         {
           y: "2026 · NOW",
           k: "EXECUTE",
-          t: "두 서비스를 모두 시장에 내놓았습니다",
-          d: "AnimAI를 출시해 2,142명이 쓰고 있고, Flowstamp는 대표가 운영하는 물류 현장에 2개월간 적용해 검증을 마쳤습니다. 특허 3건을 출원했고, 지금은 Flowstamp의 첫 외부 도입을 준비하고 있습니다.",
+          t: "두 서비스를 실제 사용자에게 검증하고 있습니다",
+          d: "AnimAI는 출시 후 사용자 2,142명을 확보했고, Flowstamp는 실제 물류 현장에 2개월간 적용해 현장 보고와 고객 전달 과정을 검증했습니다. 관련 특허 3건도 출원했습니다.",
           note: "",
           metrics: [
-            { n: "Flowstamp", l: "현장 검증 완료" },
-            { n: "AnimAI", l: "운영 중 · 2,142명" },
+            { n: "Flowstamp", l: "2개월 현장 실사용" },
+            { n: "AnimAI", l: "사용자 2,142명" },
             { n: "3건", l: "특허 출원" },
           ],
         },
       ],
-      storyClose: ["산업은 달라졌지만,", "문제를 푸는 방식은 같습니다"],
+      storyClose: ["문제는 달라도,", "제품을 만드는 방식은 같습니다"],
       storyCloseBody:
-        "사용자가 이미 알고 있는 것을 기술이 이어받고, 반복되는 과정에 쓰이던 시간을 줄이는 것. 산업은 달라져도 Vitanima가 문제를 푸는 방식은 같습니다.",
+        "사용자가 실제로 겪는 문제에서 시작하고, 직접 제품을 만든 뒤 실제 사용으로 확인합니다.",
 
       buildEyebrow: "WHAT WE BUILD",
-      buildH2: ["두 산업에서,", "같은 방법으로 만듭니다"],
+      buildH2: ["현재 두 제품을", "운영하고 있습니다"],
       buildSub:
-        "현장이 남긴 기록을 다음 단계가 그대로 이어받게 하는 것. 두 서비스의 구조는 같습니다.",
+        "Flowstamp는 수출입 물류 현장의 반복 업무를 줄이고, AnimAI는 반려동물의 일상과 건강기록을 쌓습니다.",
       build: [
         {
           n: "01",
           t: "Flowstamp",
-          s: "현장 검증 완료",
+          s: "2개월 실사용",
           live: true,
-          d: "물류·제조·유통 현장의 사진 보고가 사무실 확인을 거쳐 거래처까지 자동으로 전달됩니다. 견적부터 청구, 통계까지 한 바퀴로 이어집니다.",
+          d: "수출입 물류·유통 현장의 작업지시부터 사진 보고, 고객 전달, 견적·청구, 운송까지 한 흐름으로 연결하는 AI SaaS입니다.",
         },
         {
           n: "02",
           t: "AnimAI",
           s: "운영 중",
           live: true,
-          d: "보호자의 대화에서 중요한 내용을 찾아 Lifetime Log에 기록하고, 이전 기록과 연결해 다시 확인하는 반려동물 AI 서비스입니다.",
+          d: "보호자와 AI의 대화, 진료기록, 생활기록을 Lifetime Log에 쌓고 이전 기록을 바탕으로 다시 확인하는 반려동물 AI 서비스입니다.",
         },
       ],
       buildNote:
-        "Flowstamp는 수출입 물류를 시작으로 제조·유통까지, AnimAI는 Care Tag와 보험 연계까지 넓혀갑니다.",
+        "Flowstamp는 수출입 물류를 시작으로 제조·유통 현장으로, AnimAI는 Care Tag와 펫보험 연계로 확장하고 있습니다.",
 
       valuesH2: "우리가 지키는 것",
       values: [
         {
           n: "01",
           t: "현장에서 시작합니다",
-          d: "가정으로 문제를 만들지 않습니다. 사용자가 실제로 겪는 불편에서 시작합니다.",
+          d: "회의실에서 문제를 가정하기보다 사용자가 실제로 어디서 불편을 겪는지 먼저 봅니다.",
         },
         {
           n: "02",
-          t: "복잡함은 우리가 맡습니다",
-          d: "기술과 운영이 복잡하더라도 사용자는 쉽게 이용할 수 있어야 합니다.",
+          t: "복잡한 건 제품 안에서 처리합니다",
+          d: "기술과 운영이 복잡하더라도 사용자는 쉽게 쓸 수 있어야 합니다.",
         },
         {
           n: "03",
-          t: "기록이 쌓일수록 더 잘 알아야 합니다",
-          d: "한 번 쓰고 끝나는 기능이 아니라, 기록이 쌓일수록 우리 아이를 더 잘 이해하는 서비스를 만듭니다.",
+          t: "직접 만듭니다",
+          d: "문제를 아는 사람이 제품 기획과 개발까지 이어갑니다. 외부에 설명만 맡기지 않습니다.",
         },
         {
           n: "04",
-          t: "먼저 만들고 결과로 말합니다",
-          d: "계획만 설명하기보다 직접 만들고, 실제 사용자의 반응과 데이터로 확인합니다.",
+          t: "먼저 만들고, 사용으로 확인합니다",
+          d: "계획을 오래 설명하기보다 제품을 먼저 만들고 실제 사용자의 반응과 데이터로 고칩니다.",
         },
       ],
 
-      nameH2: "OUR NAME",
+      nameH2: "VITANIMA라는 이름",
       nameLines: [
         { k: "VITA", v: "생명" },
         { k: "ANIMA", v: "마음 · 생기" },
       ],
       nameCompound: "VITANIMA",
       nameBody:
-        "생명을 더 오래 이해하고 기억하는 기술을 만들겠다는 방향을 담은 이름입니다.",
+        "Vitanima는 Vita와 Anima를 합쳐 만든 이름입니다. 현재 이 이름 아래 Flowstamp와 AnimAI 두 서비스를 만들고 운영하고 있습니다.",
       nameProductLabel: "AnimAI",
-      nameProductSub: "Vitanima가 만드는 보호자용 AI 서비스",
+      nameProductSub: "Vitanima가 운영하는 반려동물 AI 서비스입니다.",
       nameProductBody:
-        "Vitanima는 회사 이름이고, AnimAI는 보호자가 사용하는 앱과 AI 서비스의 이름입니다.",
+        "Vitanima는 회사 이름이고, AnimAI는 보호자가 사용하는 서비스 이름입니다.",
 
       factsH2: "법인 정보",
       facts: [
         { k: "법인명", v: "주식회사 비타니마 (Vitanima Inc.)" },
         { k: "대표이사", v: "김훈기" },
-        { k: "사업 분야", v: "중소기업 AX 솔루션 · AI SaaS · 데이터 플랫폼" },
+        { k: "사업 분야", v: "AI SaaS · 물류 운영 소프트웨어 · 반려동물 AI 서비스" },
         {
           k: "주요 제품·서비스",
-          v: "Flowstamp (현장 검증 완료) · AnimAI (운영 중)",
+          v: "Flowstamp (현장 실사용 검증) · AnimAI (운영 중)",
         },
         { k: "전화", v: "010-2358-5248" },
         { k: "이메일", v: "cs@vitanima.kr" },
@@ -467,8 +470,8 @@ export const dict = {
         {
           y: "2026–현재",
           t: "주식회사 비타니마",
-          d: "중소기업 AX 솔루션 개발 및 운영",
-          sub: "Flowstamp 현장 검증 완료 / AnimAI 운영 중",
+          d: "AI SaaS · 물류 운영 소프트웨어 · 반려동물 AI 서비스",
+          sub: "Flowstamp 2개월 현장 실사용 / AnimAI 운영 중",
         },
         {
           y: "2022–2023",
@@ -493,7 +496,7 @@ export const dict = {
 
       ctaH2: ["비타니마가 만드는", "두 서비스를 확인해보세요"],
       ctaLead:
-        "Flowstamp는 현장 검증을 마치고 첫 외부 도입을 준비하고 있고, AnimAI는 2,142명이 쓰고 있습니다.",
+        "Flowstamp는 물류 현장에서 2개월 실사용을 마치고 첫 외부 도입을 준비하고 있고, AnimAI는 2,142명이 쓰고 있습니다.",
       ctaNote: "",
       ctaBtn: "Flowstamp 알아보기",
       ctaBtn2: "대표 이야기 보기",
@@ -576,7 +579,7 @@ export const dict = {
       firstEyebrow: "VITANIMA · WHAT I BUILT",
       firstH2: ["기획부터 개발, 영업까지", "직접 실행하고 있습니다"],
       firstGrid: [
-        { n: "01", t: "Flowstamp 개발", d: "웹 · 모바일 · 현장 검증 완료" },
+        { n: "01", t: "Flowstamp 개발", d: "웹 · 모바일 · 2개월 실사용" },
         { n: "02", t: "AnimAI 출시", d: "iOS · Android · 2,142명" },
         { n: "03", t: "특허 3건", d: "출원 완료" },
         { n: "04", t: "AI OCR · 자동 보고", d: "실제 코드 가동" },
@@ -1312,7 +1315,7 @@ export const dict = {
         {
           name: "Flowstamp",
           field: "Logistics · manufacturing · distribution",
-          status: "Field-validated",
+          status: "Two months of real use",
           live: true,
           steps: [
             "Recorded on site",
@@ -1334,7 +1337,7 @@ export const dict = {
       ],
 
       fsEyebrow: "FLOWSTAMP",
-      fsBadge: "Field-validated",
+      fsBadge: "Two months of real use",
       fsH2: ["The field photographs, the office confirms,", "the client receives"],
       fsSub:
         "A logistics operations solution where field photos and job records carry through to reporting, notification, history and invoicing.",
@@ -1395,7 +1398,7 @@ export const dict = {
     },
     flowstamp: {
       eyebrow: "FLOWSTAMP",
-      badge: "Field-validated",
+      badge: "Two months of real use",
       h1: "Flowstamp",
       tagline: [
         "The field photographs, the office confirms,",
@@ -1524,42 +1527,40 @@ export const dict = {
     },
     about: {
       eyebrow: "COMPANY",
-      h1: ["Making what the field knows", "reach the next person"],
+      h1: ["Problems we met ourselves,", "solved with products we built"],
       lead: [
-        "Vitanima helps small businesses and SMEs with AX — the shift to AI.",
-        "We build two services: Flowstamp for logistics and manufacturing sites, and AnimAI for life with companion animals. Different industries, one problem.",
+        "Vitanima solves problems we have actually run into, in software.",
+        "We operate Flowstamp, which connects field reporting and transport in import/export logistics, and AnimAI, which builds a record of an animal's daily life and health.",
       ],
       heroFlow: [
-        { t: "Field", d: "Where the record is made" },
-        { t: "Check & interpret", d: "People and AI together" },
-        { t: "Receiving side", d: "Clients · the next decision" },
+        { t: "We meet the problem ourselves", d: "" },
+        { t: "We build the product ourselves", d: "" },
+        { t: "We check it in real use", d: "" },
       ],
-      heroFlowCenter: "Remove the carrying, and the field gets its time back",
+      heroFlowCenter:
+        "We build the product before the plan, and check it in real use.",
 
-      missionLabel: "MISSION",
-      mission: [
-        "Let the system carry",
-        "what people have been carrying",
-      ],
+      missionLabel: "WHAT WE DO",
+      mission: ["We build products that cut", "the work that repeats"],
       missionBody:
-        "Records made in the field don't reach the office and the client, and what a caregiver says doesn't reach the next decision — not for lack of technology, but because the structure needs someone to carry it. Vitanima changes that structure.",
-      visionLabel: "VISION",
-      vision: ["Small companies working", "the way large ones do"],
+        "We cut the work of finding it again, asking again, moving it again. If the information already exists, you shouldn't have to enter or explain it from scratch.",
+      visionLabel: "HOW WE WORK",
+      vision: ["We build it ourselves,", "and check it in real use"],
       visionBody:
-        "Large companies build their own systems. Small businesses and SMEs should have tools of the same standard — fitted to their site, usable straight away, at a price they can carry.",
-      turnBody: ["We don't change the technology.", "We change how people work."],
+        "Rather than spend long explaining the problem, we build the product first. We look at what real users do with it, fix it, and put it back on site.",
+      turnBody: [],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["Seven years on the ground,", "meeting the same problem daily"],
-      whySub:
-        "Running warehouses and trucks ourselves, what we saw was always the same.",
+      whyH2: ["Seven years on the ground,", "watching the same scene repeat"],
+      whySub: "The job would finish, but the reporting and checking would not.",
       whyBody: [
-        "The work was done, but the information arrived late. A worker would photograph the job and post it to a group chat; the office would dig it out and forward it to the client.",
-        "The client would call to ask where things stood, and at month end someone built a statement in a spreadsheet. The same information was being carried by hand three or four times.",
-        "Instead of hiring more people, we built a system. That became Flowstamp — and applying the same method to life with animals became AnimAI.",
+        "Running trade and logistics, we operated warehouses and trucking ourselves. On site, a worker would photograph the job and post it to a group chat; the office would find it again and forward it to the client.",
+        "The client would call to check on progress, and at month end the same content was gathered again into spreadsheets and statements.",
+        "It wasn't a problem of missing information. The information existed — someone just had to find and organise it again so the next person could use it.",
+        "To cut that repetition we started building logistics SaaS ourselves, and that became Flowstamp.",
       ],
       whyQuote:
-        "The problem was never the people. It was a structure that required carrying.",
+        "The information was already there. It just had to be organised again for the next person.",
       whyLoop: [
         "The field photographs",
         "Posts to a group chat",
@@ -1567,121 +1568,126 @@ export const dict = {
         "Forwards to the client",
         "The phone rings",
       ],
-      whyClose: "Vitanima began to remove this loop.",
+      whyClose: "Flowstamp started from this experience.",
+      whyCloseNote:
+        "AnimAI is a product for a different industry, but the way we work is the same: see the problem directly, solve it with a product.",
 
       storyEyebrow: "OUR PATH",
       storyH2: "How we got here",
       storyLead: [
-        "Vitanima did not start out in the companion animal industry.",
-        "We met repeating problems first-hand on trade and logistics floors, and turned them into systems. Now we apply the same way of working to turn an animal's everyday life into a record.",
+        "We started in trade and logistics in 2018, running warehouses and trucking ourselves, and built logistics SaaS to cut the work that kept repeating on site.",
+        "Today we operate two products: Flowstamp and AnimAI.",
       ],
       story: [
         {
           y: "2018–2020",
           k: "FIELD",
-          t: "We started on the ground",
-          d: "On trade and international logistics floors, we solved problems face to face with customers. We learned how much time repeated checking, relaying and broken information take from a working day.",
+          t: "We started in trade and logistics",
+          d: "We ran trade brokerage, import/export logistics, warehousing and trucking ourselves. Working face to face with customers on site, we learned how logistics actually runs.",
           note: "GN Nuri · GN Logitech · GN Value Holdings",
         },
         {
           y: "2022–2023",
           k: "BUILD",
-          t: "We turned what repeats into a system",
-          d: "We built SaaS that handled repetitive logistics work in software, and learned how to make a system take over what people had been checking and relaying by hand.",
+          t: "We built our first logistics SaaS",
+          d: "To cut the checking and reporting that repeated across warehousing and trucking, we designed and built logistics SaaS. It was our first time building and running a product ourselves.",
           note: "EasyLogi · logistics SaaS",
         },
         {
           y: "2026",
           k: "VITANIMA",
-          t: "Solving one problem across two industries",
-          d: "Living with our own animals, we met the same problem again — what a caregiver knew didn't reach the next decision either. We built Flowstamp for logistics sites and AnimAI for life with animals, applying the same method to both.",
+          t: "We built two products at Vitanima",
+          d: "Flowstamp for import/export logistics sites, and AnimAI for the people who live with companion animals. Products for different markets — both started from a problem a real user had.",
           note: "",
         },
         {
           y: "2026 · NOW",
           k: "EXECUTE",
-          t: "Both services are out in the market",
-          d: "AnimAI launched and 2,142 people use it; Flowstamp was applied for two months at the logistics site the founder operates and has completed field validation. Three patents are filed, and we are preparing Flowstamp's first external rollout.",
+          t: "Both services are being validated with real users",
+          d: "AnimAI has reached 2,142 users since launch, and Flowstamp was applied at a working logistics site for two months to validate field reporting and client delivery. Three related patents are filed.",
           note: "",
           metrics: [
-            { n: "Flowstamp", l: "Field-validated" },
-            { n: "AnimAI", l: "Live · 2,142 users" },
+            { n: "Flowstamp", l: "Two months of real use on site" },
+            { n: "AnimAI", l: "2,142 users" },
             { n: "3", l: "Patents filed" },
           ],
         },
       ],
-      storyClose: ["The industry changed.", "The way we solve it did not."],
+      storyClose: ["Different problems,", "the same way of building"],
       storyCloseBody:
-        "Have technology take over what users already know, and cut the time spent on what repeats. The industry may change; the way Vitanima solves problems does not.",
+        "We start from a problem real users have, build the product ourselves, then check it in real use.",
 
       buildEyebrow: "WHAT WE BUILD",
-      buildH2: ["Two industries,", "built the same way"],
+      buildH2: ["We currently operate", "two products"],
       buildSub:
-        "Making the record left by the field carry straight into the next step. Both services share that structure.",
+        "Flowstamp cuts the repetitive work on import/export logistics sites; AnimAI builds a record of an animal's daily life and health.",
       build: [
         {
           n: "01",
           t: "Flowstamp",
-          s: "Field-validated",
+          s: "Two months of real use",
           live: true,
-          d: "Photo reports from logistics, manufacturing and distribution sites pass through office confirmation and reach the client automatically. Quotes through invoicing and statistics connect in one loop.",
+          d: "An AI SaaS connecting work orders, photo reports, client delivery, quotes and invoicing, and transport across import/export logistics and distribution sites — in one flow.",
         },
         {
           n: "02",
           t: "AnimAI",
           s: "Live",
           live: true,
-          d: "A companion animal AI service that finds what matters in a caregiver's conversation, records it in the Lifetime Log, and connects it to earlier records to check again.",
+          d: "A companion animal AI service that accumulates conversations with the AI, clinic records and daily life in the Lifetime Log, and checks back from what came before.",
         },
       ],
       buildNote:
-        "Flowstamp extends from import/export logistics into manufacturing and distribution; AnimAI into the Care Tag and insurance.",
+        "Flowstamp extends from import/export logistics into manufacturing and distribution; AnimAI into the Care Tag and pet insurance.",
 
       valuesH2: "What we hold to",
       values: [
         {
           n: "01",
           t: "We start on the ground",
-          d: "We don't invent problems from assumptions. We start from what users actually struggle with.",
+          d: "Rather than assume a problem in a meeting room, we look first at where users actually struggle.",
         },
         {
           n: "02",
-          t: "We take on the complexity",
+          t: "Complexity stays inside the product",
           d: "However complex the technology and operations, users should find it easy.",
         },
         {
           n: "03",
-          t: "The more the record accumulates, the better we should know",
-          d: "Not a feature used once, but a service that understands your animal better as the record grows.",
+          t: "We build it ourselves",
+          d: "The person who knows the problem carries it through product and engineering. We don't outsource the understanding.",
         },
         {
           n: "04",
-          t: "Build first, let results speak",
-          d: "Rather than explain a plan, we build it and check against real user response and data.",
+          t: "Build first, confirm in use",
+          d: "Rather than explain a plan at length, we build it and fix it against real user response and data.",
         },
       ],
 
-      nameH2: "OUR NAME",
+      nameH2: "The name Vitanima",
       nameLines: [
         { k: "VITA", v: "Life" },
         { k: "ANIMA", v: "Heart · spirit" },
       ],
       nameCompound: "VITANIMA",
       nameBody:
-        "A name that holds our direction: to build technology that understands and remembers life for longer.",
+        "Vitanima joins Vita and Anima. Under that name we build and operate two services today: Flowstamp and AnimAI.",
       nameProductLabel: "AnimAI",
-      nameProductSub: "The caregiver-facing AI service Vitanima builds",
+      nameProductSub: "The companion animal AI service Vitanima operates.",
       nameProductBody:
-        "Vitanima is the company name; AnimAI is the name of the app and AI service caregivers use.",
+        "Vitanima is the company name; AnimAI is the name of the service caregivers use.",
 
       factsH2: "Corporate information",
       facts: [
         { k: "Legal name", v: "Vitanima Inc. (주식회사 비타니마)" },
         { k: "CEO", v: "Hunki Kim" },
-        { k: "Field", v: "SME AX solutions · AI SaaS · data platform" },
+        {
+          k: "Field",
+          v: "AI SaaS · logistics operations software · companion animal AI",
+        },
         {
           k: "Products & services",
-          v: "Flowstamp (field-validated) · AnimAI (live)",
+          v: "Flowstamp (validated in real use) · AnimAI (live)",
         },
         { k: "Phone", v: "+82 10-2358-5248" },
         { k: "Email", v: "cs@vitanima.kr" },
@@ -1701,8 +1707,8 @@ export const dict = {
         {
           y: "2026–present",
           t: "Vitanima Inc.",
-          d: "Building and running AX solutions for SMEs",
-          sub: "Flowstamp field-validated / AnimAI live",
+          d: "AI SaaS · logistics operations software · companion animal AI",
+          sub: "Flowstamp: two months of real use / AnimAI: live",
         },
         {
           y: "2022–2023",
@@ -1727,7 +1733,7 @@ export const dict = {
 
       ctaH2: ["See the two services", "Vitanima is building"],
       ctaLead:
-        "Flowstamp has completed field validation and is preparing its first external rollout; AnimAI is used by 2,142 people.",
+        "Flowstamp completed two months of real use on a logistics site and is preparing its first external rollout; AnimAI is used by 2,142 people.",
       ctaNote: "",
       ctaBtn: "About Flowstamp",
       ctaBtn2: "Read from the CEO",
@@ -1820,7 +1826,7 @@ export const dict = {
         "I am executing it directly",
       ],
       firstGrid: [
-        { n: "01", t: "Built Flowstamp", d: "Web · mobile · field-validated" },
+        { n: "01", t: "Built Flowstamp", d: "Web · mobile · two months of real use" },
         { n: "02", t: "Launched AnimAI", d: "iOS · Android · 2,142 users" },
         { n: "03", t: "3 patents", d: "Filed" },
         { n: "04", t: "AI OCR · auto reporting", d: "Running in production" },
