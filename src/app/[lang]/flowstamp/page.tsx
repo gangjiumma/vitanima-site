@@ -150,7 +150,11 @@ export default async function FlowstampPage({
         <div className="mx-auto grid max-w-6xl gap-14 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[55fr_45fr] lg:items-center lg:gap-16">
           <Reveal>
             <h2 className="t-display text-[26px] text-ink sm:text-[34px]">
-              {f.aiH2}
+              {f.aiH2.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </h2>
             <div className="mt-7 max-w-xl space-y-4">
               {f.aiBody.map((p) => (
