@@ -26,9 +26,23 @@ export const resolveLang = async (
 export const dict = {
   ko: {
     meta: {
-      title: "㈜비타니마 — AI가 우리 아이를 이해하게 만듭니다",
+      title: "㈜비타니마 — 소상공인과 중소기업의 AX를 돕습니다",
       description:
-        "세상의 AI는 평균을 학습합니다. 비타니마의 AI는 우리 아이를 학습합니다. 보호자의 말을 반려동물 개체 데이터로 바꾸는 AI 기술로 AnimAI를 만듭니다.",
+        "현장의 기록이 다음 단계로 이어지게 만듭니다. 물류·제조 현장의 Flowstamp와 반려동물 AI 서비스 AnimAI를 만드는 AX 솔루션 회사, 주식회사 비타니마.",
+      keywords: [
+        "비타니마",
+        "Vitanima",
+        "Flowstamp",
+        "플로우스탬프",
+        "AX 솔루션",
+        "중소기업 AI",
+        "현장 보고 자동화",
+        "물류 SaaS",
+        "수출입 물류 소프트웨어",
+        "AnimAI",
+        "애니마이",
+        "반려동물 AI",
+      ],
     },
     nav: {
       about: "회사",
@@ -1214,9 +1228,19 @@ export const dict = {
 
   en: {
     meta: {
-      title: "Vitanima — Making AI understand your animal",
+      title: "Vitanima — AX for small businesses and SMEs",
       description:
-        "The world’s AI learns the average. Vitanima’s AI learns your animal. We build AnimAI on technology that turns a caregiver’s words into per-animal data.",
+        "Making what the field records carry through to the next step. Vitanima builds Flowstamp for logistics and manufacturing sites, and AnimAI for life with companion animals.",
+      keywords: [
+        "Vitanima",
+        "Flowstamp",
+        "AX solution",
+        "SME AI",
+        "field reporting software",
+        "logistics SaaS",
+        "AnimAI",
+        "pet AI",
+      ],
     },
     nav: {
       about: "Company",

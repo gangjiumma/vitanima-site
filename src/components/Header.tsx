@@ -30,8 +30,6 @@ export default function Header({ lang }: { lang: Lang }) {
     { href: `/${lang}/ceo`, label: d.nav.ceo },
     { href: `/${lang}/flowstamp`, label: d.nav.flowstamp },
     { href: `/${lang}/animai`, label: d.nav.animai },
-    { href: `/${lang}/news`, label: d.nav.news },
-    { href: `/${lang}/careers`, label: d.nav.careers },
     { href: `/${lang}/contact`, label: d.nav.contact },
   ];
 

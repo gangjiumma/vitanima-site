@@ -12,7 +12,10 @@ export default async function HomePage({
   const lang = await resolveLang(params);
   const d = getDict(lang);
   const h = d.home;
-  const news = sortedNews().slice(0, 3);
+  // /news 페이지는 현재 비공개(middleware 리다이렉트).
+  // 공개할 때 아래 false 를 지우고 Header·Footer·sitemap 에 되살린다.
+  const NEWS_PUBLIC = false;
+  const news = NEWS_PUBLIC ? sortedNews().slice(0, 3) : [];
 
   return (
     <>

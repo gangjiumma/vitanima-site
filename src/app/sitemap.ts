@@ -8,9 +8,8 @@ const ROUTES = [
   "/ceo",
   "/flowstamp",
   "/animai",
-  "/news",
-  "/careers",
   "/contact",
+  // "/news", "/careers" — 준비 중 (middleware 에서 홈으로 리다이렉트)
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

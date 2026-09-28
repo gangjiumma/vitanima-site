@@ -14,6 +14,16 @@ export function middleware(req: NextRequest) {
       url.pathname = `/${first}/animai`;
       return NextResponse.redirect(url, 308);
     }
+
+    // 준비 중인 페이지 — 파일은 남겨두고 노출만 막는다.
+    // 공개할 때는 아래 배열에서 해당 경로만 빼고 Header·sitemap 에 되살리면 된다.
+    const HIDDEN = ["/news", "/careers"];
+    if (HIDDEN.some((h) => pathname.endsWith(h))) {
+      const url = req.nextUrl.clone();
+      url.pathname = `/${first}`;
+      return NextResponse.redirect(url, 307);
+    }
+
     return NextResponse.next();
   }
 

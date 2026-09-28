@@ -8,9 +8,6 @@ export default function Footer({ lang }: { lang: Lang }) {
   const companyLinks = [
     { href: `/${lang}/about`, label: d.nav.about },
     { href: `/${lang}/ceo`, label: d.nav.ceo },
-    { href: `/${lang}/technology`, label: d.nav.technology },
-    { href: `/${lang}/news`, label: d.nav.news },
-    { href: `/${lang}/careers`, label: d.nav.careers },
     { href: `/${lang}/contact`, label: d.nav.contact },
   ];
 
@@ -25,25 +22,32 @@ export default function Footer({ lang }: { lang: Lang }) {
             <p className="t-title mt-3 max-w-xs text-[17px] leading-relaxed text-bone/70">
               {d.footer.tagline}
             </p>
-            <div className="mt-5 flex flex-col gap-1.5">
-              <a
-                href={`mailto:${d.common.email}`}
-                className="text-[13px] font-medium text-forest-lit underline-offset-4 hover:underline"
-              >
-                {d.common.email}
-              </a>
-              <a
-                href={d.common.phoneHref}
-                className="t-num text-[13px] font-medium text-bone/60 underline-offset-4 hover:text-bone hover:underline"
-              >
-                {d.common.phone}
-              </a>
-            </div>
+            <a
+              href={`mailto:${d.common.email}`}
+              className="mt-5 inline-block text-[13px] font-medium text-forest-lit underline-offset-4 hover:underline"
+            >
+              {d.common.email}
+            </a>
           </div>
 
           <div>
             <h2 className="t-label text-ink-4">{d.footer.product}</h2>
             <ul className="mt-4 space-y-2.5 text-[14px] text-bone/75">
+              <li>
+                <Link href={`/${lang}/flowstamp`} className="hover:text-bone">
+                  Flowstamp
+                </Link>
+              </li>
+              <li>
+                <a
+                  href={d.common.flowstampUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-bone"
+                >
+                  flowstamp.kr
+                </a>
+              </li>
               <li>
                 <Link href={`/${lang}/animai`} className="hover:text-bone">
                   AnimAI
@@ -57,16 +61,6 @@ export default function Footer({ lang }: { lang: Lang }) {
                   className="hover:text-bone"
                 >
                   animai.kr
-                </a>
-              </li>
-              <li>
-                <a
-                  href={d.common.dashboardUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-bone"
-                >
-                  AnimAI Biz
                 </a>
               </li>
             </ul>
