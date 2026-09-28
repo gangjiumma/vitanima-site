@@ -504,46 +504,52 @@ export const dict = {
     },
     ceo: {
       eyebrow: "FOUNDER & CEO",
-      kicker: "현장에서 문제를 찾고, 직접 만들어 검증해왔습니다.",
-      h1: ["저는 기술보다", "문제를 먼저 봅니다"],
+      kicker:
+        "직접 사업을 운영하며 문제를 겪었고, 그 문제를 소프트웨어로 해결해왔습니다.",
+      h1: ["문제를 직접 겪고,", "직접 만듭니다"],
       intro: [
-        "기술은 문제를 해결하기 위한 방법입니다.",
-        "저는 먼저 현장에서 사람들이 어디에 시간을 쓰고 있는지 봅니다. 그리고 반복되는 문제를 직접 만들고, 운영하고, 사용자 반응으로 확인합니다.",
-        "Vitanima도 같은 방식으로 시작했습니다. 물류 현장에는 Flowstamp를, 반려생활에는 AnimAI를 만들어 직접 검증하고 있습니다.",
+        "7년 동안 무역과 물류 사업을 운영하며 창고와 운송 현장을 직접 관리했습니다. 반복되는 업무와 정보 정리 문제를 매일 겪었고, 그 문제를 줄이기 위해 직접 소프트웨어를 만들기 시작했습니다.",
+        "현재는 수출입 물류 현장을 위한 Flowstamp와 반려동물 보호자를 위한 AnimAI를 만들고 운영하고 있습니다.",
       ],
       name: "김훈기",
       role: "대표 · Founder · 기획 · 개발",
 
       startEyebrow: "THE STARTING POINT",
-      startH2: ["기술이 부족해서가", "아니었습니다"],
-      startSub: "7년간 창고와 차량을 직접 운영하며 매일 본 것입니다.",
+      startH2: ["7년 동안 현장에서", "같은 장면을 반복해서 봤습니다"],
+      startSub: "작업이 끝나도 보고와 확인은 끝나지 않았습니다.",
       startBody: [
-        "작업은 끝났는데 정보는 늦게 도착했습니다. 현장 직원이 사진을 찍어 단톡방에 올리면, 사무실이 그걸 찾아 거래처에 다시 전달했습니다.",
-        "거래처는 진행 상황을 묻는 전화를 걸었고, 필요한 사진이 빠지면 현장에 다시 확인해야 했습니다. 월말이면 엑셀로 명세서를 만들었습니다.",
-        "현장에는 답을 아는 사람이 분명히 있었습니다. 다만 그 사람이 아는 것이 다음 사람에게 제대로 닿지 않았습니다.",
+        "현장에서는 작업 사진을 찍어 단톡방에 올렸고, 사무실은 그 사진을 다시 찾아 거래처에 전달했습니다.",
+        "거래처는 진행 상황을 확인하려 연락했고, 필요한 사진이 빠지면 현장에 다시 물어야 했습니다. 월말에는 같은 내용을 다시 모아 명세서를 만들었습니다.",
+        "현장에는 답을 아는 사람이 있었습니다. 다만 그 내용이 다음 사람에게 바로 전달되지 않았습니다.",
       ],
-      startQuote: ["문제는 사람이 아니라,", "사람이 옮겨야만 하는 구조였습니다"],
+      startQuote: [
+        "정보는 이미 있었지만,",
+        "다음 사람이 쓰려면 다시 정리해야 했습니다",
+      ],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["사람을 더 뽑는 대신,", "시스템을 만들기로 했습니다"],
+      whyH2: ["그래서", "직접 만들기 시작했습니다"],
       whyBody: [
-        "현장에서 반복되는 확인과 전달을 소프트웨어가 대신하게 만들었습니다. 사진 한 장을 찍으면 사무실 확인을 거쳐 거래처까지 자동으로 가는 구조입니다.",
-        "그게 Flowstamp이고, 지금 제가 운영하는 물류 현장에서 매일 쓰고 있습니다. 고객 보고까지 걸리던 시간이 크게 줄었습니다.",
-        "반려동물을 키우면서 같은 문제를 다시 봤습니다. 보호자가 아는 것도 다음 판단으로 이어지지 않았습니다. 그래서 같은 방법으로 AnimAI를 만들었습니다.",
+        "현장에서 반복되던 확인과 전달을 소프트웨어가 처리하도록 만들었습니다. 작업 사진을 보고하면 사무실 확인을 거쳐 고객에게 전달되는 구조입니다.",
+        "그렇게 만든 것이 Flowstamp이고, 지금 제가 운영하는 물류 현장에서 매일 사용하고 있습니다.",
+        "반려동물을 키우면서도 비슷한 문제를 봤습니다. 보호자가 알고 있는 내용이 다음 상담과 판단에 이어지지 않았습니다. 그래서 같은 방식으로 AnimAI를 만들었습니다.",
       ],
-      whyQuote: ["목표는 더 좋은 기술이 아니라,", "사람이 옮기던 일을 없애는 것입니다"],
+      whyQuote: [
+        "문제를 아는 사람이 직접 만들면,",
+        "더 빨리 고칠 수 있습니다.",
+      ],
 
       execEyebrow: "EXECUTION BEFORE VITANIMA",
-      execH2: ["문제를 직접 겪고,", "사업으로 해결해왔습니다"],
+      execH2: ["Vitanima 이전에도", "직접 사업을 운영했습니다"],
       execLead:
-        "Vitanima 이전에도 현장에서 문제를 찾고, 직접 사업과 제품으로 해결하는 일을 반복해왔습니다.",
+        "무역 중개, 수출입 물류, 창고·운송, 펫택시 중개 플랫폼과 물류 SaaS까지 직접 운영하며 현장의 문제를 확인했습니다.",
       execMetrics: [
-        { n: "4번", l: "Vitanima 이전 창업" },
-        { n: "7년+", l: "무역 · 국제물류 사업 경험" },
-        { n: "70억 원", l: "이전 사업체 누적 매출" },
+        { n: "4회", l: "창업 경험" },
+        { n: "7년", l: "사업 운영 기간" },
+        { n: "70억 원", l: "누적 매출" },
       ],
       execNote:
-        "* 외부투자 없이 운영한 Vitanima 이전 사업체 기준이며, Vitanima의 매출이 아닙니다.",
+        "* 누적 매출은 외부 투자 없이 운영한 Vitanima 이전 사업체 기준이며, Vitanima의 매출이 아닙니다.",
 
       careerH2: "경력",
       career: [
@@ -570,55 +576,56 @@ export const dict = {
       ],
 
       petEyebrow: "PET INDUSTRY EXPERIENCE",
-      petH2: ["반려동물 산업은", "이번이 처음이 아닙니다"],
+      petH2: ["반려동물 서비스는", "이번이 처음이 아닙니다"],
       petBody: [
-        "2019년 GN밸류홀딩스에서 반려동물 이동 서비스인 펫택시 중개 플랫폼 '모시개냥'을 만들었습니다.",
-        "그때 보호자들이 이동, 병원, 미용 같은 상황에서 어떤 정보를 반복해서 설명해야 하는지 직접 보았습니다.",
-        "그 경험이 지금 Vitanima에서 만들고 있는 기록 구조의 출발점이 되었습니다.",
+        "2019년 GN밸류홀딩스에서 펫택시 중개 플랫폼 '모시개냥'을 만들었습니다.",
+        "그때 보호자들이 이동과 병원, 미용 같은 상황에서 같은 정보를 반복해서 설명해야 하는 문제를 직접 봤습니다.",
+        "그 경험이 지금 AnimAI에서 기록을 쌓는 방식으로 이어졌습니다.",
       ],
 
       firstEyebrow: "VITANIMA · WHAT I BUILT",
-      firstH2: ["기획부터 개발, 영업까지", "직접 실행하고 있습니다"],
+      firstH2: ["현재 두 제품을", "직접 만들고 운영합니다"],
       firstGrid: [
-        { n: "01", t: "Flowstamp 개발", d: "웹 · 모바일 · 2개월 실사용" },
-        { n: "02", t: "AnimAI 출시", d: "iOS · Android · 2,142명" },
+        { n: "01", t: "Flowstamp", d: "물류 현장 2개월 실사용" },
+        { n: "02", t: "AnimAI", d: "사용자 2,142명" },
         { n: "03", t: "특허 3건", d: "출원 완료" },
-        { n: "04", t: "AI OCR · 자동 보고", d: "실제 코드 가동" },
-        { n: "05", t: "Care Tag", d: "내부 파일럿 진행 중" },
-        { n: "06", t: "현장 영업", d: "첫 외부 도입 준비 중" },
+        { n: "04", t: "AI 기능", d: "작업지시 · 요약 · 번호 인식" },
+        { n: "05", t: "Care Tag", d: "내부 테스트 진행 중" },
+        { n: "06", t: "영업", d: "첫 외부 도입 준비" },
       ],
-      firstNote: "지금도 대표가 기획·개발·백엔드·인프라를 직접 맡고 있습니다.",
+      firstNote:
+        "기획과 개발, 서버와 운영까지 직접 맡아 제품을 만들고 있습니다.",
 
       howEyebrow: "HOW I BUILD",
-      howH2: ["기술보다 먼저,", "문제와 사용자를 봅니다"],
+      howH2: ["제품을", "만드는 방식"],
       how: [
         {
           n: "01",
           en: "FIELD FIRST",
-          t: "현장에서 시작합니다",
-          d: "책상에서 가정한 문제보다 실제 사용자가 반복해서 겪는 문제를 먼저 봅니다.",
+          t: "문제를 직접 확인합니다",
+          d: "사용자가 실제로 반복해서 겪는 문제를 먼저 봅니다.",
         },
         {
           n: "02",
           en: "BUILD FIRST",
-          t: "먼저 만들어봅니다",
-          d: "설명만 하기보다 작동하는 제품을 만들고 실제 사용자의 반응으로 확인합니다.",
+          t: "직접 만듭니다",
+          d: "설명하기보다 작동하는 제품을 먼저 만듭니다.",
         },
         {
           n: "03",
           en: "KEEP LEARNING",
-          t: "출시 후에도 계속 바꿉니다",
-          d: "서비스는 출시할 때 완성되는 것이 아니라, 데이터와 사용자의 반응이 쌓이면서 더 좋아져야 한다고 믿습니다.",
+          t: "사용으로 확인합니다",
+          d: "실제 사용 데이터를 보고 계속 수정합니다.",
         },
       ],
 
       globalEyebrow: "GLOBAL EXECUTION",
-      globalH2: ["해외 시장에서도", "직접 만나고 실행할 수 있습니다"],
+      globalH2: ["해외 업무도", "직접 진행할 수 있습니다"],
       global: [
         {
           k: "Education",
           t: "리츠메이칸 아시아태평양대학교",
-          d: "국제경영 학사 · 일본 소재",
+          d: "일본 · 국제경영 전공",
         },
         {
           k: "Communication",
@@ -636,10 +643,10 @@ export const dict = {
         "* 유통·마케팅·인증·투자/BD 파트너 후보군을 검토 중이며, 현재 계약 또는 공식 파트너십을 의미하지 않습니다.",
 
       closeEyebrow: "FROM THE FOUNDER",
-      closeH2: ["현장의 기록이", "다음 사람에게 닿게 만들겠습니다"],
+      closeH2: ["직접 만든 제품으로", "문제를 해결해 나가겠습니다"],
       closeBody: [
-        "작은 회사일수록 사람이 정보를 옮기는 데 시간을 많이 씁니다. 그 시간을 돌려주는 것이 제가 만들고 싶은 것입니다.",
-        "물류 현장에서 시작했지만, 같은 문제는 제조와 유통, 반려생활에도 있습니다. 한 번에 하나씩, 실제로 쓰이는 것을 확인하며 넓혀가겠습니다.",
+        "작은 회사일수록 정보를 다시 찾고 정리하는 데 많은 시간을 씁니다. 그 시간을 줄이는 제품을 만들고 있습니다.",
+        "물류 현장에서 시작했지만 같은 문제는 제조와 유통, 반려생활에도 있습니다. 실제로 쓰이는지 확인하며 하나씩 넓혀가겠습니다.",
       ],
       sign: "(주)비타니마 대표이사 김훈기",
 
@@ -1738,53 +1745,52 @@ export const dict = {
     },
     ceo: {
       eyebrow: "FOUNDER & CEO",
-      kicker: "Finding problems on the ground, building and validating them myself.",
-      h1: ["I look at the problem", "before the technology"],
+      kicker:
+        "I ran the businesses, met the problems, and solved them in software.",
+      h1: ["I meet the problem myself,", "and build it myself"],
       intro: [
-        "Technology is a way to solve a problem.",
-        "I look first at where people on the ground are spending their time. Then I build the recurring problem away myself, run it, and check it against how users respond.",
-        "Vitanima started the same way. We built Flowstamp for logistics sites and AnimAI for life with animals, and we validate both ourselves.",
+        "For seven years I ran trade and logistics businesses, managing warehouses and trucking directly. I met the same repetitive work and the same information problems every day, and started building software myself to cut them.",
+        "Today I build and operate Flowstamp for import/export logistics sites, and AnimAI for the people who live with companion animals.",
       ],
       name: "Hunki Kim",
       role: "CEO · Founder · Product · Engineering",
 
       startEyebrow: "THE STARTING POINT",
-      startH2: ["It was never about", "a lack of technology"],
-      startSub:
-        "Seven years running warehouses and trucks myself, this is what I saw every day.",
+      startH2: ["Seven years on the ground,", "watching the same scene repeat"],
+      startSub: "The job would finish, but the reporting and checking would not.",
       startBody: [
-        "The work was done, but the information arrived late. A worker would photograph the job and post it to a group chat; the office would dig it out and forward it to the client.",
-        "The client would call to ask where things stood, and if a photo was missing someone had to go back to the field. At month end, a statement was built in a spreadsheet.",
-        "Someone on the floor always knew the answer. It just never reached the next person properly.",
+        "On site, a worker would photograph the job and post it to a group chat; the office would find it again and forward it to the client.",
+        "The client would get in touch to check on progress, and if a photo was missing someone had to go back to the field. At month end, the same content was gathered again into a statement.",
+        "Someone on the floor knew the answer. It just didn't reach the next person directly.",
       ],
       startQuote: [
-        "The problem was never the people.",
-        "It was a structure that required carrying.",
+        "The information was already there.",
+        "It just had to be organised again for the next person.",
       ],
 
       whyEyebrow: "WHY VITANIMA",
-      whyH2: ["Instead of hiring more people,", "I built a system"],
+      whyH2: ["So I started", "building it myself"],
       whyBody: [
-        "I had software take over the checking and relaying that repeated on the floor. Photograph the job once, and it passes through office confirmation to the client automatically.",
-        "That is Flowstamp, and it runs every day at the logistics site I operate. The time it took to report to a client has fallen sharply.",
-        "Living with my own animals, I met the same problem again — what a caregiver knows doesn't reach the next decision. So I built AnimAI the same way.",
+        "I had software handle the checking and relaying that repeated on site. Report a job photo, and it passes through office confirmation to the client.",
+        "That became Flowstamp, and it runs every day at the logistics site I operate.",
+        "Living with my own animals, I saw a similar problem — what a caregiver knows doesn't carry into the next consultation or decision. So I built AnimAI the same way.",
       ],
       whyQuote: [
-        "The goal is not better technology,",
-        "but removing the carrying people had to do.",
+        "When the person who knows the problem builds it,",
+        "it gets fixed faster.",
       ],
 
       execEyebrow: "EXECUTION BEFORE VITANIMA",
-      execH2: ["I met the problems myself,", "and solved them as businesses"],
+      execH2: ["Before Vitanima,", "I ran businesses of my own"],
       execLead:
-        "Before Vitanima, I repeatedly found problems on the ground and solved them through businesses and products of my own.",
+        "Trade brokerage, import/export logistics, warehousing and trucking, a pet taxi platform and logistics SaaS — I ran each of them and saw the problems on site.",
       execMetrics: [
-        { n: "4", l: "Companies founded before Vitanima" },
-        { n: "7+ yrs", l: "Trade · international logistics" },
-        { n: "₩7.0B", l: "Cumulative revenue, prior businesses" },
+        { n: "4", l: "Companies founded" },
+        { n: "7 yrs", l: "Running businesses" },
+        { n: "₩7.0B", l: "Cumulative revenue" },
       ],
       execNote:
-        "* Figures are for prior businesses run without outside investment, not Vitanima's revenue.",
+        "* Cumulative revenue is for prior businesses run without outside investment, not Vitanima's revenue.",
 
       careerH2: "Career",
       career: [
@@ -1811,59 +1817,56 @@ export const dict = {
       ],
 
       petEyebrow: "PET INDUSTRY EXPERIENCE",
-      petH2: ["This is not my first venture", "in companion animals"],
+      petH2: ["Not my first service", "for companion animals"],
       petBody: [
-        "In 2019, at GN Value Holdings, I built a pet taxi brokerage platform for animal transport.",
-        "That was where I saw first-hand which information caregivers had to explain over and over — for transport, clinics, grooming.",
-        "That experience became the starting point for the record structure we are building at Vitanima today.",
+        "In 2019, at GN Value Holdings, I built a pet taxi brokerage platform.",
+        "That was where I saw caregivers having to explain the same information over and over — for transport, clinics, grooming.",
+        "That experience carried into how AnimAI accumulates records today.",
       ],
 
       firstEyebrow: "VITANIMA · WHAT I BUILT",
-      firstH2: [
-        "From product and engineering to sales,",
-        "I am executing it directly",
-      ],
+      firstH2: ["I build and operate", "both products myself"],
       firstGrid: [
-        { n: "01", t: "Built Flowstamp", d: "Web · mobile · two months of real use" },
-        { n: "02", t: "Launched AnimAI", d: "iOS · Android · 2,142 users" },
+        { n: "01", t: "Flowstamp", d: "Two months of real use on a logistics site" },
+        { n: "02", t: "AnimAI", d: "2,142 users" },
         { n: "03", t: "3 patents", d: "Filed" },
-        { n: "04", t: "AI OCR · auto reporting", d: "Running in production" },
-        { n: "05", t: "Care Tag", d: "Internal pilot in progress" },
-        { n: "06", t: "Field sales", d: "Preparing the first external rollout" },
+        { n: "04", t: "AI features", d: "Work orders · summaries · number recognition" },
+        { n: "05", t: "Care Tag", d: "Internal testing in progress" },
+        { n: "06", t: "Sales", d: "Preparing the first external rollout" },
       ],
       firstNote:
-        "Product, engineering, backend and infrastructure are still handled directly by the founder.",
+        "Product, engineering, servers and operations are all handled directly.",
 
       howEyebrow: "HOW I BUILD",
-      howH2: ["Before the technology,", "I look at the problem and the user"],
+      howH2: ["How I build", "a product"],
       how: [
         {
           n: "01",
           en: "FIELD FIRST",
-          t: "I start on the ground",
-          d: "Rather than a problem assumed at a desk, I look first at what real users hit repeatedly.",
+          t: "I check the problem myself",
+          d: "I look first at what real users hit repeatedly.",
         },
         {
           n: "02",
           en: "BUILD FIRST",
-          t: "I build it first",
-          d: "Rather than explain, I build something that works and check it against how users respond.",
+          t: "I build it myself",
+          d: "Rather than explain, I build something that works first.",
         },
         {
           n: "03",
           en: "KEEP LEARNING",
-          t: "I keep changing it after launch",
-          d: "A service is not finished at launch. I believe it has to get better as data and user response accumulate.",
+          t: "I confirm it in use",
+          d: "I keep revising against real usage data.",
         },
       ],
 
       globalEyebrow: "GLOBAL EXECUTION",
-      globalH2: ["I can meet and execute", "in overseas markets directly"],
+      globalH2: ["I can handle overseas work", "directly"],
       global: [
         {
           k: "Education",
           t: "Ritsumeikan Asia Pacific University",
-          d: "BA in International Management · based in Japan",
+          d: "Japan · International Management",
         },
         {
           k: "Communication",
@@ -1882,13 +1885,10 @@ export const dict = {
         "* Candidates across distribution, marketing, certification and investment/BD are under review; this does not indicate any current contract or formal partnership.",
 
       closeEyebrow: "FROM THE FOUNDER",
-      closeH2: [
-        "I will make what the field records",
-        "reach the next person",
-      ],
+      closeH2: ["I will keep solving problems", "with products I build"],
       closeBody: [
-        "The smaller the company, the more time people spend carrying information by hand. Giving that time back is what I want to build.",
-        "We started on logistics floors, but the same problem exists in manufacturing, distribution and life with animals. One at a time, confirming it is genuinely used, we will widen it.",
+        "The smaller the company, the more time goes into finding and organising information again. I build products that cut that time.",
+        "We started on logistics floors, but the same problem exists in manufacturing, distribution and life with animals. We will widen it one at a time, confirming it is genuinely used.",
       ],
       sign: "Hunki Kim, CEO, Vitanima Inc.",
 
