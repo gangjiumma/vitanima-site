@@ -74,46 +74,51 @@ export const dict = {
     },
 
     landing: {
-      badge: "AI SaaS · 현장 운영 소프트웨어",
-      h1: ["문제를 직접 겪고,", "직접 만듭니다"],
-      lead: "비타니마는 현장에서 반복되는 일을 줄이는 소프트웨어를 만듭니다.",
+      wordmark: "Vitanima",
+      h1: "현장의 반복을 줄이는 소프트웨어를 만듭니다",
+      lead: "비타니마는 실제 현장에서 필요한 기능만 담아, 직접 만들고 운영합니다.",
 
-      aboutH2: "어떤 회사인가요",
       aboutBody: [
-        "수출입 물류와 반려생활, 서로 다른 두 현장에서 같은 문제를 봤습니다. 필요한 정보는 이미 있는데, 다음 사람이 쓰려면 누군가 다시 찾아 정리해야 했습니다.",
-        "비타니마는 그 반복을 줄이는 제품을 직접 만들고 운영합니다. 현재 두 개의 서비스를 운영하고 있습니다.",
+        "비타니마는 수출입 물류와 반려동물, 두 분야에서 제품을 만들고 있습니다.",
+        "현장에서 반복되는 기록과 확인, 전달 과정을 줄이는 데 집중합니다.",
       ],
+      aboutQuote: "산업은 다르지만, 문제는 같습니다.",
 
       servicesH2: "서비스",
       services: [
         {
           name: "Flowstamp",
-          tag: "물류 · 제조 · 유통",
-          desc: "현장 보고부터 고객 전달, 견적·청구, 운송 배차까지 한 흐름으로 연결하는 AI SaaS",
-          status: "운영 중",
+          desc: "수출입 물류 현장의 작업 보고와 고객 전달을 연결하는 운영 소프트웨어",
+          url: "flowstamp.kr",
         },
         {
           name: "AnimAI",
-          tag: "반려동물",
-          desc: "보호자의 대화와 생활·건강기록을 시간순으로 쌓아 다음 판단에 다시 쓰는 반려동물 AI",
-          status: "운영 중",
+          desc: "반려동물의 일상과 건강기록을 쌓고, 필요한 순간에 다시 쓰는 AI 서비스",
+          url: "animai.kr",
         },
       ],
-      servicesNote: "각 서비스의 자세한 내용은 사이트에서 확인하실 수 있습니다.",
 
-      contactEyebrow: "CONTACT",
-      contactH2: ["함께 일하고 싶거나,", "궁금한 점이 있다면"],
-      contactLead:
-        "제휴, 투자, 도입 문의 모두 환영합니다. 아래 메일로 편하게 연락 주세요.",
-      contactTypes: [
-        { t: "Flowstamp 도입", d: "현장 적용 및 데모 문의" },
-        { t: "제휴 · 협업", d: "사업 제휴와 기술 협력" },
-        { t: "투자", d: "IR 자료 요청 및 투자 문의" },
-      ],
-      contactBtn: "메일 보내기",
-      contactNote: "영업일 기준 2일 안에 회신드립니다.",
-
-      preparing: "나머지 페이지는 준비 중입니다.",
+      contactH2: "문의하기",
+      contactLead: "제휴, 투자, 서비스 도입 문의를 남겨주세요.",
+      form: {
+        name: "이름",
+        namePh: "홍길동",
+        company: "회사 / 소속",
+        companyPh: "(선택)",
+        email: "이메일",
+        emailPh: "name@company.com",
+        type: "문의 유형",
+        types: ["서비스 도입", "제휴 · 협업", "투자", "기타"],
+        message: "문의 내용",
+        messagePh: "어떤 내용이든 편하게 적어주세요.",
+        submit: "문의 보내기",
+        sending: "보내는 중…",
+        done: "문의가 전송되었습니다. 빠르게 회신드리겠습니다.",
+        error: "전송에 실패했습니다. 잠시 후 다시 시도하거나 아래 메일로 보내주세요.",
+        required: "필수 항목을 모두 입력해주세요.",
+        invalidEmail: "이메일 형식을 확인해주세요.",
+      },
+      orMail: "메일로 직접 보내기",
     },
     home: {
       eyebrow: "WHAT WE BUILD",
@@ -1335,47 +1340,54 @@ export const dict = {
     },
 
     landing: {
-      badge: "AI SaaS · field operations software",
-      h1: ["We meet the problem,", "and build it ourselves"],
+      wordmark: "Vitanima",
+      h1: "We build software that cuts the work that repeats on the ground",
       lead:
-        "Vitanima builds software that cuts the work that keeps repeating on the ground.",
+        "Vitanima builds and runs its own products, with only the features a real site needs.",
 
-      aboutH2: "About us",
       aboutBody: [
-        "We saw the same problem in two very different places — import/export logistics and life with companion animals. The information already existed, but someone had to find and organise it again for the next person.",
-        "Vitanima builds and runs products that cut that repetition. We currently operate two services.",
+        "Vitanima builds products in two fields: import/export logistics, and life with companion animals.",
+        "We focus on cutting the recording, checking and relaying that keeps repeating on the ground.",
       ],
+      aboutQuote: "Different industries. The same problem.",
 
       servicesH2: "Services",
       services: [
         {
           name: "Flowstamp",
-          tag: "Logistics · manufacturing · distribution",
-          desc: "An AI SaaS connecting field reporting, client delivery, quotes and invoicing, and transport dispatch in one flow",
-          status: "Live",
+          desc: "Operations software connecting field reporting and client delivery on import/export logistics sites",
+          url: "flowstamp.kr",
         },
         {
           name: "AnimAI",
-          tag: "Companion animals",
-          desc: "A companion animal AI that accumulates conversations, daily life and health records over time, and uses them again in the next decision",
-          status: "Live",
+          desc: "An AI service that accumulates an animal's daily life and health records, and uses them again when it matters",
+          url: "animai.kr",
         },
       ],
-      servicesNote: "Full details are available on each service's own site.",
 
-      contactEyebrow: "CONTACT",
-      contactH2: ["Want to work with us,", "or have a question?"],
+      contactH2: "Get in touch",
       contactLead:
-        "Partnership, investment and rollout enquiries are all welcome. Just drop us an email.",
-      contactTypes: [
-        { t: "Flowstamp rollout", d: "On-site deployment and demo enquiries" },
-        { t: "Partnership", d: "Business and technical collaboration" },
-        { t: "Investment", d: "IR materials and investment enquiries" },
-      ],
-      contactBtn: "Send an email",
-      contactNote: "We reply within two business days.",
-
-      preparing: "Our other pages are in preparation.",
+        "Partnership, investment and service enquiries are all welcome.",
+      form: {
+        name: "Name",
+        namePh: "Jane Doe",
+        company: "Company",
+        companyPh: "(optional)",
+        email: "Email",
+        emailPh: "name@company.com",
+        type: "Enquiry type",
+        types: ["Service rollout", "Partnership", "Investment", "Other"],
+        message: "Message",
+        messagePh: "Write anything you'd like to ask.",
+        submit: "Send enquiry",
+        sending: "Sending…",
+        done: "Your enquiry has been sent. We'll get back to you shortly.",
+        error:
+          "Sending failed. Please try again shortly, or email us directly below.",
+        required: "Please fill in all required fields.",
+        invalidEmail: "Please check the email format.",
+      },
+      orMail: "Email us directly",
     },
     home: {
       eyebrow: "WHAT WE BUILD",
