@@ -2,14 +2,11 @@ import type { MetadataRoute } from "next";
 import { LANGS } from "@/lib/dict";
 
 const BASE = "https://www.vitanima.kr";
+// 랜딩 모드 — 홈만 색인한다.
+// 전체 사이트 복구 시 아래 주석을 해제한다.
 const ROUTES = [
   "",
-  "/about",
-  "/ceo",
-  "/flowstamp",
-  "/animai",
-  "/contact",
-  // "/news", "/careers" — 준비 중 (middleware 에서 홈으로 리다이렉트)
+  // "/about", "/ceo", "/flowstamp", "/animai", "/contact", "/news", "/careers"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

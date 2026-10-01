@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+/**
+ * 랜딩 모드.
+ * true  — 홈 한 장짜리 랜딩만 노출 (Header / Footer 숨김)
+ * false — 전체 사이트 복구
+ * 끌 때는 middleware.ts 의 HIDDEN 배열도 함께 비울 것.
+ */
+const LANDING_MODE = true;
 import { LANGS, getDict, resolveLang } from "@/lib/dict";
 
 export const dynamicParams = false;
@@ -61,7 +69,7 @@ export default async function RootLayout({
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
         />
       </head>
-      <body className="antialiased">
+      <body className={LANDING_MODE ? "antialiased bg-paper" : "antialiased"}>
         {/* 검색엔진에 회사·서비스 구조 통보 */}
         <script
           type="application/ld+json"
@@ -113,9 +121,15 @@ export default async function RootLayout({
         >
           {lang === "ko" ? "본문으로 건너뛰기" : "Skip to content"}
         </a>
-        <Header lang={lang} />
-        <main id="main">{children}</main>
-        <Footer lang={lang} />
+        {LANDING_MODE ? (
+          children
+        ) : (
+          <>
+            <Header lang={lang} />
+            <main id="main">{children}</main>
+            <Footer lang={lang} />
+          </>
+        )}
       </body>
     </html>
   );

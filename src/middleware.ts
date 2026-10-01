@@ -8,16 +8,19 @@ export function middleware(req: NextRequest) {
 
   const first = pathname.split("/")[1];
   if ((LANGS as readonly string[]).includes(first)) {
-    // /technology 는 /animai 로 흡수됨 — 기존 색인 URL 보존
-    if (pathname.endsWith("/technology")) {
-      const url = req.nextUrl.clone();
-      url.pathname = `/${first}/animai`;
-      return NextResponse.redirect(url, 308);
-    }
-
-    // 준비 중인 페이지 — 파일은 남겨두고 노출만 막는다.
-    // 공개할 때는 아래 배열에서 해당 경로만 빼고 Header·sitemap 에 되살리면 된다.
-    const HIDDEN = ["/news", "/careers"];
+    // 랜딩 모드 — 홈 한 장만 노출하고 나머지는 홈으로 돌려보낸다.
+    // 전체 사이트를 되살릴 때는 이 배열을 비우고,
+    // layout.tsx 의 LANDING_MODE 를 false 로, page.tsx 를 page.full.tsx.bak 로 되돌린다.
+    const HIDDEN = [
+      "/technology",
+      "/news",
+      "/careers",
+      "/about",
+      "/ceo",
+      "/flowstamp",
+      "/animai",
+      "/contact",
+    ];
     if (HIDDEN.some((h) => pathname.endsWith(h))) {
       const url = req.nextUrl.clone();
       url.pathname = `/${first}`;
