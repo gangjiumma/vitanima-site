@@ -28,7 +28,7 @@ export const dict = {
     meta: {
       title: "㈜비타니마 — 소상공인과 중소기업의 AX를 돕습니다",
       description:
-        "비타니마는 현장에서 반복되는 일을 줄이는 소프트웨어를 만듭니다. 물류 운영 솔루션 Flowstamp와 반려동물 AI 서비스 AnimAI를 운영합니다.",
+        "비타니마는 소상공인과 중소기업, 일상의 불편함을 AI로 해결하는 AX 회사입니다. 물류 운영 솔루션 Flowstamp와 반려동물 AI 서비스 AnimAI를 운영합니다.",
       keywords: [
         "비타니마",
         "Vitanima",
@@ -79,7 +79,7 @@ export const dict = {
       lead: "비타니마는 실제 현장에서 필요한 기능만 담아, 직접 만들고 운영합니다.",
 
       aboutBody: [
-        "비타니마는 수출입 물류와 반려동물, 두 분야에서 제품을 만들고 있습니다.",
+        "비타니마는 소상공인과 중소기업, 그리고 일상의 불편함을 AI로 해결하는 AX 회사입니다. 현재 수출입 물류와 반려동물, 두 분야에서 제품을 만들고 있습니다.",
         "현장에서 반복되는 기록과 확인, 전달 과정을 줄이는 데 집중합니다.",
       ],
       aboutQuote: "산업은 다르지만, 문제는 같습니다.",
@@ -1298,7 +1298,7 @@ export const dict = {
     meta: {
       title: "Vitanima — AX for small businesses and SMEs",
       description:
-        "Vitanima builds software that cuts the work that keeps repeating on the ground. We operate Flowstamp, a logistics operations solution, and AnimAI for companion animals.",
+        "Vitanima is an AX company solving the problems small businesses, SMEs and everyday life run into — with AI. We operate Flowstamp for logistics operations and AnimAI for companion animals.",
       keywords: [
         "Vitanima",
         "Flowstamp",
@@ -1346,7 +1346,7 @@ export const dict = {
         "Vitanima builds and runs its own products, with only the features a real site needs.",
 
       aboutBody: [
-        "Vitanima builds products in two fields: import/export logistics, and life with companion animals.",
+        "Vitanima is an AX company solving the problems small businesses, SMEs and everyday life run into — with AI. We currently build products in two fields: import/export logistics, and life with companion animals.",
         "We focus on cutting the recording, checking and relaying that keeps repeating on the ground.",
       ],
       aboutQuote: "Different industries. The same problem.",
